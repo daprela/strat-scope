@@ -11,12 +11,18 @@ make bootstrap       # frozen Python/npm installation and local frontend build
 make run             # foreground TLS service; one worker, exact loopback port
 make ready           # chain/hostname validation using the installed public CA
 make browser         # graphical Chromium profile verified for this installation
+make browser-vivaldi # separately verified Vivaldi profile
 make stop            # identity-checked shutdown; verifies that the listener closes
 ```
 
 `make run` stays in its terminal. Run the other commands from another terminal.
 Ctrl+C also stops the foreground service. An occupied port is an error; the host
 does not select an alternative address, port or insecure protocol.
+
+`make browser-vivaldi` opens `/usr/bin/vivaldi` with the dedicated
+`~/.local/share/strat-scope/vivaldi-profile`; it never reuses the user's
+ordinary Vivaldi profile. Vivaldi's direct DevTools automation is currently
+unstable on this host, so its browser-specific certification remains pending.
 
 The persistent store and TLS files live under `~/.local/share/strat-scope/`, outside
 the synced checkout. `STRAT_SCOPE_STORE`, `STRAT_SCOPE_CERT` and `STRAT_SCOPE_KEY`

@@ -15,6 +15,17 @@ CA = Path.home() / ".local/share/strat-scope/tls/root.crt"
 ENV = os.environ | {"PYTHONPATH": str(ROOT / "backend/src")}
 
 
+def browser_id() -> str:
+    value = ENV.get("STRAT_SCOPE_BROWSER_ID", "chromium")
+    if not value.replace("-", "").isalnum():
+        raise RuntimeError("STRAT_SCOPE_BROWSER_ID must contain only letters, digits, and hyphens")
+    return value
+
+
+def evidence_name(name: str) -> str:
+    return name if browser_id() == "chromium" else f"{browser_id()}-{name}"
+
+
 def start() -> subprocess.Popen[bytes]:
     process = subprocess.Popen([str(ROOT / "backend/.venv/bin/python"), "-m", "strat_scope"],
         cwd=ROOT / "backend", env=ENV, stdout=subprocess.DEVNULL, stderr=subprocess.PIPE)
@@ -54,7 +65,7 @@ def main() -> None:
         phases.append("first TLS start and validated readiness passed")
         subprocess.run(["node", "tools/desktop-check.ts"],
                        cwd=ROOT / "frontend", check=True, timeout=60)
-        phases.append("existing desktop browser TLS navigation passed")
+        phases.append(f"{browser_id()} desktop browser TLS navigation passed")
     finally:
         stop(process)
     phases.append("identity-checked shutdown and listener closure passed")
@@ -62,11 +73,12 @@ def main() -> None:
     try:
         phases.append("same store and exact TLS origin relaunched")
         subprocess.run(["npm", "run", "test:e2e"], cwd=ROOT / "frontend", check=True)
-        phases.append("Chromium transport and renderer checks passed")
+        phases.append(f"{browser_id()} transport and renderer checks passed")
     finally:
         stop(process)
     phases.append("final listener closure passed")
-    (ROOT / "foundation-evidence/lifecycle.json").write_text(json.dumps({
+    (ROOT / "foundation-evidence" / evidence_name("lifecycle.json")).write_text(json.dumps({
+        "browser": browser_id(),
         "origin": "https://127.0.0.1:4111", "validation": "hostname/chain enabled",
         "hostCA": "explicit installed local public CA; system trust was not installed",
         "phases": phases,

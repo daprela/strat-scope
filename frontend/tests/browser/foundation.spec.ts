@@ -3,6 +3,11 @@ import type { Harness } from './probe';
 import { writeFile } from 'node:fs/promises';
 import { cpus, totalmem, platform } from 'node:os';
 
+const browserId = process.env.STRAT_SCOPE_BROWSER_ID ?? 'chromium';
+if (!/^[a-z0-9-]+$/i.test(browserId)) throw new Error('Invalid STRAT_SCOPE_BROWSER_ID');
+const evidence = (name: string) =>
+  `../foundation-evidence/${browserId === 'chromium' ? name : `${browserId}-${name}`}`;
+
 declare global {
   interface Window {
     foundationProbe: Harness | undefined;
@@ -45,7 +50,7 @@ test('HTTPS local assets, capability isolation and secure WS', async ({ page, co
       }
     }),
   ).toBe(false);
-  await page.screenshot({ path: '../foundation-evidence/https-entry.png' });
+  await page.screenshot({ path: evidence('https-entry.png') });
 });
 
 for (const theme of ['light', 'dark']) {
@@ -109,15 +114,16 @@ for (const theme of ['light', 'dark']) {
     const { exportPng, ...metrics } = result;
     if (!exportPng) throw new Error('Missing native export');
     await writeFile(
-      `../foundation-evidence/renderer-export-${theme}.png`,
+      evidence(`renderer-export-${theme}.png`),
       Buffer.from(exportPng.slice(exportPng.indexOf(',') + 1), 'base64'),
     );
     await writeFile(
-      `../foundation-evidence/renderer-${theme}.json`,
+      evidence(`renderer-${theme}.json`),
       JSON.stringify(
         {
           ...metrics,
-          browser: browser.version(),
+          browser: browserId,
+          browserVersion: browser.version(),
           cpu: cpus()[0]?.model,
           logicalCpus: cpus().length,
           memoryBytes: totalmem(),
@@ -136,7 +142,7 @@ for (const theme of ['light', 'dark']) {
         2,
       ) + '\n',
     );
-    await page.screenshot({ path: `../foundation-evidence/renderer-${theme}.png` });
+    await page.screenshot({ path: evidence(`renderer-${theme}.png`) });
     expect(errors).toEqual([]);
     expect(result.paired && result.sameBucket && result.absence && result.exportPresent).toBe(true);
     expect(result.panes).toEqual([4, 4]);

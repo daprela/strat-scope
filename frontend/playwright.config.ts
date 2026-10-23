@@ -9,6 +9,8 @@ const browser =
   (existsSync(installed)
     ? installed
     : `${homedir()}/.cache/ms-playwright/chromium-1243/chrome-linux64/chrome`);
+const browserId = process.env.STRAT_SCOPE_BROWSER_ID ?? 'chromium';
+if (!/^[a-z0-9-]+$/i.test(browserId)) throw new Error('Invalid STRAT_SCOPE_BROWSER_ID');
 
 export default defineConfig({
   testDir: './tests/browser',
@@ -19,6 +21,7 @@ export default defineConfig({
     viewport: { width: 1600, height: 1000 },
     launchOptions: {
       executablePath: browser,
+      args: browserId === 'vivaldi' ? ['--no-first-run', '--no-default-browser-check'] : [],
     },
   },
   webServer: {

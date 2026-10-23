@@ -101,6 +101,7 @@ an insecure HTTP listener.
 | `make stop`            | Perform identity-checked shutdown and verify the listener closes.                    |
 | `make ready`           | Check the local HTTPS readiness endpoint with TLS validation.                        |
 | `make browser`         | Open the verified Chromium profile at the local HTTPS origin.                        |
+| `make browser-vivaldi` | Open the separately verified Vivaldi profile at the local HTTPS origin.             |
 | `make contracts`       | Regenerate the OpenAPI schema and frontend API declarations.                         |
 | `make contracts-check` | Confirm generated schema and API declarations have no drift.                         |
 | `make lint`            | Run backend lint, formatting/type checks, and frontend type/lint/format checks.      |

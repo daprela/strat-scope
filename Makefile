@@ -1,4 +1,4 @@
-.PHONY: bootstrap run stop ready contracts contracts-check check test lint
+.PHONY: bootstrap run stop ready browser browser-vivaldi contracts contracts-check check test lint test-e2e test-db
 export UV_CACHE_DIR := /tmp/strat-scope-uv-cache
 export npm_config_cache := /tmp/strat-scope-npm-cache
 
@@ -16,6 +16,9 @@ ready:
 
 browser:
 	python scripts/open_browser.py
+
+browser-vivaldi:
+	STRAT_SCOPE_BROWSER=/usr/bin/vivaldi STRAT_SCOPE_BROWSER_ID=vivaldi python scripts/open_browser.py
 
 contracts:
 	python scripts/foundation.py contracts
