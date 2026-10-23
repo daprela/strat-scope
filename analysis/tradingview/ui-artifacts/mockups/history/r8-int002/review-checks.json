@@ -1,0 +1,1722 @@
+{
+  "version": "MP-SET-001-r8",
+  "kind": "Static authored design checks; no runtime pass or approval",
+  "current_sources": [
+    "MP-MOCK-001",
+    "MP-MOCK-002",
+    "MP-MOCK-003",
+    "MP-MOCK-004",
+    "MP-MOCK-005",
+    "MP-MOCK-006",
+    "MP-MOCK-007",
+    "MP-MOCK-008",
+    "MP-MOCK-009",
+    "MP-MOCK-010",
+    "MP-MOCK-011",
+    "MP-MOCK-012",
+    "MP-MOCK-013",
+    "MP-MOCK-014",
+    "MP-MOCK-015",
+    "MP-MOCK-016",
+    "MP-MOCK-017",
+    "MP-MOCK-018",
+    "MP-MOCK-019",
+    "MP-MOCK-020",
+    "MP-MOCK-021",
+    "MP-MOCK-022",
+    "MP-MOCK-023",
+    "MP-MOCK-024",
+    "MP-MOCK-025",
+    "MP-MOCK-026",
+    "MP-MOCK-027",
+    "MP-MOCK-028",
+    "MP-MOCK-029",
+    "MP-MOCK-030",
+    "MP-MOCK-031",
+    "MP-MOCK-032",
+    "MP-MOCK-033",
+    "MP-MOCK-034",
+    "MP-MOCK-035",
+    "MP-MOCK-036",
+    "MP-MOCK-037",
+    "MP-MOCK-038",
+    "MP-MOCK-039",
+    "MP-MOCK-040",
+    "MP-MOCK-041",
+    "MP-MOCK-042",
+    "MP-MOCK-043",
+    "MP-MOCK-044",
+    "MP-MOCK-045",
+    "MP-MOCK-046",
+    "MP-MOCK-047",
+    "MP-MOCK-048",
+    "MP-MOCK-049",
+    "MP-MOCK-050",
+    "MP-MOCK-051",
+    "MP-MOCK-052",
+    "MP-MOCK-053",
+    "MP-MOCK-054",
+    "MP-MOCK-055",
+    "MP-MOCK-056",
+    "MP-MOCK-057",
+    "MP-MOCK-058",
+    "MP-MOCK-059",
+    "MP-MOCK-060",
+    "MP-MOCK-061",
+    "MP-MOCK-062",
+    "MP-MOCK-063",
+    "MP-MOCK-064",
+    "MP-MOCK-065",
+    "MP-MOCK-066",
+    "MP-MOCK-067",
+    "MP-MOCK-068",
+    "MP-MOCK-069",
+    "MP-MOCK-070",
+    "MP-MOCK-071",
+    "MP-MOCK-072",
+    "MP-MOCK-073",
+    "MP-MOCK-074",
+    "MP-MOCK-075",
+    "MP-MOCK-076",
+    "MP-MOCK-077",
+    "MP-MOCK-078",
+    "MP-MOCK-079",
+    "MP-MOCK-080",
+    "MP-MOCK-081",
+    "MP-MOCK-082",
+    "MP-MOCK-083",
+    "MP-MOCK-084",
+    "MP-MOCK-085",
+    "MP-MOCK-086",
+    "MP-MOCK-087",
+    "MP-MOCK-088",
+    "MP-MOCK-089",
+    "MP-MOCK-090",
+    "MP-MOCK-091",
+    "MP-MOCK-092",
+    "MP-MOCK-093",
+    "MP-MOCK-094",
+    "MP-MOCK-095",
+    "MP-MOCK-096",
+    "MP-MOCK-097",
+    "MP-MOCK-098",
+    "MP-MOCK-099",
+    "MP-MOCK-100",
+    "MP-MOCK-101",
+    "MP-MOCK-102",
+    "MP-MOCK-103",
+    "MP-MOCK-104",
+    "MP-MOCK-105",
+    "MP-MOCK-106",
+    "MP-MOCK-107",
+    "MP-MOCK-108",
+    "MP-MOCK-109",
+    "MP-MOCK-110",
+    "MP-MOCK-111",
+    "MP-MOCK-112",
+    "MP-MOCK-113"
+  ],
+  "stale_sources": [],
+  "svg_count": 226,
+  "source_state_count": 64,
+  "source_digest_geometry_controls": "PASS for 226 current-source SVGs; stale excluded",
+  "palette_candle_quote_and_toolbar_rules": "PASS for explicit attributes; actual rendering inspected separately",
+  "xml_safety_and_local_links": "PASS",
+  "checked_html_links": 1859,
+  "verification_property_count": 34,
+  "rendered_preview_count": 304,
+  "rendering": "See render-checks.json for actual render/visual-inspection scope",
+  "runtime_evidence": "UIV-EVID-001\u2013009 expected during implementation; not observed here",
+  "side_panel_bounds": {
+    "status": "PASS",
+    "files_checked": 198,
+    "details": [
+      {
+        "file": "MP-MOCK-001.svg",
+        "panels": [
+          "watchlist"
+        ],
+        "top": 44,
+        "bottom": 774.0
+      },
+      {
+        "file": "MP-MOCK-001-dark.svg",
+        "panels": [
+          "watchlist"
+        ],
+        "top": 44,
+        "bottom": 774.0
+      },
+      {
+        "file": "MP-MOCK-002.svg",
+        "panels": [
+          "watchlist"
+        ],
+        "top": 44,
+        "bottom": 774.0
+      },
+      {
+        "file": "MP-MOCK-002-dark.svg",
+        "panels": [
+          "watchlist"
+        ],
+        "top": 44,
+        "bottom": 774.0
+      },
+      {
+        "file": "MP-MOCK-003.svg",
+        "panels": [
+          "watchlist"
+        ],
+        "top": 44,
+        "bottom": 774.0
+      },
+      {
+        "file": "MP-MOCK-003-dark.svg",
+        "panels": [
+          "watchlist"
+        ],
+        "top": 44,
+        "bottom": 774.0
+      },
+      {
+        "file": "MP-MOCK-004.svg",
+        "panels": [
+          "watchlist"
+        ],
+        "top": 44,
+        "bottom": 774.0
+      },
+      {
+        "file": "MP-MOCK-004-dark.svg",
+        "panels": [
+          "watchlist"
+        ],
+        "top": 44,
+        "bottom": 774.0
+      },
+      {
+        "file": "MP-MOCK-005.svg",
+        "panels": [
+          "watchlist"
+        ],
+        "top": 44,
+        "bottom": 774.0
+      },
+      {
+        "file": "MP-MOCK-005-dark.svg",
+        "panels": [
+          "watchlist"
+        ],
+        "top": 44,
+        "bottom": 774.0
+      },
+      {
+        "file": "MP-MOCK-006.svg",
+        "panels": [
+          "context-drawer"
+        ],
+        "top": 44,
+        "bottom": 774.0
+      },
+      {
+        "file": "MP-MOCK-006-dark.svg",
+        "panels": [
+          "context-drawer"
+        ],
+        "top": 44,
+        "bottom": 774.0
+      },
+      {
+        "file": "MP-MOCK-007.svg",
+        "panels": [
+          "watchlist"
+        ],
+        "top": 44,
+        "bottom": 774.0
+      },
+      {
+        "file": "MP-MOCK-007-dark.svg",
+        "panels": [
+          "watchlist"
+        ],
+        "top": 44,
+        "bottom": 774.0
+      },
+      {
+        "file": "MP-MOCK-008.svg",
+        "panels": [
+          "watchlist"
+        ],
+        "top": 44,
+        "bottom": 774.0
+      },
+      {
+        "file": "MP-MOCK-008-dark.svg",
+        "panels": [
+          "watchlist"
+        ],
+        "top": 44,
+        "bottom": 774.0
+      },
+      {
+        "file": "MP-MOCK-009.svg",
+        "panels": [
+          "watchlist"
+        ],
+        "top": 44,
+        "bottom": 774.0
+      },
+      {
+        "file": "MP-MOCK-009-dark.svg",
+        "panels": [
+          "watchlist"
+        ],
+        "top": 44,
+        "bottom": 774.0
+      },
+      {
+        "file": "MP-MOCK-010.svg",
+        "panels": [
+          "watchlist"
+        ],
+        "top": 44,
+        "bottom": 774.0
+      },
+      {
+        "file": "MP-MOCK-010-dark.svg",
+        "panels": [
+          "watchlist"
+        ],
+        "top": 44,
+        "bottom": 774.0
+      },
+      {
+        "file": "MP-MOCK-011.svg",
+        "panels": [
+          "watchlist"
+        ],
+        "top": 44,
+        "bottom": 774.0
+      },
+      {
+        "file": "MP-MOCK-011-dark.svg",
+        "panels": [
+          "watchlist"
+        ],
+        "top": 44,
+        "bottom": 774.0
+      },
+      {
+        "file": "MP-MOCK-012.svg",
+        "panels": [
+          "watchlist"
+        ],
+        "top": 44,
+        "bottom": 774.0
+      },
+      {
+        "file": "MP-MOCK-012-dark.svg",
+        "panels": [
+          "watchlist"
+        ],
+        "top": 44,
+        "bottom": 774.0
+      },
+      {
+        "file": "MP-MOCK-013.svg",
+        "panels": [
+          "watchlist"
+        ],
+        "top": 44,
+        "bottom": 774.0
+      },
+      {
+        "file": "MP-MOCK-013-dark.svg",
+        "panels": [
+          "watchlist"
+        ],
+        "top": 44,
+        "bottom": 774.0
+      },
+      {
+        "file": "MP-MOCK-014.svg",
+        "panels": [
+          "watchlist"
+        ],
+        "top": 44,
+        "bottom": 774.0
+      },
+      {
+        "file": "MP-MOCK-014-dark.svg",
+        "panels": [
+          "watchlist"
+        ],
+        "top": 44,
+        "bottom": 774.0
+      },
+      {
+        "file": "MP-MOCK-015.svg",
+        "panels": [
+          "watchlist"
+        ],
+        "top": 44,
+        "bottom": 774.0
+      },
+      {
+        "file": "MP-MOCK-015-dark.svg",
+        "panels": [
+          "watchlist"
+        ],
+        "top": 44,
+        "bottom": 774.0
+      },
+      {
+        "file": "MP-MOCK-016.svg",
+        "panels": [
+          "watchlist"
+        ],
+        "top": 44,
+        "bottom": 774.0
+      },
+      {
+        "file": "MP-MOCK-016-dark.svg",
+        "panels": [
+          "watchlist"
+        ],
+        "top": 44,
+        "bottom": 774.0
+      },
+      {
+        "file": "MP-MOCK-017.svg",
+        "panels": [
+          "saved-work-drawer"
+        ],
+        "top": 44,
+        "bottom": 774.0
+      },
+      {
+        "file": "MP-MOCK-017-dark.svg",
+        "panels": [
+          "saved-work-drawer"
+        ],
+        "top": 44,
+        "bottom": 774.0
+      },
+      {
+        "file": "MP-MOCK-018.svg",
+        "panels": [
+          "saved-work-drawer"
+        ],
+        "top": 44,
+        "bottom": 774.0
+      },
+      {
+        "file": "MP-MOCK-018-dark.svg",
+        "panels": [
+          "saved-work-drawer"
+        ],
+        "top": 44,
+        "bottom": 774.0
+      },
+      {
+        "file": "MP-MOCK-019.svg",
+        "panels": [
+          "saved-work-drawer"
+        ],
+        "top": 44,
+        "bottom": 774.0
+      },
+      {
+        "file": "MP-MOCK-019-dark.svg",
+        "panels": [
+          "saved-work-drawer"
+        ],
+        "top": 44,
+        "bottom": 774.0
+      },
+      {
+        "file": "MP-MOCK-020.svg",
+        "panels": [
+          "saved-work-drawer"
+        ],
+        "top": 44,
+        "bottom": 774.0
+      },
+      {
+        "file": "MP-MOCK-020-dark.svg",
+        "panels": [
+          "saved-work-drawer"
+        ],
+        "top": 44,
+        "bottom": 774.0
+      },
+      {
+        "file": "MP-MOCK-021.svg",
+        "panels": [
+          "saved-work-drawer"
+        ],
+        "top": 44,
+        "bottom": 774.0
+      },
+      {
+        "file": "MP-MOCK-021-dark.svg",
+        "panels": [
+          "saved-work-drawer"
+        ],
+        "top": 44,
+        "bottom": 774.0
+      },
+      {
+        "file": "MP-MOCK-022.svg",
+        "panels": [
+          "saved-work-drawer"
+        ],
+        "top": 44,
+        "bottom": 774.0
+      },
+      {
+        "file": "MP-MOCK-022-dark.svg",
+        "panels": [
+          "saved-work-drawer"
+        ],
+        "top": 44,
+        "bottom": 774.0
+      },
+      {
+        "file": "MP-MOCK-023.svg",
+        "panels": [
+          "saved-work-drawer"
+        ],
+        "top": 44,
+        "bottom": 774.0
+      },
+      {
+        "file": "MP-MOCK-023-dark.svg",
+        "panels": [
+          "saved-work-drawer"
+        ],
+        "top": 44,
+        "bottom": 774.0
+      },
+      {
+        "file": "MP-MOCK-024.svg",
+        "panels": [
+          "saved-work-drawer"
+        ],
+        "top": 44,
+        "bottom": 774.0
+      },
+      {
+        "file": "MP-MOCK-024-dark.svg",
+        "panels": [
+          "saved-work-drawer"
+        ],
+        "top": 44,
+        "bottom": 774.0
+      },
+      {
+        "file": "MP-MOCK-025.svg",
+        "panels": [
+          "entry-direction-editor"
+        ],
+        "top": 44,
+        "bottom": 774.0
+      },
+      {
+        "file": "MP-MOCK-025-dark.svg",
+        "panels": [
+          "entry-direction-editor"
+        ],
+        "top": 44,
+        "bottom": 774.0
+      },
+      {
+        "file": "MP-MOCK-026.svg",
+        "panels": [
+          "targeted-trading-form"
+        ],
+        "top": 44,
+        "bottom": 774.0
+      },
+      {
+        "file": "MP-MOCK-026-dark.svg",
+        "panels": [
+          "targeted-trading-form"
+        ],
+        "top": 44,
+        "bottom": 774.0
+      },
+      {
+        "file": "MP-MOCK-027.svg",
+        "panels": [
+          "targeted-trading-form"
+        ],
+        "top": 44,
+        "bottom": 774.0
+      },
+      {
+        "file": "MP-MOCK-027-dark.svg",
+        "panels": [
+          "targeted-trading-form"
+        ],
+        "top": 44,
+        "bottom": 774.0
+      },
+      {
+        "file": "MP-MOCK-028.svg",
+        "panels": [
+          "context-drawer"
+        ],
+        "top": 44,
+        "bottom": 774.0
+      },
+      {
+        "file": "MP-MOCK-028-dark.svg",
+        "panels": [
+          "context-drawer"
+        ],
+        "top": 44,
+        "bottom": 774.0
+      },
+      {
+        "file": "MP-MOCK-029.svg",
+        "panels": [
+          "targeted-trading-form"
+        ],
+        "top": 44,
+        "bottom": 774.0
+      },
+      {
+        "file": "MP-MOCK-029-dark.svg",
+        "panels": [
+          "targeted-trading-form"
+        ],
+        "top": 44,
+        "bottom": 774.0
+      },
+      {
+        "file": "MP-MOCK-030.svg",
+        "panels": [
+          "targeted-trading-form"
+        ],
+        "top": 44,
+        "bottom": 774.0
+      },
+      {
+        "file": "MP-MOCK-030-dark.svg",
+        "panels": [
+          "targeted-trading-form"
+        ],
+        "top": 44,
+        "bottom": 774.0
+      },
+      {
+        "file": "MP-MOCK-031.svg",
+        "panels": [
+          "targeted-trading-form"
+        ],
+        "top": 44,
+        "bottom": 774.0
+      },
+      {
+        "file": "MP-MOCK-031-dark.svg",
+        "panels": [
+          "targeted-trading-form"
+        ],
+        "top": 44,
+        "bottom": 774.0
+      },
+      {
+        "file": "MP-MOCK-032.svg",
+        "panels": [
+          "targeted-trading-form"
+        ],
+        "top": 44,
+        "bottom": 774.0
+      },
+      {
+        "file": "MP-MOCK-032-dark.svg",
+        "panels": [
+          "targeted-trading-form"
+        ],
+        "top": 44,
+        "bottom": 774.0
+      },
+      {
+        "file": "MP-MOCK-033.svg",
+        "panels": [
+          "context-drawer"
+        ],
+        "top": 44,
+        "bottom": 774.0
+      },
+      {
+        "file": "MP-MOCK-033-dark.svg",
+        "panels": [
+          "context-drawer"
+        ],
+        "top": 44,
+        "bottom": 774.0
+      },
+      {
+        "file": "MP-MOCK-034.svg",
+        "panels": [
+          "context-drawer"
+        ],
+        "top": 44,
+        "bottom": 774.0
+      },
+      {
+        "file": "MP-MOCK-034-dark.svg",
+        "panels": [
+          "context-drawer"
+        ],
+        "top": 44,
+        "bottom": 774.0
+      },
+      {
+        "file": "MP-MOCK-035.svg",
+        "panels": [
+          "context-drawer"
+        ],
+        "top": 44,
+        "bottom": 774.0
+      },
+      {
+        "file": "MP-MOCK-035-dark.svg",
+        "panels": [
+          "context-drawer"
+        ],
+        "top": 44,
+        "bottom": 774.0
+      },
+      {
+        "file": "MP-MOCK-036.svg",
+        "panels": [
+          "context-drawer"
+        ],
+        "top": 44,
+        "bottom": 774.0
+      },
+      {
+        "file": "MP-MOCK-036-dark.svg",
+        "panels": [
+          "context-drawer"
+        ],
+        "top": 44,
+        "bottom": 774.0
+      },
+      {
+        "file": "MP-MOCK-037.svg",
+        "panels": [
+          "context-drawer"
+        ],
+        "top": 44,
+        "bottom": 774.0
+      },
+      {
+        "file": "MP-MOCK-037-dark.svg",
+        "panels": [
+          "context-drawer"
+        ],
+        "top": 44,
+        "bottom": 774.0
+      },
+      {
+        "file": "MP-MOCK-038.svg",
+        "panels": [
+          "context-drawer"
+        ],
+        "top": 44,
+        "bottom": 774.0
+      },
+      {
+        "file": "MP-MOCK-038-dark.svg",
+        "panels": [
+          "context-drawer"
+        ],
+        "top": 44,
+        "bottom": 774.0
+      },
+      {
+        "file": "MP-MOCK-039.svg",
+        "panels": [
+          "context-drawer"
+        ],
+        "top": 44,
+        "bottom": 774.0
+      },
+      {
+        "file": "MP-MOCK-039-dark.svg",
+        "panels": [
+          "context-drawer"
+        ],
+        "top": 44,
+        "bottom": 774.0
+      },
+      {
+        "file": "MP-MOCK-040.svg",
+        "panels": [
+          "context-drawer"
+        ],
+        "top": 44,
+        "bottom": 774.0
+      },
+      {
+        "file": "MP-MOCK-040-dark.svg",
+        "panels": [
+          "context-drawer"
+        ],
+        "top": 44,
+        "bottom": 774.0
+      },
+      {
+        "file": "MP-MOCK-041.svg",
+        "panels": [
+          "context-drawer"
+        ],
+        "top": 44,
+        "bottom": 774.0
+      },
+      {
+        "file": "MP-MOCK-041-dark.svg",
+        "panels": [
+          "context-drawer"
+        ],
+        "top": 44,
+        "bottom": 774.0
+      },
+      {
+        "file": "MP-MOCK-042.svg",
+        "panels": [
+          "context-drawer"
+        ],
+        "top": 44,
+        "bottom": 774.0
+      },
+      {
+        "file": "MP-MOCK-042-dark.svg",
+        "panels": [
+          "context-drawer"
+        ],
+        "top": 44,
+        "bottom": 774.0
+      },
+      {
+        "file": "MP-MOCK-043.svg",
+        "panels": [
+          "context-drawer"
+        ],
+        "top": 44,
+        "bottom": 774.0
+      },
+      {
+        "file": "MP-MOCK-043-dark.svg",
+        "panels": [
+          "context-drawer"
+        ],
+        "top": 44,
+        "bottom": 774.0
+      },
+      {
+        "file": "MP-MOCK-044.svg",
+        "panels": [
+          "context-drawer"
+        ],
+        "top": 44,
+        "bottom": 774.0
+      },
+      {
+        "file": "MP-MOCK-044-dark.svg",
+        "panels": [
+          "context-drawer"
+        ],
+        "top": 44,
+        "bottom": 774.0
+      },
+      {
+        "file": "MP-MOCK-045.svg",
+        "panels": [
+          "context-drawer"
+        ],
+        "top": 44,
+        "bottom": 774.0
+      },
+      {
+        "file": "MP-MOCK-045-dark.svg",
+        "panels": [
+          "context-drawer"
+        ],
+        "top": 44,
+        "bottom": 774.0
+      },
+      {
+        "file": "MP-MOCK-046.svg",
+        "panels": [
+          "context-drawer"
+        ],
+        "top": 44,
+        "bottom": 774.0
+      },
+      {
+        "file": "MP-MOCK-046-dark.svg",
+        "panels": [
+          "context-drawer"
+        ],
+        "top": 44,
+        "bottom": 774.0
+      },
+      {
+        "file": "MP-MOCK-047.svg",
+        "panels": [
+          "context-drawer"
+        ],
+        "top": 44,
+        "bottom": 774.0
+      },
+      {
+        "file": "MP-MOCK-047-dark.svg",
+        "panels": [
+          "context-drawer"
+        ],
+        "top": 44,
+        "bottom": 774.0
+      },
+      {
+        "file": "MP-MOCK-048.svg",
+        "panels": [
+          "context-drawer"
+        ],
+        "top": 44,
+        "bottom": 774.0
+      },
+      {
+        "file": "MP-MOCK-048-dark.svg",
+        "panels": [
+          "context-drawer"
+        ],
+        "top": 44,
+        "bottom": 774.0
+      },
+      {
+        "file": "MP-MOCK-049.svg",
+        "panels": [
+          "watchlist"
+        ],
+        "top": 44,
+        "bottom": 774.0
+      },
+      {
+        "file": "MP-MOCK-049-dark.svg",
+        "panels": [
+          "watchlist"
+        ],
+        "top": 44,
+        "bottom": 774.0
+      },
+      {
+        "file": "MP-MOCK-050.svg",
+        "panels": [
+          "watchlist"
+        ],
+        "top": 44,
+        "bottom": 774.0
+      },
+      {
+        "file": "MP-MOCK-050-dark.svg",
+        "panels": [
+          "watchlist"
+        ],
+        "top": 44,
+        "bottom": 774.0
+      },
+      {
+        "file": "MP-MOCK-051.svg",
+        "panels": [
+          "watchlist"
+        ],
+        "top": 44,
+        "bottom": 774.0
+      },
+      {
+        "file": "MP-MOCK-051-dark.svg",
+        "panels": [
+          "watchlist"
+        ],
+        "top": 44,
+        "bottom": 774.0
+      },
+      {
+        "file": "MP-MOCK-052.svg",
+        "panels": [
+          "watchlist"
+        ],
+        "top": 44,
+        "bottom": 774.0
+      },
+      {
+        "file": "MP-MOCK-052-dark.svg",
+        "panels": [
+          "watchlist"
+        ],
+        "top": 44,
+        "bottom": 774.0
+      },
+      {
+        "file": "MP-MOCK-053.svg",
+        "panels": [
+          "watchlist"
+        ],
+        "top": 44,
+        "bottom": 774.0
+      },
+      {
+        "file": "MP-MOCK-053-dark.svg",
+        "panels": [
+          "watchlist"
+        ],
+        "top": 44,
+        "bottom": 774.0
+      },
+      {
+        "file": "MP-MOCK-054.svg",
+        "panels": [
+          "watchlist"
+        ],
+        "top": 44,
+        "bottom": 774.0
+      },
+      {
+        "file": "MP-MOCK-054-dark.svg",
+        "panels": [
+          "watchlist"
+        ],
+        "top": 44,
+        "bottom": 774.0
+      },
+      {
+        "file": "MP-MOCK-055.svg",
+        "panels": [
+          "watchlist"
+        ],
+        "top": 44,
+        "bottom": 774.0
+      },
+      {
+        "file": "MP-MOCK-055-dark.svg",
+        "panels": [
+          "watchlist"
+        ],
+        "top": 44,
+        "bottom": 774.0
+      },
+      {
+        "file": "MP-MOCK-056.svg",
+        "panels": [
+          "watchlist"
+        ],
+        "top": 44,
+        "bottom": 774.0
+      },
+      {
+        "file": "MP-MOCK-056-dark.svg",
+        "panels": [
+          "watchlist"
+        ],
+        "top": 44,
+        "bottom": 774.0
+      },
+      {
+        "file": "MP-MOCK-057.svg",
+        "panels": [
+          "watchlist"
+        ],
+        "top": 44,
+        "bottom": 774.0
+      },
+      {
+        "file": "MP-MOCK-057-dark.svg",
+        "panels": [
+          "watchlist"
+        ],
+        "top": 44,
+        "bottom": 774.0
+      },
+      {
+        "file": "MP-MOCK-058.svg",
+        "panels": [
+          "watchlist"
+        ],
+        "top": 44,
+        "bottom": 774.0
+      },
+      {
+        "file": "MP-MOCK-058-dark.svg",
+        "panels": [
+          "watchlist"
+        ],
+        "top": 44,
+        "bottom": 774.0
+      },
+      {
+        "file": "MP-MOCK-059.svg",
+        "panels": [
+          "watchlist"
+        ],
+        "top": 44,
+        "bottom": 774.0
+      },
+      {
+        "file": "MP-MOCK-059-dark.svg",
+        "panels": [
+          "watchlist"
+        ],
+        "top": 44,
+        "bottom": 774.0
+      },
+      {
+        "file": "MP-MOCK-060.svg",
+        "panels": [
+          "watchlist"
+        ],
+        "top": 44,
+        "bottom": 774.0
+      },
+      {
+        "file": "MP-MOCK-060-dark.svg",
+        "panels": [
+          "watchlist"
+        ],
+        "top": 44,
+        "bottom": 774.0
+      },
+      {
+        "file": "MP-MOCK-061.svg",
+        "panels": [
+          "watchlist"
+        ],
+        "top": 44,
+        "bottom": 774.0
+      },
+      {
+        "file": "MP-MOCK-061-dark.svg",
+        "panels": [
+          "watchlist"
+        ],
+        "top": 44,
+        "bottom": 774.0
+      },
+      {
+        "file": "MP-MOCK-062.svg",
+        "panels": [
+          "watchlist"
+        ],
+        "top": 44,
+        "bottom": 774.0
+      },
+      {
+        "file": "MP-MOCK-062-dark.svg",
+        "panels": [
+          "watchlist"
+        ],
+        "top": 44,
+        "bottom": 774.0
+      },
+      {
+        "file": "MP-MOCK-063.svg",
+        "panels": [
+          "watchlist"
+        ],
+        "top": 44,
+        "bottom": 774.0
+      },
+      {
+        "file": "MP-MOCK-063-dark.svg",
+        "panels": [
+          "watchlist"
+        ],
+        "top": 44,
+        "bottom": 774.0
+      },
+      {
+        "file": "MP-MOCK-064.svg",
+        "panels": [
+          "watchlist"
+        ],
+        "top": 44,
+        "bottom": 774.0
+      },
+      {
+        "file": "MP-MOCK-064-dark.svg",
+        "panels": [
+          "watchlist"
+        ],
+        "top": 44,
+        "bottom": 774.0
+      },
+      {
+        "file": "MP-MOCK-073.svg",
+        "panels": [
+          "watchlist"
+        ],
+        "top": 44,
+        "bottom": 774.0
+      },
+      {
+        "file": "MP-MOCK-073-dark.svg",
+        "panels": [
+          "watchlist"
+        ],
+        "top": 44,
+        "bottom": 774.0
+      },
+      {
+        "file": "MP-MOCK-074.svg",
+        "panels": [
+          "context-drawer"
+        ],
+        "top": 44,
+        "bottom": 774.0
+      },
+      {
+        "file": "MP-MOCK-074-dark.svg",
+        "panels": [
+          "context-drawer"
+        ],
+        "top": 44,
+        "bottom": 774.0
+      },
+      {
+        "file": "MP-MOCK-075.svg",
+        "panels": [
+          "watchlist"
+        ],
+        "top": 44,
+        "bottom": 774.0
+      },
+      {
+        "file": "MP-MOCK-075-dark.svg",
+        "panels": [
+          "watchlist"
+        ],
+        "top": 44,
+        "bottom": 774.0
+      },
+      {
+        "file": "MP-MOCK-076.svg",
+        "panels": [
+          "targeted-trading-form"
+        ],
+        "top": 44,
+        "bottom": 774.0
+      },
+      {
+        "file": "MP-MOCK-076-dark.svg",
+        "panels": [
+          "targeted-trading-form"
+        ],
+        "top": 44,
+        "bottom": 774.0
+      },
+      {
+        "file": "MP-MOCK-077.svg",
+        "panels": [
+          "context-drawer"
+        ],
+        "top": 44,
+        "bottom": 774.0
+      },
+      {
+        "file": "MP-MOCK-077-dark.svg",
+        "panels": [
+          "context-drawer"
+        ],
+        "top": 44,
+        "bottom": 774.0
+      },
+      {
+        "file": "MP-MOCK-078.svg",
+        "panels": [
+          "watchlist"
+        ],
+        "top": 44,
+        "bottom": 774.0
+      },
+      {
+        "file": "MP-MOCK-078-dark.svg",
+        "panels": [
+          "watchlist"
+        ],
+        "top": 44,
+        "bottom": 774.0
+      },
+      {
+        "file": "MP-MOCK-079.svg",
+        "panels": [
+          "watchlist"
+        ],
+        "top": 44,
+        "bottom": 774.0
+      },
+      {
+        "file": "MP-MOCK-079-dark.svg",
+        "panels": [
+          "watchlist"
+        ],
+        "top": 44,
+        "bottom": 774.0
+      },
+      {
+        "file": "MP-MOCK-080.svg",
+        "panels": [
+          "watchlist"
+        ],
+        "top": 44,
+        "bottom": 774.0
+      },
+      {
+        "file": "MP-MOCK-080-dark.svg",
+        "panels": [
+          "watchlist"
+        ],
+        "top": 44,
+        "bottom": 774.0
+      },
+      {
+        "file": "MP-MOCK-081.svg",
+        "panels": [
+          "watchlist"
+        ],
+        "top": 44,
+        "bottom": 774.0
+      },
+      {
+        "file": "MP-MOCK-081-dark.svg",
+        "panels": [
+          "watchlist"
+        ],
+        "top": 44,
+        "bottom": 774.0
+      },
+      {
+        "file": "MP-MOCK-082.svg",
+        "panels": [
+          "watchlist"
+        ],
+        "top": 44,
+        "bottom": 774.0
+      },
+      {
+        "file": "MP-MOCK-082-dark.svg",
+        "panels": [
+          "watchlist"
+        ],
+        "top": 44,
+        "bottom": 774.0
+      },
+      {
+        "file": "MP-MOCK-083.svg",
+        "panels": [
+          "context-drawer"
+        ],
+        "top": 44,
+        "bottom": 774.0
+      },
+      {
+        "file": "MP-MOCK-083-dark.svg",
+        "panels": [
+          "context-drawer"
+        ],
+        "top": 44,
+        "bottom": 774.0
+      },
+      {
+        "file": "MP-MOCK-086.svg",
+        "panels": [
+          "watchlist"
+        ],
+        "top": 44,
+        "bottom": 774.0
+      },
+      {
+        "file": "MP-MOCK-086-dark.svg",
+        "panels": [
+          "watchlist"
+        ],
+        "top": 44,
+        "bottom": 774.0
+      },
+      {
+        "file": "MP-MOCK-087.svg",
+        "panels": [
+          "watchlist"
+        ],
+        "top": 44,
+        "bottom": 774.0
+      },
+      {
+        "file": "MP-MOCK-087-dark.svg",
+        "panels": [
+          "watchlist"
+        ],
+        "top": 44,
+        "bottom": 774.0
+      },
+      {
+        "file": "MP-MOCK-090.svg",
+        "panels": [
+          "paper-replay-order-drawer"
+        ],
+        "top": 44,
+        "bottom": 858.0
+      },
+      {
+        "file": "MP-MOCK-090-dark.svg",
+        "panels": [
+          "paper-replay-order-drawer"
+        ],
+        "top": 44,
+        "bottom": 858.0
+      },
+      {
+        "file": "MP-MOCK-091.svg",
+        "panels": [
+          "paper-replay-order-drawer"
+        ],
+        "top": 44,
+        "bottom": 858.0
+      },
+      {
+        "file": "MP-MOCK-091-dark.svg",
+        "panels": [
+          "paper-replay-order-drawer"
+        ],
+        "top": 44,
+        "bottom": 858.0
+      },
+      {
+        "file": "MP-MOCK-092.svg",
+        "panels": [
+          "paper-replay-order-drawer"
+        ],
+        "top": 44,
+        "bottom": 858.0
+      },
+      {
+        "file": "MP-MOCK-092-dark.svg",
+        "panels": [
+          "paper-replay-order-drawer"
+        ],
+        "top": 44,
+        "bottom": 858.0
+      },
+      {
+        "file": "MP-MOCK-093.svg",
+        "panels": [
+          "entry-direction-editor"
+        ],
+        "top": 44,
+        "bottom": 774.0
+      },
+      {
+        "file": "MP-MOCK-093-dark.svg",
+        "panels": [
+          "entry-direction-editor"
+        ],
+        "top": 44,
+        "bottom": 774.0
+      },
+      {
+        "file": "MP-MOCK-094.svg",
+        "panels": [
+          "entry-direction-editor"
+        ],
+        "top": 44,
+        "bottom": 774.0
+      },
+      {
+        "file": "MP-MOCK-094-dark.svg",
+        "panels": [
+          "entry-direction-editor"
+        ],
+        "top": 44,
+        "bottom": 774.0
+      },
+      {
+        "file": "MP-MOCK-095.svg",
+        "panels": [
+          "entry-direction-editor"
+        ],
+        "top": 44,
+        "bottom": 774.0
+      },
+      {
+        "file": "MP-MOCK-095-dark.svg",
+        "panels": [
+          "entry-direction-editor"
+        ],
+        "top": 44,
+        "bottom": 774.0
+      },
+      {
+        "file": "MP-MOCK-096.svg",
+        "panels": [
+          "entry-direction-editor"
+        ],
+        "top": 44,
+        "bottom": 774.0
+      },
+      {
+        "file": "MP-MOCK-096-dark.svg",
+        "panels": [
+          "entry-direction-editor"
+        ],
+        "top": 44,
+        "bottom": 774.0
+      },
+      {
+        "file": "MP-MOCK-097.svg",
+        "panels": [
+          "targeted-trading-form"
+        ],
+        "top": 44,
+        "bottom": 774.0
+      },
+      {
+        "file": "MP-MOCK-097-dark.svg",
+        "panels": [
+          "targeted-trading-form"
+        ],
+        "top": 44,
+        "bottom": 774.0
+      },
+      {
+        "file": "MP-MOCK-098.svg",
+        "panels": [
+          "targeted-trading-form"
+        ],
+        "top": 44,
+        "bottom": 774.0
+      },
+      {
+        "file": "MP-MOCK-098-dark.svg",
+        "panels": [
+          "targeted-trading-form"
+        ],
+        "top": 44,
+        "bottom": 774.0
+      },
+      {
+        "file": "MP-MOCK-099.svg",
+        "panels": [
+          "watchlist"
+        ],
+        "top": 44,
+        "bottom": 774.0
+      },
+      {
+        "file": "MP-MOCK-099-dark.svg",
+        "panels": [
+          "watchlist"
+        ],
+        "top": 44,
+        "bottom": 774.0
+      },
+      {
+        "file": "MP-MOCK-100.svg",
+        "panels": [
+          "watchlist"
+        ],
+        "top": 44,
+        "bottom": 774.0
+      },
+      {
+        "file": "MP-MOCK-100-dark.svg",
+        "panels": [
+          "watchlist"
+        ],
+        "top": 44,
+        "bottom": 774.0
+      },
+      {
+        "file": "MP-MOCK-101.svg",
+        "panels": [
+          "watchlist"
+        ],
+        "top": 44,
+        "bottom": 774.0
+      },
+      {
+        "file": "MP-MOCK-101-dark.svg",
+        "panels": [
+          "watchlist"
+        ],
+        "top": 44,
+        "bottom": 774.0
+      },
+      {
+        "file": "MP-MOCK-102.svg",
+        "panels": [
+          "watchlist"
+        ],
+        "top": 44,
+        "bottom": 774.0
+      },
+      {
+        "file": "MP-MOCK-102-dark.svg",
+        "panels": [
+          "watchlist"
+        ],
+        "top": 44,
+        "bottom": 774.0
+      },
+      {
+        "file": "MP-MOCK-103.svg",
+        "panels": [
+          "quote-series-inspector"
+        ],
+        "top": 44,
+        "bottom": 774.0
+      },
+      {
+        "file": "MP-MOCK-103-dark.svg",
+        "panels": [
+          "quote-series-inspector"
+        ],
+        "top": 44,
+        "bottom": 774.0
+      },
+      {
+        "file": "MP-MOCK-104.svg",
+        "panels": [
+          "quote-series-inspector"
+        ],
+        "top": 44,
+        "bottom": 774.0
+      },
+      {
+        "file": "MP-MOCK-104-dark.svg",
+        "panels": [
+          "quote-series-inspector"
+        ],
+        "top": 44,
+        "bottom": 774.0
+      },
+      {
+        "file": "MP-MOCK-105.svg",
+        "panels": [
+          "quote-series-inspector"
+        ],
+        "top": 44,
+        "bottom": 774.0
+      },
+      {
+        "file": "MP-MOCK-105-dark.svg",
+        "panels": [
+          "quote-series-inspector"
+        ],
+        "top": 44,
+        "bottom": 774.0
+      },
+      {
+        "file": "MP-MOCK-106.svg",
+        "panels": [
+          "quote-series-inspector"
+        ],
+        "top": 44,
+        "bottom": 774.0
+      },
+      {
+        "file": "MP-MOCK-106-dark.svg",
+        "panels": [
+          "quote-series-inspector"
+        ],
+        "top": 44,
+        "bottom": 774.0
+      },
+      {
+        "file": "MP-MOCK-107.svg",
+        "panels": [
+          "entry-direction-editor"
+        ],
+        "top": 44,
+        "bottom": 774.0
+      },
+      {
+        "file": "MP-MOCK-107-dark.svg",
+        "panels": [
+          "entry-direction-editor"
+        ],
+        "top": 44,
+        "bottom": 774.0
+      },
+      {
+        "file": "MP-MOCK-108.svg",
+        "panels": [
+          "entry-direction-editor"
+        ],
+        "top": 44,
+        "bottom": 774.0
+      },
+      {
+        "file": "MP-MOCK-108-dark.svg",
+        "panels": [
+          "entry-direction-editor"
+        ],
+        "top": 44,
+        "bottom": 774.0
+      },
+      {
+        "file": "MP-MOCK-109.svg",
+        "panels": [
+          "entry-direction-editor"
+        ],
+        "top": 44,
+        "bottom": 774.0
+      },
+      {
+        "file": "MP-MOCK-109-dark.svg",
+        "panels": [
+          "entry-direction-editor"
+        ],
+        "top": 44,
+        "bottom": 774.0
+      },
+      {
+        "file": "MP-MOCK-112.svg",
+        "panels": [
+          "entry-direction-editor"
+        ],
+        "top": 44,
+        "bottom": 774.0
+      },
+      {
+        "file": "MP-MOCK-112-dark.svg",
+        "panels": [
+          "entry-direction-editor"
+        ],
+        "top": 44,
+        "bottom": 774.0
+      },
+      {
+        "file": "MP-MOCK-113.svg",
+        "panels": [
+          "entry-direction-editor"
+        ],
+        "top": 44,
+        "bottom": 774.0
+      },
+      {
+        "file": "MP-MOCK-113-dark.svg",
+        "panels": [
+          "entry-direction-editor"
+        ],
+        "top": 44,
+        "bottom": 774.0
+      }
+    ]
+  },
+  "g4": "SATISFIED",
+  "g5": "APPROVED"
+}

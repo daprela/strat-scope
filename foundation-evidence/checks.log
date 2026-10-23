@@ -1,0 +1,62 @@
+python scripts/foundation.py contracts-check
+
+> strat-scope-foundation@0.1.0 contracts
+> npm run generate --workspace @strat-scope/contracts
+
+
+> @strat-scope/contracts@0.1.0 generate
+> openapi-typescript ../../../foundation-evidence/openapi.json -o ../../src/generated/api.ts
+
+✨ openapi-typescript 7.13.0
+🚀 ../../../foundation-evidence/openapi.json → ../../src/generated/api.ts [50.4ms]
+cd backend && uv run ruff check .
+All checks passed!
+cd backend && uv run ruff format --check .
+17 files already formatted
+cd backend && uv run basedpyright
+0 errors, 0 warnings, 0 notes
+npm --prefix frontend run typecheck
+
+> strat-scope-foundation@0.1.0 typecheck
+> tsc --noEmit
+
+npm --prefix frontend run lint
+
+> strat-scope-foundation@0.1.0 lint
+> eslint .
+
+npm --prefix frontend run format:check
+
+> strat-scope-foundation@0.1.0 format:check
+> prettier --check .
+
+Checking formatting...
+All matched files use Prettier code style!
+cd backend && uv run pytest
+============================= test session starts ==============================
+platform linux -- Python 3.14.8, pytest-9.1.1, pluggy-1.7.0
+rootdir: /mnt/data/gdrive/trading/strat-scope/backend
+configfile: pyproject.toml
+testpaths: tests
+plugins: anyio-4.15.1
+collected 25 items
+
+tests/test_boundaries.py ....                                            [ 16%]
+tests/test_retention.py ..................                               [ 88%]
+tests/test_transport.py ...                                              [100%]
+
+============================== 25 passed in 1.18s ==============================
+npm --prefix frontend run test -- --run
+
+> strat-scope-foundation@0.1.0 test
+> vitest --run
+
+
+ RUN  v5.0.5 /mnt/data/gdrive/trading/strat-scope/frontend
+
+
+ Test Files  2 passed (2)
+      Tests  3 passed (3)
+   Start at  09:58:01
+   Duration  2.37s (environment 70%, import 22%, tests 5%, transform 2%)
+

@@ -1,0 +1,62 @@
+<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'unsafe-inline'; base-uri 'none'">
+<title>MP-SPEC-001 — visual state specimens</title>
+<style>body{margin:0;font:14px/20px system-ui,sans-serif;background:#FFFFFF;color:#1E293B}main{padding:32px;max-width:1100px;margin:auto}section{padding:24px;margin:24px 0;border:1px solid #2A2B30;border-radius:8px}button{font:500 14px/20px system-ui;padding:8px 16px;border:1px solid var(--border);border-radius:4px;background:var(--content);color:var(--text);margin:8px}button:focus-visible,.focus{outline:2px solid var(--action);outline-offset:2px;box-shadow:0 0 0 2px var(--content)}button[aria-pressed=true]{border:2px solid var(--action);text-decoration:underline}button:hover{background:var(--base)}.status{margin:12px 0;font-weight:600}.primary{background:var(--action);color:var(--on_action)}a{color:#1D4ED8}a:focus-visible{outline:2px solid #1D4ED8;outline-offset:2px}</style>
+<main><h1>MP-SPEC-001 · component state specimens</h1><p>Supplement to all MP-MOCK frames. Static, inert specimens; focus via Tab is reviewable. No product navigation or state mutation is simulated.</p><a href="index.html">Back to mockups</a>
+<section style="--base:#FFFFFF;--content:#FFFFFF;--raised:#FFFFFF;--text:#1E293B;--secondary:#1E293B;--border:#D4DAE3;--separator:#D4DAE3;--action:#1D4ED8;--on_action:#FFFFFF;--success:#166534;--warning:#92400E;--error:#B91C1C;--uncertain:#6D28D9;--buy_bg:#DCFCE7;--buy_fg:#14532D;--sell_bg:#FEE2E2;--sell_fg:#7F1D1D;--up:#16A34A;--up_border:#15803D;--down:#DC2626;--down_border:#C91F1F;background:var(--content);color:var(--text)"><h2>Light / VIS states</h2>
+<button>Default</button><button aria-pressed="true">Selected: Chart 1</button><button class="focus">Focus specimen</button><button class="primary">Apply valid draft</button><button disabled>Submit unavailable</button><p>Unavailable reason: event evaluation is unfinished. Inspection remains available.</p>
+<p class="status" style="color:#166534">✓ Checkpoint v12 saved</p>
+<p class="status" style="color:#92400E">! Coverage partial — unresolved span remains</p>
+<p class="status" style="color:#B91C1C">× Rejected — close quantity exceeds remainder</p>
+<p class="status" style="color:#6D28D9">? Outcome unknown — reconcile original intent</p>
+<p class="status" style="color:#1E293B">Ⅱ Paused — completed decision point</p>
+<p style="font-size:13px;font-variant-numeric:tabular-nums">Quantity 10,000 units · sample only · unavailable P/L: no recorded result</p></section>
+<section style="--base:#FFFFFF;--content:#FFFFFF;--raised:#FFFFFF;--text:#1E293B;--secondary:#1E293B;--border:#D4DAE3;--separator:#D4DAE3;--action:#1D4ED8;--on_action:#FFFFFF;--success:#166534;--warning:#92400E;--error:#B91C1C;--uncertain:#6D28D9;--buy_bg:#DCFCE7;--buy_fg:#14532D;--sell_bg:#FEE2E2;--sell_fg:#7F1D1D;--up:#16A34A;--up_border:#15803D;--down:#DC2626;--down_border:#C91F1F;background:var(--content);color:var(--text)"><h2>Light / independent Bid and Ask visibility</h2>
+<p>Inert visual specimens. Each toggle affects only its candle series. Calculation basis, replay cursor and executable bid/ask rules are unchanged.</p>
+<div><strong>Bid only</strong>
+<button aria-label="Show/hide bid candles" aria-pressed="true">Bid ✓</button>
+<button aria-label="Show/hide ask candles" aria-pressed="false">Ask</button>
+</div>
+<div><strong>Ask only</strong>
+<button aria-label="Show/hide bid candles" aria-pressed="false">Bid</button>
+<button aria-label="Show/hide ask candles" aria-pressed="true">Ask ✓</button>
+</div>
+<div><strong>Both series</strong>
+<button aria-label="Show/hide bid candles" aria-pressed="true">Bid ✓</button>
+<button aria-label="Show/hide ask candles" aria-pressed="true">Ask ✓</button>
+</div>
+<div><strong>Neither series</strong>
+<button aria-label="Show/hide bid candles" aria-pressed="false">Bid</button>
+<button aria-label="Show/hide ask candles" aria-pressed="false">Ask</button>
+</div>
+<p>With neither series visible, axes, drawings and context remain; absent prices retain explicit unavailable reasons.</p></section>
+<section style="--base:#FFFFFF;--content:#FFFFFF;--raised:#FFFFFF;--text:#1E293B;--secondary:#1E293B;--border:#D4DAE3;--separator:#D4DAE3;--action:#1D4ED8;--on_action:#FFFFFF;--success:#166534;--warning:#92400E;--error:#B91C1C;--uncertain:#6D28D9;--buy_bg:#DCFCE7;--buy_fg:#14532D;--sell_bg:#FEE2E2;--sell_fg:#7F1D1D;--up:#16A34A;--up_border:#15803D;--down:#DC2626;--down_border:#C91F1F;background:var(--content);color:var(--text)"><h2>Theme toolbar / trade actions</h2><button aria-pressed="true">Bid ✓</button><button>Ask</button><button class="focus">Focus</button><button style="background:#DCFCE7;color:#14532D;border-color:#14532D">Buy</button><button style="background:#FEE2E2;color:#7F1D1D;border-color:#7F1D1D">Sell</button><button disabled>Play unavailable</button><p>Toolbar background, foreground and borders follow the active theme. Trade labels stay readable with green/red light fills in both themes.</p></section>
+<section style="--base:#151619;--content:#151619;--raised:#151619;--text:#D1D4DC;--secondary:#D1D4DC;--border:#2A2B30;--separator:#2A2B30;--action:#93C5FD;--on_action:#0F172A;--success:#86EFAC;--warning:#FCD34D;--error:#FCA5A5;--uncertain:#D8B4FE;--buy_bg:#DCFCE7;--buy_fg:#14532D;--sell_bg:#FEE2E2;--sell_fg:#7F1D1D;--up:#22C55E;--up_border:#16A34A;--down:#F87171;--down_border:#EF4444;background:var(--content);color:var(--text)"><h2>Dark / VIS states</h2>
+<button>Default</button><button aria-pressed="true">Selected: Chart 1</button><button class="focus">Focus specimen</button><button class="primary">Apply valid draft</button><button disabled>Submit unavailable</button><p>Unavailable reason: event evaluation is unfinished. Inspection remains available.</p>
+<p class="status" style="color:#86EFAC">✓ Checkpoint v12 saved</p>
+<p class="status" style="color:#FCD34D">! Coverage partial — unresolved span remains</p>
+<p class="status" style="color:#FCA5A5">× Rejected — close quantity exceeds remainder</p>
+<p class="status" style="color:#D8B4FE">? Outcome unknown — reconcile original intent</p>
+<p class="status" style="color:#D1D4DC">Ⅱ Paused — completed decision point</p>
+<p style="font-size:13px;font-variant-numeric:tabular-nums">Quantity 10,000 units · sample only · unavailable P/L: no recorded result</p></section>
+<section style="--base:#151619;--content:#151619;--raised:#151619;--text:#D1D4DC;--secondary:#D1D4DC;--border:#2A2B30;--separator:#2A2B30;--action:#93C5FD;--on_action:#0F172A;--success:#86EFAC;--warning:#FCD34D;--error:#FCA5A5;--uncertain:#D8B4FE;--buy_bg:#DCFCE7;--buy_fg:#14532D;--sell_bg:#FEE2E2;--sell_fg:#7F1D1D;--up:#22C55E;--up_border:#16A34A;--down:#F87171;--down_border:#EF4444;background:var(--content);color:var(--text)"><h2>Dark / independent Bid and Ask visibility</h2>
+<p>Inert visual specimens. Each toggle affects only its candle series. Calculation basis, replay cursor and executable bid/ask rules are unchanged.</p>
+<div><strong>Bid only</strong>
+<button aria-label="Show/hide bid candles" aria-pressed="true">Bid ✓</button>
+<button aria-label="Show/hide ask candles" aria-pressed="false">Ask</button>
+</div>
+<div><strong>Ask only</strong>
+<button aria-label="Show/hide bid candles" aria-pressed="false">Bid</button>
+<button aria-label="Show/hide ask candles" aria-pressed="true">Ask ✓</button>
+</div>
+<div><strong>Both series</strong>
+<button aria-label="Show/hide bid candles" aria-pressed="true">Bid ✓</button>
+<button aria-label="Show/hide ask candles" aria-pressed="true">Ask ✓</button>
+</div>
+<div><strong>Neither series</strong>
+<button aria-label="Show/hide bid candles" aria-pressed="false">Bid</button>
+<button aria-label="Show/hide ask candles" aria-pressed="false">Ask</button>
+</div>
+<p>With neither series visible, axes, drawings and context remain; absent prices retain explicit unavailable reasons.</p></section>
+<section style="--base:#151619;--content:#151619;--raised:#151619;--text:#D1D4DC;--secondary:#D1D4DC;--border:#2A2B30;--separator:#2A2B30;--action:#93C5FD;--on_action:#0F172A;--success:#86EFAC;--warning:#FCD34D;--error:#FCA5A5;--uncertain:#D8B4FE;--buy_bg:#DCFCE7;--buy_fg:#14532D;--sell_bg:#FEE2E2;--sell_fg:#7F1D1D;--up:#22C55E;--up_border:#16A34A;--down:#F87171;--down_border:#EF4444;background:var(--content);color:var(--text)"><h2>Theme toolbar / trade actions</h2><button aria-pressed="true">Bid ✓</button><button>Ask</button><button class="focus">Focus</button><button style="background:#DCFCE7;color:#14532D;border-color:#14532D">Buy</button><button style="background:#FEE2E2;color:#7F1D1D;border-color:#7F1D1D">Sell</button><button disabled>Play unavailable</button><p>Toolbar background, foreground and borders follow the active theme. Trade labels stay readable with green/red light fills in both themes.</p></section>
+</main></html>

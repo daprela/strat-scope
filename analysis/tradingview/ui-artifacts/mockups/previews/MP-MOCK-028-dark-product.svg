@@ -1,0 +1,789 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="800" viewBox="0 0 1280 800" role="img" aria-labelledby="title desc"><title id="title">MP-MOCK-028 — Accepted/effective/triggered/filled/cancelled / dark</title><desc id="desc">High-fidelity static design. Synthetic sample marks and fixture values are not market evidence, financial advice, product defaults or recorded trades. Bracketed facts remain unresolved design fields. No controls execute actions.</desc>
+<style>
+text{font-family:system-ui,"Segoe UI",sans-serif;fill:#D1D4DC;font-size:14px;font-variant-numeric:tabular-nums}
+.meta{font-size:12px;fill:#D1D4DC}
+.heading{font-size:16px;font-weight:600} .title{font-size:20px;font-weight:600}
+.control{font-size:14px;font-weight:500} .data{font-size:13px}
+.identifier{font-family:ui-monospace,Consolas,monospace;font-size:12px}
+</style>
+<g data-role="workspace-shell">
+<rect x="0" y="0" width="1280" height="800" fill="#151619" stroke="#2A2B30" stroke-width="1" />
+<rect x="0" y="0" width="1280" height="44" fill="#151619" stroke="#2A2B30" stroke-width="1" data-surface="toolbar" />
+<g data-control="☰" aria-disabled="false" data-surface="toolbar">
+<rect x="8" y="7" width="28" height="30" fill="#151619" stroke="#2A2B30" stroke-width="1" rx="4" />
+<text x="16" y="27" class="control">☰</text>
+</g>
+<g data-control="EURUSD / ticker" aria-disabled="false" data-surface="toolbar">
+<rect x="48" y="7" width="132" height="30" fill="#151619" stroke="#2A2B30" stroke-width="1" rx="4" />
+<text x="56" y="27" class="control">EURUSD / ticker</text>
+</g>
+<g data-control="M1 v" aria-disabled="false" data-surface="toolbar">
+<rect x="188" y="7" width="64" height="30" fill="#151619" stroke="#2A2B30" stroke-width="1" rx="4" />
+<text x="196" y="27" class="control">M1 v</text>
+</g>
+<g data-control="Candles" aria-disabled="false" data-surface="toolbar">
+<rect x="260" y="7" width="72" height="30" fill="#151619" stroke="#2A2B30" stroke-width="1" rx="4" />
+<text x="268" y="27" class="control">Candles</text>
+</g>
+<g data-control="Indicators" aria-disabled="false" data-surface="toolbar">
+<rect x="340" y="7" width="96" height="30" fill="#151619" stroke="#2A2B30" stroke-width="1" rx="4" />
+<text x="348" y="27" class="control">Indicators</text>
+</g>
+<g data-control="Replay" aria-disabled="false" data-selected="true" data-surface="toolbar">
+<rect x="444" y="7" width="76" height="30" fill="#151619" stroke="#93C5FD" stroke-width="2" rx="4" />
+<text x="452" y="27" class="control">Replay</text>
+<path d="M449.0,13.0 v18" stroke="#93C5FD" stroke-width="2" fill="none" /></g>
+<g data-control="Undo / redo" aria-disabled="false" data-surface="toolbar">
+<rect x="528" y="7" width="100" height="30" fill="#151619" stroke="#2A2B30" stroke-width="1" rx="4" />
+<text x="536" y="27" class="control">Undo / redo</text>
+</g>
+<g data-control="Charts 1/2" aria-disabled="false" data-surface="toolbar">
+<rect x="636" y="7" width="92" height="30" fill="#151619" stroke="#2A2B30" stroke-width="1" rx="4" />
+<text x="644" y="27" class="control">Charts 1/2</text>
+</g>
+<g data-control="Bid" aria-disabled="false" role="button" aria-pressed="true" aria-label="Show/hide bid candles" data-selected="true" data-surface="toolbar">
+<rect x="736" y="7" width="56" height="30" fill="#151619" stroke="#93C5FD" stroke-width="2" rx="4" />
+<text x="744" y="27" class="control">Bid</text>
+<path d="M777 22 l3 3 l5 -7" fill="none" stroke="#D1D4DC" stroke-width="1.5" />
+<path d="M741.0,13.0 v18" stroke="#93C5FD" stroke-width="2" fill="none" /></g>
+<g data-control="Ask" aria-disabled="false" role="button" aria-pressed="false" aria-label="Show/hide ask candles" data-surface="toolbar">
+<rect x="800" y="7" width="56" height="30" fill="#151619" stroke="#2A2B30" stroke-width="1" rx="4" />
+<text x="808" y="27" class="control">Ask</text>
+</g>
+<g data-control="Layout / Save" aria-disabled="false" data-surface="toolbar">
+<rect x="936" y="7" width="112" height="30" fill="#151619" stroke="#2A2B30" stroke-width="1" rx="4" />
+<text x="944" y="27" class="control">Layout / Save</text>
+</g>
+<g data-control="Settings" aria-disabled="false" data-surface="toolbar">
+<rect x="1056" y="7" width="92" height="30" fill="#151619" stroke="#2A2B30" stroke-width="1" rx="4" />
+<text x="1064" y="27" class="control">Settings</text>
+</g>
+<g data-control="Export image" aria-disabled="false" data-surface="toolbar">
+<rect x="1156" y="7" width="112" height="30" fill="#151619" stroke="#2A2B30" stroke-width="1" rx="4" />
+<text x="1164" y="27" class="control">Export image</text>
+</g>
+<rect x="0" y="44" width="48" height="730" fill="#151619" stroke="#2A2B30" stroke-width="1" data-surface="toolbar" />
+<g role="img" aria-label="Select / crosshair" aria-disabled="false" data-surface="toolbar"><title>Select / crosshair</title>
+<path transform="translate(3,52)" d="M20 8 V30 M9 19 H31" stroke="#D1D4DC" stroke-width="1.4" fill="none" />
+</g>
+<g role="img" aria-label="Trendline" aria-disabled="false" data-surface="toolbar"><title>Trendline</title>
+<path transform="translate(3,95)" d="M10 28 L30 10 M9 27 h3 v3 h-3 Z M28 8 h3 v3 h-3 Z" stroke="#D1D4DC" stroke-width="1.4" fill="none" />
+</g>
+<g role="img" aria-label="Horizontal line" aria-disabled="false" data-surface="toolbar"><title>Horizontal line</title>
+<path transform="translate(3,138)" d="M8 20 H32" stroke="#D1D4DC" stroke-width="1.4" fill="none" />
+</g>
+<g role="img" aria-label="Vertical line" aria-disabled="false" data-surface="toolbar"><title>Vertical line</title>
+<path transform="translate(3,181)" d="M20 8 V31" stroke="#D1D4DC" stroke-width="1.4" fill="none" />
+</g>
+<g role="img" aria-label="Ray" aria-disabled="false" data-surface="toolbar"><title>Ray</title>
+<path transform="translate(3,224)" d="M9 29 L31 7 M9 27 h3 v3 h-3 Z" stroke="#D1D4DC" stroke-width="1.4" fill="none" />
+</g>
+<g role="img" aria-label="Fibonacci retracement" aria-disabled="false" data-surface="toolbar"><title>Fibonacci retracement</title>
+<path transform="translate(3,267)" d="M8 10 H32 M8 17 H27 M8 24 H32 M8 30 H25 M11 9 L28 31" stroke="#D1D4DC" stroke-width="1.4" fill="none" />
+</g>
+<g role="img" aria-label="Rectangle" aria-disabled="false" data-surface="toolbar"><title>Rectangle</title>
+<path transform="translate(3,310)" d="M9 10 H31 V29 H9 Z" stroke="#D1D4DC" stroke-width="1.4" fill="none" />
+</g>
+<g role="img" aria-label="Brush / editable points" aria-disabled="false" data-surface="toolbar"><title>Brush / editable points</title>
+<path transform="translate(3,353)" d="M8 28 Q18 2 23 17 Q29 30 32 9" stroke="#D1D4DC" stroke-width="1.4" fill="none" />
+</g>
+<g role="img" aria-label="Text" aria-disabled="false" data-surface="toolbar"><title>Text</title>
+<text x="17" y="423" class="title">T</text>
+</g>
+<g role="img" aria-label="Long / short measurement" aria-disabled="false" data-surface="toolbar"><title>Long / short measurement</title>
+<path transform="translate(3,439)" d="M9 28 L28 9 L33 14 L14 33 Z M15 23 L19 27 M20 18 L24 22" stroke="#D1D4DC" stroke-width="1.4" fill="none" />
+</g>
+<rect x="1236" y="44" width="44" height="730" fill="#151619" stroke="#2A2B30" stroke-width="1" data-surface="toolbar" />
+<g role="img" aria-label="Watchlist" aria-disabled="false" data-surface="toolbar"><title>Watchlist</title>
+<path transform="translate(1238,54)" d="M10 9 H30 V31 H10 Z M14 15 H26 M14 21 H26 M14 27 H23" stroke="#D1D4DC" stroke-width="1.4" fill="none" />
+</g>
+<g role="img" aria-label="Historical trading" aria-disabled="false" data-surface="toolbar"><title>Historical trading</title>
+<path transform="translate(1238,104)" d="M10 13 H30 L25 8 M30 25 H10 L15 30" stroke="#D1D4DC" stroke-width="1.4" fill="none" />
+</g>
+<g role="img" aria-label="Objects / numeric inspection" aria-disabled="false" data-surface="toolbar"><title>Objects / numeric inspection</title>
+<path transform="translate(1238,154)" d="M8 18 L20 10 L32 18 L20 26 Z M8 24 L20 32 L32 24" stroke="#D1D4DC" stroke-width="1.4" fill="none" />
+</g>
+<g role="img" aria-label="Data continuity" aria-disabled="false" data-surface="toolbar"><title>Data continuity</title>
+<path transform="translate(1238,204)" d="M9 30 V17 M16 30 V9 M23 30 V20 M30 30 V13" stroke="#D1D4DC" stroke-width="1.4" fill="none" />
+</g>
+<g role="img" aria-label="Saved work / recovery" aria-disabled="false" data-surface="toolbar"><title>Saved work / recovery</title>
+<path transform="translate(1238,254)" d="M8 12 H18 L21 16 H32 V30 H8 Z" stroke="#D1D4DC" stroke-width="1.4" fill="none" />
+</g>
+<g role="img" aria-label="Run bundle viewer — future version" aria-disabled="true" data-surface="toolbar"><title>Run bundle viewer — future version</title>
+<rect x="1242" y="307" width="32" height="32" fill="#151619" stroke="#2A2B30" stroke-width="1" stroke-dasharray="5 4" rx="4" />
+<path transform="translate(1238,304)" d="M9 13 L20 7 L31 13 V27 L20 33 L9 27 Z M9 13 L20 20 L31 13 M20 20 V33" stroke="#D1D4DC" stroke-width="1.4" fill="none" />
+</g>
+<g role="img" aria-label="Local output" aria-disabled="false" data-surface="toolbar"><title>Local output</title>
+<path transform="translate(1238,354)" d="M10 24 V31 H31 V24 M20 8 V25 M14 14 L20 8 L26 14" stroke="#D1D4DC" stroke-width="1.4" fill="none" />
+</g>
+<text x="1246" y="353" class="meta" data-surface="toolbar">later</text>
+<g id="chart-1" data-role="persistent-chart">
+<rect x="48" y="44" width="868" height="544" fill="#151619" stroke="#2A2B30" stroke-width="1" />
+<text x="60" y="67" class="meta">Active Chart 1 · EURUSD · M1 · Dukascopy · basis Bid</text>
+<text x="60" y="89" class="meta">Calculations: Bid · OHLC / studies / volume [Bid values] · selected 09:42</text>
+<text x="60" y="105" class="meta">Replay · run R-014 · cursor 09:42</text>
+<rect data-role="plot-area" x="58" y="110" width="800" height="408" fill="none" stroke="none" />
+<path d="M58,178.0 L858,178.0" fill="none" stroke="#2A2B30" stroke-dasharray="4 4" />
+<text x="866" y="182.0" class="data">1.0870</text>
+<path d="M58,246.0 L858,246.0" fill="none" stroke="#2A2B30" stroke-dasharray="4 4" />
+<text x="866" y="250.0" class="data">1.0860</text>
+<path d="M58,314.0 L858,314.0" fill="none" stroke="#2A2B30" stroke-dasharray="4 4" />
+<text x="866" y="318.0" class="data">1.0850</text>
+<path d="M58,382.0 L858,382.0" fill="none" stroke="#2A2B30" stroke-dasharray="4 4" />
+<text x="866" y="386.0" class="data">1.0840</text>
+<path d="M58,450.0 L858,450.0" fill="none" stroke="#2A2B30" stroke-dasharray="4 4" />
+<text x="866" y="454.0" class="data">1.0830</text>
+<path d="M172.28571428571428,110 L172.28571428571428,518" fill="none" stroke="#2A2B30" stroke-dasharray="4 4" />
+<path d="M286.57142857142856,110 L286.57142857142856,518" fill="none" stroke="#2A2B30" stroke-dasharray="4 4" />
+<path d="M400.85714285714283,110 L400.85714285714283,518" fill="none" stroke="#2A2B30" stroke-dasharray="4 4" />
+<path d="M515.1428571428571,110 L515.1428571428571,518" fill="none" stroke="#2A2B30" stroke-dasharray="4 4" />
+<path d="M629.4285714285714,110 L629.4285714285714,518" fill="none" stroke="#2A2B30" stroke-dasharray="4 4" />
+<path d="M743.7142857142857,110 L743.7142857142857,518" fill="none" stroke="#2A2B30" stroke-dasharray="4 4" />
+<g data-role="bid-candle" data-bucket="0" data-direction="down">
+<path d="M72.5,348.24800000000005 L72.5,372.24800000000005" fill="none" stroke="#EF4444" />
+<rect x="70.0" y="357.24800000000005" width="5" height="6" fill="#F87171" stroke="#EF4444" stroke-width="1.5" />
+<path d="M68.0,357.24800000000005 L70.0,357.24800000000005" fill="none" stroke="#EF4444" />
+<path d="M75.0,363.24800000000005 L77.0,363.24800000000005" fill="none" stroke="#EF4444" />
+</g>
+<g data-role="bid-volume" data-bucket="0" data-direction="down">
+<rect x="70.0" y="508" width="5" height="10" fill="#F87171" stroke="#EF4444" />
+</g>
+<g data-role="bid-candle" data-bucket="1" data-direction="up">
+<path d="M84.12962962962963,362.528 L84.12962962962963,393.528" fill="none" stroke="#16A34A" />
+<rect x="81.62962962962963" y="371.528" width="5" height="13" fill="#22C55E" stroke="#16A34A" stroke-width="1.5" />
+<path d="M79.62962962962963,384.528 L81.62962962962963,384.528" fill="none" stroke="#16A34A" />
+<path d="M86.62962962962963,371.528 L88.62962962962963,371.528" fill="none" stroke="#16A34A" />
+</g>
+<g data-role="bid-volume" data-bucket="1" data-direction="up">
+<rect x="81.62962962962963" y="491" width="5" height="27" fill="#22C55E" stroke="#16A34A" />
+</g>
+<g data-role="bid-candle" data-bucket="2" data-direction="up">
+<path d="M95.75925925925927,376.808 L95.75925925925927,400.808" fill="none" stroke="#16A34A" />
+<rect x="93.25925925925927" y="385.808" width="5" height="6" fill="#22C55E" stroke="#16A34A" stroke-width="1.5" />
+<path d="M91.25925925925927,391.808 L93.25925925925927,391.808" fill="none" stroke="#16A34A" />
+<path d="M98.25925925925927,385.808 L100.25925925925927,385.808" fill="none" stroke="#16A34A" />
+</g>
+<g data-role="bid-volume" data-bucket="2" data-direction="up">
+<rect x="93.25925925925927" y="474" width="5" height="44" fill="#22C55E" stroke="#16A34A" />
+</g>
+<g data-role="bid-candle" data-bucket="3" data-direction="down">
+<path d="M107.38888888888889,345.8 L107.38888888888889,376.8" fill="none" stroke="#EF4444" />
+<rect x="104.88888888888889" y="354.8" width="5" height="13" fill="#F87171" stroke="#EF4444" stroke-width="1.5" />
+<path d="M102.88888888888889,354.8 L104.88888888888889,354.8" fill="none" stroke="#EF4444" />
+<path d="M109.88888888888889,367.8 L111.88888888888889,367.8" fill="none" stroke="#EF4444" />
+</g>
+<g data-role="bid-volume" data-bucket="3" data-direction="down">
+<rect x="104.88888888888889" y="457" width="5" height="61" fill="#F87171" stroke="#EF4444" />
+</g>
+<g data-role="bid-candle" data-bucket="4" data-direction="up">
+<path d="M119.01851851851852,360.08 L119.01851851851852,384.08" fill="none" stroke="#16A34A" />
+<rect x="116.51851851851852" y="369.08" width="5" height="6" fill="#22C55E" stroke="#16A34A" stroke-width="1.5" />
+<path d="M114.51851851851852,375.08 L116.51851851851852,375.08" fill="none" stroke="#16A34A" />
+<path d="M121.51851851851852,369.08 L123.51851851851852,369.08" fill="none" stroke="#16A34A" />
+</g>
+<g data-role="bid-volume" data-bucket="4" data-direction="up">
+<rect x="116.51851851851852" y="493" width="5" height="25" fill="#22C55E" stroke="#16A34A" />
+</g>
+<g data-role="bid-candle" data-bucket="5" data-direction="up">
+<path d="M130.64814814814815,374.36 L130.64814814814815,405.36" fill="none" stroke="#16A34A" />
+<rect x="128.14814814814815" y="383.36" width="5" height="13" fill="#22C55E" stroke="#16A34A" stroke-width="1.5" />
+<path d="M126.14814814814815,396.36 L128.14814814814815,396.36" fill="none" stroke="#16A34A" />
+<path d="M133.14814814814815,383.36 L135.14814814814815,383.36" fill="none" stroke="#16A34A" />
+</g>
+<g data-role="bid-volume" data-bucket="5" data-direction="up">
+<rect x="128.14814814814815" y="476" width="5" height="42" fill="#22C55E" stroke="#16A34A" />
+</g>
+<g data-role="bid-candle" data-bucket="6" data-direction="down">
+<path d="M142.27777777777777,343.35200000000003 L142.27777777777777,367.35200000000003" fill="none" stroke="#EF4444" />
+<rect x="139.77777777777777" y="352.35200000000003" width="5" height="6" fill="#F87171" stroke="#EF4444" stroke-width="1.5" />
+<path d="M137.77777777777777,352.35200000000003 L139.77777777777777,352.35200000000003" fill="none" stroke="#EF4444" />
+<path d="M144.77777777777777,358.35200000000003 L146.77777777777777,358.35200000000003" fill="none" stroke="#EF4444" />
+</g>
+<g data-role="bid-volume" data-bucket="6" data-direction="down">
+<rect x="139.77777777777777" y="459" width="5" height="59" fill="#F87171" stroke="#EF4444" />
+</g>
+<g data-role="bid-candle" data-bucket="7" data-direction="up">
+<path d="M153.9074074074074,357.63200000000006 L153.9074074074074,388.63200000000006" fill="none" stroke="#16A34A" />
+<rect x="151.4074074074074" y="366.63200000000006" width="5" height="13" fill="#22C55E" stroke="#16A34A" stroke-width="1.5" />
+<path d="M149.4074074074074,379.63200000000006 L151.4074074074074,379.63200000000006" fill="none" stroke="#16A34A" />
+<path d="M156.4074074074074,366.63200000000006 L158.4074074074074,366.63200000000006" fill="none" stroke="#16A34A" />
+</g>
+<g data-role="bid-volume" data-bucket="7" data-direction="up">
+<rect x="151.4074074074074" y="495" width="5" height="23" fill="#22C55E" stroke="#16A34A" />
+</g>
+<g data-role="bid-candle" data-bucket="8" data-direction="up">
+<path d="M165.53703703703704,371.91200000000003 L165.53703703703704,395.91200000000003" fill="none" stroke="#16A34A" />
+<rect x="163.03703703703704" y="380.91200000000003" width="5" height="6" fill="#22C55E" stroke="#16A34A" stroke-width="1.5" />
+<path d="M161.03703703703704,386.91200000000003 L163.03703703703704,386.91200000000003" fill="none" stroke="#16A34A" />
+<path d="M168.03703703703704,380.91200000000003 L170.03703703703704,380.91200000000003" fill="none" stroke="#16A34A" />
+</g>
+<g data-role="bid-volume" data-bucket="8" data-direction="up">
+<rect x="163.03703703703704" y="478" width="5" height="40" fill="#22C55E" stroke="#16A34A" />
+</g>
+<g data-role="bid-candle" data-bucket="9" data-direction="down">
+<path d="M177.16666666666669,340.90400000000005 L177.16666666666669,371.90400000000005" fill="none" stroke="#EF4444" />
+<rect x="174.66666666666669" y="349.90400000000005" width="5" height="13" fill="#F87171" stroke="#EF4444" stroke-width="1.5" />
+<path d="M172.66666666666669,349.90400000000005 L174.66666666666669,349.90400000000005" fill="none" stroke="#EF4444" />
+<path d="M179.66666666666669,362.90400000000005 L181.66666666666669,362.90400000000005" fill="none" stroke="#EF4444" />
+</g>
+<g data-role="bid-volume" data-bucket="9" data-direction="down">
+<rect x="174.66666666666669" y="461" width="5" height="57" fill="#F87171" stroke="#EF4444" />
+</g>
+<g data-role="bid-candle" data-bucket="10" data-direction="up">
+<path d="M188.7962962962963,355.184 L188.7962962962963,379.184" fill="none" stroke="#16A34A" />
+<rect x="186.2962962962963" y="364.184" width="5" height="6" fill="#22C55E" stroke="#16A34A" stroke-width="1.5" />
+<path d="M184.2962962962963,370.184 L186.2962962962963,370.184" fill="none" stroke="#16A34A" />
+<path d="M191.2962962962963,364.184 L193.2962962962963,364.184" fill="none" stroke="#16A34A" />
+</g>
+<g data-role="bid-volume" data-bucket="10" data-direction="up">
+<rect x="186.2962962962963" y="497" width="5" height="21" fill="#22C55E" stroke="#16A34A" />
+</g>
+<g data-role="bid-candle" data-bucket="11" data-direction="up">
+<path d="M200.42592592592592,369.46400000000006 L200.42592592592592,400.46400000000006" fill="none" stroke="#16A34A" />
+<rect x="197.92592592592592" y="378.46400000000006" width="5" height="13" fill="#22C55E" stroke="#16A34A" stroke-width="1.5" />
+<path d="M195.92592592592592,391.46400000000006 L197.92592592592592,391.46400000000006" fill="none" stroke="#16A34A" />
+<path d="M202.92592592592592,378.46400000000006 L204.92592592592592,378.46400000000006" fill="none" stroke="#16A34A" />
+</g>
+<g data-role="bid-volume" data-bucket="11" data-direction="up">
+<rect x="197.92592592592592" y="480" width="5" height="38" fill="#22C55E" stroke="#16A34A" />
+</g>
+<g data-role="bid-candle" data-bucket="12" data-direction="down">
+<path d="M212.05555555555554,338.456 L212.05555555555554,362.456" fill="none" stroke="#EF4444" />
+<rect x="209.55555555555554" y="347.456" width="5" height="6" fill="#F87171" stroke="#EF4444" stroke-width="1.5" />
+<path d="M207.55555555555554,347.456 L209.55555555555554,347.456" fill="none" stroke="#EF4444" />
+<path d="M214.55555555555554,353.456 L216.55555555555554,353.456" fill="none" stroke="#EF4444" />
+</g>
+<g data-role="bid-volume" data-bucket="12" data-direction="down">
+<rect x="209.55555555555554" y="463" width="5" height="55" fill="#F87171" stroke="#EF4444" />
+</g>
+<g data-role="bid-candle" data-bucket="13" data-direction="up">
+<path d="M223.6851851851852,352.73600000000005 L223.6851851851852,383.73600000000005" fill="none" stroke="#16A34A" />
+<rect x="221.1851851851852" y="361.73600000000005" width="5" height="13" fill="#22C55E" stroke="#16A34A" stroke-width="1.5" />
+<path d="M219.1851851851852,374.73600000000005 L221.1851851851852,374.73600000000005" fill="none" stroke="#16A34A" />
+<path d="M226.1851851851852,361.73600000000005 L228.1851851851852,361.73600000000005" fill="none" stroke="#16A34A" />
+</g>
+<g data-role="bid-volume" data-bucket="13" data-direction="up">
+<rect x="221.1851851851852" y="499" width="5" height="19" fill="#22C55E" stroke="#16A34A" />
+</g>
+<g data-role="bid-candle" data-bucket="14" data-direction="up">
+<path d="M235.3148148148148,367.016 L235.3148148148148,391.016" fill="none" stroke="#16A34A" />
+<rect x="232.8148148148148" y="376.016" width="5" height="6" fill="#22C55E" stroke="#16A34A" stroke-width="1.5" />
+<path d="M230.8148148148148,382.016 L232.8148148148148,382.016" fill="none" stroke="#16A34A" />
+<path d="M237.8148148148148,376.016 L239.8148148148148,376.016" fill="none" stroke="#16A34A" />
+</g>
+<g data-role="bid-volume" data-bucket="14" data-direction="up">
+<rect x="232.8148148148148" y="482" width="5" height="36" fill="#22C55E" stroke="#16A34A" />
+</g>
+<g data-role="bid-candle" data-bucket="15" data-direction="down">
+<path d="M246.94444444444446,336.00800000000004 L246.94444444444446,367.00800000000004" fill="none" stroke="#EF4444" />
+<rect x="244.44444444444446" y="345.00800000000004" width="5" height="13" fill="#F87171" stroke="#EF4444" stroke-width="1.5" />
+<path d="M242.44444444444446,345.00800000000004 L244.44444444444446,345.00800000000004" fill="none" stroke="#EF4444" />
+<path d="M249.44444444444446,358.00800000000004 L251.44444444444446,358.00800000000004" fill="none" stroke="#EF4444" />
+</g>
+<g data-role="bid-volume" data-bucket="15" data-direction="down">
+<rect x="244.44444444444446" y="465" width="5" height="53" fill="#F87171" stroke="#EF4444" />
+</g>
+<g data-role="bid-candle" data-bucket="16" data-direction="up">
+<path d="M258.5740740740741,350.288 L258.5740740740741,374.288" fill="none" stroke="#16A34A" />
+<rect x="256.0740740740741" y="359.288" width="5" height="6" fill="#22C55E" stroke="#16A34A" stroke-width="1.5" />
+<path d="M254.07407407407408,365.288 L256.0740740740741,365.288" fill="none" stroke="#16A34A" />
+<path d="M261.0740740740741,359.288 L263.0740740740741,359.288" fill="none" stroke="#16A34A" />
+</g>
+<g data-role="bid-volume" data-bucket="16" data-direction="up">
+<rect x="256.0740740740741" y="501" width="5" height="17" fill="#22C55E" stroke="#16A34A" />
+</g>
+<g data-role="bid-candle" data-bucket="17" data-direction="up">
+<path d="M270.2037037037037,364.56800000000004 L270.2037037037037,395.56800000000004" fill="none" stroke="#16A34A" />
+<rect x="267.7037037037037" y="373.56800000000004" width="5" height="13" fill="#22C55E" stroke="#16A34A" stroke-width="1.5" />
+<path d="M265.7037037037037,386.56800000000004 L267.7037037037037,386.56800000000004" fill="none" stroke="#16A34A" />
+<path d="M272.7037037037037,373.56800000000004 L274.7037037037037,373.56800000000004" fill="none" stroke="#16A34A" />
+</g>
+<g data-role="bid-volume" data-bucket="17" data-direction="up">
+<rect x="267.7037037037037" y="484" width="5" height="34" fill="#22C55E" stroke="#16A34A" />
+</g>
+<g data-role="bid-candle" data-bucket="18" data-direction="down">
+<path d="M281.83333333333337,333.56000000000006 L281.83333333333337,357.56000000000006" fill="none" stroke="#EF4444" />
+<rect x="279.33333333333337" y="342.56000000000006" width="5" height="6" fill="#F87171" stroke="#EF4444" stroke-width="1.5" />
+<path d="M277.33333333333337,342.56000000000006 L279.33333333333337,342.56000000000006" fill="none" stroke="#EF4444" />
+<path d="M284.33333333333337,348.56000000000006 L286.33333333333337,348.56000000000006" fill="none" stroke="#EF4444" />
+</g>
+<g data-role="bid-volume" data-bucket="18" data-direction="down">
+<rect x="279.33333333333337" y="467" width="5" height="51" fill="#F87171" stroke="#EF4444" />
+</g>
+<g data-role="bid-candle" data-bucket="19" data-direction="up">
+<path d="M293.46296296296293,347.84000000000003 L293.46296296296293,378.84000000000003" fill="none" stroke="#16A34A" />
+<rect x="290.96296296296293" y="356.84000000000003" width="5" height="13" fill="#22C55E" stroke="#16A34A" stroke-width="1.5" />
+<path d="M288.96296296296293,369.84000000000003 L290.96296296296293,369.84000000000003" fill="none" stroke="#16A34A" />
+<path d="M295.96296296296293,356.84000000000003 L297.96296296296293,356.84000000000003" fill="none" stroke="#16A34A" />
+</g>
+<g data-role="bid-volume" data-bucket="19" data-direction="up">
+<rect x="290.96296296296293" y="503" width="5" height="15" fill="#22C55E" stroke="#16A34A" />
+</g>
+<g data-role="bid-candle" data-bucket="20" data-direction="up">
+<path d="M305.0925925925926,316.83200000000005 L305.0925925925926,340.83200000000005" fill="none" stroke="#16A34A" />
+<rect x="302.5925925925926" y="325.83200000000005" width="5" height="6" fill="#22C55E" stroke="#16A34A" stroke-width="1.5" />
+<path d="M300.5925925925926,331.83200000000005 L302.5925925925926,331.83200000000005" fill="none" stroke="#16A34A" />
+<path d="M307.5925925925926,325.83200000000005 L309.5925925925926,325.83200000000005" fill="none" stroke="#16A34A" />
+</g>
+<g data-role="bid-volume" data-bucket="20" data-direction="up">
+<rect x="302.5925925925926" y="486" width="5" height="32" fill="#22C55E" stroke="#16A34A" />
+</g>
+<g data-role="bid-candle" data-bucket="21" data-direction="down">
+<path d="M316.72222222222223,331.112 L316.72222222222223,362.112" fill="none" stroke="#EF4444" />
+<rect x="314.22222222222223" y="340.112" width="5" height="13" fill="#F87171" stroke="#EF4444" stroke-width="1.5" />
+<path d="M312.22222222222223,340.112 L314.22222222222223,340.112" fill="none" stroke="#EF4444" />
+<path d="M319.22222222222223,353.112 L321.22222222222223,353.112" fill="none" stroke="#EF4444" />
+</g>
+<g data-role="bid-volume" data-bucket="21" data-direction="down">
+<rect x="314.22222222222223" y="469" width="5" height="49" fill="#F87171" stroke="#EF4444" />
+</g>
+<g data-role="bid-candle" data-bucket="22" data-direction="up">
+<path d="M328.35185185185185,345.39200000000005 L328.35185185185185,369.39200000000005" fill="none" stroke="#16A34A" />
+<rect x="325.85185185185185" y="354.39200000000005" width="5" height="6" fill="#22C55E" stroke="#16A34A" stroke-width="1.5" />
+<path d="M323.85185185185185,360.39200000000005 L325.85185185185185,360.39200000000005" fill="none" stroke="#16A34A" />
+<path d="M330.85185185185185,354.39200000000005 L332.85185185185185,354.39200000000005" fill="none" stroke="#16A34A" />
+</g>
+<g data-role="bid-volume" data-bucket="22" data-direction="up">
+<rect x="325.85185185185185" y="505" width="5" height="13" fill="#22C55E" stroke="#16A34A" />
+</g>
+<g data-role="bid-candle" data-bucket="23" data-direction="up">
+<path d="M339.98148148148147,314.384 L339.98148148148147,345.384" fill="none" stroke="#16A34A" />
+<rect x="337.48148148148147" y="323.384" width="5" height="13" fill="#22C55E" stroke="#16A34A" stroke-width="1.5" />
+<path d="M335.48148148148147,336.384 L337.48148148148147,336.384" fill="none" stroke="#16A34A" />
+<path d="M342.48148148148147,323.384 L344.48148148148147,323.384" fill="none" stroke="#16A34A" />
+</g>
+<g data-role="bid-volume" data-bucket="23" data-direction="up">
+<rect x="337.48148148148147" y="488" width="5" height="30" fill="#22C55E" stroke="#16A34A" />
+</g>
+<g data-role="bid-candle" data-bucket="24" data-direction="down">
+<path d="M351.6111111111111,328.66400000000004 L351.6111111111111,352.66400000000004" fill="none" stroke="#EF4444" />
+<rect x="349.1111111111111" y="337.66400000000004" width="5" height="6" fill="#F87171" stroke="#EF4444" stroke-width="1.5" />
+<path d="M347.1111111111111,337.66400000000004 L349.1111111111111,337.66400000000004" fill="none" stroke="#EF4444" />
+<path d="M354.1111111111111,343.66400000000004 L356.1111111111111,343.66400000000004" fill="none" stroke="#EF4444" />
+</g>
+<g data-role="bid-volume" data-bucket="24" data-direction="down">
+<rect x="349.1111111111111" y="471" width="5" height="47" fill="#F87171" stroke="#EF4444" />
+</g>
+<g data-role="bid-candle" data-bucket="25" data-direction="up">
+<path d="M363.24074074074076,342.944 L363.24074074074076,373.944" fill="none" stroke="#16A34A" />
+<rect x="360.74074074074076" y="351.944" width="5" height="13" fill="#22C55E" stroke="#16A34A" stroke-width="1.5" />
+<path d="M358.74074074074076,364.944 L360.74074074074076,364.944" fill="none" stroke="#16A34A" />
+<path d="M365.74074074074076,351.944 L367.74074074074076,351.944" fill="none" stroke="#16A34A" />
+</g>
+<g data-role="bid-volume" data-bucket="25" data-direction="up">
+<rect x="360.74074074074076" y="507" width="5" height="11" fill="#22C55E" stroke="#16A34A" />
+</g>
+<g data-role="bid-candle" data-bucket="26" data-direction="up">
+<path d="M374.8703703703704,311.93600000000004 L374.8703703703704,335.93600000000004" fill="none" stroke="#16A34A" />
+<rect x="372.3703703703704" y="320.93600000000004" width="5" height="6" fill="#22C55E" stroke="#16A34A" stroke-width="1.5" />
+<path d="M370.3703703703704,326.93600000000004 L372.3703703703704,326.93600000000004" fill="none" stroke="#16A34A" />
+<path d="M377.3703703703704,320.93600000000004 L379.3703703703704,320.93600000000004" fill="none" stroke="#16A34A" />
+</g>
+<g data-role="bid-volume" data-bucket="26" data-direction="up">
+<rect x="372.3703703703704" y="490" width="5" height="28" fill="#22C55E" stroke="#16A34A" />
+</g>
+<g data-role="bid-candle" data-bucket="27" data-direction="down">
+<path d="M386.5,326.216 L386.5,357.216" fill="none" stroke="#EF4444" />
+<rect x="384.0" y="335.216" width="5" height="13" fill="#F87171" stroke="#EF4444" stroke-width="1.5" />
+<path d="M382.0,335.216 L384.0,335.216" fill="none" stroke="#EF4444" />
+<path d="M389.0,348.216 L391.0,348.216" fill="none" stroke="#EF4444" />
+</g>
+<g data-role="bid-volume" data-bucket="27" data-direction="down">
+<rect x="384.0" y="473" width="5" height="45" fill="#F87171" stroke="#EF4444" />
+</g>
+<g data-role="bid-candle" data-bucket="28" data-direction="up">
+<path d="M398.1296296296296,340.49600000000004 L398.1296296296296,364.49600000000004" fill="none" stroke="#16A34A" />
+<rect x="395.6296296296296" y="349.49600000000004" width="5" height="6" fill="#22C55E" stroke="#16A34A" stroke-width="1.5" />
+<path d="M393.6296296296296,355.49600000000004 L395.6296296296296,355.49600000000004" fill="none" stroke="#16A34A" />
+<path d="M400.6296296296296,349.49600000000004 L402.6296296296296,349.49600000000004" fill="none" stroke="#16A34A" />
+</g>
+<g data-role="bid-volume" data-bucket="28" data-direction="up">
+<rect x="395.6296296296296" y="456" width="5" height="62" fill="#22C55E" stroke="#16A34A" />
+</g>
+<g data-role="bid-candle" data-bucket="29" data-direction="up">
+<path d="M409.75925925925924,309.488 L409.75925925925924,340.488" fill="none" stroke="#16A34A" />
+<rect x="407.25925925925924" y="318.488" width="5" height="13" fill="#22C55E" stroke="#16A34A" stroke-width="1.5" />
+<path d="M405.25925925925924,331.488 L407.25925925925924,331.488" fill="none" stroke="#16A34A" />
+<path d="M412.25925925925924,318.488 L414.25925925925924,318.488" fill="none" stroke="#16A34A" />
+</g>
+<g data-role="bid-volume" data-bucket="29" data-direction="up">
+<rect x="407.25925925925924" y="492" width="5" height="26" fill="#22C55E" stroke="#16A34A" />
+</g>
+<g data-role="bid-candle" data-bucket="30" data-direction="down">
+<path d="M421.3888888888889,323.76800000000003 L421.3888888888889,347.76800000000003" fill="none" stroke="#EF4444" />
+<rect x="418.8888888888889" y="332.76800000000003" width="5" height="6" fill="#F87171" stroke="#EF4444" stroke-width="1.5" />
+<path d="M416.8888888888889,332.76800000000003 L418.8888888888889,332.76800000000003" fill="none" stroke="#EF4444" />
+<path d="M423.8888888888889,338.76800000000003 L425.8888888888889,338.76800000000003" fill="none" stroke="#EF4444" />
+</g>
+<g data-role="bid-volume" data-bucket="30" data-direction="down">
+<rect x="418.8888888888889" y="475" width="5" height="43" fill="#F87171" stroke="#EF4444" />
+</g>
+<g data-role="bid-candle" data-bucket="31" data-direction="up">
+<path d="M433.01851851851853,338.04800000000006 L433.01851851851853,369.04800000000006" fill="none" stroke="#16A34A" />
+<rect x="430.51851851851853" y="347.04800000000006" width="5" height="13" fill="#22C55E" stroke="#16A34A" stroke-width="1.5" />
+<path d="M428.51851851851853,360.04800000000006 L430.51851851851853,360.04800000000006" fill="none" stroke="#16A34A" />
+<path d="M435.51851851851853,347.04800000000006 L437.51851851851853,347.04800000000006" fill="none" stroke="#16A34A" />
+</g>
+<g data-role="bid-volume" data-bucket="31" data-direction="up">
+<rect x="430.51851851851853" y="458" width="5" height="60" fill="#22C55E" stroke="#16A34A" />
+</g>
+<g data-role="bid-candle" data-bucket="32" data-direction="up">
+<path d="M444.64814814814815,307.04 L444.64814814814815,331.04" fill="none" stroke="#16A34A" />
+<rect x="442.14814814814815" y="316.04" width="5" height="6" fill="#22C55E" stroke="#16A34A" stroke-width="1.5" />
+<path d="M440.14814814814815,322.04 L442.14814814814815,322.04" fill="none" stroke="#16A34A" />
+<path d="M447.14814814814815,316.04 L449.14814814814815,316.04" fill="none" stroke="#16A34A" />
+</g>
+<g data-role="bid-volume" data-bucket="32" data-direction="up">
+<rect x="442.14814814814815" y="494" width="5" height="24" fill="#22C55E" stroke="#16A34A" />
+</g>
+<g data-role="bid-candle" data-bucket="33" data-direction="down">
+<path d="M456.27777777777777,321.32000000000005 L456.27777777777777,352.32000000000005" fill="none" stroke="#EF4444" />
+<rect x="453.77777777777777" y="330.32000000000005" width="5" height="13" fill="#F87171" stroke="#EF4444" stroke-width="1.5" />
+<path d="M451.77777777777777,330.32000000000005 L453.77777777777777,330.32000000000005" fill="none" stroke="#EF4444" />
+<path d="M458.77777777777777,343.32000000000005 L460.77777777777777,343.32000000000005" fill="none" stroke="#EF4444" />
+</g>
+<g data-role="bid-volume" data-bucket="33" data-direction="down">
+<rect x="453.77777777777777" y="477" width="5" height="41" fill="#F87171" stroke="#EF4444" />
+</g>
+<g data-role="bid-candle" data-bucket="34" data-direction="up">
+<path d="M467.9074074074074,335.6 L467.9074074074074,359.6" fill="none" stroke="#16A34A" />
+<rect x="465.4074074074074" y="344.6" width="5" height="6" fill="#22C55E" stroke="#16A34A" stroke-width="1.5" />
+<path d="M463.4074074074074,350.6 L465.4074074074074,350.6" fill="none" stroke="#16A34A" />
+<path d="M470.4074074074074,344.6 L472.4074074074074,344.6" fill="none" stroke="#16A34A" />
+</g>
+<g data-role="bid-volume" data-bucket="34" data-direction="up">
+<rect x="465.4074074074074" y="460" width="5" height="58" fill="#22C55E" stroke="#16A34A" />
+</g>
+<g data-role="bid-candle" data-bucket="35" data-direction="up">
+<path d="M479.537037037037,304.59200000000004 L479.537037037037,335.59200000000004" fill="none" stroke="#16A34A" />
+<rect x="477.037037037037" y="313.59200000000004" width="5" height="13" fill="#22C55E" stroke="#16A34A" stroke-width="1.5" />
+<path d="M475.037037037037,326.59200000000004 L477.037037037037,326.59200000000004" fill="none" stroke="#16A34A" />
+<path d="M482.037037037037,313.59200000000004 L484.037037037037,313.59200000000004" fill="none" stroke="#16A34A" />
+</g>
+<g data-role="bid-volume" data-bucket="35" data-direction="up">
+<rect x="477.037037037037" y="496" width="5" height="22" fill="#22C55E" stroke="#16A34A" />
+</g>
+<g data-role="bid-candle" data-bucket="36" data-direction="down">
+<path d="M491.1666666666667,318.872 L491.1666666666667,342.872" fill="none" stroke="#EF4444" />
+<rect x="488.6666666666667" y="327.872" width="5" height="6" fill="#F87171" stroke="#EF4444" stroke-width="1.5" />
+<path d="M486.6666666666667,327.872 L488.6666666666667,327.872" fill="none" stroke="#EF4444" />
+<path d="M493.6666666666667,333.872 L495.6666666666667,333.872" fill="none" stroke="#EF4444" />
+</g>
+<g data-role="bid-volume" data-bucket="36" data-direction="down">
+<rect x="488.6666666666667" y="479" width="5" height="39" fill="#F87171" stroke="#EF4444" />
+</g>
+<g data-role="bid-candle" data-bucket="37" data-direction="up">
+<path d="M502.7962962962963,287.86400000000003 L502.7962962962963,318.86400000000003" fill="none" stroke="#16A34A" />
+<rect x="500.2962962962963" y="296.86400000000003" width="5" height="13" fill="#22C55E" stroke="#16A34A" stroke-width="1.5" />
+<path d="M498.2962962962963,309.86400000000003 L500.2962962962963,309.86400000000003" fill="none" stroke="#16A34A" />
+<path d="M505.2962962962963,296.86400000000003 L507.2962962962963,296.86400000000003" fill="none" stroke="#16A34A" />
+</g>
+<g data-role="bid-volume" data-bucket="37" data-direction="up">
+<rect x="500.2962962962963" y="462" width="5" height="56" fill="#22C55E" stroke="#16A34A" />
+</g>
+<g data-role="bid-candle" data-bucket="38" data-direction="up">
+<path d="M514.4259259259259,302.144 L514.4259259259259,326.144" fill="none" stroke="#16A34A" />
+<rect x="511.9259259259259" y="311.144" width="5" height="6" fill="#22C55E" stroke="#16A34A" stroke-width="1.5" />
+<path d="M509.9259259259259,317.144 L511.9259259259259,317.144" fill="none" stroke="#16A34A" />
+<path d="M516.9259259259259,311.144 L518.9259259259259,311.144" fill="none" stroke="#16A34A" />
+</g>
+<g data-role="bid-volume" data-bucket="38" data-direction="up">
+<rect x="511.9259259259259" y="498" width="5" height="20" fill="#22C55E" stroke="#16A34A" />
+</g>
+<g data-role="bid-candle" data-bucket="39" data-direction="down">
+<path d="M526.0555555555555,316.424 L526.0555555555555,347.424" fill="none" stroke="#EF4444" />
+<rect x="523.5555555555555" y="325.424" width="5" height="13" fill="#F87171" stroke="#EF4444" stroke-width="1.5" />
+<path d="M521.5555555555555,325.424 L523.5555555555555,325.424" fill="none" stroke="#EF4444" />
+<path d="M528.5555555555555,338.424 L530.5555555555555,338.424" fill="none" stroke="#EF4444" />
+</g>
+<g data-role="bid-volume" data-bucket="39" data-direction="down">
+<rect x="523.5555555555555" y="481" width="5" height="37" fill="#F87171" stroke="#EF4444" />
+</g>
+<g data-role="bid-candle" data-bucket="40" data-direction="up">
+<path d="M537.6851851851852,285.416 L537.6851851851852,309.416" fill="none" stroke="#16A34A" />
+<rect x="535.1851851851852" y="294.416" width="5" height="6" fill="#22C55E" stroke="#16A34A" stroke-width="1.5" />
+<path d="M533.1851851851852,300.416 L535.1851851851852,300.416" fill="none" stroke="#16A34A" />
+<path d="M540.1851851851852,294.416 L542.1851851851852,294.416" fill="none" stroke="#16A34A" />
+</g>
+<g data-role="bid-volume" data-bucket="40" data-direction="up">
+<rect x="535.1851851851852" y="464" width="5" height="54" fill="#22C55E" stroke="#16A34A" />
+</g>
+<g data-role="bid-candle" data-bucket="41" data-direction="up">
+<path d="M549.3148148148148,299.696 L549.3148148148148,330.696" fill="none" stroke="#16A34A" />
+<rect x="546.8148148148148" y="308.696" width="5" height="13" fill="#22C55E" stroke="#16A34A" stroke-width="1.5" />
+<path d="M544.8148148148148,321.696 L546.8148148148148,321.696" fill="none" stroke="#16A34A" />
+<path d="M551.8148148148148,308.696 L553.8148148148148,308.696" fill="none" stroke="#16A34A" />
+</g>
+<g data-role="bid-volume" data-bucket="41" data-direction="up">
+<rect x="546.8148148148148" y="500" width="5" height="18" fill="#22C55E" stroke="#16A34A" />
+</g>
+<g data-role="bid-candle" data-bucket="42" data-direction="down">
+<path d="M560.9444444444445,313.97600000000006 L560.9444444444445,337.97600000000006" fill="none" stroke="#EF4444" />
+<rect x="558.4444444444445" y="322.97600000000006" width="5" height="6" fill="#F87171" stroke="#EF4444" stroke-width="1.5" />
+<path d="M556.4444444444445,322.97600000000006 L558.4444444444445,322.97600000000006" fill="none" stroke="#EF4444" />
+<path d="M563.4444444444445,328.97600000000006 L565.4444444444445,328.97600000000006" fill="none" stroke="#EF4444" />
+</g>
+<g data-role="bid-volume" data-bucket="42" data-direction="down">
+<rect x="558.4444444444445" y="483" width="5" height="35" fill="#F87171" stroke="#EF4444" />
+</g>
+<g data-role="bid-candle" data-bucket="43" data-direction="up">
+<path d="M572.5740740740741,282.968 L572.5740740740741,313.968" fill="none" stroke="#16A34A" />
+<rect x="570.0740740740741" y="291.968" width="5" height="13" fill="#22C55E" stroke="#16A34A" stroke-width="1.5" />
+<path d="M568.0740740740741,304.968 L570.0740740740741,304.968" fill="none" stroke="#16A34A" />
+<path d="M575.0740740740741,291.968 L577.0740740740741,291.968" fill="none" stroke="#16A34A" />
+</g>
+<g data-role="bid-volume" data-bucket="43" data-direction="up">
+<rect x="570.0740740740741" y="466" width="5" height="52" fill="#22C55E" stroke="#16A34A" />
+</g>
+<g data-role="bid-candle" data-bucket="44" data-direction="up">
+<path d="M584.2037037037037,297.24800000000005 L584.2037037037037,321.24800000000005" fill="none" stroke="#16A34A" />
+<rect x="581.7037037037037" y="306.24800000000005" width="5" height="6" fill="#22C55E" stroke="#16A34A" stroke-width="1.5" />
+<path d="M579.7037037037037,312.24800000000005 L581.7037037037037,312.24800000000005" fill="none" stroke="#16A34A" />
+<path d="M586.7037037037037,306.24800000000005 L588.7037037037037,306.24800000000005" fill="none" stroke="#16A34A" />
+</g>
+<g data-role="bid-volume" data-bucket="44" data-direction="up">
+<rect x="581.7037037037037" y="502" width="5" height="16" fill="#22C55E" stroke="#16A34A" />
+</g>
+<g data-role="bid-candle" data-bucket="45" data-direction="down">
+<path d="M595.8333333333334,311.528 L595.8333333333334,342.528" fill="none" stroke="#EF4444" />
+<rect x="593.3333333333334" y="320.528" width="5" height="13" fill="#F87171" stroke="#EF4444" stroke-width="1.5" />
+<path d="M591.3333333333334,320.528 L593.3333333333334,320.528" fill="none" stroke="#EF4444" />
+<path d="M598.3333333333334,333.528 L600.3333333333334,333.528" fill="none" stroke="#EF4444" />
+</g>
+<g data-role="bid-volume" data-bucket="45" data-direction="down">
+<rect x="593.3333333333334" y="485" width="5" height="33" fill="#F87171" stroke="#EF4444" />
+</g>
+<g data-role="bid-candle" data-bucket="46" data-direction="up">
+<path d="M607.4629629629629,280.52000000000004 L607.4629629629629,304.52000000000004" fill="none" stroke="#16A34A" />
+<rect x="604.9629629629629" y="289.52000000000004" width="5" height="6" fill="#22C55E" stroke="#16A34A" stroke-width="1.5" />
+<path d="M602.9629629629629,295.52000000000004 L604.9629629629629,295.52000000000004" fill="none" stroke="#16A34A" />
+<path d="M609.9629629629629,289.52000000000004 L611.9629629629629,289.52000000000004" fill="none" stroke="#16A34A" />
+</g>
+<g data-role="bid-volume" data-bucket="46" data-direction="up">
+<rect x="604.9629629629629" y="468" width="5" height="50" fill="#22C55E" stroke="#16A34A" />
+</g>
+<g data-role="bid-candle" data-bucket="47" data-direction="up">
+<path d="M619.0925925925926,294.8 L619.0925925925926,325.8" fill="none" stroke="#16A34A" />
+<rect x="616.5925925925926" y="303.8" width="5" height="13" fill="#22C55E" stroke="#16A34A" stroke-width="1.5" />
+<path d="M614.5925925925926,316.8 L616.5925925925926,316.8" fill="none" stroke="#16A34A" />
+<path d="M621.5925925925926,303.8 L623.5925925925926,303.8" fill="none" stroke="#16A34A" />
+</g>
+<g data-role="bid-volume" data-bucket="47" data-direction="up">
+<rect x="616.5925925925926" y="504" width="5" height="14" fill="#22C55E" stroke="#16A34A" />
+</g>
+<g data-role="bid-candle" data-bucket="48" data-direction="down">
+<path d="M630.7222222222222,309.08000000000004 L630.7222222222222,333.08000000000004" fill="none" stroke="#EF4444" />
+<rect x="628.2222222222222" y="318.08000000000004" width="5" height="6" fill="#F87171" stroke="#EF4444" stroke-width="1.5" />
+<path d="M626.2222222222222,318.08000000000004 L628.2222222222222,318.08000000000004" fill="none" stroke="#EF4444" />
+<path d="M633.2222222222222,324.08000000000004 L635.2222222222222,324.08000000000004" fill="none" stroke="#EF4444" />
+</g>
+<g data-role="bid-volume" data-bucket="48" data-direction="down">
+<rect x="628.2222222222222" y="487" width="5" height="31" fill="#F87171" stroke="#EF4444" />
+</g>
+<g data-role="bid-candle" data-bucket="49" data-direction="up">
+<path d="M642.3518518518518,278.072 L642.3518518518518,309.072" fill="none" stroke="#16A34A" />
+<rect x="639.8518518518518" y="287.072" width="5" height="13" fill="#22C55E" stroke="#16A34A" stroke-width="1.5" />
+<path d="M637.8518518518518,300.072 L639.8518518518518,300.072" fill="none" stroke="#16A34A" />
+<path d="M644.8518518518518,287.072 L646.8518518518518,287.072" fill="none" stroke="#16A34A" />
+</g>
+<g data-role="bid-volume" data-bucket="49" data-direction="up">
+<rect x="639.8518518518518" y="470" width="5" height="48" fill="#22C55E" stroke="#16A34A" />
+</g>
+<g data-role="bid-candle" data-bucket="50" data-direction="up">
+<path d="M653.9814814814815,292.35200000000003 L653.9814814814815,316.35200000000003" fill="none" stroke="#16A34A" />
+<rect x="651.4814814814815" y="301.35200000000003" width="5" height="6" fill="#22C55E" stroke="#16A34A" stroke-width="1.5" />
+<path d="M649.4814814814815,307.35200000000003 L651.4814814814815,307.35200000000003" fill="none" stroke="#16A34A" />
+<path d="M656.4814814814815,301.35200000000003 L658.4814814814815,301.35200000000003" fill="none" stroke="#16A34A" />
+</g>
+<g data-role="bid-volume" data-bucket="50" data-direction="up">
+<rect x="651.4814814814815" y="506" width="5" height="12" fill="#22C55E" stroke="#16A34A" />
+</g>
+<g data-role="bid-candle" data-bucket="51" data-direction="down">
+<path d="M665.6111111111111,306.632 L665.6111111111111,337.632" fill="none" stroke="#EF4444" />
+<rect x="663.1111111111111" y="315.632" width="5" height="13" fill="#F87171" stroke="#EF4444" stroke-width="1.5" />
+<path d="M661.1111111111111,315.632 L663.1111111111111,315.632" fill="none" stroke="#EF4444" />
+<path d="M668.1111111111111,328.632 L670.1111111111111,328.632" fill="none" stroke="#EF4444" />
+</g>
+<g data-role="bid-volume" data-bucket="51" data-direction="down">
+<rect x="663.1111111111111" y="489" width="5" height="29" fill="#F87171" stroke="#EF4444" />
+</g>
+<g data-role="bid-candle" data-bucket="52" data-direction="up">
+<path d="M677.2407407407408,275.6240000000001 L677.2407407407408,299.6240000000001" fill="none" stroke="#16A34A" />
+<rect x="674.7407407407408" y="284.6240000000001" width="5" height="6" fill="#22C55E" stroke="#16A34A" stroke-width="1.5" />
+<path d="M672.7407407407408,290.6240000000001 L674.7407407407408,290.6240000000001" fill="none" stroke="#16A34A" />
+<path d="M679.7407407407408,284.6240000000001 L681.7407407407408,284.6240000000001" fill="none" stroke="#16A34A" />
+</g>
+<g data-role="bid-volume" data-bucket="52" data-direction="up">
+<rect x="674.7407407407408" y="472" width="5" height="46" fill="#22C55E" stroke="#16A34A" />
+</g>
+<g data-role="bid-candle" data-bucket="53" data-direction="up">
+<path d="M688.8703703703703,289.90400000000005 L688.8703703703703,320.90400000000005" fill="none" stroke="#16A34A" />
+<rect x="686.3703703703703" y="298.90400000000005" width="5" height="13" fill="#22C55E" stroke="#16A34A" stroke-width="1.5" />
+<path d="M684.3703703703703,311.90400000000005 L686.3703703703703,311.90400000000005" fill="none" stroke="#16A34A" />
+<path d="M691.3703703703703,298.90400000000005 L693.3703703703703,298.90400000000005" fill="none" stroke="#16A34A" />
+</g>
+<g data-role="bid-volume" data-bucket="53" data-direction="up">
+<rect x="686.3703703703703" y="508" width="5" height="10" fill="#22C55E" stroke="#16A34A" />
+</g>
+<text x="62" y="433" class="meta">Volume · Bid · provider-qualified</text>
+<text x="62" y="130" class="meta">Bid: filled body · open left / close right ticks</text>
+<text x="62" y="150" class="meta">Rising: green · Falling: red · open left / close right</text>
+<path d="M730.0,110 L730.0,518" fill="none" stroke="#D1D4DC" stroke-dasharray="4 4" />
+<text x="598.0" y="128" class="meta">Run cursor 09:42</text>
+<text x="74.0" y="539" class="meta">09:00</text>
+<text x="256.5" y="539" class="meta">09:10</text>
+<text x="439.0" y="539" class="meta">09:20</text>
+<text x="621.5" y="539" class="meta">09:30</text>
+<g data-role="chart-range-controls" aria-label="Chart date and viewport range" data-surface="toolbar">
+<rect x="48" y="552" width="868" height="36" fill="#151619" stroke="#2A2B30" stroke-width="1" />
+<g role="img" aria-label="View range 1D"><title>View range 1D</title>
+<text x="58" y="576" class="meta">1D</text>
+</g>
+<g role="img" aria-label="View range 5D"><title>View range 5D</title>
+<text x="90" y="576" class="meta">5D</text>
+</g>
+<g role="img" aria-label="View range 1M"><title>View range 1M</title>
+<text x="122" y="576" class="meta">1M</text>
+</g>
+<g role="img" aria-label="View range 3M"><title>View range 3M</title>
+<text x="154" y="576" class="meta">3M</text>
+</g>
+<g role="img" aria-label="View range 6M"><title>View range 6M</title>
+<text x="186" y="576" class="meta">6M</text>
+</g>
+<g role="img" aria-label="View range YTD"><title>View range YTD</title>
+<text x="218" y="576" class="meta">YTD</text>
+</g>
+<g role="img" aria-label="View range 1Y"><title>View range 1Y</title>
+<text x="250" y="576" class="meta">1Y</text>
+</g>
+<g role="img" aria-label="View range 5Y"><title>View range 5Y</title>
+<text x="282" y="576" class="meta">5Y</text>
+</g>
+<g role="img" aria-label="View range All"><title>View range All</title>
+<text x="314" y="576" class="meta">All</text>
+</g>
+<path d="M346,559 L346,581" fill="none" stroke="#2A2B30" />
+<g role="img" aria-label="Go to date or custom range"><title>Go to date or custom range</title>
+<rect x="352" y="556" width="30" height="28" fill="#151619" stroke="#2A2B30" stroke-width="1" />
+<path transform="translate(357,559)" d="M2 4 H19 V21 H2 Z M2 9 H19 M6 1 V6 M15 1 V6 M12 13 H17 M15 11 L18 14 L15 17" fill="none" stroke="#D1D4DC" />
+</g>
+<text x="760" y="576" class="meta">09:42:00 UTC</text>
+</g>
+</g>
+<g data-role="context-drawer">
+<rect x="916" y="44" width="320" height="730" fill="#151619" stroke="#2A2B30" stroke-width="1" />
+<text x="928" y="71" class="heading">Paper trading · replay</text>
+<text x="1212" y="70" class="heading">×</text>
+<path d="M916,86 L1236,86" fill="none" stroke="#2A2B30" />
+<text x="928" y="116" class="meta">Run R-014 · Paused · USD</text>
+<text x="928" y="142" class="meta">Cursor 09:42 · completed decision</text>
+<text x="928" y="172" class="meta">Order</text>
+<rect x="928" y="180" width="296" height="30" fill="#151619" stroke="#2A2B30" stroke-width="1" rx="4" />
+<text x="936" y="200" class="meta">Morning review / v12</text>
+<text x="928" y="234" class="meta">Instruction state</text>
+<rect x="928" y="242" width="296" height="30" fill="#151619" stroke="#2A2B30" stroke-width="1" rx="4" />
+<text x="936" y="262" class="meta">Accepted waiting · not filled</text>
+<text x="928" y="296" class="meta">Type / direction</text>
+<rect x="928" y="304" width="296" height="30" fill="#151619" stroke="#2A2B30" stroke-width="1" rx="4" />
+<text x="936" y="324" class="meta">[type] / Buy</text>
+<text x="928" y="358" class="meta">Quantity</text>
+<rect x="928" y="366" width="296" height="30" fill="#151619" stroke="#2A2B30" stroke-width="1" rx="4" />
+<text x="936" y="386" class="meta">[units]</text>
+<text x="928" y="420" class="meta">Level / SL / TP</text>
+<rect x="928" y="428" width="296" height="30" fill="#151619" stroke="#2A2B30" stroke-width="1" rx="4" />
+<text x="936" y="448" class="meta">Not set</text>
+<text x="928" y="481" class="meta">Planned risk Unavailable · Fees Unavailable</text>
+<text x="928" y="505" class="meta">After decision · accepted ≠ filled</text>
+<text x="928" y="529" class="meta">Buy uses ask · Sell uses bid</text>
+<rect x="926" y="600" width="300" height="88" fill="#151619" stroke="#2A2B30" stroke-width="1" />
+<text x="936" y="620" class="body" style="fill:#D1D4DC">Accepted waiting: instruction recorded;</text>
+<text x="936" y="640" class="body" style="fill:#D1D4DC">no fill claimed</text>
+<g data-control="Modify order" aria-disabled="false">
+<rect x="928" y="700" width="296" height="30" fill="#151619" stroke="#2A2B30" stroke-width="1" rx="4" />
+<text x="936" y="720" class="control">Modify order</text>
+</g>
+<g data-control="Cancel selected order" aria-disabled="false">
+<rect x="928" y="736" width="296" height="30" fill="#151619" stroke="#2A2B30" stroke-width="1" rx="4" />
+<text x="936" y="756" class="control">Cancel selected order</text>
+</g>
+</g>
+<g data-role="floating-replay-bar" data-surface="toolbar">
+<rect x="63.0" y="496" width="844" height="40" rx="6" fill="#151619" />
+<rect x="60.0" y="492" width="844" height="40" rx="6" fill="#151619" stroke="#2A2B30" />
+<circle cx="72.0" cy="506" r="1" fill="#2A2B30" />
+<circle cx="76.0" cy="506" r="1" fill="#2A2B30" />
+<circle cx="72.0" cy="512" r="1" fill="#2A2B30" />
+<circle cx="76.0" cy="512" r="1" fill="#2A2B30" />
+<circle cx="72.0" cy="518" r="1" fill="#2A2B30" />
+<circle cx="76.0" cy="518" r="1" fill="#2A2B30" />
+<g data-control="Start bar" aria-disabled="false"><title>Start bar</title>
+<text x="89.0" y="517" class="control">Start bar</text>
+</g>
+<g data-control="Play" aria-disabled="false"><title>Play</title>
+<path d="M173.0 505 L173.0 519 L184.0 512 Z" fill="#D1D4DC" />
+</g>
+<g data-control="Step" aria-disabled="false"><title>Step</title>
+<path d="M200.0 505 L200.0 519 L210.0 512 Z M213.0 505 V519" fill="#D1D4DC" stroke="#D1D4DC" />
+</g>
+<g data-control="Speed v" aria-disabled="false"><title>Speed v</title>
+<text x="229.0" y="517" class="control">Speed</text>
+</g>
+<path d="M274.0,500 L274.0,524" fill="none" stroke="#2A2B30" />
+<g data-control="[replay time]" aria-disabled="false"><title>[replay time]</title>
+<text x="289.0" y="517" class="control">09:42 UTC</text>
+</g>
+<g data-control="[bars left]" aria-disabled="false"><title>[bars left]</title>
+<text x="397.0" y="517" class="control">Bars: —</text>
+</g>
+<path d="M482.0,500 L482.0,524" fill="none" stroke="#2A2B30" />
+<g data-control="Sell" aria-disabled="true"><title>Sell</title>
+<rect x="490.0" y="498" width="44" height="28" rx="4" fill="#FEE2E2" stroke="#7F1D1D" stroke-dasharray="4 3" />
+<text x="495.0" y="517" class="control" style="fill:#7F1D1D">Sell</text>
+<path d="M494.0 525 H530.0" stroke="#7F1D1D" stroke-dasharray="2 2" />
+</g>
+<g data-control="[quantity]" aria-disabled="true"><title>[quantity]</title>
+<text x="541.0" y="517" class="control" style="fill:#D1D4DC">10,000</text>
+<path d="M540.0 525 H598.0" stroke="#2A2B30" stroke-dasharray="2 2" />
+</g>
+<g data-control="Units v" aria-disabled="false"><title>Units v</title>
+<text x="609.0" y="517" class="control">Units v</text>
+</g>
+<g data-control="Buy" aria-disabled="true" data-selected="true"><title>Buy</title>
+<rect x="662.0" y="498" width="44" height="28" rx="4" fill="#DCFCE7" stroke="#14532D" stroke-width="2" stroke-dasharray="4 3" />
+<text x="667.0" y="517" class="control" style="fill:#14532D">Buy</text>
+<path d="M666.0 525 H702.0" stroke="#14532D" stroke-dasharray="2 2" />
+<path d="M667.0,504.0 v18" stroke="#14532D" stroke-width="2" fill="none" /></g>
+<g data-control="P/L [USD]" aria-disabled="false"><title>P/L [USD]</title>
+<text x="715.0" y="517" class="control">P/L —</text>
+</g>
+<g data-control="Pin" aria-disabled="false"><title>Pin</title>
+<path d="M788.0 504 H798.0 M791.0 504 V512 L787.0 516 H799.0 L795.0 512 V504 M793.0 516 V522" fill="none" stroke="#D1D4DC" />
+</g>
+<g data-control="×" aria-disabled="false"><title>×</title>
+<text x="813.0" y="517" class="control">×</text>
+</g>
+</g>
+<g data-role="bottom-dock">
+<rect x="48" y="588" width="868" height="186" fill="#151619" stroke="#2A2B30" stroke-width="1" />
+<text x="60" y="612" class="meta">Positions   |   Orders   |   Results / executions</text>
+<text x="858" y="612" class="meta">—   ×</text>
+<path d="M48,626 L916,626" fill="none" stroke="#2A2B30" />
+<text x="60" y="650" class="meta">Run R-014 · cursor 09:42 · original basis D-006 · USD</text>
+<text x="65.36" y="679" class="meta">Target</text>
+<text x="247.64000000000001" y="679" class="meta">Side</text>
+<text x="360.47999999999996" y="679" class="meta">Quantity</text>
+<text x="490.68" y="679" class="meta">State / protection</text>
+<text x="707.6800000000001" y="679" class="meta">Fees / result USD</text>
+<path d="M58,688 L906,688" fill="none" stroke="#2A2B30" />
+<text x="65.36" y="712" class="meta">R-014</text>
+<text x="247.64000000000001" y="712" class="meta">[Buy / Sell]</text>
+<text x="360.47999999999996" y="712" class="meta">[units]</text>
+<text x="490.68" y="712" class="meta">[recorded state]</text>
+<text x="707.6800000000001" y="712" class="meta">[USD / reason]</text>
+<text x="60" y="757" class="meta">Selected target details &gt;    ASM-01 stop-first / ASM-02 full-fill and bar-touch · provenance &gt;</text>
+</g>
+<rect x="0" y="774" width="1280" height="26" fill="#151619" stroke="#2A2B30" stroke-width="1" data-surface="toolbar" />
+<text x="10" y="792" class="meta" data-surface="toolbar">Feed [condition] · Working [v] / Saved [v] · Save / authority detail &gt;</text>
+</g>
+</svg>

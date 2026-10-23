@@ -1,0 +1,735 @@
+{
+  "format_version": "1.0.0",
+  "types": {
+    "string": "Arrow utf8 / Parquet BYTE_ARRAY annotated STRING",
+    "int64": "Arrow signed int64 / Parquet INT64",
+    "float64": "Arrow double / Parquet DOUBLE"
+  },
+  "common_rules": {
+    "exact_columns": true,
+    "field_order": "as listed",
+    "metadata": "Parquet key/value metadata bv.contract=run-bundle/1.0.0 and bv.section=<section name>",
+    "one_row_group_per_shard": true,
+    "max_rows_per_shard": 4096,
+    "max_file_bytes": 8388608,
+    "max_uncompressed_bytes": 16777216,
+    "compression": [
+      "UNCOMPRESSED",
+      "ZSTD"
+    ],
+    "parquet_version": "2.6",
+    "nullability": "Exact REQUIRED/OPTIONAL repetition matches nullable; nullable column must exist even if entirely null.",
+    "timestamp": "YYYY-MM-DDTHH:MM:SS.nnnnnnnnnZ, year 1970..9999, valid Gregorian date, no leap seconds.",
+    "sequence_max": 9007199254740991
+  },
+  "sections": {
+    "trade_facts": {
+      "optional": false,
+      "time_field": "known_at_utc",
+      "entity_field": "execution_id",
+      "state_index": false,
+      "fields": [
+        {
+          "name": "fact_id",
+          "type": "string",
+          "nullable": false,
+          "meaning": "Stable section-scoped immutable fact ID."
+        },
+        {
+          "name": "known_at_utc",
+          "type": "string",
+          "nullable": false,
+          "meaning": "Exact runner knowledge instant; gates containing-minute replay."
+        },
+        {
+          "name": "sequence_num",
+          "type": "int64",
+          "nullable": false,
+          "meaning": "Nonnegative integer, unique per section and reveal minute."
+        },
+        {
+          "name": "execution_id",
+          "type": "string",
+          "nullable": false,
+          "meaning": "Unique fill ID; equals fact_id."
+        },
+        {
+          "name": "position_id",
+          "type": "string",
+          "nullable": false,
+          "meaning": "Logical position ID, required; reversal opens a new ID."
+        },
+        {
+          "name": "timestamp_utc",
+          "type": "string",
+          "nullable": false,
+          "meaning": "Fill occurrence instant, no later than known_at_utc."
+        },
+        {
+          "name": "side",
+          "type": "string",
+          "nullable": false,
+          "meaning": "BUY or SELL execution side."
+        },
+        {
+          "name": "action",
+          "type": "string",
+          "nullable": false,
+          "meaning": "ENTRY, SCALE_IN, SCALE_OUT, or EXIT; ENTRY begins and EXIT terminates position."
+        },
+        {
+          "name": "quantity",
+          "type": "float64",
+          "nullable": false,
+          "meaning": "Positive per-fill quantity in manifest quantity_unit."
+        },
+        {
+          "name": "price",
+          "type": "float64",
+          "nullable": false,
+          "meaning": "Finite execution price in instrument price_unit; zero/negative allowed."
+        },
+        {
+          "name": "realized_gross_pnl",
+          "type": "float64",
+          "nullable": true,
+          "meaning": "Incremental realized amount in account_currency; null means not supplied."
+        },
+        {
+          "name": "commission",
+          "type": "float64",
+          "nullable": true,
+          "meaning": "Account-currency debit positive, rebate negative; null unknown, zero explicitly none."
+        },
+        {
+          "name": "other_costs",
+          "type": "float64",
+          "nullable": true,
+          "meaning": "Incremental other account-currency debits or credits; null unknown."
+        },
+        {
+          "name": "strategy_id",
+          "type": "string",
+          "nullable": true,
+          "meaning": "Emitted strategy attribution; null unassigned and not matched by a strategy filter."
+        },
+        {
+          "name": "setup_id",
+          "type": "string",
+          "nullable": true,
+          "meaning": "Opaque run-scoped setup grouping token, not a catalogue reference."
+        },
+        {
+          "name": "session_id",
+          "type": "string",
+          "nullable": true,
+          "meaning": "Optional emitted session association."
+        },
+        {
+          "name": "metadata_json",
+          "type": "string",
+          "nullable": false,
+          "meaning": "Strict JSON object containing information already known at known_at_utc."
+        }
+      ]
+    },
+    "position_history": {
+      "optional": true,
+      "time_field": "known_at_utc",
+      "entity_field": "position_id",
+      "state_index": true,
+      "fields": [
+        {
+          "name": "fact_id",
+          "type": "string",
+          "nullable": false,
+          "meaning": "Stable section-scoped immutable fact ID."
+        },
+        {
+          "name": "known_at_utc",
+          "type": "string",
+          "nullable": false,
+          "meaning": "Exact runner knowledge instant; gates containing-minute replay."
+        },
+        {
+          "name": "sequence_num",
+          "type": "int64",
+          "nullable": false,
+          "meaning": "Nonnegative integer, unique per section and reveal minute."
+        },
+        {
+          "name": "position_id",
+          "type": "string",
+          "nullable": false,
+          "meaning": "Stable logical position ID."
+        },
+        {
+          "name": "action",
+          "type": "string",
+          "nullable": false,
+          "meaning": "OPEN, UPDATE or CLOSE; full replacement snapshot."
+        },
+        {
+          "name": "direction",
+          "type": "string",
+          "nullable": false,
+          "meaning": "LONG or SHORT, immutable."
+        },
+        {
+          "name": "entry_execution_id",
+          "type": "string",
+          "nullable": false,
+          "meaning": "First ENTRY execution reference."
+        },
+        {
+          "name": "last_execution_id",
+          "type": "string",
+          "nullable": false,
+          "meaning": "Most recent execution reflected in this snapshot."
+        },
+        {
+          "name": "entry_time_utc",
+          "type": "string",
+          "nullable": false,
+          "meaning": "Producer-supplied entry occurrence, immutable."
+        },
+        {
+          "name": "entry_price",
+          "type": "float64",
+          "nullable": false,
+          "meaning": "Producer-supplied initial execution price, immutable."
+        },
+        {
+          "name": "initial_quantity",
+          "type": "float64",
+          "nullable": false,
+          "meaning": "Positive first-fill quantity, immutable."
+        },
+        {
+          "name": "open_quantity",
+          "type": "float64",
+          "nullable": false,
+          "meaning": "Nonnegative current position size; CLOSE requires zero."
+        },
+        {
+          "name": "total_entry_quantity",
+          "type": "float64",
+          "nullable": false,
+          "meaning": "Producer-supplied cumulative entry quantity so far."
+        },
+        {
+          "name": "total_exit_quantity",
+          "type": "float64",
+          "nullable": false,
+          "meaning": "Producer-supplied cumulative exit quantity so far."
+        },
+        {
+          "name": "realized_net_pnl",
+          "type": "float64",
+          "nullable": true,
+          "meaning": "Producer-supplied realized net amount known so far."
+        },
+        {
+          "name": "net_pnl",
+          "type": "float64",
+          "nullable": true,
+          "meaning": "Final producer-supplied net outcome; null except CLOSE."
+        },
+        {
+          "name": "exit_time_utc",
+          "type": "string",
+          "nullable": true,
+          "meaning": "Final exit occurrence; null except CLOSE."
+        },
+        {
+          "name": "duration_seconds",
+          "type": "float64",
+          "nullable": true,
+          "meaning": "Producer-supplied holding seconds; null except CLOSE."
+        },
+        {
+          "name": "strategy_id",
+          "type": "string",
+          "nullable": true,
+          "meaning": "Immutable attribution."
+        },
+        {
+          "name": "setup_id",
+          "type": "string",
+          "nullable": true,
+          "meaning": "Immutable opaque setup token."
+        },
+        {
+          "name": "session_id",
+          "type": "string",
+          "nullable": true,
+          "meaning": "Immutable optional session association."
+        },
+        {
+          "name": "metadata_json",
+          "type": "string",
+          "nullable": false,
+          "meaning": "Strict JSON object known at this snapshot."
+        }
+      ]
+    },
+    "strategy_events": {
+      "optional": true,
+      "time_field": "known_at_utc",
+      "entity_field": "event_id",
+      "state_index": false,
+      "fields": [
+        {
+          "name": "fact_id",
+          "type": "string",
+          "nullable": false,
+          "meaning": "Stable section-scoped immutable fact ID."
+        },
+        {
+          "name": "known_at_utc",
+          "type": "string",
+          "nullable": false,
+          "meaning": "Exact runner knowledge instant; gates containing-minute replay."
+        },
+        {
+          "name": "sequence_num",
+          "type": "int64",
+          "nullable": false,
+          "meaning": "Nonnegative integer, unique per section and reveal minute."
+        },
+        {
+          "name": "event_id",
+          "type": "string",
+          "nullable": false,
+          "meaning": "Unique event ID; equals fact_id."
+        },
+        {
+          "name": "timestamp_utc",
+          "type": "string",
+          "nullable": false,
+          "meaning": "Occurrence no later than knowledge."
+        },
+        {
+          "name": "event_type",
+          "type": "string",
+          "nullable": false,
+          "meaning": "Open producer-defined classification; never a geometry instruction."
+        },
+        {
+          "name": "message",
+          "type": "string",
+          "nullable": true,
+          "meaning": "Inert human-readable explanation."
+        },
+        {
+          "name": "position_id",
+          "type": "string",
+          "nullable": true,
+          "meaning": "Optional execution-position association."
+        },
+        {
+          "name": "execution_id",
+          "type": "string",
+          "nullable": true,
+          "meaning": "Optional fill reference."
+        },
+        {
+          "name": "strategy_id",
+          "type": "string",
+          "nullable": true,
+          "meaning": "Optional emitted strategy reference."
+        },
+        {
+          "name": "setup_id",
+          "type": "string",
+          "nullable": true,
+          "meaning": "Opaque setup token."
+        },
+        {
+          "name": "session_id",
+          "type": "string",
+          "nullable": true,
+          "meaning": "Optional emitted session reference."
+        },
+        {
+          "name": "metadata_json",
+          "type": "string",
+          "nullable": false,
+          "meaning": "Strict JSON object with no knowledge later than this fact."
+        }
+      ]
+    },
+    "visual_history": {
+      "optional": true,
+      "time_field": "known_at_utc",
+      "entity_field": "visual_id",
+      "state_index": true,
+      "fields": [
+        {
+          "name": "fact_id",
+          "type": "string",
+          "nullable": false,
+          "meaning": "Stable section-scoped immutable fact ID."
+        },
+        {
+          "name": "known_at_utc",
+          "type": "string",
+          "nullable": false,
+          "meaning": "Exact runner knowledge instant; gates containing-minute replay."
+        },
+        {
+          "name": "sequence_num",
+          "type": "int64",
+          "nullable": false,
+          "meaning": "Nonnegative integer, unique per section and reveal minute."
+        },
+        {
+          "name": "visual_id",
+          "type": "string",
+          "nullable": false,
+          "meaning": "Logical visual ID; terminal removal cannot be reversed."
+        },
+        {
+          "name": "action",
+          "type": "string",
+          "nullable": false,
+          "meaning": "CREATE, UPDATE or REMOVE."
+        },
+        {
+          "name": "geometry_type",
+          "type": "string",
+          "nullable": true,
+          "meaning": "Exact declared primitive; null on REMOVE."
+        },
+        {
+          "name": "payload_json",
+          "type": "string",
+          "nullable": true,
+          "meaning": "Complete geometry/provenance/style JSON object; null on REMOVE."
+        },
+        {
+          "name": "removal_reason",
+          "type": "string",
+          "nullable": true,
+          "meaning": "Optional inert reason only on REMOVE."
+        },
+        {
+          "name": "session_id",
+          "type": "string",
+          "nullable": true,
+          "meaning": "Optional stable session association; never strategy attribution."
+        },
+        {
+          "name": "metadata_json",
+          "type": "string",
+          "nullable": false,
+          "meaning": "Strict JSON object known at the lifecycle change."
+        }
+      ]
+    },
+    "indicator_series": {
+      "optional": true,
+      "time_field": "known_at_utc",
+      "entity_field": "series_id",
+      "state_index": false,
+      "fields": [
+        {
+          "name": "fact_id",
+          "type": "string",
+          "nullable": false,
+          "meaning": "Stable section-scoped immutable fact ID."
+        },
+        {
+          "name": "known_at_utc",
+          "type": "string",
+          "nullable": false,
+          "meaning": "Exact runner knowledge instant; gates containing-minute replay."
+        },
+        {
+          "name": "sequence_num",
+          "type": "int64",
+          "nullable": false,
+          "meaning": "Nonnegative integer, unique per section and reveal minute."
+        },
+        {
+          "name": "series_id",
+          "type": "string",
+          "nullable": false,
+          "meaning": "Immutable series catalogue ID; fact_id equals series_id."
+        },
+        {
+          "name": "name",
+          "type": "string",
+          "nullable": false,
+          "meaning": "Inert producer name, such as EMA."
+        },
+        {
+          "name": "component",
+          "type": "string",
+          "nullable": false,
+          "meaning": "Component label; multi-component indicators use distinct series IDs."
+        },
+        {
+          "name": "unit",
+          "type": "string",
+          "nullable": false,
+          "meaning": "Declared value unit, such as instrument-price or ratio."
+        },
+        {
+          "name": "axis",
+          "type": "string",
+          "nullable": false,
+          "meaning": "PRICE or SEPARATE; PRICE requires instrument price units."
+        },
+        {
+          "name": "method_json",
+          "type": "string",
+          "nullable": false,
+          "meaning": "Strict explanatory object; no viewer calculation."
+        },
+        {
+          "name": "style_json",
+          "type": "string",
+          "nullable": false,
+          "meaning": "Strict cosmetic object; no interpolation/aggregation authority."
+        },
+        {
+          "name": "session_id",
+          "type": "string",
+          "nullable": true,
+          "meaning": "Optional session association; remains run-level."
+        },
+        {
+          "name": "metadata_json",
+          "type": "string",
+          "nullable": false,
+          "meaning": "Strict object known at series creation."
+        }
+      ]
+    },
+    "indicator_points": {
+      "optional": true,
+      "time_field": "sample_time_utc",
+      "entity_field": "series_id",
+      "state_index": false,
+      "fields": [
+        {
+          "name": "fact_id",
+          "type": "string",
+          "nullable": false,
+          "meaning": "Stable section-scoped immutable fact ID."
+        },
+        {
+          "name": "known_at_utc",
+          "type": "string",
+          "nullable": false,
+          "meaning": "Exact runner knowledge instant; gates containing-minute replay."
+        },
+        {
+          "name": "sequence_num",
+          "type": "int64",
+          "nullable": false,
+          "meaning": "Nonnegative integer, unique per section and reveal minute."
+        },
+        {
+          "name": "series_id",
+          "type": "string",
+          "nullable": false,
+          "meaning": "Reference to immutable indicator_series catalogue."
+        },
+        {
+          "name": "sample_time_utc",
+          "type": "string",
+          "nullable": false,
+          "meaning": "Sample coordinate no later than knowledge."
+        },
+        {
+          "name": "value",
+          "type": "float64",
+          "nullable": true,
+          "meaning": "Finite emitted scalar only when status is VALUE."
+        },
+        {
+          "name": "status",
+          "type": "string",
+          "nullable": false,
+          "meaning": "VALUE, WARMUP or GAP. WARMUP/GAP require null value."
+        },
+        {
+          "name": "metadata_json",
+          "type": "string",
+          "nullable": false,
+          "meaning": "Strict object known at the point; no retroactive replacement."
+        }
+      ]
+    },
+    "sessions": {
+      "optional": true,
+      "time_field": "known_at_utc",
+      "entity_field": "session_id",
+      "state_index": true,
+      "fields": [
+        {
+          "name": "fact_id",
+          "type": "string",
+          "nullable": false,
+          "meaning": "Stable section-scoped immutable fact ID."
+        },
+        {
+          "name": "known_at_utc",
+          "type": "string",
+          "nullable": false,
+          "meaning": "Exact runner knowledge instant; gates containing-minute replay."
+        },
+        {
+          "name": "sequence_num",
+          "type": "int64",
+          "nullable": false,
+          "meaning": "Nonnegative integer, unique per section and reveal minute."
+        },
+        {
+          "name": "session_id",
+          "type": "string",
+          "nullable": false,
+          "meaning": "Stable runner-defined session ID."
+        },
+        {
+          "name": "action",
+          "type": "string",
+          "nullable": false,
+          "meaning": "START or END; each completed session has exactly both."
+        },
+        {
+          "name": "boundary_time_utc",
+          "type": "string",
+          "nullable": false,
+          "meaning": "Historical start/end instant, no later than knowledge."
+        },
+        {
+          "name": "label",
+          "type": "string",
+          "nullable": false,
+          "meaning": "Stable inert session label."
+        },
+        {
+          "name": "metadata_json",
+          "type": "string",
+          "nullable": false,
+          "meaning": "Strict object known at this boundary."
+        }
+      ]
+    },
+    "equity_curve": {
+      "optional": true,
+      "time_field": "timestamp_utc",
+      "entity_field": "fact_id",
+      "state_index": false,
+      "fields": [
+        {
+          "name": "fact_id",
+          "type": "string",
+          "nullable": false,
+          "meaning": "Stable section-scoped immutable fact ID."
+        },
+        {
+          "name": "known_at_utc",
+          "type": "string",
+          "nullable": false,
+          "meaning": "Exact runner knowledge instant; gates containing-minute replay."
+        },
+        {
+          "name": "sequence_num",
+          "type": "int64",
+          "nullable": false,
+          "meaning": "Nonnegative integer, unique per section and reveal minute."
+        },
+        {
+          "name": "timestamp_utc",
+          "type": "string",
+          "nullable": false,
+          "meaning": "Sample coordinate no later than knowledge, unique in this section."
+        },
+        {
+          "name": "equity",
+          "type": "float64",
+          "nullable": false,
+          "meaning": "Producer-supplied mark-to-market account value including costs."
+        },
+        {
+          "name": "balance",
+          "type": "float64",
+          "nullable": false,
+          "meaning": "Producer-supplied realized account value including costs."
+        },
+        {
+          "name": "metadata_json",
+          "type": "string",
+          "nullable": false,
+          "meaning": "Strict JSON object. Entire section is report-gated until run end."
+        }
+      ]
+    },
+    "monthly_returns": {
+      "optional": true,
+      "time_field": "known_at_utc",
+      "entity_field": "fact_id",
+      "state_index": false,
+      "fields": [
+        {
+          "name": "fact_id",
+          "type": "string",
+          "nullable": false,
+          "meaning": "Stable section-scoped immutable fact ID."
+        },
+        {
+          "name": "known_at_utc",
+          "type": "string",
+          "nullable": false,
+          "meaning": "Exact runner knowledge instant; gates containing-minute replay."
+        },
+        {
+          "name": "sequence_num",
+          "type": "int64",
+          "nullable": false,
+          "meaning": "Nonnegative integer, unique per section and reveal minute."
+        },
+        {
+          "name": "year",
+          "type": "int64",
+          "nullable": false,
+          "meaning": "UTC calendar year 1970..9999."
+        },
+        {
+          "name": "month",
+          "type": "int64",
+          "nullable": false,
+          "meaning": "UTC month 1..12; year/month unique."
+        },
+        {
+          "name": "return_pct",
+          "type": "float64",
+          "nullable": true,
+          "meaning": "Percent points, 100*month net profit/month opening equity; null if base zero."
+        },
+        {
+          "name": "profit",
+          "type": "float64",
+          "nullable": false,
+          "meaning": "Net realized profit attributed by closing instant, account_currency."
+        },
+        {
+          "name": "trades_count",
+          "type": "int64",
+          "nullable": false,
+          "meaning": "Nonnegative completed position count attributed by closing instant."
+        },
+        {
+          "name": "metadata_json",
+          "type": "string",
+          "nullable": false,
+          "meaning": "Strict JSON object. Entire section report-gated until run end."
+        }
+      ]
+    }
+  }
+}

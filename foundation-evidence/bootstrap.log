@@ -1,0 +1,23 @@
+python scripts/foundation.py bootstrap
+Checked 27 packages in 23ms
+
+added 273 packages, and audited 275 packages in 4s
+
+61 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+
+> strat-scope-foundation@0.1.0 build
+> vite build
+
+vite v8.3.5 building client environment for production...
+transforming...
+✓ 18 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/index.html                   0.40 kB │ gzip:  0.28 kB
+dist/assets/index-BEDM5wWx.css    0.64 kB │ gzip:  0.36 kB
+dist/assets/index-Ds-f0MLI.js   221.89 kB │ gzip: 69.61 kB
+
+✓ built in 278ms

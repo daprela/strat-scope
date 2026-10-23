@@ -1,0 +1,67 @@
+{
+  "full": {
+    "format_version": "1.0.0",
+    "base_contract_valid": true,
+    "manifest_sha256": "cea8e1a8c0a1219f713ff62fe85016dae8772318f8786301ce40cedbd8d2e569",
+    "physical_rows": {
+      "trade_facts": 4,
+      "position_history": 4,
+      "strategy_events": 1,
+      "visual_history": 5,
+      "indicator_series": 1,
+      "indicator_points": 4,
+      "sessions": 4,
+      "equity_curve": 3,
+      "monthly_returns": 1
+    },
+    "semantic_facts": {
+      "trade_facts": 4,
+      "position_history": 4,
+      "strategy_events": 1,
+      "visual_history": 5,
+      "indicator_series": 1,
+      "indicator_points": 4,
+      "sessions": 4,
+      "equity_curve": 3,
+      "monthly_returns": 1
+    },
+    "opaque_optional_evidence": [],
+    "limits": [
+      "Does not verify strategy-result accuracy or historical knowledge truth.",
+      "Does not prove fsync/publication execution or producer connectedness.",
+      "Opaque optional extension internals are not base semantics.",
+      "Does not approve current viewer conformance or a production request ceiling."
+    ]
+  },
+  "empty": {
+    "format_version": "1.0.0",
+    "base_contract_valid": true,
+    "manifest_sha256": "a415f116f5dd741a064ba125598d8677360a03507977737a2c7e0cf69b822962",
+    "physical_rows": {
+      "trade_facts": 0
+    },
+    "semantic_facts": {
+      "trade_facts": 0
+    },
+    "opaque_optional_evidence": [],
+    "limits": [
+      "Does not verify strategy-result accuracy or historical knowledge truth.",
+      "Does not prove fsync/publication execution or producer connectedness.",
+      "Opaque optional extension internals are not base semantics.",
+      "Does not approve current viewer conformance or a production request ceiling."
+    ]
+  },
+  "carry_in": {
+    "selected_fact_ids": [
+      "fib-update"
+    ],
+    "consumed_nodes": 1,
+    "decoded_rows": 2,
+    "consumed_bytes_including_manifest_recheck": 18459
+  },
+  "predecessor": {
+    "selected_fact_id": "point-2",
+    "candidate_steps": 2,
+    "reason": "The nearer sample is known later than the cursor; seek continues within budget."
+  }
+}

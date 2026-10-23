@@ -1,0 +1,387 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Run Bundle Index Node v1.0.0",
+  "oneOf": [
+    {
+      "type": "object",
+      "properties": {
+        "index_kind": {
+          "const": "time"
+        },
+        "level": {
+          "const": 0
+        },
+        "summary": {
+          "$ref": "#/$defs/summary"
+        },
+        "entries": {
+          "type": "array",
+          "maxItems": 64,
+          "items": {
+            "type": "object",
+            "properties": {
+              "file": {
+                "$ref": "#/$defs/file_ref"
+              },
+              "row_count": {
+                "type": "integer",
+                "minimum": 0,
+                "maximum": 4096
+              },
+              "first_time": {
+                "anyOf": [
+                  {
+                    "type": "string",
+                    "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}T[0-9]{2}:[0-9]{2}:[0-9]{2}\\.[0-9]{9}Z$"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "last_time": {
+                "anyOf": [
+                  {
+                    "type": "string",
+                    "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}T[0-9]{2}:[0-9]{2}:[0-9]{2}\\.[0-9]{9}Z$"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              }
+            },
+            "required": [
+              "file",
+              "row_count",
+              "first_time",
+              "last_time"
+            ],
+            "additionalProperties": false
+          }
+        }
+      },
+      "required": [
+        "index_kind",
+        "level",
+        "summary",
+        "entries"
+      ],
+      "additionalProperties": false
+    },
+    {
+      "type": "object",
+      "properties": {
+        "index_kind": {
+          "const": "entity"
+        },
+        "level": {
+          "const": 0
+        },
+        "summary": {
+          "$ref": "#/$defs/summary"
+        },
+        "entries": {
+          "type": "array",
+          "maxItems": 64,
+          "items": {
+            "type": "object",
+            "properties": {
+              "file": {
+                "$ref": "#/$defs/file_ref"
+              },
+              "row": {
+                "type": "integer",
+                "minimum": 0,
+                "maximum": 4095
+              },
+              "entity_id": {
+                "type": "string",
+                "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]{0,127}$"
+              },
+              "fact_id": {
+                "type": "string",
+                "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]{0,127}$"
+              },
+              "time_utc": {
+                "type": "string",
+                "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}T[0-9]{2}:[0-9]{2}:[0-9]{2}\\.[0-9]{9}Z$"
+              },
+              "known_at_utc": {
+                "type": "string",
+                "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}T[0-9]{2}:[0-9]{2}:[0-9]{2}\\.[0-9]{9}Z$"
+              },
+              "sequence_num": {
+                "type": "integer",
+                "minimum": 0,
+                "maximum": 9007199254740991
+              }
+            },
+            "required": [
+              "file",
+              "row",
+              "entity_id",
+              "fact_id",
+              "time_utc",
+              "known_at_utc",
+              "sequence_num"
+            ],
+            "additionalProperties": false
+          }
+        }
+      },
+      "required": [
+        "index_kind",
+        "level",
+        "summary",
+        "entries"
+      ],
+      "additionalProperties": false
+    },
+    {
+      "type": "object",
+      "properties": {
+        "index_kind": {
+          "const": "state"
+        },
+        "level": {
+          "const": 0
+        },
+        "summary": {
+          "$ref": "#/$defs/summary"
+        },
+        "entries": {
+          "type": "array",
+          "maxItems": 64,
+          "items": {
+            "type": "object",
+            "properties": {
+              "file": {
+                "$ref": "#/$defs/file_ref"
+              },
+              "row": {
+                "type": "integer",
+                "minimum": 0,
+                "maximum": 4095
+              },
+              "entity_id": {
+                "type": "string",
+                "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]{0,127}$"
+              },
+              "fact_id": {
+                "type": "string",
+                "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]{0,127}$"
+              },
+              "known_from_utc": {
+                "type": "string",
+                "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}T[0-9]{2}:[0-9]{2}:[0-9]{2}\\.[0-9]{9}Z$"
+              },
+              "known_to_utc": {
+                "anyOf": [
+                  {
+                    "type": "string",
+                    "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}T[0-9]{2}:[0-9]{2}:[0-9]{2}\\.[0-9]{9}Z$"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "coordinate_start_utc": {
+                "type": "string",
+                "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}T[0-9]{2}:[0-9]{2}:[0-9]{2}\\.[0-9]{9}Z$"
+              },
+              "coordinate_end_utc": {
+                "anyOf": [
+                  {
+                    "type": "string",
+                    "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}T[0-9]{2}:[0-9]{2}:[0-9]{2}\\.[0-9]{9}Z$"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              }
+            },
+            "required": [
+              "file",
+              "row",
+              "entity_id",
+              "fact_id",
+              "known_from_utc",
+              "known_to_utc",
+              "coordinate_start_utc",
+              "coordinate_end_utc"
+            ],
+            "additionalProperties": false
+          }
+        }
+      },
+      "required": [
+        "index_kind",
+        "level",
+        "summary",
+        "entries"
+      ],
+      "additionalProperties": false
+    },
+    {
+      "type": "object",
+      "properties": {
+        "index_kind": {
+          "enum": [
+            "time",
+            "entity",
+            "state"
+          ]
+        },
+        "level": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 31
+        },
+        "summary": {
+          "$ref": "#/$defs/summary"
+        },
+        "entries": {
+          "type": "array",
+          "minItems": 1,
+          "maxItems": 64,
+          "items": {
+            "type": "object",
+            "properties": {
+              "file": {
+                "$ref": "#/$defs/file_ref"
+              },
+              "summary": {
+                "$ref": "#/$defs/summary"
+              }
+            },
+            "required": [
+              "file",
+              "summary"
+            ],
+            "additionalProperties": false
+          }
+        }
+      },
+      "required": [
+        "index_kind",
+        "level",
+        "summary",
+        "entries"
+      ],
+      "additionalProperties": false
+    }
+  ],
+  "$defs": {
+    "file_ref": {
+      "type": "object",
+      "properties": {
+        "path": {
+          "type": "string",
+          "pattern": "^[a-z0-9][a-z0-9._/-]*$"
+        },
+        "sha256": {
+          "type": "string",
+          "pattern": "^[a-f0-9]{64}$"
+        },
+        "bytes": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 8388608
+        }
+      },
+      "required": [
+        "path",
+        "sha256",
+        "bytes"
+      ],
+      "additionalProperties": false
+    },
+    "summary": {
+      "type": "object",
+      "properties": {
+        "min_key": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "max_key": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "count": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 9007199254740991
+        },
+        "min_start": {
+          "anyOf": [
+            {
+              "type": "string",
+              "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}T[0-9]{2}:[0-9]{2}:[0-9]{2}\\.[0-9]{9}Z$"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "max_end": {
+          "anyOf": [
+            {
+              "type": "string",
+              "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}T[0-9]{2}:[0-9]{2}:[0-9]{2}\\.[0-9]{9}Z$"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "min_known": {
+          "anyOf": [
+            {
+              "type": "string",
+              "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}T[0-9]{2}:[0-9]{2}:[0-9]{2}\\.[0-9]{9}Z$"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "max_known_end": {
+          "anyOf": [
+            {
+              "type": "string",
+              "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}T[0-9]{2}:[0-9]{2}:[0-9]{2}\\.[0-9]{9}Z$"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        }
+      },
+      "required": [
+        "min_key",
+        "max_key",
+        "count",
+        "min_start",
+        "max_end",
+        "min_known",
+        "max_known_end"
+      ],
+      "additionalProperties": false
+    }
+  }
+}

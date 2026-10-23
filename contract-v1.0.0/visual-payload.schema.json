@@ -1,0 +1,291 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Run Bundle Visual Payload v1.0.0",
+  "type": "object",
+  "properties": {
+    "geometry": {
+      "oneOf": [
+        {
+          "type": "object",
+          "properties": {
+            "kind": {
+              "const": "HORIZONTAL_LEVEL"
+            },
+            "price": {
+              "type": "number"
+            }
+          },
+          "required": [
+            "kind",
+            "price"
+          ],
+          "additionalProperties": false
+        },
+        {
+          "type": "object",
+          "properties": {
+            "kind": {
+              "const": "PRICE_ZONE"
+            },
+            "price_low": {
+              "type": "number"
+            },
+            "price_high": {
+              "type": "number"
+            }
+          },
+          "required": [
+            "kind",
+            "price_low",
+            "price_high"
+          ],
+          "additionalProperties": false
+        },
+        {
+          "type": "object",
+          "properties": {
+            "kind": {
+              "const": "TREND_LINE"
+            },
+            "start_time_utc": {
+              "type": "string",
+              "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}T[0-9]{2}:[0-9]{2}:[0-9]{2}\\.[0-9]{9}Z$"
+            },
+            "end_time_utc": {
+              "type": "string",
+              "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}T[0-9]{2}:[0-9]{2}:[0-9]{2}\\.[0-9]{9}Z$"
+            },
+            "price_start": {
+              "type": "number"
+            },
+            "price_end": {
+              "type": "number"
+            }
+          },
+          "required": [
+            "kind",
+            "start_time_utc",
+            "end_time_utc",
+            "price_start",
+            "price_end"
+          ],
+          "additionalProperties": false
+        },
+        {
+          "type": "object",
+          "properties": {
+            "kind": {
+              "const": "BOX"
+            },
+            "start_time_utc": {
+              "type": "string",
+              "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}T[0-9]{2}:[0-9]{2}:[0-9]{2}\\.[0-9]{9}Z$"
+            },
+            "end_time_utc": {
+              "type": "string",
+              "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}T[0-9]{2}:[0-9]{2}:[0-9]{2}\\.[0-9]{9}Z$"
+            },
+            "price_low": {
+              "type": "number"
+            },
+            "price_high": {
+              "type": "number"
+            }
+          },
+          "required": [
+            "kind",
+            "start_time_utc",
+            "end_time_utc",
+            "price_low",
+            "price_high"
+          ],
+          "additionalProperties": false
+        },
+        {
+          "type": "object",
+          "properties": {
+            "kind": {
+              "const": "MARKER"
+            },
+            "time_utc": {
+              "type": "string",
+              "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}T[0-9]{2}:[0-9]{2}:[0-9]{2}\\.[0-9]{9}Z$"
+            },
+            "placement": {
+              "enum": [
+                "PRICE",
+                "ABOVE_BAR",
+                "BELOW_BAR"
+              ]
+            },
+            "price": {
+              "anyOf": [
+                {
+                  "type": "number"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "direction": {
+              "enum": [
+                "UP",
+                "DOWN",
+                "NEUTRAL"
+              ]
+            }
+          },
+          "required": [
+            "kind",
+            "time_utc",
+            "placement",
+            "price",
+            "direction"
+          ],
+          "additionalProperties": false
+        },
+        {
+          "type": "object",
+          "properties": {
+            "kind": {
+              "const": "ARROW"
+            },
+            "time_utc": {
+              "type": "string",
+              "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}T[0-9]{2}:[0-9]{2}:[0-9]{2}\\.[0-9]{9}Z$"
+            },
+            "placement": {
+              "enum": [
+                "PRICE",
+                "ABOVE_BAR",
+                "BELOW_BAR"
+              ]
+            },
+            "price": {
+              "anyOf": [
+                {
+                  "type": "number"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "direction": {
+              "enum": [
+                "UP",
+                "DOWN"
+              ]
+            }
+          },
+          "required": [
+            "kind",
+            "time_utc",
+            "placement",
+            "price",
+            "direction"
+          ],
+          "additionalProperties": false
+        },
+        {
+          "type": "object",
+          "properties": {
+            "kind": {
+              "type": "string",
+              "pattern": "^[a-z][a-z0-9_]*\\.[a-z][a-z0-9_.-]*$"
+            }
+          },
+          "required": [
+            "kind"
+          ],
+          "additionalProperties": true
+        }
+      ]
+    },
+    "label": {
+      "anyOf": [
+        {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 256
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "method": {
+      "anyOf": [
+        {
+          "type": "object",
+          "properties": {
+            "name": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 256
+            },
+            "parameters": {
+              "type": "object"
+            },
+            "metadata": {
+              "type": "object"
+            }
+          },
+          "required": [
+            "name",
+            "parameters",
+            "metadata"
+          ],
+          "additionalProperties": false
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "style": {
+      "type": "object",
+      "properties": {
+        "color": {
+          "type": "string",
+          "pattern": "^#[0-9A-Fa-f]{6}$"
+        },
+        "line_width": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 8
+        },
+        "line_style": {
+          "enum": [
+            "SOLID",
+            "DASHED",
+            "DOTTED"
+          ]
+        },
+        "opacity": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        }
+      },
+      "required": [],
+      "additionalProperties": false
+    },
+    "extensions": {
+      "type": "object",
+      "patternProperties": {
+        "^[a-z][a-z0-9_]*\\.[a-z][a-z0-9_.-]*$": {}
+      },
+      "additionalProperties": false
+    }
+  },
+  "required": [
+    "geometry",
+    "label",
+    "method",
+    "style",
+    "extensions"
+  ],
+  "additionalProperties": false
+}

@@ -1,0 +1,5634 @@
+{
+  "version": "WF-SET-001-r14",
+  "frames": [
+    {
+      "id": "WF-FRAME-001",
+      "file": "WF-FRAME-001.svg",
+      "view": 1,
+      "state": 1,
+      "variant": "state",
+      "title": "Initial/ready/selected",
+      "adapt": [
+        "UIS-ADAPT-001",
+        "UIS-ADAPT-004",
+        "UIS-ADAPT-005",
+        "UIS-ADAPT-006"
+      ],
+      "annotation": "Selection and actual chart/numeric values co-present; replay controls only for declared mode. No demo prices; valid selection or retained run; IF-REC-001/005",
+      "gate_g4": "APPROVED",
+      "visibility": "bid",
+      "basis": "Bid",
+      "candle_visibility": {
+        "bid": true,
+        "ask": false,
+        "independent_toggles": true,
+        "scope": "active-chart"
+      },
+      "surface": "chart-with-watchlist",
+      "regions": [
+        "UIS-REG-001",
+        "UIS-REG-002",
+        "UIS-REG-003",
+        "UIS-REG-004"
+      ],
+      "chart_persistent": true,
+      "uses_overlay": false,
+      "replay_stage": "inactive",
+      "replay_controls": null,
+      "paper_trading_over_replay": false,
+      "future_launchers": [
+        {
+          "name": "Run bundle viewer",
+          "status": "disabled",
+          "version": "future"
+        }
+      ],
+      "reference_screenshots": [
+        "screenshots/E01-load-chart.png",
+        "screenshots/E07-settings-ready.png"
+      ],
+      "artifact_version": "WF-SET-001-r11",
+      "revision_scope": "unchanged"
+    },
+    {
+      "id": "WF-FRAME-002",
+      "file": "WF-FRAME-002.svg",
+      "view": 1,
+      "state": 2,
+      "variant": "state",
+      "title": "Loading or obsolete range/selection",
+      "adapt": [
+        "UIS-ADAPT-001",
+        "UIS-ADAPT-004",
+        "UIS-ADAPT-005",
+        "UIS-ADAPT-006"
+      ],
+      "annotation": "Pending request identified in selection region; retain old labelled plot/values or explicit unavailable at new boundary. Do not relabel old arrays; discard obsolete callback; IF-REC-001",
+      "gate_g4": "APPROVED",
+      "visibility": "bid",
+      "basis": "Bid",
+      "candle_visibility": {
+        "bid": true,
+        "ask": false,
+        "independent_toggles": true,
+        "scope": "active-chart"
+      },
+      "surface": "chart-with-watchlist",
+      "regions": [
+        "UIS-REG-001",
+        "UIS-REG-002",
+        "UIS-REG-003",
+        "UIS-REG-004"
+      ],
+      "chart_persistent": true,
+      "uses_overlay": false,
+      "replay_stage": "inactive",
+      "replay_controls": null,
+      "paper_trading_over_replay": false,
+      "future_launchers": [
+        {
+          "name": "Run bundle viewer",
+          "status": "disabled",
+          "version": "future"
+        }
+      ],
+      "reference_screenshots": [
+        "screenshots/E01-load-chart.png",
+        "screenshots/E07-settings-ready.png"
+      ],
+      "artifact_version": "WF-SET-001-r11",
+      "revision_scope": "unchanged"
+    },
+    {
+      "id": "WF-FRAME-003",
+      "file": "WF-FRAME-003.svg",
+      "view": 1,
+      "state": 3,
+      "variant": "state",
+      "title": "Empty/no match/unavailable/warm-up/actual coverage end",
+      "adapt": [
+        "UIS-ADAPT-001",
+        "UIS-ADAPT-004",
+        "UIS-ADAPT-005",
+        "UIS-ADAPT-006"
+      ],
+      "annotation": "Reason replaces absent value, not whole workspace; actual end distinct from paging. Change query/range; positions not liquidated at end; IF-REC-001/005",
+      "gate_g4": "APPROVED",
+      "visibility": "bid",
+      "basis": "Bid",
+      "candle_visibility": {
+        "bid": true,
+        "ask": false,
+        "independent_toggles": true,
+        "scope": "active-chart"
+      },
+      "surface": "chart-with-watchlist",
+      "regions": [
+        "UIS-REG-001",
+        "UIS-REG-002",
+        "UIS-REG-003",
+        "UIS-REG-004"
+      ],
+      "chart_persistent": true,
+      "uses_overlay": false,
+      "replay_stage": "inactive",
+      "replay_controls": null,
+      "paper_trading_over_replay": false,
+      "future_launchers": [
+        {
+          "name": "Run bundle viewer",
+          "status": "disabled",
+          "version": "future"
+        }
+      ],
+      "reference_screenshots": [
+        "screenshots/E01-load-chart.png",
+        "screenshots/E07-settings-ready.png"
+      ],
+      "artifact_version": "WF-SET-001-r11",
+      "revision_scope": "unchanged"
+    },
+    {
+      "id": "WF-FRAME-004",
+      "file": "WF-FRAME-004.svg",
+      "view": 1,
+      "state": 4,
+      "variant": "state",
+      "title": "Partial/stale/offline/known closure",
+      "adapt": [
+        "UIS-ADAPT-001",
+        "UIS-ADAPT-004",
+        "UIS-ADAPT-005",
+        "UIS-ADAPT-006"
+      ],
+      "annotation": "Feed/coverage limitation persists with readable history; no invented movement. Qualified history usable, gap policy unchanged; IF-REC-012",
+      "gate_g4": "APPROVED",
+      "visibility": "bid",
+      "basis": "Bid",
+      "candle_visibility": {
+        "bid": true,
+        "ask": false,
+        "independent_toggles": true,
+        "scope": "active-chart"
+      },
+      "surface": "chart-with-watchlist",
+      "regions": [
+        "UIS-REG-001",
+        "UIS-REG-002",
+        "UIS-REG-003",
+        "UIS-REG-004"
+      ],
+      "chart_persistent": true,
+      "uses_overlay": false,
+      "replay_stage": "inactive",
+      "replay_controls": null,
+      "paper_trading_over_replay": false,
+      "future_launchers": [
+        {
+          "name": "Run bundle viewer",
+          "status": "disabled",
+          "version": "future"
+        }
+      ],
+      "reference_screenshots": [
+        "screenshots/E01-load-chart.png",
+        "screenshots/E07-settings-ready.png"
+      ],
+      "artifact_version": "WF-SET-001-r11",
+      "revision_scope": "unchanged"
+    },
+    {
+      "id": "WF-FRAME-005",
+      "file": "WF-FRAME-005.svg",
+      "view": 1,
+      "state": 5,
+      "variant": "state",
+      "title": "Replay evaluating/blocked or slow panel",
+      "adapt": [
+        "UIS-ADAPT-001",
+        "UIS-ADAPT-004",
+        "UIS-ADAPT-005",
+        "UIS-ADAPT-006"
+      ],
+      "annotation": "Cursor/reason and coherent prefix remain primary; panel values unavailable within same boundary if not yet ready. No new decision beyond unfinished event; open original-event view; IF-REC-005/010",
+      "gate_g4": "APPROVED",
+      "visibility": "bid",
+      "basis": "Bid",
+      "candle_visibility": {
+        "bid": true,
+        "ask": false,
+        "independent_toggles": true,
+        "scope": "active-chart"
+      },
+      "surface": "chart-with-watchlist",
+      "regions": [
+        "UIS-REG-001",
+        "UIS-REG-002",
+        "UIS-REG-003",
+        "UIS-REG-004"
+      ],
+      "chart_persistent": true,
+      "uses_overlay": true,
+      "replay_stage": "paused",
+      "replay_controls": "floating-capsule",
+      "paper_trading_over_replay": false,
+      "future_launchers": [
+        {
+          "name": "Run bundle viewer",
+          "status": "disabled",
+          "version": "future"
+        }
+      ],
+      "reference_screenshots": [
+        "screenshots/E01-load-chart.png",
+        "screenshots/E07-settings-ready.png",
+        "screenshots/authenticated/A30-replay.png",
+        "screenshots/authenticated/A31-replay.png"
+      ],
+      "artifact_version": "WF-SET-001-r11",
+      "revision_scope": "unchanged"
+    },
+    {
+      "id": "WF-FRAME-006",
+      "file": "WF-FRAME-006.svg",
+      "view": 1,
+      "state": 6,
+      "variant": "state",
+      "title": "Preview/invalid or locked annotation",
+      "adapt": [
+        "UIS-ADAPT-001",
+        "UIS-ADAPT-004",
+        "UIS-ADAPT-005",
+        "UIS-ADAPT-006"
+      ],
+      "annotation": "Preview/target/validation distinct from committed plot; object collection remains accessible. Correct/cancel/unlock permitted target; IF-REC-002/003",
+      "gate_g4": "APPROVED",
+      "visibility": "bid",
+      "basis": "Bid",
+      "candle_visibility": {
+        "bid": true,
+        "ask": false,
+        "independent_toggles": true,
+        "scope": "active-chart"
+      },
+      "surface": "right-context-drawer",
+      "regions": [
+        "UIS-REG-001",
+        "UIS-REG-002",
+        "UIS-REG-003",
+        "UIS-REG-004"
+      ],
+      "chart_persistent": true,
+      "uses_overlay": false,
+      "replay_stage": "inactive",
+      "replay_controls": null,
+      "paper_trading_over_replay": false,
+      "future_launchers": [
+        {
+          "name": "Run bundle viewer",
+          "status": "disabled",
+          "version": "future"
+        }
+      ],
+      "reference_screenshots": [
+        "screenshots/E01-load-chart.png",
+        "screenshots/E07-settings-ready.png"
+      ],
+      "artifact_version": "WF-SET-001-r11",
+      "revision_scope": "unchanged"
+    },
+    {
+      "id": "WF-FRAME-007",
+      "file": "WF-FRAME-007.svg",
+      "view": 1,
+      "state": 7,
+      "variant": "state",
+      "title": "Save failed/unknown; request error",
+      "adapt": [
+        "UIS-ADAPT-001",
+        "UIS-ADAPT-004",
+        "UIS-ADAPT-005",
+        "UIS-ADAPT-006"
+      ],
+      "annotation": "Status region exposes working versus retained state and safe next action without replacing coherent financial content. Reconcile/retain, not rerun trade/edit; IF-REC-013",
+      "gate_g4": "APPROVED",
+      "visibility": "bid",
+      "basis": "Bid",
+      "candle_visibility": {
+        "bid": true,
+        "ask": false,
+        "independent_toggles": true,
+        "scope": "active-chart"
+      },
+      "surface": "chart-with-watchlist",
+      "regions": [
+        "UIS-REG-001",
+        "UIS-REG-002",
+        "UIS-REG-003",
+        "UIS-REG-004"
+      ],
+      "chart_persistent": true,
+      "uses_overlay": false,
+      "replay_stage": "inactive",
+      "replay_controls": null,
+      "paper_trading_over_replay": false,
+      "future_launchers": [
+        {
+          "name": "Run bundle viewer",
+          "status": "disabled",
+          "version": "future"
+        }
+      ],
+      "reference_screenshots": [
+        "screenshots/E01-load-chart.png",
+        "screenshots/E07-settings-ready.png"
+      ],
+      "artifact_version": "WF-SET-001-r11",
+      "revision_scope": "unchanged"
+    },
+    {
+      "id": "WF-FRAME-008",
+      "file": "WF-FRAME-008.svg",
+      "view": 1,
+      "state": 8,
+      "variant": "state",
+      "title": "Destructive review or restricted writer",
+      "adapt": [
+        "UIS-ADAPT-001",
+        "UIS-ADAPT-004",
+        "UIS-ADAPT-005",
+        "UIS-ADAPT-006"
+      ],
+      "annotation": "Review routes to UIS-VIEW-007; restricted mutations unavailable with reason, inspection retained. Cancel unchanged; no silent takeover; IF-REC-006/013",
+      "gate_g4": "APPROVED",
+      "visibility": "bid",
+      "basis": "Bid",
+      "candle_visibility": {
+        "bid": true,
+        "ask": false,
+        "independent_toggles": true,
+        "scope": "active-chart"
+      },
+      "surface": "chart-with-watchlist",
+      "regions": [
+        "UIS-REG-001",
+        "UIS-REG-002",
+        "UIS-REG-003",
+        "UIS-REG-004"
+      ],
+      "chart_persistent": true,
+      "uses_overlay": false,
+      "replay_stage": "inactive",
+      "replay_controls": null,
+      "paper_trading_over_replay": false,
+      "future_launchers": [
+        {
+          "name": "Run bundle viewer",
+          "status": "disabled",
+          "version": "future"
+        }
+      ],
+      "reference_screenshots": [
+        "screenshots/E01-load-chart.png",
+        "screenshots/E07-settings-ready.png"
+      ],
+      "artifact_version": "WF-SET-001-r11",
+      "revision_scope": "unchanged"
+    },
+    {
+      "id": "WF-FRAME-009",
+      "file": "WF-FRAME-009.svg",
+      "view": 2,
+      "state": 9,
+      "variant": "state",
+      "title": "Ready/selected",
+      "adapt": [
+        "UIS-ADAPT-001",
+        "UIS-ADAPT-004",
+        "UIS-ADAPT-005",
+        "UIS-ADAPT-006"
+      ],
+      "annotation": "Named scope, committed values and draft visible. Apply/cancel separate; IF-REC-002/007",
+      "gate_g4": "APPROVED",
+      "visibility": "bid",
+      "basis": "Bid",
+      "candle_visibility": {
+        "bid": true,
+        "ask": false,
+        "independent_toggles": true,
+        "scope": "active-chart"
+      },
+      "surface": "settings-window-over-chart",
+      "regions": [
+        "UIS-REG-005",
+        "UIS-REG-006",
+        "UIS-REG-007"
+      ],
+      "chart_persistent": true,
+      "uses_overlay": true,
+      "replay_stage": "inactive",
+      "replay_controls": null,
+      "paper_trading_over_replay": false,
+      "future_launchers": [
+        {
+          "name": "Run bundle viewer",
+          "status": "disabled",
+          "version": "future"
+        }
+      ],
+      "reference_screenshots": [
+        "screenshots/E01-load-chart.png",
+        "screenshots/E07-settings-ready.png"
+      ],
+      "artifact_version": "WF-SET-001-r11",
+      "revision_scope": "unchanged"
+    },
+    {
+      "id": "WF-FRAME-010",
+      "file": "WF-FRAME-010.svg",
+      "view": 2,
+      "state": 10,
+      "variant": "state",
+      "title": "Loading/calculating/preview",
+      "adapt": [
+        "UIS-ADAPT-001",
+        "UIS-ADAPT-004",
+        "UIS-ADAPT-005",
+        "UIS-ADAPT-006"
+      ],
+      "annotation": "Preview/estimate explicitly pending or temporary; prior valid values remain identified. Await matching result or cancel; IF-REC-002/007",
+      "gate_g4": "APPROVED",
+      "visibility": "bid",
+      "basis": "Bid",
+      "candle_visibility": {
+        "bid": true,
+        "ask": false,
+        "independent_toggles": true,
+        "scope": "active-chart"
+      },
+      "surface": "settings-window-over-chart",
+      "regions": [
+        "UIS-REG-005",
+        "UIS-REG-006",
+        "UIS-REG-007"
+      ],
+      "chart_persistent": true,
+      "uses_overlay": true,
+      "replay_stage": "inactive",
+      "replay_controls": null,
+      "paper_trading_over_replay": false,
+      "future_launchers": [
+        {
+          "name": "Run bundle viewer",
+          "status": "disabled",
+          "version": "future"
+        }
+      ],
+      "reference_screenshots": [
+        "screenshots/E01-load-chart.png",
+        "screenshots/E07-settings-ready.png"
+      ],
+      "artifact_version": "WF-SET-001-r11",
+      "revision_scope": "unchanged"
+    },
+    {
+      "id": "WF-FRAME-011",
+      "file": "WF-FRAME-011.svg",
+      "view": 2,
+      "state": 11,
+      "variant": "state",
+      "title": "Missing/warm-up/unknown spec or FX",
+      "adapt": [
+        "UIS-ADAPT-001",
+        "UIS-ADAPT-004",
+        "UIS-ADAPT-005",
+        "UIS-ADAPT-006"
+      ],
+      "annotation": "Affected estimate unavailable, required fact/reason near inputs. No invented zero/contract/rate; resolve prerequisite; IF-REC-007/010",
+      "gate_g4": "APPROVED",
+      "visibility": "bid",
+      "basis": "Bid",
+      "candle_visibility": {
+        "bid": true,
+        "ask": false,
+        "independent_toggles": true,
+        "scope": "active-chart"
+      },
+      "surface": "settings-window-over-chart",
+      "regions": [
+        "UIS-REG-005",
+        "UIS-REG-006",
+        "UIS-REG-007"
+      ],
+      "chart_persistent": true,
+      "uses_overlay": true,
+      "replay_stage": "inactive",
+      "replay_controls": null,
+      "paper_trading_over_replay": false,
+      "future_launchers": [
+        {
+          "name": "Run bundle viewer",
+          "status": "disabled",
+          "version": "future"
+        }
+      ],
+      "reference_screenshots": [
+        "screenshots/E01-load-chart.png",
+        "screenshots/E07-settings-ready.png"
+      ],
+      "artifact_version": "WF-SET-001-r11",
+      "revision_scope": "unchanged"
+    },
+    {
+      "id": "WF-FRAME-012",
+      "file": "WF-FRAME-012.svg",
+      "view": 2,
+      "state": 12,
+      "variant": "state",
+      "title": "Invalid parameter/quantity/risk",
+      "adapt": [
+        "UIS-ADAPT-001",
+        "UIS-ADAPT-004",
+        "UIS-ADAPT-005",
+        "UIS-ADAPT-006"
+      ],
+      "annotation": "Field and constraint identified; no application to committed state. Correct/cancel; IF-REC-002/007",
+      "gate_g4": "APPROVED",
+      "visibility": "bid",
+      "basis": "Bid",
+      "candle_visibility": {
+        "bid": true,
+        "ask": false,
+        "independent_toggles": true,
+        "scope": "active-chart"
+      },
+      "surface": "settings-window-over-chart",
+      "regions": [
+        "UIS-REG-005",
+        "UIS-REG-006",
+        "UIS-REG-007"
+      ],
+      "chart_persistent": true,
+      "uses_overlay": true,
+      "replay_stage": "inactive",
+      "replay_controls": null,
+      "paper_trading_over_replay": false,
+      "future_launchers": [
+        {
+          "name": "Run bundle viewer",
+          "status": "disabled",
+          "version": "future"
+        }
+      ],
+      "reference_screenshots": [
+        "screenshots/E01-load-chart.png",
+        "screenshots/E07-settings-ready.png"
+      ],
+      "artifact_version": "WF-SET-001-r11",
+      "revision_scope": "unchanged"
+    },
+    {
+      "id": "WF-FRAME-013",
+      "file": "WF-FRAME-013.svg",
+      "view": 2,
+      "state": 13,
+      "variant": "state",
+      "title": "Basis/target changed or superseded estimate",
+      "adapt": [
+        "UIS-ADAPT-001",
+        "UIS-ADAPT-004",
+        "UIS-ADAPT-005",
+        "UIS-ADAPT-006"
+      ],
+      "annotation": "Old estimate no longer actionable; review scope and current values before apply. Retain draft visibly as draft; re-decide, do not revalue prior results; IF-REC-007",
+      "gate_g4": "APPROVED",
+      "visibility": "bid",
+      "basis": "Bid",
+      "candle_visibility": {
+        "bid": true,
+        "ask": false,
+        "independent_toggles": true,
+        "scope": "active-chart"
+      },
+      "surface": "settings-window-over-chart",
+      "regions": [
+        "UIS-REG-005",
+        "UIS-REG-006",
+        "UIS-REG-007"
+      ],
+      "chart_persistent": true,
+      "uses_overlay": true,
+      "replay_stage": "inactive",
+      "replay_controls": null,
+      "paper_trading_over_replay": false,
+      "future_launchers": [
+        {
+          "name": "Run bundle viewer",
+          "status": "disabled",
+          "version": "future"
+        }
+      ],
+      "reference_screenshots": [
+        "screenshots/E01-load-chart.png",
+        "screenshots/E07-settings-ready.png"
+      ],
+      "artifact_version": "WF-SET-001-r11",
+      "revision_scope": "unchanged"
+    },
+    {
+      "id": "WF-FRAME-014",
+      "file": "WF-FRAME-014.svg",
+      "view": 2,
+      "state": 14,
+      "variant": "state",
+      "title": "Offline/provider metadata unavailable",
+      "adapt": [
+        "UIS-ADAPT-001",
+        "UIS-ADAPT-004",
+        "UIS-ADAPT-005",
+        "UIS-ADAPT-006"
+      ],
+      "annotation": "Local retained settings available; remote metadata limitation separate. Valid local configuration remains; unknown required values block affected action; IF-REC-007/012",
+      "gate_g4": "APPROVED",
+      "visibility": "bid",
+      "basis": "Bid",
+      "candle_visibility": {
+        "bid": true,
+        "ask": false,
+        "independent_toggles": true,
+        "scope": "active-chart"
+      },
+      "surface": "settings-window-over-chart",
+      "regions": [
+        "UIS-REG-005",
+        "UIS-REG-006",
+        "UIS-REG-007"
+      ],
+      "chart_persistent": true,
+      "uses_overlay": true,
+      "replay_stage": "inactive",
+      "replay_controls": null,
+      "paper_trading_over_replay": false,
+      "future_launchers": [
+        {
+          "name": "Run bundle viewer",
+          "status": "disabled",
+          "version": "future"
+        }
+      ],
+      "reference_screenshots": [
+        "screenshots/E01-load-chart.png",
+        "screenshots/E07-settings-ready.png"
+      ],
+      "artifact_version": "WF-SET-001-r11",
+      "revision_scope": "unchanged"
+    },
+    {
+      "id": "WF-FRAME-015",
+      "file": "WF-FRAME-015.svg",
+      "view": 2,
+      "state": 15,
+      "variant": "state",
+      "title": "Applied working state; save failed/unknown",
+      "adapt": [
+        "UIS-ADAPT-001",
+        "UIS-ADAPT-004",
+        "UIS-ADAPT-005",
+        "UIS-ADAPT-006"
+      ],
+      "annotation": "Commit result distinct from unsaved/unknown checkpoint; no duplicate apply to repair save. IF-REC-013; retain current valid settings",
+      "gate_g4": "APPROVED",
+      "visibility": "bid",
+      "basis": "Bid",
+      "candle_visibility": {
+        "bid": true,
+        "ask": false,
+        "independent_toggles": true,
+        "scope": "active-chart"
+      },
+      "surface": "settings-window-over-chart",
+      "regions": [
+        "UIS-REG-005",
+        "UIS-REG-006",
+        "UIS-REG-007"
+      ],
+      "chart_persistent": true,
+      "uses_overlay": true,
+      "replay_stage": "inactive",
+      "replay_controls": null,
+      "paper_trading_over_replay": false,
+      "future_launchers": [
+        {
+          "name": "Run bundle viewer",
+          "status": "disabled",
+          "version": "future"
+        }
+      ],
+      "reference_screenshots": [
+        "screenshots/E01-load-chart.png",
+        "screenshots/E07-settings-ready.png"
+      ],
+      "artifact_version": "WF-SET-001-r11",
+      "revision_scope": "unchanged"
+    },
+    {
+      "id": "WF-FRAME-016",
+      "file": "WF-FRAME-016.svg",
+      "view": 2,
+      "state": 16,
+      "variant": "state",
+      "title": "Restricted/absent target",
+      "adapt": [
+        "UIS-ADAPT-001",
+        "UIS-ADAPT-004",
+        "UIS-ADAPT-005",
+        "UIS-ADAPT-006"
+      ],
+      "annotation": "Editing unavailable with reason; valid settings inspectable. Fresh valid authority/target needed; cancel/return; IF-REC-002/013",
+      "gate_g4": "APPROVED",
+      "visibility": "bid",
+      "basis": "Bid",
+      "candle_visibility": {
+        "bid": true,
+        "ask": false,
+        "independent_toggles": true,
+        "scope": "active-chart"
+      },
+      "surface": "settings-window-over-chart",
+      "regions": [
+        "UIS-REG-005",
+        "UIS-REG-006",
+        "UIS-REG-007"
+      ],
+      "chart_persistent": true,
+      "uses_overlay": true,
+      "replay_stage": "inactive",
+      "replay_controls": null,
+      "paper_trading_over_replay": false,
+      "future_launchers": [
+        {
+          "name": "Run bundle viewer",
+          "status": "disabled",
+          "version": "future"
+        }
+      ],
+      "reference_screenshots": [
+        "screenshots/E01-load-chart.png",
+        "screenshots/E07-settings-ready.png"
+      ],
+      "artifact_version": "WF-SET-001-r11",
+      "revision_scope": "unchanged"
+    },
+    {
+      "id": "WF-FRAME-017",
+      "file": "WF-FRAME-017.svg",
+      "view": 3,
+      "state": 17,
+      "variant": "state",
+      "title": "Ready/selected retained work",
+      "adapt": [
+        "UIS-ADAPT-001",
+        "UIS-ADAPT-004",
+        "UIS-ADAPT-005",
+        "UIS-ADAPT-006"
+      ],
+      "annotation": "Collection and selected details/save scope visible. Choose restore/resume/arrangement/backup distinctly; IF-REC-004/013/014",
+      "gate_g4": "APPROVED",
+      "visibility": "bid",
+      "basis": "Bid",
+      "candle_visibility": {
+        "bid": true,
+        "ask": false,
+        "independent_toggles": true,
+        "scope": "active-chart"
+      },
+      "surface": "right-context-drawer",
+      "regions": [
+        "UIS-REG-008",
+        "UIS-REG-009",
+        "UIS-REG-010"
+      ],
+      "chart_persistent": true,
+      "uses_overlay": false,
+      "replay_stage": "inactive",
+      "replay_controls": null,
+      "paper_trading_over_replay": false,
+      "future_launchers": [
+        {
+          "name": "Run bundle viewer",
+          "status": "disabled",
+          "version": "future"
+        }
+      ],
+      "reference_screenshots": [
+        "screenshots/E01-load-chart.png",
+        "screenshots/E07-settings-ready.png"
+      ],
+      "artifact_version": "WF-SET-001-r11",
+      "revision_scope": "unchanged"
+    },
+    {
+      "id": "WF-FRAME-018",
+      "file": "WF-FRAME-018.svg",
+      "view": 3,
+      "state": 18,
+      "variant": "state",
+      "title": "Initial/empty",
+      "adapt": [
+        "UIS-ADAPT-001",
+        "UIS-ADAPT-004",
+        "UIS-ADAPT-005",
+        "UIS-ADAPT-006"
+      ],
+      "annotation": "No layouts/runs/checkpoint stated; create supported analysis available. No fabricated saved state; IF-REC-004/013",
+      "gate_g4": "APPROVED",
+      "visibility": "bid",
+      "basis": "Bid",
+      "candle_visibility": {
+        "bid": true,
+        "ask": false,
+        "independent_toggles": true,
+        "scope": "active-chart"
+      },
+      "surface": "right-context-drawer",
+      "regions": [
+        "UIS-REG-008",
+        "UIS-REG-009",
+        "UIS-REG-010"
+      ],
+      "chart_persistent": true,
+      "uses_overlay": false,
+      "replay_stage": "inactive",
+      "replay_controls": null,
+      "paper_trading_over_replay": false,
+      "future_launchers": [
+        {
+          "name": "Run bundle viewer",
+          "status": "disabled",
+          "version": "future"
+        }
+      ],
+      "reference_screenshots": [
+        "screenshots/E01-load-chart.png",
+        "screenshots/E07-settings-ready.png"
+      ],
+      "artifact_version": "WF-SET-001-r11",
+      "revision_scope": "unchanged"
+    },
+    {
+      "id": "WF-FRAME-019",
+      "file": "WF-FRAME-019.svg",
+      "view": 3,
+      "state": 19,
+      "variant": "state",
+      "title": "Loading/copying/validating/saving",
+      "adapt": [
+        "UIS-ADAPT-001",
+        "UIS-ADAPT-004",
+        "UIS-ADAPT-005",
+        "UIS-ADAPT-006"
+      ],
+      "annotation": "Identify selected candidate/phase, preserve old retained generation and current work. Cancel preparation where supported or await; IF-REC-013/014",
+      "gate_g4": "APPROVED",
+      "visibility": "bid",
+      "basis": "Bid",
+      "candle_visibility": {
+        "bid": true,
+        "ask": false,
+        "independent_toggles": true,
+        "scope": "active-chart"
+      },
+      "surface": "right-context-drawer",
+      "regions": [
+        "UIS-REG-008",
+        "UIS-REG-009",
+        "UIS-REG-010"
+      ],
+      "chart_persistent": true,
+      "uses_overlay": false,
+      "replay_stage": "inactive",
+      "replay_controls": null,
+      "paper_trading_over_replay": false,
+      "future_launchers": [
+        {
+          "name": "Run bundle viewer",
+          "status": "disabled",
+          "version": "future"
+        }
+      ],
+      "reference_screenshots": [
+        "screenshots/E01-load-chart.png",
+        "screenshots/E07-settings-ready.png"
+      ],
+      "artifact_version": "WF-SET-001-r11",
+      "revision_scope": "unchanged"
+    },
+    {
+      "id": "WF-FRAME-020",
+      "file": "WF-FRAME-020.svg",
+      "view": 3,
+      "state": 20,
+      "variant": "state",
+      "title": "Newer unsaved state/older acknowledgement",
+      "adapt": [
+        "UIS-ADAPT-001",
+        "UIS-ADAPT-004",
+        "UIS-ADAPT-005",
+        "UIS-ADAPT-006"
+      ],
+      "annotation": "Current working changes and retained version distinguished; backup names included retained snapshot. Retry valid retention or explicit chosen checkpoint, no \u201call saved\u201d claim; IF-REC-013/014",
+      "gate_g4": "APPROVED",
+      "visibility": "bid",
+      "basis": "Bid",
+      "candle_visibility": {
+        "bid": true,
+        "ask": false,
+        "independent_toggles": true,
+        "scope": "active-chart"
+      },
+      "surface": "right-context-drawer",
+      "regions": [
+        "UIS-REG-008",
+        "UIS-REG-009",
+        "UIS-REG-010"
+      ],
+      "chart_persistent": true,
+      "uses_overlay": false,
+      "replay_stage": "inactive",
+      "replay_controls": null,
+      "paper_trading_over_replay": false,
+      "future_launchers": [
+        {
+          "name": "Run bundle viewer",
+          "status": "disabled",
+          "version": "future"
+        }
+      ],
+      "reference_screenshots": [
+        "screenshots/E01-load-chart.png",
+        "screenshots/E07-settings-ready.png"
+      ],
+      "artifact_version": "WF-SET-001-r11",
+      "revision_scope": "unchanged"
+    },
+    {
+      "id": "WF-FRAME-021",
+      "file": "WF-FRAME-021.svg",
+      "view": 3,
+      "state": 21,
+      "variant": "state",
+      "title": "Unknown save/replacement/output publication",
+      "adapt": [
+        "UIS-ADAPT-001",
+        "UIS-ADAPT-004",
+        "UIS-ADAPT-005",
+        "UIS-ADAPT-006"
+      ],
+      "annotation": "Show reconciliation responsibility and operation scope; incompatible repeated writes unavailable. Inspect authoritative generation/artifact before retry; IF-REC-013/014",
+      "gate_g4": "APPROVED",
+      "visibility": "bid",
+      "basis": "Bid",
+      "candle_visibility": {
+        "bid": true,
+        "ask": false,
+        "independent_toggles": true,
+        "scope": "active-chart"
+      },
+      "surface": "right-context-drawer",
+      "regions": [
+        "UIS-REG-008",
+        "UIS-REG-009",
+        "UIS-REG-010"
+      ],
+      "chart_persistent": true,
+      "uses_overlay": false,
+      "replay_stage": "inactive",
+      "replay_controls": null,
+      "paper_trading_over_replay": false,
+      "future_launchers": [
+        {
+          "name": "Run bundle viewer",
+          "status": "disabled",
+          "version": "future"
+        }
+      ],
+      "reference_screenshots": [
+        "screenshots/E01-load-chart.png",
+        "screenshots/E07-settings-ready.png"
+      ],
+      "artifact_version": "WF-SET-001-r11",
+      "revision_scope": "unchanged"
+    },
+    {
+      "id": "WF-FRAME-022",
+      "file": "WF-FRAME-022.svg",
+      "view": 3,
+      "state": 22,
+      "variant": "state",
+      "title": "Known storage/read failure or missing/corrupt required inputs",
+      "adapt": [
+        "UIS-ADAPT-001",
+        "UIS-ADAPT-004",
+        "UIS-ADAPT-005",
+        "UIS-ADAPT-006"
+      ],
+      "annotation": "Affected restore/resume/backup unavailable with reason; old valid checkpoint/other work preserved. Correct storage/use coherent backup; never latest-data substitution; IF-REC-013/014",
+      "gate_g4": "APPROVED",
+      "visibility": "bid",
+      "basis": "Bid",
+      "candle_visibility": {
+        "bid": true,
+        "ask": false,
+        "independent_toggles": true,
+        "scope": "active-chart"
+      },
+      "surface": "right-context-drawer",
+      "regions": [
+        "UIS-REG-008",
+        "UIS-REG-009",
+        "UIS-REG-010"
+      ],
+      "chart_persistent": true,
+      "uses_overlay": false,
+      "replay_stage": "inactive",
+      "replay_controls": null,
+      "paper_trading_over_replay": false,
+      "future_launchers": [
+        {
+          "name": "Run bundle viewer",
+          "status": "disabled",
+          "version": "future"
+        }
+      ],
+      "reference_screenshots": [
+        "screenshots/E01-load-chart.png",
+        "screenshots/E07-settings-ready.png"
+      ],
+      "artifact_version": "WF-SET-001-r11",
+      "revision_scope": "unchanged"
+    },
+    {
+      "id": "WF-FRAME-023",
+      "file": "WF-FRAME-023.svg",
+      "view": 3,
+      "state": 23,
+      "variant": "state",
+      "title": "Invalid/unsafe backup or incompatible scope",
+      "adapt": [
+        "UIS-ADAPT-001",
+        "UIS-ADAPT-004",
+        "UIS-ADAPT-005",
+        "UIS-ADAPT-006"
+      ],
+      "annotation": "Validation reasons replace candidate readiness; no partial activation. Reject candidate/select valid backup; IF-REC-014",
+      "gate_g4": "APPROVED",
+      "visibility": "bid",
+      "basis": "Bid",
+      "candle_visibility": {
+        "bid": true,
+        "ask": false,
+        "independent_toggles": true,
+        "scope": "active-chart"
+      },
+      "surface": "right-context-drawer",
+      "regions": [
+        "UIS-REG-008",
+        "UIS-REG-009",
+        "UIS-REG-010"
+      ],
+      "chart_persistent": true,
+      "uses_overlay": false,
+      "replay_stage": "inactive",
+      "replay_controls": null,
+      "paper_trading_over_replay": false,
+      "future_launchers": [
+        {
+          "name": "Run bundle viewer",
+          "status": "disabled",
+          "version": "future"
+        }
+      ],
+      "reference_screenshots": [
+        "screenshots/E01-load-chart.png",
+        "screenshots/E07-settings-ready.png"
+      ],
+      "artifact_version": "WF-SET-001-r11",
+      "revision_scope": "unchanged"
+    },
+    {
+      "id": "WF-FRAME-024",
+      "file": "WF-FRAME-024.svg",
+      "view": 3,
+      "state": 24,
+      "variant": "state",
+      "title": "Offline/restricted/confirmation needed",
+      "adapt": [
+        "UIS-ADAPT-001",
+        "UIS-ADAPT-004",
+        "UIS-ADAPT-005",
+        "UIS-ADAPT-006"
+      ],
+      "annotation": "Offline local work remains available; second-writer mutations unavailable; destructive review routes to UIS-VIEW-007. Permitted inspection, fresh authority or cancel; IF-REC-004/013/014",
+      "gate_g4": "APPROVED",
+      "visibility": "bid",
+      "basis": "Bid",
+      "candle_visibility": {
+        "bid": true,
+        "ask": false,
+        "independent_toggles": true,
+        "scope": "active-chart"
+      },
+      "surface": "right-context-drawer",
+      "regions": [
+        "UIS-REG-008",
+        "UIS-REG-009",
+        "UIS-REG-010"
+      ],
+      "chart_persistent": true,
+      "uses_overlay": false,
+      "replay_stage": "inactive",
+      "replay_controls": null,
+      "paper_trading_over_replay": false,
+      "future_launchers": [
+        {
+          "name": "Run bundle viewer",
+          "status": "disabled",
+          "version": "future"
+        }
+      ],
+      "reference_screenshots": [
+        "screenshots/E01-load-chart.png",
+        "screenshots/E07-settings-ready.png"
+      ],
+      "artifact_version": "WF-SET-001-r11",
+      "revision_scope": "unchanged"
+    },
+    {
+      "id": "WF-FRAME-025",
+      "file": "WF-FRAME-025.svg",
+      "view": 4,
+      "state": 25,
+      "variant": "state",
+      "title": "Ready/draft/selected pending instruction or position",
+      "adapt": [
+        "UIS-ADAPT-001",
+        "UIS-ADAPT-004",
+        "UIS-ADAPT-005",
+        "UIS-ADAPT-006"
+      ],
+      "annotation": "IF-BR-008a: direction selection submits nothing. Matching valid side alone commits; opposite has no effect. Edits supersede estimates; retain inputs. Keep focus; announce status. Editor restores invoker. No auto-submit/play.",
+      "gate_g4": "APPROVED",
+      "visibility": "bid",
+      "basis": "Bid",
+      "candle_visibility": {
+        "bid": true,
+        "ask": false,
+        "independent_toggles": true,
+        "scope": "active-chart"
+      },
+      "surface": "paper-sidebar-with-floating-replay",
+      "regions": [
+        "UIS-REG-012",
+        "UIS-REG-013",
+        "UIS-REG-014",
+        "UIS-REG-011"
+      ],
+      "chart_persistent": true,
+      "uses_overlay": true,
+      "replay_stage": "paused",
+      "replay_controls": "floating-capsule",
+      "paper_trading_over_replay": true,
+      "future_launchers": [
+        {
+          "name": "Run bundle viewer",
+          "status": "disabled",
+          "version": "future"
+        }
+      ],
+      "reference_screenshots": [
+        "screenshots/E01-load-chart.png",
+        "screenshots/E07-settings-ready.png",
+        "screenshots/authenticated/A30-replay.png",
+        "screenshots/authenticated/A31-replay.png",
+        "screenshots/authenticated/A32-paper-trading.png"
+      ],
+      "artifact_version": "WF-SET-001-r14",
+      "revision_scope": "revised"
+    },
+    {
+      "id": "WF-FRAME-026",
+      "file": "WF-FRAME-026.svg",
+      "view": 4,
+      "state": 26,
+      "variant": "state",
+      "title": "No active run/positions/results or now-closed target",
+      "adapt": [
+        "UIS-ADAPT-001",
+        "UIS-ADAPT-004",
+        "UIS-ADAPT-005",
+        "UIS-ADAPT-006"
+      ],
+      "annotation": "Explain missing context or empty collection; retain historical closed-position detail if selected. Start/resume run, inspect existing records; no fictitious trade/result; IF-REC-008/011",
+      "gate_g4": "APPROVED",
+      "visibility": "bid",
+      "basis": "Bid",
+      "candle_visibility": {
+        "bid": true,
+        "ask": false,
+        "independent_toggles": true,
+        "scope": "active-chart"
+      },
+      "surface": "right-drawer-and-bottom-dock",
+      "regions": [
+        "UIS-REG-012",
+        "UIS-REG-013",
+        "UIS-REG-014",
+        "UIS-REG-011"
+      ],
+      "chart_persistent": true,
+      "uses_overlay": false,
+      "replay_stage": "inactive",
+      "replay_controls": null,
+      "paper_trading_over_replay": true,
+      "future_launchers": [
+        {
+          "name": "Run bundle viewer",
+          "status": "disabled",
+          "version": "future"
+        }
+      ],
+      "reference_screenshots": [
+        "screenshots/E01-load-chart.png",
+        "screenshots/E07-settings-ready.png",
+        "screenshots/authenticated/A32-paper-trading.png"
+      ],
+      "artifact_version": "WF-SET-001-r11",
+      "revision_scope": "unchanged"
+    },
+    {
+      "id": "WF-FRAME-027",
+      "file": "WF-FRAME-027.svg",
+      "view": 4,
+      "state": 27,
+      "variant": "state",
+      "title": "Sizing/loading/submitting/event evaluation",
+      "adapt": [
+        "UIS-ADAPT-001",
+        "UIS-ADAPT-004",
+        "UIS-ADAPT-005",
+        "UIS-ADAPT-006"
+      ],
+      "annotation": "Pending estimate/request/evaluation and scope visible; old valid terms remain identified. No new decision past unfinished event; reconcile same intent; IF-REC-008/009",
+      "gate_g4": "APPROVED",
+      "visibility": "bid",
+      "basis": "Bid",
+      "candle_visibility": {
+        "bid": true,
+        "ask": false,
+        "independent_toggles": true,
+        "scope": "active-chart"
+      },
+      "surface": "right-drawer-and-bottom-dock",
+      "regions": [
+        "UIS-REG-012",
+        "UIS-REG-013",
+        "UIS-REG-014",
+        "UIS-REG-011"
+      ],
+      "chart_persistent": true,
+      "uses_overlay": true,
+      "replay_stage": "event-processing",
+      "replay_controls": "floating-capsule",
+      "paper_trading_over_replay": true,
+      "future_launchers": [
+        {
+          "name": "Run bundle viewer",
+          "status": "disabled",
+          "version": "future"
+        }
+      ],
+      "reference_screenshots": [
+        "screenshots/E01-load-chart.png",
+        "screenshots/E07-settings-ready.png",
+        "screenshots/authenticated/A30-replay.png",
+        "screenshots/authenticated/A31-replay.png",
+        "screenshots/authenticated/A32-paper-trading.png"
+      ],
+      "artifact_version": "WF-SET-001-r13",
+      "revision_scope": "unchanged"
+    },
+    {
+      "id": "WF-FRAME-028",
+      "file": "WF-FRAME-028.svg",
+      "view": 4,
+      "state": 28,
+      "variant": "state",
+      "title": "Accepted/effective/triggered/filled/cancelled",
+      "adapt": [
+        "UIS-ADAPT-001",
+        "UIS-ADAPT-004",
+        "UIS-ADAPT-005",
+        "UIS-ADAPT-006"
+      ],
+      "annotation": "Distinct instruction/execution fact plus whole quantity/protection/fee/USD result. Acceptance/trigger is not fill or saved acknowledgement; IF-REC-008/011",
+      "gate_g4": "APPROVED",
+      "visibility": "bid",
+      "basis": "Bid",
+      "candle_visibility": {
+        "bid": true,
+        "ask": false,
+        "independent_toggles": true,
+        "scope": "active-chart"
+      },
+      "surface": "right-drawer-and-bottom-dock",
+      "regions": [
+        "UIS-REG-012",
+        "UIS-REG-013",
+        "UIS-REG-014",
+        "UIS-REG-011"
+      ],
+      "chart_persistent": true,
+      "uses_overlay": true,
+      "replay_stage": "paused",
+      "replay_controls": "floating-capsule",
+      "paper_trading_over_replay": true,
+      "future_launchers": [
+        {
+          "name": "Run bundle viewer",
+          "status": "disabled",
+          "version": "future"
+        }
+      ],
+      "reference_screenshots": [
+        "screenshots/E01-load-chart.png",
+        "screenshots/E07-settings-ready.png",
+        "screenshots/authenticated/A30-replay.png",
+        "screenshots/authenticated/A31-replay.png",
+        "screenshots/authenticated/A32-paper-trading.png"
+      ],
+      "artifact_version": "WF-SET-001-r11",
+      "revision_scope": "unchanged"
+    },
+    {
+      "id": "WF-FRAME-029",
+      "file": "WF-FRAME-029.svg",
+      "view": 4,
+      "state": 29,
+      "variant": "state",
+      "title": "Invalid/rejected/over-close/target conflict",
+      "adapt": [
+        "UIS-ADAPT-001",
+        "UIS-ADAPT-004",
+        "UIS-ADAPT-005",
+        "UIS-ADAPT-006"
+      ],
+      "annotation": "Specific field/remainder/target reason near request; prior valid pending order intact. Correct/review current target; IF-REC-008/009",
+      "gate_g4": "APPROVED",
+      "visibility": "bid",
+      "basis": "Bid",
+      "candle_visibility": {
+        "bid": true,
+        "ask": false,
+        "independent_toggles": true,
+        "scope": "active-chart"
+      },
+      "surface": "right-drawer-and-bottom-dock",
+      "regions": [
+        "UIS-REG-012",
+        "UIS-REG-013",
+        "UIS-REG-014",
+        "UIS-REG-011"
+      ],
+      "chart_persistent": true,
+      "uses_overlay": true,
+      "replay_stage": "paused",
+      "replay_controls": "floating-capsule",
+      "paper_trading_over_replay": true,
+      "future_launchers": [
+        {
+          "name": "Run bundle viewer",
+          "status": "disabled",
+          "version": "future"
+        }
+      ],
+      "reference_screenshots": [
+        "screenshots/E01-load-chart.png",
+        "screenshots/E07-settings-ready.png",
+        "screenshots/authenticated/A30-replay.png",
+        "screenshots/authenticated/A31-replay.png",
+        "screenshots/authenticated/A32-paper-trading.png"
+      ],
+      "artifact_version": "WF-SET-001-r11",
+      "revision_scope": "unchanged"
+    },
+    {
+      "id": "WF-FRAME-030",
+      "file": "WF-FRAME-030.svg",
+      "view": 4,
+      "state": 30,
+      "variant": "state",
+      "title": "Blocked evidence/FX/spec/gap",
+      "adapt": [
+        "UIS-ADAPT-001",
+        "UIS-ADAPT-004",
+        "UIS-ADAPT-005",
+        "UIS-ADAPT-006"
+      ],
+      "annotation": "Original reason/event and coherent prefix co-present; no partial new effect. Open UIS-VIEW-005; dismiss does not resolve; IF-REC-010",
+      "gate_g4": "APPROVED",
+      "visibility": "bid",
+      "basis": "Bid",
+      "candle_visibility": {
+        "bid": true,
+        "ask": false,
+        "independent_toggles": true,
+        "scope": "active-chart"
+      },
+      "surface": "right-drawer-and-bottom-dock",
+      "regions": [
+        "UIS-REG-012",
+        "UIS-REG-013",
+        "UIS-REG-014",
+        "UIS-REG-011"
+      ],
+      "chart_persistent": true,
+      "uses_overlay": true,
+      "replay_stage": "paused",
+      "replay_controls": "floating-capsule",
+      "paper_trading_over_replay": true,
+      "future_launchers": [
+        {
+          "name": "Run bundle viewer",
+          "status": "disabled",
+          "version": "future"
+        }
+      ],
+      "reference_screenshots": [
+        "screenshots/E01-load-chart.png",
+        "screenshots/E07-settings-ready.png",
+        "screenshots/authenticated/A30-replay.png",
+        "screenshots/authenticated/A31-replay.png",
+        "screenshots/authenticated/A32-paper-trading.png"
+      ],
+      "artifact_version": "WF-SET-001-r12",
+      "revision_scope": "unchanged"
+    },
+    {
+      "id": "WF-FRAME-031",
+      "file": "WF-FRAME-031.svg",
+      "view": 4,
+      "state": 31,
+      "variant": "state",
+      "title": "Stale draft/settings or uncertain command/save response",
+      "adapt": [
+        "UIS-ADAPT-001",
+        "UIS-ADAPT-004",
+        "UIS-ADAPT-005",
+        "UIS-ADAPT-006"
+      ],
+      "annotation": "Superseded estimate/target nonactionable; accepted working effect separate from retained status. Re-read/reconcile same occurrence; no duplicate submit; IF-REC-008/009/013",
+      "gate_g4": "APPROVED",
+      "visibility": "bid",
+      "basis": "Bid",
+      "candle_visibility": {
+        "bid": true,
+        "ask": false,
+        "independent_toggles": true,
+        "scope": "active-chart"
+      },
+      "surface": "right-drawer-and-bottom-dock",
+      "regions": [
+        "UIS-REG-012",
+        "UIS-REG-013",
+        "UIS-REG-014",
+        "UIS-REG-011"
+      ],
+      "chart_persistent": true,
+      "uses_overlay": true,
+      "replay_stage": "paused",
+      "replay_controls": "floating-capsule",
+      "paper_trading_over_replay": true,
+      "future_launchers": [
+        {
+          "name": "Run bundle viewer",
+          "status": "disabled",
+          "version": "future"
+        }
+      ],
+      "reference_screenshots": [
+        "screenshots/E01-load-chart.png",
+        "screenshots/E07-settings-ready.png",
+        "screenshots/authenticated/A30-replay.png",
+        "screenshots/authenticated/A31-replay.png",
+        "screenshots/authenticated/A32-paper-trading.png"
+      ],
+      "artifact_version": "WF-SET-001-r12",
+      "revision_scope": "unchanged"
+    },
+    {
+      "id": "WF-FRAME-032",
+      "file": "WF-FRAME-032.svg",
+      "view": 4,
+      "state": 32,
+      "variant": "state",
+      "title": "Offline/restricted",
+      "adapt": [
+        "UIS-ADAPT-001",
+        "UIS-ADAPT-004",
+        "UIS-ADAPT-005",
+        "UIS-ADAPT-006"
+      ],
+      "annotation": "Retained-run inspection continues if required inputs local; data outage not permission for guessed fill; writer-denied mutations unavailable. Qualified retained reads, authority/prerequisite recovery; IF-REC-010/013",
+      "gate_g4": "APPROVED",
+      "visibility": "bid",
+      "basis": "Bid",
+      "candle_visibility": {
+        "bid": true,
+        "ask": false,
+        "independent_toggles": true,
+        "scope": "active-chart"
+      },
+      "surface": "right-drawer-and-bottom-dock",
+      "regions": [
+        "UIS-REG-012",
+        "UIS-REG-013",
+        "UIS-REG-014",
+        "UIS-REG-011"
+      ],
+      "chart_persistent": true,
+      "uses_overlay": true,
+      "replay_stage": "paused",
+      "replay_controls": "floating-capsule",
+      "paper_trading_over_replay": true,
+      "future_launchers": [
+        {
+          "name": "Run bundle viewer",
+          "status": "disabled",
+          "version": "future"
+        }
+      ],
+      "reference_screenshots": [
+        "screenshots/E01-load-chart.png",
+        "screenshots/E07-settings-ready.png",
+        "screenshots/authenticated/A30-replay.png",
+        "screenshots/authenticated/A31-replay.png",
+        "screenshots/authenticated/A32-paper-trading.png"
+      ],
+      "artifact_version": "WF-SET-001-r12",
+      "revision_scope": "unchanged"
+    },
+    {
+      "id": "WF-FRAME-033",
+      "file": "WF-FRAME-033.svg",
+      "view": 5,
+      "state": 33,
+      "variant": "state",
+      "title": "Explained block",
+      "adapt": [
+        "UIS-ADAPT-001",
+        "UIS-ADAPT-004",
+        "UIS-ADAPT-005",
+        "UIS-ADAPT-006"
+      ],
+      "annotation": "Original reason/event and last coherent prefix primary. Resolve required fact or remain paused; IF-REC-010",
+      "gate_g4": "APPROVED",
+      "visibility": "bid",
+      "basis": "Bid",
+      "candle_visibility": {
+        "bid": true,
+        "ask": false,
+        "independent_toggles": true,
+        "scope": "active-chart"
+      },
+      "surface": "right-context-drawer",
+      "regions": [
+        "UIS-REG-015",
+        "UIS-REG-016",
+        "UIS-REG-017"
+      ],
+      "chart_persistent": true,
+      "uses_overlay": true,
+      "replay_stage": "paused",
+      "replay_controls": "floating-capsule",
+      "paper_trading_over_replay": false,
+      "future_launchers": [
+        {
+          "name": "Run bundle viewer",
+          "status": "disabled",
+          "version": "future"
+        }
+      ],
+      "reference_screenshots": [
+        "screenshots/E01-load-chart.png",
+        "screenshots/E07-settings-ready.png",
+        "screenshots/authenticated/A30-replay.png",
+        "screenshots/authenticated/A31-replay.png"
+      ],
+      "artifact_version": "WF-SET-001-r11",
+      "revision_scope": "unchanged"
+    },
+    {
+      "id": "WF-FRAME-034",
+      "file": "WF-FRAME-034.svg",
+      "view": 5,
+      "state": 34,
+      "variant": "state",
+      "title": "Evidence loading/recovery partial",
+      "adapt": [
+        "UIS-ADAPT-001",
+        "UIS-ADAPT-004",
+        "UIS-ADAPT-005",
+        "UIS-ADAPT-006"
+      ],
+      "annotation": "Requested prerequisite/known phase visible without fill. Qualified retry/cancel inspection; block persists; IF-REC-010/012",
+      "gate_g4": "APPROVED",
+      "visibility": "bid",
+      "basis": "Bid",
+      "candle_visibility": {
+        "bid": true,
+        "ask": false,
+        "independent_toggles": true,
+        "scope": "active-chart"
+      },
+      "surface": "right-context-drawer",
+      "regions": [
+        "UIS-REG-015",
+        "UIS-REG-016",
+        "UIS-REG-017"
+      ],
+      "chart_persistent": true,
+      "uses_overlay": true,
+      "replay_stage": "paused",
+      "replay_controls": "floating-capsule",
+      "paper_trading_over_replay": false,
+      "future_launchers": [
+        {
+          "name": "Run bundle viewer",
+          "status": "disabled",
+          "version": "future"
+        }
+      ],
+      "reference_screenshots": [
+        "screenshots/E01-load-chart.png",
+        "screenshots/E07-settings-ready.png",
+        "screenshots/authenticated/A30-replay.png",
+        "screenshots/authenticated/A31-replay.png"
+      ],
+      "artifact_version": "WF-SET-001-r11",
+      "revision_scope": "unchanged"
+    },
+    {
+      "id": "WF-FRAME-035",
+      "file": "WF-FRAME-035.svg",
+      "view": 5,
+      "state": 35,
+      "variant": "state",
+      "title": "Missing/invalid/inapplicable prerequisite",
+      "adapt": [
+        "UIS-ADAPT-001",
+        "UIS-ADAPT-004",
+        "UIS-ADAPT-005",
+        "UIS-ADAPT-006"
+      ],
+      "annotation": "Needed fact and specific rejection/absence reason remain. No guessed price/FX/closure; correct evidence or later resume; IF-REC-010",
+      "gate_g4": "APPROVED",
+      "visibility": "bid",
+      "basis": "Bid",
+      "candle_visibility": {
+        "bid": true,
+        "ask": false,
+        "independent_toggles": true,
+        "scope": "active-chart"
+      },
+      "surface": "right-context-drawer",
+      "regions": [
+        "UIS-REG-015",
+        "UIS-REG-016",
+        "UIS-REG-017"
+      ],
+      "chart_persistent": true,
+      "uses_overlay": true,
+      "replay_stage": "paused",
+      "replay_controls": "floating-capsule",
+      "paper_trading_over_replay": false,
+      "future_launchers": [
+        {
+          "name": "Run bundle viewer",
+          "status": "disabled",
+          "version": "future"
+        }
+      ],
+      "reference_screenshots": [
+        "screenshots/E01-load-chart.png",
+        "screenshots/E07-settings-ready.png",
+        "screenshots/authenticated/A30-replay.png",
+        "screenshots/authenticated/A31-replay.png"
+      ],
+      "artifact_version": "WF-SET-001-r11",
+      "revision_scope": "unchanged"
+    },
+    {
+      "id": "WF-FRAME-036",
+      "file": "WF-FRAME-036.svg",
+      "view": 5,
+      "state": 36,
+      "variant": "state",
+      "title": "Compatible resolution being applied",
+      "adapt": [
+        "UIS-ADAPT-001",
+        "UIS-ADAPT-004",
+        "UIS-ADAPT-005",
+        "UIS-ADAPT-006"
+      ],
+      "annotation": "Original event/context and pending whole effect identified. No intervening new decision or duplicate resolution; IF-REC-010",
+      "gate_g4": "APPROVED",
+      "visibility": "bid",
+      "basis": "Bid",
+      "candle_visibility": {
+        "bid": true,
+        "ask": false,
+        "independent_toggles": true,
+        "scope": "active-chart"
+      },
+      "surface": "right-context-drawer",
+      "regions": [
+        "UIS-REG-015",
+        "UIS-REG-016",
+        "UIS-REG-017"
+      ],
+      "chart_persistent": true,
+      "uses_overlay": true,
+      "replay_stage": "paused",
+      "replay_controls": "floating-capsule",
+      "paper_trading_over_replay": false,
+      "future_launchers": [
+        {
+          "name": "Run bundle viewer",
+          "status": "disabled",
+          "version": "future"
+        }
+      ],
+      "reference_screenshots": [
+        "screenshots/E01-load-chart.png",
+        "screenshots/E07-settings-ready.png",
+        "screenshots/authenticated/A30-replay.png",
+        "screenshots/authenticated/A31-replay.png"
+      ],
+      "artifact_version": "WF-SET-001-r11",
+      "revision_scope": "unchanged"
+    },
+    {
+      "id": "WF-FRAME-037",
+      "file": "WF-FRAME-037.svg",
+      "view": 5,
+      "state": 37,
+      "variant": "state",
+      "title": "Known resolved or outcome unknown",
+      "adapt": [
+        "UIS-ADAPT-001",
+        "UIS-ADAPT-004",
+        "UIS-ADAPT-005",
+        "UIS-ADAPT-006"
+      ],
+      "annotation": "Known whole effect replaces active block; unknown publication requires reconciliation before further mutation. Preserve original event/recorded outcome; no automatic play; IF-REC-010/013",
+      "gate_g4": "APPROVED",
+      "visibility": "bid",
+      "basis": "Bid",
+      "candle_visibility": {
+        "bid": true,
+        "ask": false,
+        "independent_toggles": true,
+        "scope": "active-chart"
+      },
+      "surface": "right-context-drawer",
+      "regions": [
+        "UIS-REG-015",
+        "UIS-REG-016",
+        "UIS-REG-017"
+      ],
+      "chart_persistent": true,
+      "uses_overlay": true,
+      "replay_stage": "paused",
+      "replay_controls": "floating-capsule",
+      "paper_trading_over_replay": false,
+      "future_launchers": [
+        {
+          "name": "Run bundle viewer",
+          "status": "disabled",
+          "version": "future"
+        }
+      ],
+      "reference_screenshots": [
+        "screenshots/E01-load-chart.png",
+        "screenshots/E07-settings-ready.png",
+        "screenshots/authenticated/A30-replay.png",
+        "screenshots/authenticated/A31-replay.png"
+      ],
+      "artifact_version": "WF-SET-001-r11",
+      "revision_scope": "unchanged"
+    },
+    {
+      "id": "WF-FRAME-038",
+      "file": "WF-FRAME-038.svg",
+      "view": 5,
+      "state": 38,
+      "variant": "state",
+      "title": "Incompatible retained-basis change",
+      "adapt": [
+        "UIS-ADAPT-001",
+        "UIS-ADAPT-004",
+        "UIS-ADAPT-005",
+        "UIS-ADAPT-006"
+      ],
+      "annotation": "Explain why new catalog/spec evidence cannot silently alter committed history. Stay blocked or deliberate restart with confirmation; IF-REC-010/006",
+      "gate_g4": "APPROVED",
+      "visibility": "bid",
+      "basis": "Bid",
+      "candle_visibility": {
+        "bid": true,
+        "ask": false,
+        "independent_toggles": true,
+        "scope": "active-chart"
+      },
+      "surface": "right-context-drawer",
+      "regions": [
+        "UIS-REG-015",
+        "UIS-REG-016",
+        "UIS-REG-017"
+      ],
+      "chart_persistent": true,
+      "uses_overlay": true,
+      "replay_stage": "paused",
+      "replay_controls": "floating-capsule",
+      "paper_trading_over_replay": false,
+      "future_launchers": [
+        {
+          "name": "Run bundle viewer",
+          "status": "disabled",
+          "version": "future"
+        }
+      ],
+      "reference_screenshots": [
+        "screenshots/E01-load-chart.png",
+        "screenshots/E07-settings-ready.png",
+        "screenshots/authenticated/A30-replay.png",
+        "screenshots/authenticated/A31-replay.png"
+      ],
+      "artifact_version": "WF-SET-001-r11",
+      "revision_scope": "unchanged"
+    },
+    {
+      "id": "WF-FRAME-039",
+      "file": "WF-FRAME-039.svg",
+      "view": 5,
+      "state": 39,
+      "variant": "state",
+      "title": "Offline/retryable read failure",
+      "adapt": [
+        "UIS-ADAPT-001",
+        "UIS-ADAPT-004",
+        "UIS-ADAPT-005",
+        "UIS-ADAPT-006"
+      ],
+      "annotation": "Retained evidence inspectable, missing network fact unavailable. Qualified retry when possible; no provider deadline; IF-REC-010/012",
+      "gate_g4": "APPROVED",
+      "visibility": "bid",
+      "basis": "Bid",
+      "candle_visibility": {
+        "bid": true,
+        "ask": false,
+        "independent_toggles": true,
+        "scope": "active-chart"
+      },
+      "surface": "right-context-drawer",
+      "regions": [
+        "UIS-REG-015",
+        "UIS-REG-016",
+        "UIS-REG-017"
+      ],
+      "chart_persistent": true,
+      "uses_overlay": true,
+      "replay_stage": "paused",
+      "replay_controls": "floating-capsule",
+      "paper_trading_over_replay": false,
+      "future_launchers": [
+        {
+          "name": "Run bundle viewer",
+          "status": "disabled",
+          "version": "future"
+        }
+      ],
+      "reference_screenshots": [
+        "screenshots/E01-load-chart.png",
+        "screenshots/E07-settings-ready.png",
+        "screenshots/authenticated/A30-replay.png",
+        "screenshots/authenticated/A31-replay.png"
+      ],
+      "artifact_version": "WF-SET-001-r11",
+      "revision_scope": "unchanged"
+    },
+    {
+      "id": "WF-FRAME-040",
+      "file": "WF-FRAME-040.svg",
+      "view": 5,
+      "state": 40,
+      "variant": "state",
+      "title": "Stale event/epoch, no current block or restricted",
+      "adapt": [
+        "UIS-ADAPT-001",
+        "UIS-ADAPT-004",
+        "UIS-ADAPT-005",
+        "UIS-ADAPT-006"
+      ],
+      "annotation": "Old explanation identified as historical/nonactionable; mutation denied or return to current state. Discard stale completion, fresh current context needed; IF-REC-010/013",
+      "gate_g4": "APPROVED",
+      "visibility": "bid",
+      "basis": "Bid",
+      "candle_visibility": {
+        "bid": true,
+        "ask": false,
+        "independent_toggles": true,
+        "scope": "active-chart"
+      },
+      "surface": "right-context-drawer",
+      "regions": [
+        "UIS-REG-015",
+        "UIS-REG-016",
+        "UIS-REG-017"
+      ],
+      "chart_persistent": true,
+      "uses_overlay": true,
+      "replay_stage": "paused",
+      "replay_controls": "floating-capsule",
+      "paper_trading_over_replay": false,
+      "future_launchers": [
+        {
+          "name": "Run bundle viewer",
+          "status": "disabled",
+          "version": "future"
+        }
+      ],
+      "reference_screenshots": [
+        "screenshots/E01-load-chart.png",
+        "screenshots/E07-settings-ready.png",
+        "screenshots/authenticated/A30-replay.png",
+        "screenshots/authenticated/A31-replay.png"
+      ],
+      "artifact_version": "WF-SET-001-r11",
+      "revision_scope": "unchanged"
+    },
+    {
+      "id": "WF-FRAME-041",
+      "file": "WF-FRAME-041.svg",
+      "view": 6,
+      "state": 41,
+      "variant": "state",
+      "title": "Receiving/qualified ready",
+      "adapt": [
+        "UIS-ADAPT-001",
+        "UIS-ADAPT-004",
+        "UIS-ADAPT-005",
+        "UIS-ADAPT-006"
+      ],
+      "annotation": "Actual receipt/feed condition and current qualified coverage visible. Current catalog distinct from saved-run basis; IF-REC-012",
+      "gate_g4": "APPROVED",
+      "visibility": "bid",
+      "basis": "Bid",
+      "candle_visibility": {
+        "bid": true,
+        "ask": false,
+        "independent_toggles": true,
+        "scope": "active-chart"
+      },
+      "surface": "right-context-drawer",
+      "regions": [
+        "UIS-REG-018",
+        "UIS-REG-019",
+        "UIS-REG-020"
+      ],
+      "chart_persistent": true,
+      "uses_overlay": false,
+      "replay_stage": "inactive",
+      "replay_controls": null,
+      "paper_trading_over_replay": false,
+      "future_launchers": [
+        {
+          "name": "Run bundle viewer",
+          "status": "disabled",
+          "version": "future"
+        }
+      ],
+      "reference_screenshots": [
+        "screenshots/E01-load-chart.png",
+        "screenshots/E07-settings-ready.png"
+      ],
+      "artifact_version": "WF-SET-001-r11",
+      "revision_scope": "unchanged"
+    },
+    {
+      "id": "WF-FRAME-042",
+      "file": "WF-FRAME-042.svg",
+      "view": 6,
+      "state": 42,
+      "variant": "state",
+      "title": "Discovering/catching up/partial/provisional",
+      "adapt": [
+        "UIS-ADAPT-001",
+        "UIS-ADAPT-004",
+        "UIS-ADAPT-005",
+        "UIS-ADAPT-006"
+      ],
+      "annotation": "Phase, requested span, qualified subset and unresolved remainder visible. Retain published history; partial not complete/final; IF-REC-012",
+      "gate_g4": "APPROVED",
+      "visibility": "bid",
+      "basis": "Bid",
+      "candle_visibility": {
+        "bid": true,
+        "ask": false,
+        "independent_toggles": true,
+        "scope": "active-chart"
+      },
+      "surface": "right-context-drawer",
+      "regions": [
+        "UIS-REG-018",
+        "UIS-REG-019",
+        "UIS-REG-020"
+      ],
+      "chart_persistent": true,
+      "uses_overlay": false,
+      "replay_stage": "inactive",
+      "replay_controls": null,
+      "paper_trading_over_replay": false,
+      "future_launchers": [
+        {
+          "name": "Run bundle viewer",
+          "status": "disabled",
+          "version": "future"
+        }
+      ],
+      "reference_screenshots": [
+        "screenshots/E01-load-chart.png",
+        "screenshots/E07-settings-ready.png"
+      ],
+      "artifact_version": "WF-SET-001-r11",
+      "revision_scope": "unchanged"
+    },
+    {
+      "id": "WF-FRAME-043",
+      "file": "WF-FRAME-043.svg",
+      "view": 6,
+      "state": 43,
+      "variant": "state",
+      "title": "No recent receipt/unknown freshness/proven closure",
+      "adapt": [
+        "UIS-ADAPT-001",
+        "UIS-ADAPT-004",
+        "UIS-ADAPT-005",
+        "UIS-ADAPT-006"
+      ],
+      "annotation": "Distinct reasoned conditions; known closure only from evidence. No fabricated movement or closure inference; IF-REC-012",
+      "gate_g4": "APPROVED",
+      "visibility": "bid",
+      "basis": "Bid",
+      "candle_visibility": {
+        "bid": true,
+        "ask": false,
+        "independent_toggles": true,
+        "scope": "active-chart"
+      },
+      "surface": "right-context-drawer",
+      "regions": [
+        "UIS-REG-018",
+        "UIS-REG-019",
+        "UIS-REG-020"
+      ],
+      "chart_persistent": true,
+      "uses_overlay": false,
+      "replay_stage": "inactive",
+      "replay_controls": null,
+      "paper_trading_over_replay": false,
+      "future_launchers": [
+        {
+          "name": "Run bundle viewer",
+          "status": "disabled",
+          "version": "future"
+        }
+      ],
+      "reference_screenshots": [
+        "screenshots/E01-load-chart.png",
+        "screenshots/E07-settings-ready.png"
+      ],
+      "artifact_version": "WF-SET-001-r11",
+      "revision_scope": "unchanged"
+    },
+    {
+      "id": "WF-FRAME-044",
+      "file": "WF-FRAME-044.svg",
+      "view": 6,
+      "state": 44,
+      "variant": "state",
+      "title": "Empty/invalid/conflicting response or coverage",
+      "adapt": [
+        "UIS-ADAPT-001",
+        "UIS-ADAPT-004",
+        "UIS-ADAPT-005",
+        "UIS-ADAPT-006"
+      ],
+      "annotation": "Span/reason explains absence/conflict; old qualified catalog remains. Retry qualified read/re-decide overlap; not silent last-writer-wins; IF-REC-012",
+      "gate_g4": "APPROVED",
+      "visibility": "bid",
+      "basis": "Bid",
+      "candle_visibility": {
+        "bid": true,
+        "ask": false,
+        "independent_toggles": true,
+        "scope": "active-chart"
+      },
+      "surface": "right-context-drawer",
+      "regions": [
+        "UIS-REG-018",
+        "UIS-REG-019",
+        "UIS-REG-020"
+      ],
+      "chart_persistent": true,
+      "uses_overlay": false,
+      "replay_stage": "inactive",
+      "replay_controls": null,
+      "paper_trading_over_replay": false,
+      "future_launchers": [
+        {
+          "name": "Run bundle viewer",
+          "status": "disabled",
+          "version": "future"
+        }
+      ],
+      "reference_screenshots": [
+        "screenshots/E01-load-chart.png",
+        "screenshots/E07-settings-ready.png"
+      ],
+      "artifact_version": "WF-SET-001-r11",
+      "revision_scope": "unchanged"
+    },
+    {
+      "id": "WF-FRAME-045",
+      "file": "WF-FRAME-045.svg",
+      "view": 6,
+      "state": 45,
+      "variant": "state",
+      "title": "Stale/offline/disconnected/rate-limited",
+      "adapt": [
+        "UIS-ADAPT-001",
+        "UIS-ADAPT-004",
+        "UIS-ADAPT-005",
+        "UIS-ADAPT-006"
+      ],
+      "annotation": "Limitation and last known usable coverage remain; no invented recovery deadline. Read local history, qualified bounded reconnect/retry; IF-REC-012",
+      "gate_g4": "APPROVED",
+      "visibility": "bid",
+      "basis": "Bid",
+      "candle_visibility": {
+        "bid": true,
+        "ask": false,
+        "independent_toggles": true,
+        "scope": "active-chart"
+      },
+      "surface": "right-context-drawer",
+      "regions": [
+        "UIS-REG-018",
+        "UIS-REG-019",
+        "UIS-REG-020"
+      ],
+      "chart_persistent": true,
+      "uses_overlay": false,
+      "replay_stage": "inactive",
+      "replay_controls": null,
+      "paper_trading_over_replay": false,
+      "future_launchers": [
+        {
+          "name": "Run bundle viewer",
+          "status": "disabled",
+          "version": "future"
+        }
+      ],
+      "reference_screenshots": [
+        "screenshots/E01-load-chart.png",
+        "screenshots/E07-settings-ready.png"
+      ],
+      "artifact_version": "WF-SET-001-r11",
+      "revision_scope": "unchanged"
+    },
+    {
+      "id": "WF-FRAME-046",
+      "file": "WF-FRAME-046.svg",
+      "view": 6,
+      "state": 46,
+      "variant": "state",
+      "title": "Access denied/unverified provider capability",
+      "adapt": [
+        "UIS-ADAPT-001",
+        "UIS-ADAPT-004",
+        "UIS-ADAPT-005",
+        "UIS-ADAPT-006"
+      ],
+      "annotation": "Required live limitation explicit, no false ready or demo substitution. Protected setup/integration evidence required; historical mode usable; IF-REC-012",
+      "gate_g4": "APPROVED",
+      "visibility": "bid",
+      "basis": "Bid",
+      "candle_visibility": {
+        "bid": true,
+        "ask": false,
+        "independent_toggles": true,
+        "scope": "active-chart"
+      },
+      "surface": "right-context-drawer",
+      "regions": [
+        "UIS-REG-018",
+        "UIS-REG-019",
+        "UIS-REG-020"
+      ],
+      "chart_persistent": true,
+      "uses_overlay": false,
+      "replay_stage": "inactive",
+      "replay_controls": null,
+      "paper_trading_over_replay": false,
+      "future_launchers": [
+        {
+          "name": "Run bundle viewer",
+          "status": "disabled",
+          "version": "future"
+        }
+      ],
+      "reference_screenshots": [
+        "screenshots/E01-load-chart.png",
+        "screenshots/E07-settings-ready.png"
+      ],
+      "artifact_version": "WF-SET-001-r11",
+      "revision_scope": "unchanged"
+    },
+    {
+      "id": "WF-FRAME-047",
+      "file": "WF-FRAME-047.svg",
+      "view": 6,
+      "state": 47,
+      "variant": "state",
+      "title": "Local publication unknown/storage failure/display lag",
+      "adapt": [
+        "UIS-ADAPT-001",
+        "UIS-ADAPT-004",
+        "UIS-ADAPT-005",
+        "UIS-ADAPT-006"
+      ],
+      "annotation": "Distinguish receipt, visible display and retained catalog outcome. Inspect/reconcile publication, rebuild bounded view/correct storage; IF-REC-012/013",
+      "gate_g4": "APPROVED",
+      "visibility": "bid",
+      "basis": "Bid",
+      "candle_visibility": {
+        "bid": true,
+        "ask": false,
+        "independent_toggles": true,
+        "scope": "active-chart"
+      },
+      "surface": "right-context-drawer",
+      "regions": [
+        "UIS-REG-018",
+        "UIS-REG-019",
+        "UIS-REG-020"
+      ],
+      "chart_persistent": true,
+      "uses_overlay": false,
+      "replay_stage": "inactive",
+      "replay_controls": null,
+      "paper_trading_over_replay": false,
+      "future_launchers": [
+        {
+          "name": "Run bundle viewer",
+          "status": "disabled",
+          "version": "future"
+        }
+      ],
+      "reference_screenshots": [
+        "screenshots/E01-load-chart.png",
+        "screenshots/E07-settings-ready.png"
+      ],
+      "artifact_version": "WF-SET-001-r11",
+      "revision_scope": "unchanged"
+    },
+    {
+      "id": "WF-FRAME-048",
+      "file": "WF-FRAME-048.svg",
+      "view": 6,
+      "state": 48,
+      "variant": "state",
+      "title": "Runtime authority revoked/replay inspection",
+      "adapt": [
+        "UIS-ADAPT-001",
+        "UIS-ADAPT-004",
+        "UIS-ADAPT-005",
+        "UIS-ADAPT-006"
+      ],
+      "annotation": "Old callbacks unavailable to publish; replay-origin context omits later price data. Fresh valid session/catch-up or return; explicit exit before latest-price inspection; IF-REC-012",
+      "gate_g4": "APPROVED",
+      "visibility": "bid",
+      "basis": "Bid",
+      "candle_visibility": {
+        "bid": true,
+        "ask": false,
+        "independent_toggles": true,
+        "scope": "active-chart"
+      },
+      "surface": "right-context-drawer",
+      "regions": [
+        "UIS-REG-018",
+        "UIS-REG-019",
+        "UIS-REG-020"
+      ],
+      "chart_persistent": true,
+      "uses_overlay": true,
+      "replay_stage": "paused",
+      "replay_controls": "floating-capsule",
+      "paper_trading_over_replay": false,
+      "future_launchers": [
+        {
+          "name": "Run bundle viewer",
+          "status": "disabled",
+          "version": "future"
+        }
+      ],
+      "reference_screenshots": [
+        "screenshots/E01-load-chart.png",
+        "screenshots/E07-settings-ready.png",
+        "screenshots/authenticated/A30-replay.png",
+        "screenshots/authenticated/A31-replay.png"
+      ],
+      "artifact_version": "WF-SET-001-r11",
+      "revision_scope": "unchanged"
+    },
+    {
+      "id": "WF-FRAME-049",
+      "file": "WF-FRAME-049.svg",
+      "view": 7,
+      "state": 49,
+      "variant": "state",
+      "title": "Valid confirmation review",
+      "adapt": [
+        "UIS-ADAPT-001",
+        "UIS-ADAPT-004",
+        "UIS-ADAPT-005",
+        "UIS-ADAPT-006"
+      ],
+      "annotation": "Exact consequence/scope/version co-present with confirm/cancel. Old state authoritative; cancel unchanged; IF-REC-006/014",
+      "gate_g4": "APPROVED",
+      "visibility": "bid",
+      "basis": "Bid",
+      "candle_visibility": {
+        "bid": true,
+        "ask": false,
+        "independent_toggles": true,
+        "scope": "active-chart"
+      },
+      "surface": "inline-confirmation-in-replay-or-work-dock",
+      "regions": [
+        "UIS-REG-021",
+        "UIS-REG-022",
+        "UIS-REG-023"
+      ],
+      "chart_persistent": true,
+      "uses_overlay": true,
+      "replay_stage": "paused",
+      "replay_controls": "floating-capsule",
+      "paper_trading_over_replay": false,
+      "future_launchers": [
+        {
+          "name": "Run bundle viewer",
+          "status": "disabled",
+          "version": "future"
+        }
+      ],
+      "reference_screenshots": [
+        "screenshots/E01-load-chart.png",
+        "screenshots/E07-settings-ready.png",
+        "screenshots/authenticated/A30-replay.png",
+        "screenshots/authenticated/A31-replay.png"
+      ],
+      "artifact_version": "WF-SET-001-r11",
+      "revision_scope": "unchanged"
+    },
+    {
+      "id": "WF-FRAME-050",
+      "file": "WF-FRAME-050.svg",
+      "view": 7,
+      "state": 50,
+      "variant": "state",
+      "title": "No valid target/missing evidence/failed validation",
+      "adapt": [
+        "UIS-ADAPT-001",
+        "UIS-ADAPT-004",
+        "UIS-ADAPT-005",
+        "UIS-ADAPT-006"
+      ],
+      "annotation": "Confirm unavailable with specific reason; scoped return/cancel visible. Nothing activated; choose valid target/evidence; IF-REC-006/014",
+      "gate_g4": "APPROVED",
+      "visibility": "bid",
+      "basis": "Bid",
+      "candle_visibility": {
+        "bid": true,
+        "ask": false,
+        "independent_toggles": true,
+        "scope": "active-chart"
+      },
+      "surface": "inline-confirmation-in-replay-or-work-dock",
+      "regions": [
+        "UIS-REG-021",
+        "UIS-REG-022",
+        "UIS-REG-023"
+      ],
+      "chart_persistent": true,
+      "uses_overlay": true,
+      "replay_stage": "paused",
+      "replay_controls": "floating-capsule",
+      "paper_trading_over_replay": false,
+      "future_launchers": [
+        {
+          "name": "Run bundle viewer",
+          "status": "disabled",
+          "version": "future"
+        }
+      ],
+      "reference_screenshots": [
+        "screenshots/E01-load-chart.png",
+        "screenshots/E07-settings-ready.png",
+        "screenshots/authenticated/A30-replay.png",
+        "screenshots/authenticated/A31-replay.png"
+      ],
+      "artifact_version": "WF-SET-001-r11",
+      "revision_scope": "unchanged"
+    },
+    {
+      "id": "WF-FRAME-051",
+      "file": "WF-FRAME-051.svg",
+      "view": 7,
+      "state": 51,
+      "variant": "state",
+      "title": "Target/version changed",
+      "adapt": [
+        "UIS-ADAPT-001",
+        "UIS-ADAPT-004",
+        "UIS-ADAPT-005",
+        "UIS-ADAPT-006"
+      ],
+      "annotation": "Prior approval proposal explicitly invalid; revised consequence requires review. No old confirmation reused; IF-REC-006/014",
+      "gate_g4": "APPROVED",
+      "visibility": "bid",
+      "basis": "Bid",
+      "candle_visibility": {
+        "bid": true,
+        "ask": false,
+        "independent_toggles": true,
+        "scope": "active-chart"
+      },
+      "surface": "inline-confirmation-in-replay-or-work-dock",
+      "regions": [
+        "UIS-REG-021",
+        "UIS-REG-022",
+        "UIS-REG-023"
+      ],
+      "chart_persistent": true,
+      "uses_overlay": true,
+      "replay_stage": "paused",
+      "replay_controls": "floating-capsule",
+      "paper_trading_over_replay": false,
+      "future_launchers": [
+        {
+          "name": "Run bundle viewer",
+          "status": "disabled",
+          "version": "future"
+        }
+      ],
+      "reference_screenshots": [
+        "screenshots/E01-load-chart.png",
+        "screenshots/E07-settings-ready.png",
+        "screenshots/authenticated/A30-replay.png",
+        "screenshots/authenticated/A31-replay.png"
+      ],
+      "artifact_version": "WF-SET-001-r11",
+      "revision_scope": "unchanged"
+    },
+    {
+      "id": "WF-FRAME-052",
+      "file": "WF-FRAME-052.svg",
+      "view": 7,
+      "state": 52,
+      "variant": "state",
+      "title": "Confirmed preparation/reconstruction",
+      "adapt": [
+        "UIS-ADAPT-001",
+        "UIS-ADAPT-004",
+        "UIS-ADAPT-005",
+        "UIS-ADAPT-006"
+      ],
+      "annotation": "Phase visible, no premature replacement success; old coherent state remains authoritative. Cancellation supported only before irreversible publication; after publication reconcile; IF-REC-006/014",
+      "gate_g4": "APPROVED",
+      "visibility": "bid",
+      "basis": "Bid",
+      "candle_visibility": {
+        "bid": true,
+        "ask": false,
+        "independent_toggles": true,
+        "scope": "active-chart"
+      },
+      "surface": "inline-confirmation-in-replay-or-work-dock",
+      "regions": [
+        "UIS-REG-021",
+        "UIS-REG-022",
+        "UIS-REG-023"
+      ],
+      "chart_persistent": true,
+      "uses_overlay": true,
+      "replay_stage": "paused",
+      "replay_controls": "floating-capsule",
+      "paper_trading_over_replay": false,
+      "future_launchers": [
+        {
+          "name": "Run bundle viewer",
+          "status": "disabled",
+          "version": "future"
+        }
+      ],
+      "reference_screenshots": [
+        "screenshots/E01-load-chart.png",
+        "screenshots/E07-settings-ready.png",
+        "screenshots/authenticated/A30-replay.png",
+        "screenshots/authenticated/A31-replay.png"
+      ],
+      "artifact_version": "WF-SET-001-r11",
+      "revision_scope": "unchanged"
+    },
+    {
+      "id": "WF-FRAME-053",
+      "file": "WF-FRAME-053.svg",
+      "view": 7,
+      "state": 53,
+      "variant": "state",
+      "title": "Cancelled/known failed prepublication",
+      "adapt": [
+        "UIS-ADAPT-001",
+        "UIS-ADAPT-004",
+        "UIS-ADAPT-005",
+        "UIS-ADAPT-006"
+      ],
+      "annotation": "Clear unchanged original target/cursor result. Return to invoker, no destructive retry; IF-REC-006/014",
+      "gate_g4": "APPROVED",
+      "visibility": "bid",
+      "basis": "Bid",
+      "candle_visibility": {
+        "bid": true,
+        "ask": false,
+        "independent_toggles": true,
+        "scope": "active-chart"
+      },
+      "surface": "inline-confirmation-in-replay-or-work-dock",
+      "regions": [
+        "UIS-REG-021",
+        "UIS-REG-022",
+        "UIS-REG-023"
+      ],
+      "chart_persistent": true,
+      "uses_overlay": true,
+      "replay_stage": "paused",
+      "replay_controls": "floating-capsule",
+      "paper_trading_over_replay": false,
+      "future_launchers": [
+        {
+          "name": "Run bundle viewer",
+          "status": "disabled",
+          "version": "future"
+        }
+      ],
+      "reference_screenshots": [
+        "screenshots/E01-load-chart.png",
+        "screenshots/E07-settings-ready.png",
+        "screenshots/authenticated/A30-replay.png",
+        "screenshots/authenticated/A31-replay.png"
+      ],
+      "artifact_version": "WF-SET-001-r11",
+      "revision_scope": "unchanged"
+    },
+    {
+      "id": "WF-FRAME-054",
+      "file": "WF-FRAME-054.svg",
+      "view": 7,
+      "state": 54,
+      "variant": "state",
+      "title": "Replacement outcome unknown",
+      "adapt": [
+        "UIS-ADAPT-001",
+        "UIS-ADAPT-004",
+        "UIS-ADAPT-005",
+        "UIS-ADAPT-006"
+      ],
+      "annotation": "Persistent reconciliation condition; no repeated replacement or guessed rollback. Resolve whole old/new generation first; IF-REC-006/013/014",
+      "gate_g4": "APPROVED",
+      "visibility": "bid",
+      "basis": "Bid",
+      "candle_visibility": {
+        "bid": true,
+        "ask": false,
+        "independent_toggles": true,
+        "scope": "active-chart"
+      },
+      "surface": "inline-confirmation-in-replay-or-work-dock",
+      "regions": [
+        "UIS-REG-021",
+        "UIS-REG-022",
+        "UIS-REG-023"
+      ],
+      "chart_persistent": true,
+      "uses_overlay": true,
+      "replay_stage": "paused",
+      "replay_controls": "floating-capsule",
+      "paper_trading_over_replay": false,
+      "future_launchers": [
+        {
+          "name": "Run bundle viewer",
+          "status": "disabled",
+          "version": "future"
+        }
+      ],
+      "reference_screenshots": [
+        "screenshots/E01-load-chart.png",
+        "screenshots/E07-settings-ready.png",
+        "screenshots/authenticated/A30-replay.png",
+        "screenshots/authenticated/A31-replay.png"
+      ],
+      "artifact_version": "WF-SET-001-r11",
+      "revision_scope": "unchanged"
+    },
+    {
+      "id": "WF-FRAME-055",
+      "file": "WF-FRAME-055.svg",
+      "view": 7,
+      "state": 55,
+      "variant": "state",
+      "title": "Known successful replacement",
+      "adapt": [
+        "UIS-ADAPT-001",
+        "UIS-ADAPT-004",
+        "UIS-ADAPT-005",
+        "UIS-ADAPT-006"
+      ],
+      "annotation": "Surviving new state/mode, fresh epoch and actual publication result identified. Return to meaningful survivor; no promise of automatic discarded-state archive; IF-REC-006/014",
+      "gate_g4": "APPROVED",
+      "visibility": "bid",
+      "basis": "Bid",
+      "candle_visibility": {
+        "bid": true,
+        "ask": false,
+        "independent_toggles": true,
+        "scope": "active-chart"
+      },
+      "surface": "inline-confirmation-in-replay-or-work-dock",
+      "regions": [
+        "UIS-REG-021",
+        "UIS-REG-022",
+        "UIS-REG-023"
+      ],
+      "chart_persistent": true,
+      "uses_overlay": true,
+      "replay_stage": "paused",
+      "replay_controls": "floating-capsule",
+      "paper_trading_over_replay": false,
+      "future_launchers": [
+        {
+          "name": "Run bundle viewer",
+          "status": "disabled",
+          "version": "future"
+        }
+      ],
+      "reference_screenshots": [
+        "screenshots/E01-load-chart.png",
+        "screenshots/E07-settings-ready.png",
+        "screenshots/authenticated/A30-replay.png",
+        "screenshots/authenticated/A31-replay.png"
+      ],
+      "artifact_version": "WF-SET-001-r11",
+      "revision_scope": "unchanged"
+    },
+    {
+      "id": "WF-FRAME-056",
+      "file": "WF-FRAME-056.svg",
+      "view": 7,
+      "state": 56,
+      "variant": "state",
+      "title": "Offline/restricted authority",
+      "adapt": [
+        "UIS-ADAPT-001",
+        "UIS-ADAPT-004",
+        "UIS-ADAPT-005",
+        "UIS-ADAPT-006"
+      ],
+      "annotation": "Local valid operations need no provider network; unavailable required input or denied writer/epoch explained. Existing work unchanged; fresh valid intent/authority needed; IF-REC-013/014",
+      "gate_g4": "APPROVED",
+      "visibility": "bid",
+      "basis": "Bid",
+      "candle_visibility": {
+        "bid": true,
+        "ask": false,
+        "independent_toggles": true,
+        "scope": "active-chart"
+      },
+      "surface": "inline-confirmation-in-replay-or-work-dock",
+      "regions": [
+        "UIS-REG-021",
+        "UIS-REG-022",
+        "UIS-REG-023"
+      ],
+      "chart_persistent": true,
+      "uses_overlay": true,
+      "replay_stage": "paused",
+      "replay_controls": "floating-capsule",
+      "paper_trading_over_replay": false,
+      "future_launchers": [
+        {
+          "name": "Run bundle viewer",
+          "status": "disabled",
+          "version": "future"
+        }
+      ],
+      "reference_screenshots": [
+        "screenshots/E01-load-chart.png",
+        "screenshots/E07-settings-ready.png",
+        "screenshots/authenticated/A30-replay.png",
+        "screenshots/authenticated/A31-replay.png"
+      ],
+      "artifact_version": "WF-SET-001-r11",
+      "revision_scope": "unchanged"
+    },
+    {
+      "id": "WF-FRAME-057",
+      "file": "WF-FRAME-057.svg",
+      "view": 8,
+      "state": 57,
+      "variant": "state",
+      "title": "Ready/source selected",
+      "adapt": [
+        "UIS-ADAPT-001",
+        "UIS-ADAPT-004",
+        "UIS-ADAPT-005",
+        "UIS-ADAPT-006"
+      ],
+      "annotation": "Output kind/source/scope and required labels visible. Explicit generate separate from inspection; IF-REC-011",
+      "gate_g4": "APPROVED",
+      "visibility": "bid",
+      "basis": "Bid",
+      "candle_visibility": {
+        "bid": true,
+        "ask": false,
+        "independent_toggles": true,
+        "scope": "active-chart"
+      },
+      "surface": "export-action-in-results-or-chart-dock",
+      "regions": [
+        "UIS-REG-024",
+        "UIS-REG-025",
+        "UIS-REG-026"
+      ],
+      "chart_persistent": true,
+      "uses_overlay": true,
+      "replay_stage": "paused",
+      "replay_controls": "floating-capsule",
+      "paper_trading_over_replay": false,
+      "future_launchers": [
+        {
+          "name": "Run bundle viewer",
+          "status": "disabled",
+          "version": "future"
+        }
+      ],
+      "reference_screenshots": [
+        "screenshots/E01-load-chart.png",
+        "screenshots/E07-settings-ready.png",
+        "screenshots/authenticated/A30-replay.png",
+        "screenshots/authenticated/A31-replay.png"
+      ],
+      "artifact_version": "WF-SET-001-r11",
+      "revision_scope": "unchanged"
+    },
+    {
+      "id": "WF-FRAME-058",
+      "file": "WF-FRAME-058.svg",
+      "view": 8,
+      "state": 58,
+      "variant": "state",
+      "title": "Missing values/empty results/not renderable",
+      "adapt": [
+        "UIS-ADAPT-001",
+        "UIS-ADAPT-004",
+        "UIS-ADAPT-005",
+        "UIS-ADAPT-006"
+      ],
+      "annotation": "Scope-specific absence reason; no fabricated report values or image preview. Return/select meaningful source or valid subset preserving absence labels; IF-REC-011",
+      "gate_g4": "APPROVED",
+      "visibility": "bid",
+      "basis": "Bid",
+      "candle_visibility": {
+        "bid": true,
+        "ask": false,
+        "independent_toggles": true,
+        "scope": "active-chart"
+      },
+      "surface": "export-action-in-results-or-chart-dock",
+      "regions": [
+        "UIS-REG-024",
+        "UIS-REG-025",
+        "UIS-REG-026"
+      ],
+      "chart_persistent": true,
+      "uses_overlay": true,
+      "replay_stage": "paused",
+      "replay_controls": "floating-capsule",
+      "paper_trading_over_replay": false,
+      "future_launchers": [
+        {
+          "name": "Run bundle viewer",
+          "status": "disabled",
+          "version": "future"
+        }
+      ],
+      "reference_screenshots": [
+        "screenshots/E01-load-chart.png",
+        "screenshots/E07-settings-ready.png",
+        "screenshots/authenticated/A30-replay.png",
+        "screenshots/authenticated/A31-replay.png"
+      ],
+      "artifact_version": "WF-SET-001-r11",
+      "revision_scope": "unchanged"
+    },
+    {
+      "id": "WF-FRAME-059",
+      "file": "WF-FRAME-059.svg",
+      "view": 8,
+      "state": 59,
+      "variant": "state",
+      "title": "Preparing/writing",
+      "adapt": [
+        "UIS-ADAPT-001",
+        "UIS-ADAPT-004",
+        "UIS-ADAPT-005",
+        "UIS-ADAPT-006"
+      ],
+      "annotation": "Pinned source and actual phase visible, workspace changes do not relabel output. Await/cancel supported preparation; source unchanged; IF-REC-011",
+      "gate_g4": "APPROVED",
+      "visibility": "bid",
+      "basis": "Bid",
+      "candle_visibility": {
+        "bid": true,
+        "ask": false,
+        "independent_toggles": true,
+        "scope": "active-chart"
+      },
+      "surface": "export-action-in-results-or-chart-dock",
+      "regions": [
+        "UIS-REG-024",
+        "UIS-REG-025",
+        "UIS-REG-026"
+      ],
+      "chart_persistent": true,
+      "uses_overlay": true,
+      "replay_stage": "paused",
+      "replay_controls": "floating-capsule",
+      "paper_trading_over_replay": false,
+      "future_launchers": [
+        {
+          "name": "Run bundle viewer",
+          "status": "disabled",
+          "version": "future"
+        }
+      ],
+      "reference_screenshots": [
+        "screenshots/E01-load-chart.png",
+        "screenshots/E07-settings-ready.png",
+        "screenshots/authenticated/A30-replay.png",
+        "screenshots/authenticated/A31-replay.png"
+      ],
+      "artifact_version": "WF-SET-001-r11",
+      "revision_scope": "unchanged"
+    },
+    {
+      "id": "WF-FRAME-060",
+      "file": "WF-FRAME-060.svg",
+      "view": 8,
+      "state": 60,
+      "variant": "state",
+      "title": "Source advanced/superseded after pin",
+      "adapt": [
+        "UIS-ADAPT-001",
+        "UIS-ADAPT-004",
+        "UIS-ADAPT-005",
+        "UIS-ADAPT-006"
+      ],
+      "annotation": "Original source version/cursor remains identified; optional new preparation explicit. Finish same snapshot or start new intent; no silent latest switch; IF-REC-011",
+      "gate_g4": "APPROVED",
+      "visibility": "bid",
+      "basis": "Bid",
+      "candle_visibility": {
+        "bid": true,
+        "ask": false,
+        "independent_toggles": true,
+        "scope": "active-chart"
+      },
+      "surface": "export-action-in-results-or-chart-dock",
+      "regions": [
+        "UIS-REG-024",
+        "UIS-REG-025",
+        "UIS-REG-026"
+      ],
+      "chart_persistent": true,
+      "uses_overlay": true,
+      "replay_stage": "paused",
+      "replay_controls": "floating-capsule",
+      "paper_trading_over_replay": false,
+      "future_launchers": [
+        {
+          "name": "Run bundle viewer",
+          "status": "disabled",
+          "version": "future"
+        }
+      ],
+      "reference_screenshots": [
+        "screenshots/E01-load-chart.png",
+        "screenshots/E07-settings-ready.png",
+        "screenshots/authenticated/A30-replay.png",
+        "screenshots/authenticated/A31-replay.png"
+      ],
+      "artifact_version": "WF-SET-001-r11",
+      "revision_scope": "unchanged"
+    },
+    {
+      "id": "WF-FRAME-061",
+      "file": "WF-FRAME-061.svg",
+      "view": 8,
+      "state": 61,
+      "variant": "state",
+      "title": "Known failed/incomplete artifact",
+      "adapt": [
+        "UIS-ADAPT-001",
+        "UIS-ADAPT-004",
+        "UIS-ADAPT-005",
+        "UIS-ADAPT-006"
+      ],
+      "annotation": "Explain local output failure and incomplete state. Verify or retry same pinned snapshot/correct storage; IF-REC-011",
+      "gate_g4": "APPROVED",
+      "visibility": "bid",
+      "basis": "Bid",
+      "candle_visibility": {
+        "bid": true,
+        "ask": false,
+        "independent_toggles": true,
+        "scope": "active-chart"
+      },
+      "surface": "export-action-in-results-or-chart-dock",
+      "regions": [
+        "UIS-REG-024",
+        "UIS-REG-025",
+        "UIS-REG-026"
+      ],
+      "chart_persistent": true,
+      "uses_overlay": true,
+      "replay_stage": "paused",
+      "replay_controls": "floating-capsule",
+      "paper_trading_over_replay": false,
+      "future_launchers": [
+        {
+          "name": "Run bundle viewer",
+          "status": "disabled",
+          "version": "future"
+        }
+      ],
+      "reference_screenshots": [
+        "screenshots/E01-load-chart.png",
+        "screenshots/E07-settings-ready.png",
+        "screenshots/authenticated/A30-replay.png",
+        "screenshots/authenticated/A31-replay.png"
+      ],
+      "artifact_version": "WF-SET-001-r11",
+      "revision_scope": "unchanged"
+    },
+    {
+      "id": "WF-FRAME-062",
+      "file": "WF-FRAME-062.svg",
+      "view": 8,
+      "state": 62,
+      "variant": "state",
+      "title": "Artifact outcome unknown",
+      "adapt": [
+        "UIS-ADAPT-001",
+        "UIS-ADAPT-004",
+        "UIS-ADAPT-005",
+        "UIS-ADAPT-006"
+      ],
+      "annotation": "Verification responsibility persists; no false success/repeat. Verify complete matching artifact first; IF-REC-011",
+      "gate_g4": "APPROVED",
+      "visibility": "bid",
+      "basis": "Bid",
+      "candle_visibility": {
+        "bid": true,
+        "ask": false,
+        "independent_toggles": true,
+        "scope": "active-chart"
+      },
+      "surface": "export-action-in-results-or-chart-dock",
+      "regions": [
+        "UIS-REG-024",
+        "UIS-REG-025",
+        "UIS-REG-026"
+      ],
+      "chart_persistent": true,
+      "uses_overlay": true,
+      "replay_stage": "paused",
+      "replay_controls": "floating-capsule",
+      "paper_trading_over_replay": false,
+      "future_launchers": [
+        {
+          "name": "Run bundle viewer",
+          "status": "disabled",
+          "version": "future"
+        }
+      ],
+      "reference_screenshots": [
+        "screenshots/E01-load-chart.png",
+        "screenshots/E07-settings-ready.png",
+        "screenshots/authenticated/A30-replay.png",
+        "screenshots/authenticated/A31-replay.png"
+      ],
+      "artifact_version": "WF-SET-001-r11",
+      "revision_scope": "unchanged"
+    },
+    {
+      "id": "WF-FRAME-063",
+      "file": "WF-FRAME-063.svg",
+      "view": 8,
+      "state": 63,
+      "variant": "state",
+      "title": "Verified complete",
+      "adapt": [
+        "UIS-ADAPT-001",
+        "UIS-ADAPT-004",
+        "UIS-ADAPT-005",
+        "UIS-ADAPT-006"
+      ],
+      "annotation": "Matching local artifact outcome and source labels visible. Return to invoking selection; no source-state mutation; IF-REC-011",
+      "gate_g4": "APPROVED",
+      "visibility": "bid",
+      "basis": "Bid",
+      "candle_visibility": {
+        "bid": true,
+        "ask": false,
+        "independent_toggles": true,
+        "scope": "active-chart"
+      },
+      "surface": "export-action-in-results-or-chart-dock",
+      "regions": [
+        "UIS-REG-024",
+        "UIS-REG-025",
+        "UIS-REG-026"
+      ],
+      "chart_persistent": true,
+      "uses_overlay": true,
+      "replay_stage": "paused",
+      "replay_controls": "floating-capsule",
+      "paper_trading_over_replay": false,
+      "future_launchers": [
+        {
+          "name": "Run bundle viewer",
+          "status": "disabled",
+          "version": "future"
+        }
+      ],
+      "reference_screenshots": [
+        "screenshots/E01-load-chart.png",
+        "screenshots/E07-settings-ready.png",
+        "screenshots/authenticated/A30-replay.png",
+        "screenshots/authenticated/A31-replay.png"
+      ],
+      "artifact_version": "WF-SET-001-r11",
+      "revision_scope": "unchanged"
+    },
+    {
+      "id": "WF-FRAME-064",
+      "file": "WF-FRAME-064.svg",
+      "view": 8,
+      "state": 64,
+      "variant": "state",
+      "title": "Offline/restricted disclosure/invalid source scope",
+      "adapt": [
+        "UIS-ADAPT-001",
+        "UIS-ADAPT-004",
+        "UIS-ADAPT-005",
+        "UIS-ADAPT-006"
+      ],
+      "annotation": "Local export may continue with valid local source; forbidden/missing data or stale scope explained. Preserve source, correct source/authority, no secret leakage/hosted fallback; IF-REC-011/013",
+      "gate_g4": "APPROVED",
+      "visibility": "bid",
+      "basis": "Bid",
+      "candle_visibility": {
+        "bid": true,
+        "ask": false,
+        "independent_toggles": true,
+        "scope": "active-chart"
+      },
+      "surface": "export-action-in-results-or-chart-dock",
+      "regions": [
+        "UIS-REG-024",
+        "UIS-REG-025",
+        "UIS-REG-026"
+      ],
+      "chart_persistent": true,
+      "uses_overlay": true,
+      "replay_stage": "paused",
+      "replay_controls": "floating-capsule",
+      "paper_trading_over_replay": false,
+      "future_launchers": [
+        {
+          "name": "Run bundle viewer",
+          "status": "disabled",
+          "version": "future"
+        }
+      ],
+      "reference_screenshots": [
+        "screenshots/E01-load-chart.png",
+        "screenshots/E07-settings-ready.png",
+        "screenshots/authenticated/A30-replay.png",
+        "screenshots/authenticated/A31-replay.png"
+      ],
+      "artifact_version": "WF-SET-001-r11",
+      "revision_scope": "unchanged"
+    },
+    {
+      "id": "WF-FRAME-065",
+      "file": "WF-FRAME-065.svg",
+      "view": 1,
+      "state": 1,
+      "variant": "reflow",
+      "title": "Chart and replay workspace / zoom reflow",
+      "adapt": [
+        "UIS-ADAPT-001",
+        "UIS-ADAPT-002",
+        "UIS-ADAPT-003",
+        "UIS-ADAPT-004",
+        "UIS-ADAPT-005"
+      ],
+      "annotation": "Selection and actual chart/numeric values co-present; replay controls only for declared mode. No demo prices; valid selection or retained run; IF-REC-001/005",
+      "gate_g4": "APPROVED",
+      "visibility": "bid",
+      "basis": "Bid",
+      "candle_visibility": {
+        "bid": true,
+        "ask": false,
+        "independent_toggles": true,
+        "scope": "active-chart"
+      },
+      "surface": "chart-with-collapsed-panels",
+      "regions": [
+        "UIS-REG-001",
+        "UIS-REG-002",
+        "UIS-REG-003",
+        "UIS-REG-004"
+      ],
+      "chart_persistent": true,
+      "uses_overlay": false,
+      "replay_stage": "inactive",
+      "replay_controls": null,
+      "paper_trading_over_replay": false,
+      "future_launchers": [
+        {
+          "name": "Run bundle viewer",
+          "status": "disabled",
+          "version": "future"
+        }
+      ],
+      "reference_screenshots": [
+        "screenshots/E01-load-chart.png",
+        "screenshots/E07-settings-ready.png"
+      ],
+      "artifact_version": "WF-SET-001-r11",
+      "revision_scope": "unchanged"
+    },
+    {
+      "id": "WF-FRAME-066",
+      "file": "WF-FRAME-066.svg",
+      "view": 2,
+      "state": 9,
+      "variant": "reflow",
+      "title": "Scoped configuration / zoom reflow",
+      "adapt": [
+        "UIS-ADAPT-001",
+        "UIS-ADAPT-002",
+        "UIS-ADAPT-003",
+        "UIS-ADAPT-004",
+        "UIS-ADAPT-005"
+      ],
+      "annotation": "Named scope, committed values and draft visible. Apply/cancel separate; IF-REC-002/007",
+      "gate_g4": "APPROVED",
+      "visibility": "bid",
+      "basis": "Bid",
+      "candle_visibility": {
+        "bid": true,
+        "ask": false,
+        "independent_toggles": true,
+        "scope": "active-chart"
+      },
+      "surface": "settings-window-over-chart",
+      "regions": [
+        "UIS-REG-005",
+        "UIS-REG-006",
+        "UIS-REG-007"
+      ],
+      "chart_persistent": true,
+      "uses_overlay": true,
+      "replay_stage": "inactive",
+      "replay_controls": null,
+      "paper_trading_over_replay": false,
+      "future_launchers": [
+        {
+          "name": "Run bundle viewer",
+          "status": "disabled",
+          "version": "future"
+        }
+      ],
+      "reference_screenshots": [
+        "screenshots/E01-load-chart.png",
+        "screenshots/E07-settings-ready.png"
+      ],
+      "artifact_version": "WF-SET-001-r11",
+      "revision_scope": "unchanged"
+    },
+    {
+      "id": "WF-FRAME-067",
+      "file": "WF-FRAME-067.svg",
+      "view": 3,
+      "state": 17,
+      "variant": "reflow",
+      "title": "Layouts, retained work and recovery / zoom reflow",
+      "adapt": [
+        "UIS-ADAPT-001",
+        "UIS-ADAPT-002",
+        "UIS-ADAPT-003",
+        "UIS-ADAPT-004",
+        "UIS-ADAPT-005"
+      ],
+      "annotation": "Collection and selected details/save scope visible. Choose restore/resume/arrangement/backup distinctly; IF-REC-004/013/014",
+      "gate_g4": "APPROVED",
+      "visibility": "bid",
+      "basis": "Bid",
+      "candle_visibility": {
+        "bid": true,
+        "ask": false,
+        "independent_toggles": true,
+        "scope": "active-chart"
+      },
+      "surface": "zoom-task-dock-below-chart",
+      "regions": [
+        "UIS-REG-008",
+        "UIS-REG-009",
+        "UIS-REG-010"
+      ],
+      "chart_persistent": true,
+      "uses_overlay": false,
+      "replay_stage": "inactive",
+      "replay_controls": null,
+      "paper_trading_over_replay": false,
+      "future_launchers": [
+        {
+          "name": "Run bundle viewer",
+          "status": "disabled",
+          "version": "future"
+        }
+      ],
+      "reference_screenshots": [
+        "screenshots/E01-load-chart.png",
+        "screenshots/E07-settings-ready.png"
+      ],
+      "artifact_version": "WF-SET-001-r11",
+      "revision_scope": "unchanged"
+    },
+    {
+      "id": "WF-FRAME-068",
+      "file": "WF-FRAME-068.svg",
+      "view": 4,
+      "state": 25,
+      "variant": "reflow",
+      "title": "Paper trading over replay / zoom reflow",
+      "adapt": [
+        "UIS-ADAPT-001",
+        "UIS-ADAPT-002",
+        "UIS-ADAPT-003",
+        "UIS-ADAPT-004",
+        "UIS-ADAPT-005"
+      ],
+      "annotation": "IF-BR-008a: direction selection submits nothing. Matching valid side alone commits; opposite has no effect. Edits supersede estimates; retain inputs. Keep focus; announce status. Editor restores invoker. No auto-submit/play.",
+      "gate_g4": "APPROVED",
+      "visibility": "bid",
+      "basis": "Bid",
+      "candle_visibility": {
+        "bid": true,
+        "ask": false,
+        "independent_toggles": true,
+        "scope": "active-chart"
+      },
+      "surface": "zoom-task-dock-below-chart",
+      "regions": [
+        "UIS-REG-012",
+        "UIS-REG-013",
+        "UIS-REG-014",
+        "UIS-REG-011"
+      ],
+      "chart_persistent": true,
+      "uses_overlay": true,
+      "replay_stage": "paused",
+      "replay_controls": "floating-capsule",
+      "paper_trading_over_replay": true,
+      "future_launchers": [
+        {
+          "name": "Run bundle viewer",
+          "status": "disabled",
+          "version": "future"
+        }
+      ],
+      "reference_screenshots": [
+        "screenshots/E01-load-chart.png",
+        "screenshots/E07-settings-ready.png",
+        "screenshots/authenticated/A30-replay.png",
+        "screenshots/authenticated/A31-replay.png",
+        "screenshots/authenticated/A32-paper-trading.png"
+      ],
+      "artifact_version": "WF-SET-001-r14",
+      "revision_scope": "revised"
+    },
+    {
+      "id": "WF-FRAME-069",
+      "file": "WF-FRAME-069.svg",
+      "view": 5,
+      "state": 33,
+      "variant": "reflow",
+      "title": "Original historical-event resolution / zoom reflow",
+      "adapt": [
+        "UIS-ADAPT-001",
+        "UIS-ADAPT-002",
+        "UIS-ADAPT-003",
+        "UIS-ADAPT-004",
+        "UIS-ADAPT-005"
+      ],
+      "annotation": "Original reason/event and last coherent prefix primary. Resolve required fact or remain paused; IF-REC-010",
+      "gate_g4": "APPROVED",
+      "visibility": "bid",
+      "basis": "Bid",
+      "candle_visibility": {
+        "bid": true,
+        "ask": false,
+        "independent_toggles": true,
+        "scope": "active-chart"
+      },
+      "surface": "zoom-task-dock-below-chart",
+      "regions": [
+        "UIS-REG-015",
+        "UIS-REG-016",
+        "UIS-REG-017"
+      ],
+      "chart_persistent": true,
+      "uses_overlay": true,
+      "replay_stage": "paused",
+      "replay_controls": "floating-capsule",
+      "paper_trading_over_replay": false,
+      "future_launchers": [
+        {
+          "name": "Run bundle viewer",
+          "status": "disabled",
+          "version": "future"
+        }
+      ],
+      "reference_screenshots": [
+        "screenshots/E01-load-chart.png",
+        "screenshots/E07-settings-ready.png",
+        "screenshots/authenticated/A30-replay.png",
+        "screenshots/authenticated/A31-replay.png"
+      ],
+      "artifact_version": "WF-SET-001-r11",
+      "revision_scope": "unchanged"
+    },
+    {
+      "id": "WF-FRAME-070",
+      "file": "WF-FRAME-070.svg",
+      "view": 6,
+      "state": 41,
+      "variant": "reflow",
+      "title": "Data continuity and access / zoom reflow",
+      "adapt": [
+        "UIS-ADAPT-001",
+        "UIS-ADAPT-002",
+        "UIS-ADAPT-003",
+        "UIS-ADAPT-004",
+        "UIS-ADAPT-005"
+      ],
+      "annotation": "Actual receipt/feed condition and current qualified coverage visible. Current catalog distinct from saved-run basis; IF-REC-012",
+      "gate_g4": "APPROVED",
+      "visibility": "bid",
+      "basis": "Bid",
+      "candle_visibility": {
+        "bid": true,
+        "ask": false,
+        "independent_toggles": true,
+        "scope": "active-chart"
+      },
+      "surface": "zoom-task-dock-below-chart",
+      "regions": [
+        "UIS-REG-018",
+        "UIS-REG-019",
+        "UIS-REG-020"
+      ],
+      "chart_persistent": true,
+      "uses_overlay": false,
+      "replay_stage": "inactive",
+      "replay_controls": null,
+      "paper_trading_over_replay": false,
+      "future_launchers": [
+        {
+          "name": "Run bundle viewer",
+          "status": "disabled",
+          "version": "future"
+        }
+      ],
+      "reference_screenshots": [
+        "screenshots/E01-load-chart.png",
+        "screenshots/E07-settings-ready.png"
+      ],
+      "artifact_version": "WF-SET-001-r11",
+      "revision_scope": "unchanged"
+    },
+    {
+      "id": "WF-FRAME-071",
+      "file": "WF-FRAME-071.svg",
+      "view": 7,
+      "state": 49,
+      "variant": "reflow",
+      "title": "Replay and saved-work actions / zoom reflow",
+      "adapt": [
+        "UIS-ADAPT-001",
+        "UIS-ADAPT-002",
+        "UIS-ADAPT-003",
+        "UIS-ADAPT-004",
+        "UIS-ADAPT-005"
+      ],
+      "annotation": "Exact consequence/scope/version co-present with confirm/cancel. Old state authoritative; cancel unchanged; IF-REC-006/014",
+      "gate_g4": "APPROVED",
+      "visibility": "bid",
+      "basis": "Bid",
+      "candle_visibility": {
+        "bid": true,
+        "ask": false,
+        "independent_toggles": true,
+        "scope": "active-chart"
+      },
+      "surface": "inline-confirmation-in-replay-or-work-dock",
+      "regions": [
+        "UIS-REG-021",
+        "UIS-REG-022",
+        "UIS-REG-023"
+      ],
+      "chart_persistent": true,
+      "uses_overlay": true,
+      "replay_stage": "paused",
+      "replay_controls": "floating-capsule",
+      "paper_trading_over_replay": false,
+      "future_launchers": [
+        {
+          "name": "Run bundle viewer",
+          "status": "disabled",
+          "version": "future"
+        }
+      ],
+      "reference_screenshots": [
+        "screenshots/E01-load-chart.png",
+        "screenshots/E07-settings-ready.png",
+        "screenshots/authenticated/A30-replay.png",
+        "screenshots/authenticated/A31-replay.png"
+      ],
+      "artifact_version": "WF-SET-001-r11",
+      "revision_scope": "unchanged"
+    },
+    {
+      "id": "WF-FRAME-072",
+      "file": "WF-FRAME-072.svg",
+      "view": 8,
+      "state": 57,
+      "variant": "reflow",
+      "title": "Results and local export / zoom reflow",
+      "adapt": [
+        "UIS-ADAPT-001",
+        "UIS-ADAPT-002",
+        "UIS-ADAPT-003",
+        "UIS-ADAPT-004",
+        "UIS-ADAPT-005"
+      ],
+      "annotation": "Output kind/source/scope and required labels visible. Explicit generate separate from inspection; IF-REC-011",
+      "gate_g4": "APPROVED",
+      "visibility": "bid",
+      "basis": "Bid",
+      "candle_visibility": {
+        "bid": true,
+        "ask": false,
+        "independent_toggles": true,
+        "scope": "active-chart"
+      },
+      "surface": "export-action-in-results-or-chart-dock",
+      "regions": [
+        "UIS-REG-024",
+        "UIS-REG-025",
+        "UIS-REG-026"
+      ],
+      "chart_persistent": true,
+      "uses_overlay": true,
+      "replay_stage": "paused",
+      "replay_controls": "floating-capsule",
+      "paper_trading_over_replay": false,
+      "future_launchers": [
+        {
+          "name": "Run bundle viewer",
+          "status": "disabled",
+          "version": "future"
+        }
+      ],
+      "reference_screenshots": [
+        "screenshots/E01-load-chart.png",
+        "screenshots/E07-settings-ready.png",
+        "screenshots/authenticated/A30-replay.png",
+        "screenshots/authenticated/A31-replay.png"
+      ],
+      "artifact_version": "WF-SET-001-r11",
+      "revision_scope": "unchanged"
+    },
+    {
+      "id": "WF-FRAME-073",
+      "file": "WF-FRAME-073.svg",
+      "view": 1,
+      "state": 1,
+      "variant": "two-chart",
+      "title": "Two-chart comparison and active-chart switch",
+      "adapt": [
+        "UIS-ADAPT-001",
+        "UIS-ADAPT-004",
+        "UIS-ADAPT-005",
+        "UIS-ADAPT-006"
+      ],
+      "annotation": "Selection and actual chart/numeric values co-present; replay controls only for declared mode. No demo prices; valid selection or retained run; IF-REC-001/005",
+      "gate_g4": "APPROVED",
+      "visibility": "bid",
+      "basis": "Bid",
+      "candle_visibility": {
+        "bid": true,
+        "ask": false,
+        "independent_toggles": true,
+        "scope": "active-chart"
+      },
+      "surface": "chart-with-watchlist",
+      "regions": [
+        "UIS-REG-001",
+        "UIS-REG-002",
+        "UIS-REG-003",
+        "UIS-REG-004"
+      ],
+      "chart_persistent": true,
+      "uses_overlay": true,
+      "replay_stage": "paused",
+      "replay_controls": "floating-capsule",
+      "paper_trading_over_replay": false,
+      "future_launchers": [
+        {
+          "name": "Run bundle viewer",
+          "status": "disabled",
+          "version": "future"
+        }
+      ],
+      "reference_screenshots": [
+        "screenshots/E01-load-chart.png",
+        "screenshots/E07-settings-ready.png",
+        "screenshots/authenticated/A30-replay.png",
+        "screenshots/authenticated/A31-replay.png"
+      ],
+      "artifact_version": "WF-SET-001-r11",
+      "revision_scope": "unchanged"
+    },
+    {
+      "id": "WF-FRAME-074",
+      "file": "WF-FRAME-074.svg",
+      "view": 1,
+      "state": 6,
+      "variant": "anchors",
+      "title": "Keyboard brush and financial anchor editing",
+      "adapt": [
+        "UIS-ADAPT-001",
+        "UIS-ADAPT-004",
+        "UIS-ADAPT-005",
+        "UIS-ADAPT-006"
+      ],
+      "annotation": "Preview/target/validation distinct from committed plot; object collection remains accessible. Correct/cancel/unlock permitted target; IF-REC-002/003",
+      "gate_g4": "APPROVED",
+      "visibility": "bid",
+      "basis": "Bid",
+      "candle_visibility": {
+        "bid": true,
+        "ask": false,
+        "independent_toggles": true,
+        "scope": "active-chart"
+      },
+      "surface": "right-context-drawer",
+      "regions": [
+        "UIS-REG-001",
+        "UIS-REG-002",
+        "UIS-REG-003",
+        "UIS-REG-004"
+      ],
+      "chart_persistent": true,
+      "uses_overlay": false,
+      "replay_stage": "inactive",
+      "replay_controls": null,
+      "paper_trading_over_replay": false,
+      "future_launchers": [
+        {
+          "name": "Run bundle viewer",
+          "status": "disabled",
+          "version": "future"
+        }
+      ],
+      "reference_screenshots": [
+        "screenshots/E01-load-chart.png",
+        "screenshots/E07-settings-ready.png"
+      ],
+      "artifact_version": "WF-SET-001-r11",
+      "revision_scope": "unchanged"
+    },
+    {
+      "id": "WF-FRAME-075",
+      "file": "WF-FRAME-075.svg",
+      "view": 2,
+      "state": 9,
+      "variant": "analysis",
+      "title": "Presentation and study configuration",
+      "adapt": [
+        "UIS-ADAPT-001",
+        "UIS-ADAPT-004",
+        "UIS-ADAPT-005",
+        "UIS-ADAPT-006"
+      ],
+      "annotation": "Named scope, committed values and draft visible. Apply/cancel separate; IF-REC-002/007",
+      "gate_g4": "APPROVED",
+      "visibility": "bid",
+      "basis": "Bid",
+      "candle_visibility": {
+        "bid": true,
+        "ask": false,
+        "independent_toggles": true,
+        "scope": "active-chart"
+      },
+      "surface": "settings-window-over-chart",
+      "regions": [
+        "UIS-REG-005",
+        "UIS-REG-006",
+        "UIS-REG-007"
+      ],
+      "chart_persistent": true,
+      "uses_overlay": true,
+      "replay_stage": "inactive",
+      "replay_controls": null,
+      "paper_trading_over_replay": false,
+      "future_launchers": [
+        {
+          "name": "Run bundle viewer",
+          "status": "disabled",
+          "version": "future"
+        }
+      ],
+      "reference_screenshots": [
+        "screenshots/E01-load-chart.png",
+        "screenshots/E07-settings-ready.png"
+      ],
+      "artifact_version": "WF-SET-001-r11",
+      "revision_scope": "unchanged"
+    },
+    {
+      "id": "WF-FRAME-076",
+      "file": "WF-FRAME-076.svg",
+      "view": 4,
+      "state": 25,
+      "variant": "pending",
+      "title": "Pending order modification and cancellation",
+      "adapt": [
+        "UIS-ADAPT-001",
+        "UIS-ADAPT-004",
+        "UIS-ADAPT-005",
+        "UIS-ADAPT-006"
+      ],
+      "annotation": "Run, actual terms/target and action family explicit. Submit/modify/cancel/close distinctly; IF-REC-008/009",
+      "gate_g4": "APPROVED",
+      "visibility": "bid",
+      "basis": "Bid",
+      "candle_visibility": {
+        "bid": true,
+        "ask": false,
+        "independent_toggles": true,
+        "scope": "active-chart"
+      },
+      "surface": "paper-sidebar-with-floating-replay",
+      "regions": [
+        "UIS-REG-012",
+        "UIS-REG-013",
+        "UIS-REG-014",
+        "UIS-REG-011"
+      ],
+      "chart_persistent": true,
+      "uses_overlay": true,
+      "replay_stage": "paused",
+      "replay_controls": "floating-capsule",
+      "paper_trading_over_replay": true,
+      "future_launchers": [
+        {
+          "name": "Run bundle viewer",
+          "status": "disabled",
+          "version": "future"
+        }
+      ],
+      "reference_screenshots": [
+        "screenshots/E01-load-chart.png",
+        "screenshots/E07-settings-ready.png",
+        "screenshots/authenticated/A30-replay.png",
+        "screenshots/authenticated/A31-replay.png",
+        "screenshots/authenticated/A32-paper-trading.png"
+      ],
+      "artifact_version": "WF-SET-001-r12",
+      "revision_scope": "unchanged"
+    },
+    {
+      "id": "WF-FRAME-077",
+      "file": "WF-FRAME-077.svg",
+      "view": 5,
+      "state": 37,
+      "variant": "resolution-unknown",
+      "title": "Original resolution publication unknown",
+      "adapt": [
+        "UIS-ADAPT-001",
+        "UIS-ADAPT-004",
+        "UIS-ADAPT-005",
+        "UIS-ADAPT-006"
+      ],
+      "annotation": "Known whole effect replaces active block; unknown publication requires reconciliation before further mutation. Preserve original event/recorded outcome; no automatic play; IF-REC-010/013",
+      "gate_g4": "APPROVED",
+      "visibility": "bid",
+      "basis": "Bid",
+      "candle_visibility": {
+        "bid": true,
+        "ask": false,
+        "independent_toggles": true,
+        "scope": "active-chart"
+      },
+      "surface": "right-context-drawer",
+      "regions": [
+        "UIS-REG-015",
+        "UIS-REG-016",
+        "UIS-REG-017"
+      ],
+      "chart_persistent": true,
+      "uses_overlay": true,
+      "replay_stage": "paused",
+      "replay_controls": "floating-capsule",
+      "paper_trading_over_replay": false,
+      "future_launchers": [
+        {
+          "name": "Run bundle viewer",
+          "status": "disabled",
+          "version": "future"
+        }
+      ],
+      "reference_screenshots": [
+        "screenshots/E01-load-chart.png",
+        "screenshots/E07-settings-ready.png",
+        "screenshots/authenticated/A30-replay.png",
+        "screenshots/authenticated/A31-replay.png"
+      ],
+      "artifact_version": "WF-SET-001-r13",
+      "revision_scope": "unchanged"
+    },
+    {
+      "id": "WF-FRAME-078",
+      "file": "WF-FRAME-078.svg",
+      "view": 7,
+      "state": 49,
+      "variant": "restore",
+      "title": "Validated own-backup replacement review",
+      "adapt": [
+        "UIS-ADAPT-001",
+        "UIS-ADAPT-004",
+        "UIS-ADAPT-005",
+        "UIS-ADAPT-006"
+      ],
+      "annotation": "Exact consequence/scope/version co-present with confirm/cancel. Old state authoritative; cancel unchanged; IF-REC-006/014",
+      "gate_g4": "APPROVED",
+      "visibility": "bid",
+      "basis": "Bid",
+      "candle_visibility": {
+        "bid": true,
+        "ask": false,
+        "independent_toggles": true,
+        "scope": "active-chart"
+      },
+      "surface": "inline-confirmation-in-replay-or-work-dock",
+      "regions": [
+        "UIS-REG-021",
+        "UIS-REG-022",
+        "UIS-REG-023"
+      ],
+      "chart_persistent": true,
+      "uses_overlay": false,
+      "replay_stage": "inactive",
+      "replay_controls": null,
+      "paper_trading_over_replay": false,
+      "future_launchers": [
+        {
+          "name": "Run bundle viewer",
+          "status": "disabled",
+          "version": "future"
+        }
+      ],
+      "reference_screenshots": [
+        "screenshots/E01-load-chart.png",
+        "screenshots/E07-settings-ready.png"
+      ],
+      "artifact_version": "WF-SET-001-r11",
+      "revision_scope": "unchanged"
+    },
+    {
+      "id": "WF-FRAME-079",
+      "file": "WF-FRAME-079.svg",
+      "view": 7,
+      "state": 49,
+      "variant": "delete",
+      "title": "Selected layout deletion review",
+      "adapt": [
+        "UIS-ADAPT-001",
+        "UIS-ADAPT-004",
+        "UIS-ADAPT-005",
+        "UIS-ADAPT-006"
+      ],
+      "annotation": "Exact consequence/scope/version co-present with confirm/cancel. Old state authoritative; cancel unchanged; IF-REC-006/014",
+      "gate_g4": "APPROVED",
+      "visibility": "bid",
+      "basis": "Bid",
+      "candle_visibility": {
+        "bid": true,
+        "ask": false,
+        "independent_toggles": true,
+        "scope": "active-chart"
+      },
+      "surface": "inline-confirmation-in-replay-or-work-dock",
+      "regions": [
+        "UIS-REG-021",
+        "UIS-REG-022",
+        "UIS-REG-023"
+      ],
+      "chart_persistent": true,
+      "uses_overlay": false,
+      "replay_stage": "inactive",
+      "replay_controls": null,
+      "paper_trading_over_replay": false,
+      "future_launchers": [
+        {
+          "name": "Run bundle viewer",
+          "status": "disabled",
+          "version": "future"
+        }
+      ],
+      "reference_screenshots": [
+        "screenshots/E01-load-chart.png",
+        "screenshots/E07-settings-ready.png"
+      ],
+      "artifact_version": "WF-SET-001-r11",
+      "revision_scope": "unchanged"
+    },
+    {
+      "id": "WF-FRAME-080",
+      "file": "WF-FRAME-080.svg",
+      "view": 7,
+      "state": 49,
+      "variant": "restart",
+      "title": "Explicit updated-basis restart review",
+      "adapt": [
+        "UIS-ADAPT-001",
+        "UIS-ADAPT-004",
+        "UIS-ADAPT-005",
+        "UIS-ADAPT-006"
+      ],
+      "annotation": "Exact consequence/scope/version co-present with confirm/cancel. Old state authoritative; cancel unchanged; IF-REC-006/014",
+      "gate_g4": "APPROVED",
+      "visibility": "bid",
+      "basis": "Bid",
+      "candle_visibility": {
+        "bid": true,
+        "ask": false,
+        "independent_toggles": true,
+        "scope": "active-chart"
+      },
+      "surface": "inline-confirmation-in-replay-or-work-dock",
+      "regions": [
+        "UIS-REG-021",
+        "UIS-REG-022",
+        "UIS-REG-023"
+      ],
+      "chart_persistent": true,
+      "uses_overlay": true,
+      "replay_stage": "paused",
+      "replay_controls": "floating-capsule",
+      "paper_trading_over_replay": false,
+      "future_launchers": [
+        {
+          "name": "Run bundle viewer",
+          "status": "disabled",
+          "version": "future"
+        }
+      ],
+      "reference_screenshots": [
+        "screenshots/E01-load-chart.png",
+        "screenshots/E07-settings-ready.png",
+        "screenshots/authenticated/A30-replay.png",
+        "screenshots/authenticated/A31-replay.png"
+      ],
+      "artifact_version": "WF-SET-001-r11",
+      "revision_scope": "unchanged"
+    },
+    {
+      "id": "WF-FRAME-081",
+      "file": "WF-FRAME-081.svg",
+      "view": 8,
+      "state": 57,
+      "variant": "image",
+      "title": "Local chart image source and inclusion",
+      "adapt": [
+        "UIS-ADAPT-001",
+        "UIS-ADAPT-004",
+        "UIS-ADAPT-005",
+        "UIS-ADAPT-006"
+      ],
+      "annotation": "Output kind/source/scope and required labels visible. Explicit generate separate from inspection; IF-REC-011",
+      "gate_g4": "APPROVED",
+      "visibility": "bid",
+      "basis": "Bid",
+      "candle_visibility": {
+        "bid": true,
+        "ask": false,
+        "independent_toggles": true,
+        "scope": "active-chart"
+      },
+      "surface": "export-action-in-results-or-chart-dock",
+      "regions": [
+        "UIS-REG-024",
+        "UIS-REG-025",
+        "UIS-REG-026"
+      ],
+      "chart_persistent": true,
+      "uses_overlay": false,
+      "replay_stage": "inactive",
+      "replay_controls": null,
+      "paper_trading_over_replay": false,
+      "future_launchers": [
+        {
+          "name": "Run bundle viewer",
+          "status": "disabled",
+          "version": "future"
+        }
+      ],
+      "reference_screenshots": [
+        "screenshots/E01-load-chart.png",
+        "screenshots/E07-settings-ready.png"
+      ],
+      "artifact_version": "WF-SET-001-r11",
+      "revision_scope": "unchanged"
+    },
+    {
+      "id": "WF-FRAME-082",
+      "file": "WF-FRAME-082.svg",
+      "view": 1,
+      "state": 1,
+      "variant": "current-history",
+      "title": "Current-history workspace and explicit replay entry",
+      "adapt": [
+        "UIS-ADAPT-001",
+        "UIS-ADAPT-004",
+        "UIS-ADAPT-005",
+        "UIS-ADAPT-006"
+      ],
+      "annotation": "Selection and actual chart/numeric values co-present; replay controls only for declared mode. No demo prices; valid selection or retained run; IF-REC-001/005",
+      "gate_g4": "APPROVED",
+      "visibility": "bid",
+      "basis": "Bid",
+      "candle_visibility": {
+        "bid": true,
+        "ask": false,
+        "independent_toggles": true,
+        "scope": "active-chart"
+      },
+      "surface": "chart-with-watchlist",
+      "regions": [
+        "UIS-REG-001",
+        "UIS-REG-002",
+        "UIS-REG-003",
+        "UIS-REG-004"
+      ],
+      "chart_persistent": true,
+      "uses_overlay": false,
+      "replay_stage": "inactive",
+      "replay_controls": null,
+      "paper_trading_over_replay": false,
+      "future_launchers": [
+        {
+          "name": "Run bundle viewer",
+          "status": "disabled",
+          "version": "future"
+        }
+      ],
+      "reference_screenshots": [
+        "screenshots/E01-load-chart.png",
+        "screenshots/E07-settings-ready.png"
+      ],
+      "artifact_version": "WF-SET-001-r11",
+      "revision_scope": "unchanged"
+    },
+    {
+      "id": "WF-FRAME-083",
+      "file": "WF-FRAME-083.svg",
+      "view": 1,
+      "state": 2,
+      "variant": "selection",
+      "title": "Instrument search and requested versus adopted selection",
+      "adapt": [
+        "UIS-ADAPT-001",
+        "UIS-ADAPT-004",
+        "UIS-ADAPT-005",
+        "UIS-ADAPT-006"
+      ],
+      "annotation": "Pending request identified in selection region; retain old labelled plot/values or explicit unavailable at new boundary. Do not relabel old arrays; discard obsolete callback; IF-REC-001",
+      "gate_g4": "APPROVED",
+      "visibility": "bid",
+      "basis": "Bid",
+      "candle_visibility": {
+        "bid": true,
+        "ask": false,
+        "independent_toggles": true,
+        "scope": "active-chart"
+      },
+      "surface": "symbol-search-right-drawer",
+      "regions": [
+        "UIS-REG-001",
+        "UIS-REG-002",
+        "UIS-REG-003",
+        "UIS-REG-004"
+      ],
+      "chart_persistent": true,
+      "uses_overlay": false,
+      "replay_stage": "inactive",
+      "replay_controls": null,
+      "paper_trading_over_replay": false,
+      "future_launchers": [
+        {
+          "name": "Run bundle viewer",
+          "status": "disabled",
+          "version": "future"
+        }
+      ],
+      "reference_screenshots": [
+        "screenshots/E01-load-chart.png",
+        "screenshots/E07-settings-ready.png"
+      ],
+      "artifact_version": "WF-SET-001-r11",
+      "revision_scope": "unchanged"
+    },
+    {
+      "id": "WF-FRAME-084",
+      "file": "WF-FRAME-084.svg",
+      "view": 1,
+      "state": 1,
+      "variant": "replay",
+      "title": "Replay controls around the retained central chart",
+      "adapt": [
+        "UIS-ADAPT-001",
+        "UIS-ADAPT-004",
+        "UIS-ADAPT-005",
+        "UIS-ADAPT-006"
+      ],
+      "annotation": "Selection and actual chart/numeric values co-present; replay controls only for declared mode. No demo prices; valid selection or retained run; IF-REC-001/005",
+      "gate_g4": "APPROVED",
+      "visibility": "bid",
+      "basis": "Bid",
+      "candle_visibility": {
+        "bid": true,
+        "ask": false,
+        "independent_toggles": true,
+        "scope": "active-chart"
+      },
+      "surface": "chart-with-collapsed-panels",
+      "regions": [
+        "UIS-REG-001",
+        "UIS-REG-002",
+        "UIS-REG-003",
+        "UIS-REG-004"
+      ],
+      "chart_persistent": true,
+      "uses_overlay": true,
+      "replay_stage": "paused",
+      "replay_controls": "floating-capsule",
+      "paper_trading_over_replay": false,
+      "future_launchers": [
+        {
+          "name": "Run bundle viewer",
+          "status": "disabled",
+          "version": "future"
+        }
+      ],
+      "reference_screenshots": [
+        "screenshots/E01-load-chart.png",
+        "screenshots/E07-settings-ready.png",
+        "screenshots/authenticated/A30-replay.png",
+        "screenshots/authenticated/A31-replay.png"
+      ],
+      "artifact_version": "WF-SET-001-r11",
+      "revision_scope": "unchanged"
+    },
+    {
+      "id": "WF-FRAME-085",
+      "file": "WF-FRAME-085.svg",
+      "view": 1,
+      "state": 1,
+      "variant": "collapsed",
+      "title": "Expanded chart with right drawer closed",
+      "adapt": [
+        "UIS-ADAPT-001",
+        "UIS-ADAPT-004",
+        "UIS-ADAPT-005",
+        "UIS-ADAPT-006"
+      ],
+      "annotation": "Selection and actual chart/numeric values co-present; replay controls only for declared mode. No demo prices; valid selection or retained run; IF-REC-001/005",
+      "gate_g4": "APPROVED",
+      "visibility": "bid",
+      "basis": "Bid",
+      "candle_visibility": {
+        "bid": true,
+        "ask": false,
+        "independent_toggles": true,
+        "scope": "active-chart"
+      },
+      "surface": "chart-with-collapsed-panels",
+      "regions": [
+        "UIS-REG-001",
+        "UIS-REG-002",
+        "UIS-REG-003",
+        "UIS-REG-004"
+      ],
+      "chart_persistent": true,
+      "uses_overlay": false,
+      "replay_stage": "inactive",
+      "replay_controls": null,
+      "paper_trading_over_replay": false,
+      "future_launchers": [
+        {
+          "name": "Run bundle viewer",
+          "status": "disabled",
+          "version": "future"
+        }
+      ],
+      "reference_screenshots": [
+        "screenshots/E01-load-chart.png",
+        "screenshots/E07-settings-ready.png"
+      ],
+      "artifact_version": "WF-SET-001-r11",
+      "revision_scope": "unchanged"
+    },
+    {
+      "id": "WF-FRAME-086",
+      "file": "WF-FRAME-086.svg",
+      "view": 1,
+      "state": 1,
+      "variant": "go-to-date",
+      "title": "Bottom calendar action / floating Go to date window",
+      "adapt": [
+        "UIS-ADAPT-001",
+        "UIS-ADAPT-004",
+        "UIS-ADAPT-005",
+        "UIS-ADAPT-006"
+      ],
+      "annotation": "Calendar button in the bottom-left range strip opens the floating Go to window above the retained chart, as explicitly restored by the user. Date changes the viewport, never the run cursor. Cancel keeps the prior viewport. Calendar month/day selection is illustrative. Date tab follows A29 date/time inputs and month grid.",
+      "gate_g4": "APPROVED",
+      "visibility": "bid",
+      "basis": "Bid",
+      "candle_visibility": {
+        "bid": true,
+        "ask": false,
+        "independent_toggles": true,
+        "scope": "active-chart"
+      },
+      "surface": "go-to-window-over-chart",
+      "regions": [
+        "UIS-REG-001",
+        "UIS-REG-002",
+        "UIS-REG-003",
+        "UIS-REG-004"
+      ],
+      "chart_persistent": true,
+      "uses_overlay": true,
+      "replay_stage": "inactive",
+      "replay_controls": null,
+      "paper_trading_over_replay": false,
+      "future_launchers": [
+        {
+          "name": "Run bundle viewer",
+          "status": "disabled",
+          "version": "future"
+        }
+      ],
+      "reference_screenshots": [
+        "screenshots/E01-load-chart.png",
+        "screenshots/E07-settings-ready.png",
+        "screenshots/authenticated/A29-range-selection.png"
+      ],
+      "artifact_version": "WF-SET-001-r11",
+      "revision_scope": "unchanged"
+    },
+    {
+      "id": "WF-FRAME-087",
+      "file": "WF-FRAME-087.svg",
+      "view": 1,
+      "state": 1,
+      "variant": "custom-range",
+      "title": "Go to / custom viewport range",
+      "adapt": [
+        "UIS-ADAPT-001",
+        "UIS-ADAPT-004",
+        "UIS-ADAPT-005",
+        "UIS-ADAPT-006"
+      ],
+      "annotation": "Calendar button in the bottom-left range strip opens the floating Go to window above the retained chart, as explicitly restored by the user. Date changes the viewport, never the run cursor. Cancel keeps the prior viewport. Calendar month/day selection is illustrative. Custom-range contents are a designed From/To realization of the visible A29 tab, not a captured tab-body reconstruction.",
+      "gate_g4": "APPROVED",
+      "visibility": "bid",
+      "basis": "Bid",
+      "candle_visibility": {
+        "bid": true,
+        "ask": false,
+        "independent_toggles": true,
+        "scope": "active-chart"
+      },
+      "surface": "go-to-window-over-chart",
+      "regions": [
+        "UIS-REG-001",
+        "UIS-REG-002",
+        "UIS-REG-003",
+        "UIS-REG-004"
+      ],
+      "chart_persistent": true,
+      "uses_overlay": true,
+      "replay_stage": "inactive",
+      "replay_controls": null,
+      "paper_trading_over_replay": false,
+      "future_launchers": [
+        {
+          "name": "Run bundle viewer",
+          "status": "disabled",
+          "version": "future"
+        }
+      ],
+      "reference_screenshots": [
+        "screenshots/E01-load-chart.png",
+        "screenshots/E07-settings-ready.png",
+        "screenshots/authenticated/A29-range-selection.png"
+      ],
+      "artifact_version": "WF-SET-001-r11",
+      "revision_scope": "unchanged"
+    },
+    {
+      "id": "WF-FRAME-088",
+      "file": "WF-FRAME-088.svg",
+      "view": 1,
+      "state": 1,
+      "variant": "replay-select",
+      "title": "Replay / select the starting bar (A30)",
+      "adapt": [
+        "UIS-ADAPT-001",
+        "UIS-ADAPT-004",
+        "UIS-ADAPT-005",
+        "UIS-ADAPT-006"
+      ],
+      "annotation": "A31/A32 geometry: one compact floating replay/trading capsule, with a grip, transport, time, Sell, quantity, unit selector, Buy, P/L, pin and close. A32 sidebar traced in the same order and grouping; state-25 results dock is closed. Screenshot-only presets, sizing/price modes and footer toggles are disabled reference placeholders, not new behavior. Prices/balances remain placeholders.",
+      "gate_g4": "APPROVED",
+      "visibility": "bid",
+      "basis": "Bid",
+      "candle_visibility": {
+        "bid": true,
+        "ask": false,
+        "independent_toggles": true,
+        "scope": "active-chart"
+      },
+      "surface": "chart-with-collapsed-panels",
+      "regions": [
+        "UIS-REG-001",
+        "UIS-REG-002",
+        "UIS-REG-003",
+        "UIS-REG-004"
+      ],
+      "chart_persistent": true,
+      "uses_overlay": true,
+      "replay_stage": "start-selection",
+      "replay_controls": "floating-capsule",
+      "paper_trading_over_replay": false,
+      "future_launchers": [
+        {
+          "name": "Run bundle viewer",
+          "status": "disabled",
+          "version": "future"
+        }
+      ],
+      "reference_screenshots": [
+        "screenshots/E01-load-chart.png",
+        "screenshots/E07-settings-ready.png",
+        "screenshots/authenticated/A30-replay.png",
+        "screenshots/authenticated/A31-replay.png"
+      ],
+      "artifact_version": "WF-SET-001-r11",
+      "revision_scope": "unchanged"
+    },
+    {
+      "id": "WF-FRAME-089",
+      "file": "WF-FRAME-089.svg",
+      "view": 1,
+      "state": 1,
+      "variant": "replay-active",
+      "title": "Replay / playing with bottom controls (A31)",
+      "adapt": [
+        "UIS-ADAPT-001",
+        "UIS-ADAPT-004",
+        "UIS-ADAPT-005",
+        "UIS-ADAPT-006"
+      ],
+      "annotation": "A31/A32 geometry: one compact floating replay/trading capsule, with a grip, transport, time, Sell, quantity, unit selector, Buy, P/L, pin and close. A32 sidebar traced in the same order and grouping; state-25 results dock is closed. Screenshot-only presets, sizing/price modes and footer toggles are disabled reference placeholders, not new behavior. Prices/balances remain placeholders.",
+      "gate_g4": "APPROVED",
+      "visibility": "bid",
+      "basis": "Bid",
+      "candle_visibility": {
+        "bid": true,
+        "ask": false,
+        "independent_toggles": true,
+        "scope": "active-chart"
+      },
+      "surface": "chart-with-collapsed-panels",
+      "regions": [
+        "UIS-REG-001",
+        "UIS-REG-002",
+        "UIS-REG-003",
+        "UIS-REG-004"
+      ],
+      "chart_persistent": true,
+      "uses_overlay": true,
+      "replay_stage": "playing",
+      "replay_controls": "floating-capsule",
+      "paper_trading_over_replay": false,
+      "future_launchers": [
+        {
+          "name": "Run bundle viewer",
+          "status": "disabled",
+          "version": "future"
+        }
+      ],
+      "reference_screenshots": [
+        "screenshots/E01-load-chart.png",
+        "screenshots/E07-settings-ready.png",
+        "screenshots/authenticated/A30-replay.png",
+        "screenshots/authenticated/A31-replay.png"
+      ],
+      "artifact_version": "WF-SET-001-r11",
+      "revision_scope": "unchanged"
+    },
+    {
+      "id": "WF-FRAME-090",
+      "file": "WF-FRAME-090.svg",
+      "view": 4,
+      "state": 25,
+      "variant": "paper-replay",
+      "title": "Paper trading over replay / order terms and Sell-Buy strip (A32)",
+      "adapt": [
+        "UIS-ADAPT-001",
+        "UIS-ADAPT-004",
+        "UIS-ADAPT-005",
+        "UIS-ADAPT-006"
+      ],
+      "annotation": "A31/A32 geometry: one compact floating replay/trading capsule, with a grip, transport, time, Sell, quantity, unit selector, Buy, P/L, pin and close. A32 sidebar traced in the same order and grouping; state-25 results dock is closed. Screenshot-only presets, sizing/price modes and footer toggles are disabled reference placeholders, not new behavior. Prices/balances remain placeholders.",
+      "gate_g4": "APPROVED",
+      "visibility": "bid",
+      "basis": "Bid",
+      "candle_visibility": {
+        "bid": true,
+        "ask": false,
+        "independent_toggles": true,
+        "scope": "active-chart"
+      },
+      "surface": "paper-sidebar-with-floating-replay",
+      "regions": [
+        "UIS-REG-012",
+        "UIS-REG-013",
+        "UIS-REG-014",
+        "UIS-REG-011"
+      ],
+      "chart_persistent": true,
+      "uses_overlay": true,
+      "replay_stage": "paused",
+      "replay_controls": "floating-capsule",
+      "paper_trading_over_replay": true,
+      "future_launchers": [
+        {
+          "name": "Run bundle viewer",
+          "status": "disabled",
+          "version": "future"
+        }
+      ],
+      "reference_screenshots": [
+        "screenshots/E01-load-chart.png",
+        "screenshots/E07-settings-ready.png",
+        "screenshots/authenticated/A30-replay.png",
+        "screenshots/authenticated/A31-replay.png",
+        "screenshots/authenticated/A32-paper-trading.png"
+      ],
+      "artifact_version": "WF-SET-001-r14",
+      "revision_scope": "revised"
+    },
+    {
+      "id": "WF-FRAME-091",
+      "file": "WF-FRAME-091.svg",
+      "view": 4,
+      "state": 28,
+      "variant": "paper-accepted",
+      "title": "Paper replay / accepted order waiting for an eligible event",
+      "adapt": [
+        "UIS-ADAPT-001",
+        "UIS-ADAPT-004",
+        "UIS-ADAPT-005",
+        "UIS-ADAPT-006"
+      ],
+      "annotation": "A31/A32 geometry: one compact floating replay/trading capsule, with a grip, transport, time, Sell, quantity, unit selector, Buy, P/L, pin and close. A32 sidebar traced in the same order and grouping; state-25 results dock is closed. Screenshot-only presets, sizing/price modes and footer toggles are disabled reference placeholders, not new behavior. Prices/balances remain placeholders.",
+      "gate_g4": "APPROVED",
+      "visibility": "bid",
+      "basis": "Bid",
+      "candle_visibility": {
+        "bid": true,
+        "ask": false,
+        "independent_toggles": true,
+        "scope": "active-chart"
+      },
+      "surface": "paper-sidebar-with-floating-replay",
+      "regions": [
+        "UIS-REG-012",
+        "UIS-REG-013",
+        "UIS-REG-014",
+        "UIS-REG-011"
+      ],
+      "chart_persistent": true,
+      "uses_overlay": true,
+      "replay_stage": "paused",
+      "replay_controls": "floating-capsule",
+      "paper_trading_over_replay": true,
+      "future_launchers": [
+        {
+          "name": "Run bundle viewer",
+          "status": "disabled",
+          "version": "future"
+        }
+      ],
+      "reference_screenshots": [
+        "screenshots/E01-load-chart.png",
+        "screenshots/E07-settings-ready.png",
+        "screenshots/authenticated/A30-replay.png",
+        "screenshots/authenticated/A31-replay.png",
+        "screenshots/authenticated/A32-paper-trading.png"
+      ],
+      "artifact_version": "WF-SET-001-r12",
+      "revision_scope": "unchanged"
+    },
+    {
+      "id": "WF-FRAME-092",
+      "file": "WF-FRAME-092.svg",
+      "view": 4,
+      "state": 27,
+      "variant": "paper-processing",
+      "title": "Paper replay / event processing blocks new decisions",
+      "adapt": [
+        "UIS-ADAPT-001",
+        "UIS-ADAPT-004",
+        "UIS-ADAPT-005",
+        "UIS-ADAPT-006"
+      ],
+      "annotation": "A31/A32 geometry: one compact floating replay/trading capsule, with a grip, transport, time, Sell, quantity, unit selector, Buy, P/L, pin and close. A32 sidebar traced in the same order and grouping; state-25 results dock is closed. Screenshot-only presets, sizing/price modes and footer toggles are disabled reference placeholders, not new behavior. Prices/balances remain placeholders.",
+      "gate_g4": "APPROVED",
+      "visibility": "bid",
+      "basis": "Bid",
+      "candle_visibility": {
+        "bid": true,
+        "ask": false,
+        "independent_toggles": true,
+        "scope": "active-chart"
+      },
+      "surface": "paper-sidebar-with-floating-replay",
+      "regions": [
+        "UIS-REG-012",
+        "UIS-REG-013",
+        "UIS-REG-014",
+        "UIS-REG-011"
+      ],
+      "chart_persistent": true,
+      "uses_overlay": true,
+      "replay_stage": "event-processing",
+      "replay_controls": "floating-capsule",
+      "paper_trading_over_replay": true,
+      "future_launchers": [
+        {
+          "name": "Run bundle viewer",
+          "status": "disabled",
+          "version": "future"
+        }
+      ],
+      "reference_screenshots": [
+        "screenshots/E01-load-chart.png",
+        "screenshots/E07-settings-ready.png",
+        "screenshots/authenticated/A30-replay.png",
+        "screenshots/authenticated/A31-replay.png",
+        "screenshots/authenticated/A32-paper-trading.png"
+      ],
+      "artifact_version": "WF-SET-001-r12",
+      "revision_scope": "unchanged"
+    },
+    {
+      "id": "WF-FRAME-093",
+      "file": "WF-FRAME-093.svg",
+      "view": 4,
+      "state": 25,
+      "variant": "limit",
+      "title": "Limit entry level and fixed quantity",
+      "adapt": [
+        "UIS-ADAPT-001",
+        "UIS-ADAPT-004",
+        "UIS-ADAPT-005",
+        "UIS-ADAPT-006"
+      ],
+      "annotation": "IF-BR-008a: direction selection submits nothing. Matching valid side alone commits; opposite has no effect. Edits supersede estimates; retain inputs. Keep focus; announce status. Editor restores invoker. No auto-submit/play.",
+      "gate_g4": "APPROVED",
+      "visibility": "bid",
+      "basis": "Bid",
+      "candle_visibility": {
+        "bid": true,
+        "ask": false,
+        "independent_toggles": true,
+        "scope": "active-chart"
+      },
+      "surface": "paper-sidebar-with-floating-replay",
+      "regions": [
+        "UIS-REG-012",
+        "UIS-REG-013",
+        "UIS-REG-014",
+        "UIS-REG-011"
+      ],
+      "chart_persistent": true,
+      "uses_overlay": true,
+      "replay_stage": "paused",
+      "replay_controls": "floating-capsule",
+      "paper_trading_over_replay": true,
+      "future_launchers": [
+        {
+          "name": "Run bundle viewer",
+          "status": "disabled",
+          "version": "future"
+        }
+      ],
+      "reference_screenshots": [
+        "screenshots/E01-load-chart.png",
+        "screenshots/E07-settings-ready.png",
+        "screenshots/authenticated/A30-replay.png",
+        "screenshots/authenticated/A31-replay.png",
+        "screenshots/authenticated/A32-paper-trading.png"
+      ],
+      "artifact_version": "WF-SET-001-r14",
+      "revision_scope": "revised"
+    },
+    {
+      "id": "WF-FRAME-094",
+      "file": "WF-FRAME-094.svg",
+      "view": 4,
+      "state": 25,
+      "variant": "stop",
+      "title": "Stop entry level and fixed quantity",
+      "adapt": [
+        "UIS-ADAPT-001",
+        "UIS-ADAPT-004",
+        "UIS-ADAPT-005",
+        "UIS-ADAPT-006"
+      ],
+      "annotation": "IF-BR-008a: direction selection submits nothing. Matching valid side alone commits; opposite has no effect. Edits supersede estimates; retain inputs. Keep focus; announce status. Editor restores invoker. No auto-submit/play.",
+      "gate_g4": "APPROVED",
+      "visibility": "bid",
+      "basis": "Bid",
+      "candle_visibility": {
+        "bid": true,
+        "ask": false,
+        "independent_toggles": true,
+        "scope": "active-chart"
+      },
+      "surface": "paper-sidebar-with-floating-replay",
+      "regions": [
+        "UIS-REG-012",
+        "UIS-REG-013",
+        "UIS-REG-014",
+        "UIS-REG-011"
+      ],
+      "chart_persistent": true,
+      "uses_overlay": true,
+      "replay_stage": "paused",
+      "replay_controls": "floating-capsule",
+      "paper_trading_over_replay": true,
+      "future_launchers": [
+        {
+          "name": "Run bundle viewer",
+          "status": "disabled",
+          "version": "future"
+        }
+      ],
+      "reference_screenshots": [
+        "screenshots/E01-load-chart.png",
+        "screenshots/E07-settings-ready.png",
+        "screenshots/authenticated/A30-replay.png",
+        "screenshots/authenticated/A31-replay.png",
+        "screenshots/authenticated/A32-paper-trading.png"
+      ],
+      "artifact_version": "WF-SET-001-r14",
+      "revision_scope": "revised"
+    },
+    {
+      "id": "WF-FRAME-095",
+      "file": "WF-FRAME-095.svg",
+      "view": 4,
+      "state": 25,
+      "variant": "risk",
+      "title": "Risk percentage sizing with planned-risk estimate",
+      "adapt": [
+        "UIS-ADAPT-001",
+        "UIS-ADAPT-004",
+        "UIS-ADAPT-005",
+        "UIS-ADAPT-006"
+      ],
+      "annotation": "IF-BR-008a: direction selection submits nothing. Matching valid side alone commits; opposite has no effect. Edits supersede estimates; retain inputs. Keep focus; announce status. Editor restores invoker. No auto-submit/play.",
+      "gate_g4": "APPROVED",
+      "visibility": "bid",
+      "basis": "Bid",
+      "candle_visibility": {
+        "bid": true,
+        "ask": false,
+        "independent_toggles": true,
+        "scope": "active-chart"
+      },
+      "surface": "paper-sidebar-with-floating-replay",
+      "regions": [
+        "UIS-REG-012",
+        "UIS-REG-013",
+        "UIS-REG-014",
+        "UIS-REG-011"
+      ],
+      "chart_persistent": true,
+      "uses_overlay": true,
+      "replay_stage": "paused",
+      "replay_controls": "floating-capsule",
+      "paper_trading_over_replay": true,
+      "future_launchers": [
+        {
+          "name": "Run bundle viewer",
+          "status": "disabled",
+          "version": "future"
+        }
+      ],
+      "reference_screenshots": [
+        "screenshots/E01-load-chart.png",
+        "screenshots/E07-settings-ready.png",
+        "screenshots/authenticated/A30-replay.png",
+        "screenshots/authenticated/A31-replay.png",
+        "screenshots/authenticated/A32-paper-trading.png"
+      ],
+      "artifact_version": "WF-SET-001-r14",
+      "revision_scope": "revised"
+    },
+    {
+      "id": "WF-FRAME-096",
+      "file": "WF-FRAME-096.svg",
+      "view": 4,
+      "state": 25,
+      "variant": "risk-invalid",
+      "title": "Risk sizing invalid: missing stop loss",
+      "adapt": [
+        "UIS-ADAPT-001",
+        "UIS-ADAPT-004",
+        "UIS-ADAPT-005",
+        "UIS-ADAPT-006"
+      ],
+      "annotation": "IF-BR-008a: direction selection submits nothing. Matching valid side alone commits; opposite has no effect. Edits supersede estimates; retain inputs. Keep focus; announce status. Editor restores invoker. No auto-submit/play.",
+      "gate_g4": "APPROVED",
+      "visibility": "bid",
+      "basis": "Bid",
+      "candle_visibility": {
+        "bid": true,
+        "ask": false,
+        "independent_toggles": true,
+        "scope": "active-chart"
+      },
+      "surface": "paper-sidebar-with-floating-replay",
+      "regions": [
+        "UIS-REG-012",
+        "UIS-REG-013",
+        "UIS-REG-014",
+        "UIS-REG-011"
+      ],
+      "chart_persistent": true,
+      "uses_overlay": true,
+      "replay_stage": "paused",
+      "replay_controls": "floating-capsule",
+      "paper_trading_over_replay": true,
+      "future_launchers": [
+        {
+          "name": "Run bundle viewer",
+          "status": "disabled",
+          "version": "future"
+        }
+      ],
+      "reference_screenshots": [
+        "screenshots/E01-load-chart.png",
+        "screenshots/E07-settings-ready.png",
+        "screenshots/authenticated/A30-replay.png",
+        "screenshots/authenticated/A31-replay.png",
+        "screenshots/authenticated/A32-paper-trading.png"
+      ],
+      "artifact_version": "WF-SET-001-r14",
+      "revision_scope": "revised"
+    },
+    {
+      "id": "WF-FRAME-097",
+      "file": "WF-FRAME-097.svg",
+      "view": 4,
+      "state": 25,
+      "variant": "close-partial",
+      "title": "Valid selected-position partial close",
+      "adapt": [
+        "UIS-ADAPT-001",
+        "UIS-ADAPT-004",
+        "UIS-ADAPT-005",
+        "UIS-ADAPT-006"
+      ],
+      "annotation": "Run, actual terms/target and action family explicit. Submit/modify/cancel/close distinctly; IF-REC-008/009",
+      "gate_g4": "APPROVED",
+      "visibility": "bid",
+      "basis": "Bid",
+      "candle_visibility": {
+        "bid": true,
+        "ask": false,
+        "independent_toggles": true,
+        "scope": "active-chart"
+      },
+      "surface": "paper-sidebar-with-floating-replay",
+      "regions": [
+        "UIS-REG-012",
+        "UIS-REG-013",
+        "UIS-REG-014",
+        "UIS-REG-011"
+      ],
+      "chart_persistent": true,
+      "uses_overlay": true,
+      "replay_stage": "paused",
+      "replay_controls": "floating-capsule",
+      "paper_trading_over_replay": true,
+      "future_launchers": [
+        {
+          "name": "Run bundle viewer",
+          "status": "disabled",
+          "version": "future"
+        }
+      ],
+      "reference_screenshots": [
+        "screenshots/E01-load-chart.png",
+        "screenshots/E07-settings-ready.png",
+        "screenshots/authenticated/A30-replay.png",
+        "screenshots/authenticated/A31-replay.png",
+        "screenshots/authenticated/A32-paper-trading.png"
+      ],
+      "artifact_version": "WF-SET-001-r12",
+      "revision_scope": "unchanged"
+    },
+    {
+      "id": "WF-FRAME-098",
+      "file": "WF-FRAME-098.svg",
+      "view": 4,
+      "state": 25,
+      "variant": "close-full",
+      "title": "Valid selected-position full close",
+      "adapt": [
+        "UIS-ADAPT-001",
+        "UIS-ADAPT-004",
+        "UIS-ADAPT-005",
+        "UIS-ADAPT-006"
+      ],
+      "annotation": "Run, actual terms/target and action family explicit. Submit/modify/cancel/close distinctly; IF-REC-008/009",
+      "gate_g4": "APPROVED",
+      "visibility": "bid",
+      "basis": "Bid",
+      "candle_visibility": {
+        "bid": true,
+        "ask": false,
+        "independent_toggles": true,
+        "scope": "active-chart"
+      },
+      "surface": "paper-sidebar-with-floating-replay",
+      "regions": [
+        "UIS-REG-012",
+        "UIS-REG-013",
+        "UIS-REG-014",
+        "UIS-REG-011"
+      ],
+      "chart_persistent": true,
+      "uses_overlay": true,
+      "replay_stage": "paused",
+      "replay_controls": "floating-capsule",
+      "paper_trading_over_replay": true,
+      "future_launchers": [
+        {
+          "name": "Run bundle viewer",
+          "status": "disabled",
+          "version": "future"
+        }
+      ],
+      "reference_screenshots": [
+        "screenshots/E01-load-chart.png",
+        "screenshots/E07-settings-ready.png",
+        "screenshots/authenticated/A30-replay.png",
+        "screenshots/authenticated/A31-replay.png",
+        "screenshots/authenticated/A32-paper-trading.png"
+      ],
+      "artifact_version": "WF-SET-001-r12",
+      "revision_scope": "unchanged"
+    },
+    {
+      "id": "WF-FRAME-099",
+      "file": "WF-FRAME-099.svg",
+      "view": 2,
+      "state": 9,
+      "variant": "data-ready",
+      "title": "Settings / Dukascopy data location / valid candidate",
+      "adapt": [
+        "UIS-ADAPT-001",
+        "UIS-ADAPT-004",
+        "UIS-ADAPT-005",
+        "UIS-ADAPT-006"
+      ],
+      "annotation": "Named scope, committed values and draft visible. Apply/cancel separate; IF-REC-002/007",
+      "gate_g4": "APPROVED",
+      "visibility": "bid",
+      "basis": "Bid",
+      "candle_visibility": {
+        "bid": true,
+        "ask": false,
+        "independent_toggles": true,
+        "scope": "active-chart"
+      },
+      "surface": "settings-window-over-chart",
+      "regions": [
+        "UIS-REG-005",
+        "UIS-REG-006",
+        "UIS-REG-007"
+      ],
+      "chart_persistent": true,
+      "uses_overlay": true,
+      "replay_stage": "inactive",
+      "replay_controls": null,
+      "paper_trading_over_replay": false,
+      "future_launchers": [
+        {
+          "name": "Run bundle viewer",
+          "status": "disabled",
+          "version": "future"
+        }
+      ],
+      "reference_screenshots": [
+        "screenshots/E01-load-chart.png",
+        "screenshots/E07-settings-ready.png"
+      ],
+      "artifact_version": "WF-SET-001-r11",
+      "revision_scope": "unchanged"
+    },
+    {
+      "id": "WF-FRAME-100",
+      "file": "WF-FRAME-100.svg",
+      "view": 2,
+      "state": 9,
+      "variant": "data-invalid",
+      "title": "Settings / data location / invalid path",
+      "adapt": [
+        "UIS-ADAPT-001",
+        "UIS-ADAPT-004",
+        "UIS-ADAPT-005",
+        "UIS-ADAPT-006"
+      ],
+      "annotation": "Named scope, committed values and draft visible. Apply/cancel separate; IF-REC-002/007",
+      "gate_g4": "APPROVED",
+      "visibility": "bid",
+      "basis": "Bid",
+      "candle_visibility": {
+        "bid": true,
+        "ask": false,
+        "independent_toggles": true,
+        "scope": "active-chart"
+      },
+      "surface": "settings-window-over-chart",
+      "regions": [
+        "UIS-REG-005",
+        "UIS-REG-006",
+        "UIS-REG-007"
+      ],
+      "chart_persistent": true,
+      "uses_overlay": true,
+      "replay_stage": "inactive",
+      "replay_controls": null,
+      "paper_trading_over_replay": false,
+      "future_launchers": [
+        {
+          "name": "Run bundle viewer",
+          "status": "disabled",
+          "version": "future"
+        }
+      ],
+      "reference_screenshots": [
+        "screenshots/E01-load-chart.png",
+        "screenshots/E07-settings-ready.png"
+      ],
+      "artifact_version": "WF-SET-001-r11",
+      "revision_scope": "unchanged"
+    },
+    {
+      "id": "WF-FRAME-101",
+      "file": "WF-FRAME-101.svg",
+      "view": 2,
+      "state": 9,
+      "variant": "data-checking",
+      "title": "Settings / data location / validation pending",
+      "adapt": [
+        "UIS-ADAPT-001",
+        "UIS-ADAPT-004",
+        "UIS-ADAPT-005",
+        "UIS-ADAPT-006"
+      ],
+      "annotation": "Named scope, committed values and draft visible. Apply/cancel separate; IF-REC-002/007",
+      "gate_g4": "APPROVED",
+      "visibility": "bid",
+      "basis": "Bid",
+      "candle_visibility": {
+        "bid": true,
+        "ask": false,
+        "independent_toggles": true,
+        "scope": "active-chart"
+      },
+      "surface": "settings-window-over-chart",
+      "regions": [
+        "UIS-REG-005",
+        "UIS-REG-006",
+        "UIS-REG-007"
+      ],
+      "chart_persistent": true,
+      "uses_overlay": true,
+      "replay_stage": "inactive",
+      "replay_controls": null,
+      "paper_trading_over_replay": false,
+      "future_launchers": [
+        {
+          "name": "Run bundle viewer",
+          "status": "disabled",
+          "version": "future"
+        }
+      ],
+      "reference_screenshots": [
+        "screenshots/E01-load-chart.png",
+        "screenshots/E07-settings-ready.png"
+      ],
+      "artifact_version": "WF-SET-001-r11",
+      "revision_scope": "unchanged"
+    },
+    {
+      "id": "WF-FRAME-102",
+      "file": "WF-FRAME-102.svg",
+      "view": 2,
+      "state": 9,
+      "variant": "data-applied",
+      "title": "Settings / data location / applied",
+      "adapt": [
+        "UIS-ADAPT-001",
+        "UIS-ADAPT-004",
+        "UIS-ADAPT-005",
+        "UIS-ADAPT-006"
+      ],
+      "annotation": "Named scope, committed values and draft visible. Apply/cancel separate; IF-REC-002/007",
+      "gate_g4": "APPROVED",
+      "visibility": "bid",
+      "basis": "Bid",
+      "candle_visibility": {
+        "bid": true,
+        "ask": false,
+        "independent_toggles": true,
+        "scope": "active-chart"
+      },
+      "surface": "settings-window-over-chart",
+      "regions": [
+        "UIS-REG-005",
+        "UIS-REG-006",
+        "UIS-REG-007"
+      ],
+      "chart_persistent": true,
+      "uses_overlay": true,
+      "replay_stage": "inactive",
+      "replay_controls": null,
+      "paper_trading_over_replay": false,
+      "future_launchers": [
+        {
+          "name": "Run bundle viewer",
+          "status": "disabled",
+          "version": "future"
+        }
+      ],
+      "reference_screenshots": [
+        "screenshots/E01-load-chart.png",
+        "screenshots/E07-settings-ready.png"
+      ],
+      "artifact_version": "WF-SET-001-r11",
+      "revision_scope": "unchanged"
+    },
+    {
+      "id": "WF-FRAME-103",
+      "file": "WF-FRAME-103.svg",
+      "view": 1,
+      "state": 1,
+      "variant": "quote-ask",
+      "title": "Ask visible with independent Bid calculation basis",
+      "adapt": [
+        "UIS-ADAPT-001",
+        "UIS-ADAPT-004",
+        "UIS-ADAPT-005",
+        "UIS-ADAPT-006"
+      ],
+      "annotation": "Selection and actual chart/numeric values co-present; replay controls only for declared mode. No demo prices; valid selection or retained run; IF-REC-001/005",
+      "gate_g4": "APPROVED",
+      "visibility": "ask",
+      "basis": "Bid",
+      "candle_visibility": {
+        "bid": false,
+        "ask": true,
+        "independent_toggles": true,
+        "scope": "active-chart"
+      },
+      "surface": "chart-with-watchlist",
+      "regions": [
+        "UIS-REG-001",
+        "UIS-REG-002",
+        "UIS-REG-003",
+        "UIS-REG-004"
+      ],
+      "chart_persistent": true,
+      "uses_overlay": false,
+      "replay_stage": "inactive",
+      "replay_controls": null,
+      "paper_trading_over_replay": false,
+      "future_launchers": [
+        {
+          "name": "Run bundle viewer",
+          "status": "disabled",
+          "version": "future"
+        }
+      ],
+      "reference_screenshots": [
+        "screenshots/E01-load-chart.png",
+        "screenshots/E07-settings-ready.png"
+      ],
+      "artifact_version": "WF-SET-001-r11",
+      "revision_scope": "unchanged"
+    },
+    {
+      "id": "WF-FRAME-104",
+      "file": "WF-FRAME-104.svg",
+      "view": 1,
+      "state": 1,
+      "variant": "quote-both",
+      "title": "Both selected / paired filled Bid and hollow Ask / dual OHLCV and volume",
+      "adapt": [
+        "UIS-ADAPT-001",
+        "UIS-ADAPT-004",
+        "UIS-ADAPT-005",
+        "UIS-ADAPT-006"
+      ],
+      "annotation": "Both Bid and Ask selected. Each UTC bucket pairs a filled Bid candle on the left and a hollow Ask candle on the right, with two corresponding volume bars. The header and inspector expose separately labelled Bid and Ask OHLCV. Values and bars are schematic placeholders, not validated market data. Bullish candles use light shades and bearish candles dark shades on filled bodies and hollow borders/wicks. Calculation-side study selection remains independent.",
+      "gate_g4": "APPROVED",
+      "visibility": "both",
+      "basis": "Bid",
+      "candle_visibility": {
+        "bid": true,
+        "ask": true,
+        "independent_toggles": true,
+        "scope": "active-chart"
+      },
+      "surface": "chart-with-watchlist",
+      "regions": [
+        "UIS-REG-001",
+        "UIS-REG-002",
+        "UIS-REG-003",
+        "UIS-REG-004"
+      ],
+      "chart_persistent": true,
+      "uses_overlay": false,
+      "replay_stage": "inactive",
+      "replay_controls": null,
+      "paper_trading_over_replay": false,
+      "future_launchers": [
+        {
+          "name": "Run bundle viewer",
+          "status": "disabled",
+          "version": "future"
+        }
+      ],
+      "reference_screenshots": [
+        "screenshots/E01-load-chart.png",
+        "screenshots/E07-settings-ready.png"
+      ],
+      "artifact_version": "WF-SET-001-r11",
+      "revision_scope": "unchanged"
+    },
+    {
+      "id": "WF-FRAME-105",
+      "file": "WF-FRAME-105.svg",
+      "view": 1,
+      "state": 1,
+      "variant": "quote-none",
+      "title": "Neither candle series visible; basis values retained",
+      "adapt": [
+        "UIS-ADAPT-001",
+        "UIS-ADAPT-004",
+        "UIS-ADAPT-005",
+        "UIS-ADAPT-006"
+      ],
+      "annotation": "Selection and actual chart/numeric values co-present; replay controls only for declared mode. No demo prices; valid selection or retained run; IF-REC-001/005",
+      "gate_g4": "APPROVED",
+      "visibility": "none",
+      "basis": "Bid",
+      "candle_visibility": {
+        "bid": false,
+        "ask": false,
+        "independent_toggles": true,
+        "scope": "active-chart"
+      },
+      "surface": "chart-with-watchlist",
+      "regions": [
+        "UIS-REG-001",
+        "UIS-REG-002",
+        "UIS-REG-003",
+        "UIS-REG-004"
+      ],
+      "chart_persistent": true,
+      "uses_overlay": false,
+      "replay_stage": "inactive",
+      "replay_controls": null,
+      "paper_trading_over_replay": false,
+      "future_launchers": [
+        {
+          "name": "Run bundle viewer",
+          "status": "disabled",
+          "version": "future"
+        }
+      ],
+      "reference_screenshots": [
+        "screenshots/E01-load-chart.png",
+        "screenshots/E07-settings-ready.png"
+      ],
+      "artifact_version": "WF-SET-001-r11",
+      "revision_scope": "unchanged"
+    },
+    {
+      "id": "WF-FRAME-106",
+      "file": "WF-FRAME-106.svg",
+      "view": 1,
+      "state": 1,
+      "variant": "quote-ask-basis",
+      "title": "Ask calculation basis explicitly adopted",
+      "adapt": [
+        "UIS-ADAPT-001",
+        "UIS-ADAPT-004",
+        "UIS-ADAPT-005",
+        "UIS-ADAPT-006"
+      ],
+      "annotation": "Selection and actual chart/numeric values co-present; replay controls only for declared mode. No demo prices; valid selection or retained run; IF-REC-001/005",
+      "gate_g4": "APPROVED",
+      "visibility": "ask",
+      "basis": "Ask",
+      "candle_visibility": {
+        "bid": false,
+        "ask": true,
+        "independent_toggles": true,
+        "scope": "active-chart"
+      },
+      "surface": "chart-with-watchlist",
+      "regions": [
+        "UIS-REG-001",
+        "UIS-REG-002",
+        "UIS-REG-003",
+        "UIS-REG-004"
+      ],
+      "chart_persistent": true,
+      "uses_overlay": false,
+      "replay_stage": "inactive",
+      "replay_controls": null,
+      "paper_trading_over_replay": false,
+      "future_launchers": [
+        {
+          "name": "Run bundle viewer",
+          "status": "disabled",
+          "version": "future"
+        }
+      ],
+      "reference_screenshots": [
+        "screenshots/E01-load-chart.png",
+        "screenshots/E07-settings-ready.png"
+      ],
+      "artifact_version": "WF-SET-001-r11",
+      "revision_scope": "unchanged"
+    },
+    {
+      "id": "WF-FRAME-107",
+      "file": "WF-FRAME-107.svg",
+      "view": 4,
+      "state": 25,
+      "variant": "entry-sell-fixed",
+      "title": "Sell fixed quantity / ready matching submission",
+      "adapt": [
+        "UIS-ADAPT-001",
+        "UIS-ADAPT-004",
+        "UIS-ADAPT-005",
+        "UIS-ADAPT-006"
+      ],
+      "annotation": "IF-BR-008a: direction selection submits nothing. Matching valid side alone commits; opposite has no effect. Edits supersede estimates; retain inputs. Keep focus; announce status. Editor restores invoker. No auto-submit/play.",
+      "gate_g4": "APPROVED",
+      "visibility": "bid",
+      "basis": "Bid",
+      "candle_visibility": {
+        "bid": true,
+        "ask": false,
+        "independent_toggles": true,
+        "scope": "active-chart"
+      },
+      "surface": "paper-sidebar-with-floating-replay",
+      "regions": [
+        "UIS-REG-012",
+        "UIS-REG-013",
+        "UIS-REG-014",
+        "UIS-REG-011"
+      ],
+      "chart_persistent": true,
+      "uses_overlay": true,
+      "replay_stage": "paused",
+      "replay_controls": "floating-capsule",
+      "paper_trading_over_replay": true,
+      "future_launchers": [
+        {
+          "name": "Run bundle viewer",
+          "status": "disabled",
+          "version": "future"
+        }
+      ],
+      "reference_screenshots": [
+        "screenshots/E01-load-chart.png",
+        "screenshots/E07-settings-ready.png",
+        "screenshots/authenticated/A30-replay.png",
+        "screenshots/authenticated/A31-replay.png",
+        "screenshots/authenticated/A32-paper-trading.png"
+      ],
+      "artifact_version": "WF-SET-001-r14",
+      "revision_scope": "revised"
+    },
+    {
+      "id": "WF-FRAME-108",
+      "file": "WF-FRAME-108.svg",
+      "view": 4,
+      "state": 25,
+      "variant": "entry-sell-risk-pending",
+      "title": "Changed direction / risk validation pending",
+      "adapt": [
+        "UIS-ADAPT-001",
+        "UIS-ADAPT-004",
+        "UIS-ADAPT-005",
+        "UIS-ADAPT-006"
+      ],
+      "annotation": "IF-BR-008a: direction selection submits nothing. Matching valid side alone commits; opposite has no effect. Edits supersede estimates; retain inputs. Keep focus; announce status. Editor restores invoker. No auto-submit/play.",
+      "gate_g4": "APPROVED",
+      "visibility": "bid",
+      "basis": "Bid",
+      "candle_visibility": {
+        "bid": true,
+        "ask": false,
+        "independent_toggles": true,
+        "scope": "active-chart"
+      },
+      "surface": "paper-sidebar-with-floating-replay",
+      "regions": [
+        "UIS-REG-012",
+        "UIS-REG-013",
+        "UIS-REG-014",
+        "UIS-REG-011"
+      ],
+      "chart_persistent": true,
+      "uses_overlay": true,
+      "replay_stage": "paused",
+      "replay_controls": "floating-capsule",
+      "paper_trading_over_replay": true,
+      "future_launchers": [
+        {
+          "name": "Run bundle viewer",
+          "status": "disabled",
+          "version": "future"
+        }
+      ],
+      "reference_screenshots": [
+        "screenshots/E01-load-chart.png",
+        "screenshots/E07-settings-ready.png",
+        "screenshots/authenticated/A30-replay.png",
+        "screenshots/authenticated/A31-replay.png",
+        "screenshots/authenticated/A32-paper-trading.png"
+      ],
+      "artifact_version": "WF-SET-001-r14",
+      "revision_scope": "revised"
+    },
+    {
+      "id": "WF-FRAME-109",
+      "file": "WF-FRAME-109.svg",
+      "view": 4,
+      "state": 25,
+      "variant": "entry-sell-risk-invalid",
+      "title": "Changed direction / retained levels invalid",
+      "adapt": [
+        "UIS-ADAPT-001",
+        "UIS-ADAPT-004",
+        "UIS-ADAPT-005",
+        "UIS-ADAPT-006"
+      ],
+      "annotation": "IF-BR-008a: direction selection submits nothing. Matching valid side alone commits; opposite has no effect. Edits supersede estimates; retain inputs. Keep focus; announce status. Editor restores invoker. No auto-submit/play.",
+      "gate_g4": "APPROVED",
+      "visibility": "bid",
+      "basis": "Bid",
+      "candle_visibility": {
+        "bid": true,
+        "ask": false,
+        "independent_toggles": true,
+        "scope": "active-chart"
+      },
+      "surface": "paper-sidebar-with-floating-replay",
+      "regions": [
+        "UIS-REG-012",
+        "UIS-REG-013",
+        "UIS-REG-014",
+        "UIS-REG-011"
+      ],
+      "chart_persistent": true,
+      "uses_overlay": true,
+      "replay_stage": "paused",
+      "replay_controls": "floating-capsule",
+      "paper_trading_over_replay": true,
+      "future_launchers": [
+        {
+          "name": "Run bundle viewer",
+          "status": "disabled",
+          "version": "future"
+        }
+      ],
+      "reference_screenshots": [
+        "screenshots/E01-load-chart.png",
+        "screenshots/E07-settings-ready.png",
+        "screenshots/authenticated/A30-replay.png",
+        "screenshots/authenticated/A31-replay.png",
+        "screenshots/authenticated/A32-paper-trading.png"
+      ],
+      "artifact_version": "WF-SET-001-r14",
+      "revision_scope": "revised"
+    },
+    {
+      "id": "WF-FRAME-110",
+      "file": "WF-FRAME-110.svg",
+      "view": 4,
+      "state": 25,
+      "variant": "entry-sell-fixed-collapsed",
+      "title": "Sell ready / collapsed ticket and reachable editor",
+      "adapt": [
+        "UIS-ADAPT-001",
+        "UIS-ADAPT-004",
+        "UIS-ADAPT-005",
+        "UIS-ADAPT-006"
+      ],
+      "annotation": "IF-BR-008a: direction selection submits nothing. Matching valid side alone commits; opposite has no effect. Edits supersede estimates; retain inputs. Keep focus; announce status. Editor restores invoker. No auto-submit/play.",
+      "gate_g4": "APPROVED",
+      "visibility": "bid",
+      "basis": "Bid",
+      "candle_visibility": {
+        "bid": true,
+        "ask": false,
+        "independent_toggles": true,
+        "scope": "active-chart"
+      },
+      "surface": "paper-sidebar-with-floating-replay",
+      "regions": [
+        "UIS-REG-012",
+        "UIS-REG-013",
+        "UIS-REG-014",
+        "UIS-REG-011"
+      ],
+      "chart_persistent": true,
+      "uses_overlay": true,
+      "replay_stage": "paused",
+      "replay_controls": "floating-capsule",
+      "paper_trading_over_replay": true,
+      "future_launchers": [
+        {
+          "name": "Run bundle viewer",
+          "status": "disabled",
+          "version": "future"
+        }
+      ],
+      "reference_screenshots": [
+        "screenshots/E01-load-chart.png",
+        "screenshots/E07-settings-ready.png",
+        "screenshots/authenticated/A30-replay.png",
+        "screenshots/authenticated/A31-replay.png",
+        "screenshots/authenticated/A32-paper-trading.png"
+      ],
+      "artifact_version": "WF-SET-001-r14",
+      "revision_scope": "revised"
+    },
+    {
+      "id": "WF-FRAME-111",
+      "file": "WF-FRAME-111.svg",
+      "view": 4,
+      "state": 25,
+      "variant": "entry-sell-risk-pending-reflow",
+      "title": "Sell pending / effective desktop zoom",
+      "adapt": [
+        "UIS-ADAPT-001",
+        "UIS-ADAPT-004",
+        "UIS-ADAPT-005",
+        "UIS-ADAPT-006"
+      ],
+      "annotation": "IF-BR-008a: direction selection submits nothing. Matching valid side alone commits; opposite has no effect. Edits supersede estimates; retain inputs. Keep focus; announce status. Editor restores invoker. No auto-submit/play.",
+      "gate_g4": "APPROVED",
+      "visibility": "bid",
+      "basis": "Bid",
+      "candle_visibility": {
+        "bid": true,
+        "ask": false,
+        "independent_toggles": true,
+        "scope": "active-chart"
+      },
+      "surface": "zoom-task-dock-below-chart",
+      "regions": [
+        "UIS-REG-012",
+        "UIS-REG-013",
+        "UIS-REG-014",
+        "UIS-REG-011"
+      ],
+      "chart_persistent": true,
+      "uses_overlay": true,
+      "replay_stage": "paused",
+      "replay_controls": "floating-capsule",
+      "paper_trading_over_replay": true,
+      "future_launchers": [
+        {
+          "name": "Run bundle viewer",
+          "status": "disabled",
+          "version": "future"
+        }
+      ],
+      "reference_screenshots": [
+        "screenshots/E01-load-chart.png",
+        "screenshots/E07-settings-ready.png",
+        "screenshots/authenticated/A30-replay.png",
+        "screenshots/authenticated/A31-replay.png",
+        "screenshots/authenticated/A32-paper-trading.png"
+      ],
+      "artifact_version": "WF-SET-001-r14",
+      "revision_scope": "revised"
+    },
+    {
+      "id": "WF-FRAME-112",
+      "file": "WF-FRAME-112.svg",
+      "view": 4,
+      "state": 25,
+      "variant": "entry-sell-risk",
+      "title": "Sell risk sizing / fresh validation ready",
+      "adapt": [
+        "UIS-ADAPT-001",
+        "UIS-ADAPT-004",
+        "UIS-ADAPT-005",
+        "UIS-ADAPT-006"
+      ],
+      "annotation": "IF-BR-008a: direction selection submits nothing. Matching valid side alone commits; opposite has no effect. Edits supersede estimates; retain inputs. Keep focus; announce status. Editor restores invoker. No auto-submit/play.",
+      "gate_g4": "APPROVED",
+      "visibility": "bid",
+      "basis": "Bid",
+      "candle_visibility": {
+        "bid": true,
+        "ask": false,
+        "independent_toggles": true,
+        "scope": "active-chart"
+      },
+      "surface": "paper-sidebar-with-floating-replay",
+      "regions": [
+        "UIS-REG-012",
+        "UIS-REG-013",
+        "UIS-REG-014",
+        "UIS-REG-011"
+      ],
+      "chart_persistent": true,
+      "uses_overlay": true,
+      "replay_stage": "paused",
+      "replay_controls": "floating-capsule",
+      "paper_trading_over_replay": true,
+      "future_launchers": [
+        {
+          "name": "Run bundle viewer",
+          "status": "disabled",
+          "version": "future"
+        }
+      ],
+      "reference_screenshots": [
+        "screenshots/E01-load-chart.png",
+        "screenshots/E07-settings-ready.png",
+        "screenshots/authenticated/A30-replay.png",
+        "screenshots/authenticated/A31-replay.png",
+        "screenshots/authenticated/A32-paper-trading.png"
+      ],
+      "artifact_version": "WF-SET-001-r14",
+      "revision_scope": "revised"
+    },
+    {
+      "id": "WF-FRAME-113",
+      "file": "WF-FRAME-113.svg",
+      "view": 4,
+      "state": 25,
+      "variant": "entry-buy-fixed-pending",
+      "title": "Buy fixed edit / validation pending",
+      "adapt": [
+        "UIS-ADAPT-001",
+        "UIS-ADAPT-004",
+        "UIS-ADAPT-005",
+        "UIS-ADAPT-006"
+      ],
+      "annotation": "IF-BR-008a: direction selection submits nothing. Matching valid side alone commits; opposite has no effect. Edits supersede estimates; retain inputs. Keep focus; announce status. Editor restores invoker. No auto-submit/play.",
+      "gate_g4": "APPROVED",
+      "visibility": "bid",
+      "basis": "Bid",
+      "candle_visibility": {
+        "bid": true,
+        "ask": false,
+        "independent_toggles": true,
+        "scope": "active-chart"
+      },
+      "surface": "paper-sidebar-with-floating-replay",
+      "regions": [
+        "UIS-REG-012",
+        "UIS-REG-013",
+        "UIS-REG-014",
+        "UIS-REG-011"
+      ],
+      "chart_persistent": true,
+      "uses_overlay": true,
+      "replay_stage": "paused",
+      "replay_controls": "floating-capsule",
+      "paper_trading_over_replay": true,
+      "future_launchers": [
+        {
+          "name": "Run bundle viewer",
+          "status": "disabled",
+          "version": "future"
+        }
+      ],
+      "reference_screenshots": [
+        "screenshots/E01-load-chart.png",
+        "screenshots/E07-settings-ready.png",
+        "screenshots/authenticated/A30-replay.png",
+        "screenshots/authenticated/A31-replay.png",
+        "screenshots/authenticated/A32-paper-trading.png"
+      ],
+      "artifact_version": "WF-SET-001-r14",
+      "revision_scope": "revised"
+    }
+  ]
+}

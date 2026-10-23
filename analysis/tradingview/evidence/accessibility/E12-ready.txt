@@ -1,0 +1,242 @@
+- document:
+  - button:
+    - img
+  - toolbar:
+    - button "SPX"
+    - button "Switch data type"
+    - button "Compare symbols"
+    - separator
+    - button "1 day": D
+    - separator
+    - button "Candles"
+    - separator
+    - button "Indicators, metrics, and strategies": Indicators
+    - button "Indicator templates"
+    - separator
+    - button "Create alert": Alert
+    - button "Bar replay": Replay
+    - separator
+    - button [disabled]
+    - button [disabled]
+    - button "Layout setup"
+    - button "Save all charts for all symbols and intervals on your layout": Save Save
+    - button "Manage layouts"
+    - separator
+    - button "Quick search"
+    - button "Settings"
+    - button "Fullscreen mode"
+    - button "Take a snapshot"
+    - button "Share your idea with the trade community"
+    - button "Trade"
+    - button "Upgrade"
+  - toolbar:
+    - button "Cross"
+    - button "Cursors" [pressed]
+    - button "Trendline"
+    - button "Trend tools"
+    - button "Fib retracement"
+    - button "Gann and Fibonacci tools"
+    - button "XABCD pattern"
+    - button "Patterns"
+    - button "Long position"
+    - button "Forecasting and measurement tools"
+    - button "Brush"
+    - button "Geometric shapes"
+    - button "Text"
+    - button "Annotation tools"
+    - button "Icon"
+    - button "Icons"
+    - button "Measure"
+    - button "Zoom in"
+    - button "Magnet mode snaps drawings placed near price bars to the closest OHLC value"
+    - button "Magnets"
+    - button "Keep drawing"
+    - button "Lock drawings and indicators"
+    - button "Lock options"
+    - button "Hide all drawings"
+    - button "Hide options"
+    - button "Remove objects"
+    - button "Remove options"
+  - 'region "Chart #1"':
+    - toolbar:
+      - img
+      - text: S
+      - button "Change symbol": S&P 500 Index
+      - text: ·
+      - button "Change interval": 1D
+      - text: · SP
+      - button "Flag symbol":
+        - img
+      - button "More":
+        - img
+      - button "Market closed · Data is delayed"
+      - text: O 7,774.18 H 7,789.15 L 7,693.31 C 7,718.94 −86.51 (−1.11%)
+    - text: 7,669.69 Sell 73.98 7,743.67 Buy
+    - button "Hide indicator legend":
+      - img
+    - toolbar:
+      - text: Vol
+      - button "Hide":
+        - img
+      - button "Settings":
+        - img
+      - button "Remove":
+        - img
+      - button "More":
+        - img
+  - toolbar:
+    - button "1 day in 1 minute intervals": 1D
+    - button "5 days in 5 minutes intervals": 5D
+    - button "1 month in 30 minutes intervals": 1M
+    - button "3 months in 1 hour intervals": 3M
+    - button "6 months in 2 hours intervals": 6M
+    - button "Year to day in 1 day intervals": YTD
+    - button "1 year in 1 day intervals": 1Y
+    - button "5 years in 1 week intervals": 5Y
+    - button "All data in 1 month intervals": All
+    - separator
+    - button "Go to"
+    - button "Timezone": 10:40:57 UTC
+  - toolbar:
+    - button "Watchlist, details, and news" [pressed]
+    - button "Alerts"
+    - button "Object tree and data window"
+    - button "AI Copilot"
+    - button "Screeners"
+    - button "Pine"
+    - button "Calendars"
+    - button "Community"
+    - button "Notifications"
+    - button "Chats"
+    - button "Products"
+    - separator
+    - button "Help Center"
+  - button "Watchlist"
+  - button "Add symbol"
+  - button "Advanced view"
+  - button "Settings"
+  - button
+  - button "Symbol"
+  - button "Last"
+  - button "Chg"
+  - button "Chg%"
+  - text: Indices
+  - img
+  - text: S SPX D 7,718.94 −86.51 −1.11%
+  - img
+  - text: N NDQ 29,950.82 −618.66 −2.02%
+  - img
+  - text: D DJI 51,626.17 −48.98 −0.09%
+  - img
+  - text: V VIX D 17.58 0.71 4.21%
+  - img
+  - text: D DXY 102.109 −0.419 −0.41% Stocks
+  - img
+  - text: A AAPL 342.96 1.69 0.50%
+  - img
+  - text: T TSLA 367.16 −8.07 −2.15%
+  - img
+  - text: N NFLX 70.57 0.11 0.16% Futures
+  - img
+  - text: U USOIL 95.15 −0.01 −0.01%
+  - img
+  - text: G GOLD 4,153.970 48.749 1.19%
+  - img
+  - text: S SILVER 56.675
+  - superscript: "1"
+  - text: 1.0681 1.92% Forex
+  - img
+  - img
+  - text: E EURUSD 1.1206
+  - superscript: "0"
+  - text: 0.00499 0.45%
+  - img
+  - img
+  - text: G GBPUSD 1.3249
+  - superscript: "8"
+  - text: 0.00572 0.43%
+  - img
+  - img
+  - text: U USDJPY 157.86
+  - superscript: "4"
+  - text: −0.435 −0.27% Crypto
+  - img
+  - text: B BTCUSD 81,053 −522 −0.64%
+  - img
+  - text: B BTCUSDT 81,156.00 −526.01 −0.64%
+  - img
+  - text: E ETHUSD 2,367.2 −51.4 −2.13%
+  - img
+  - text: S SPX
+  - button "Metrics"
+  - link "S&P 500 Index":
+    - /url: https://www.tradingview.com/symbols/SPX/
+  - text: SP Index 7,718.94 D POINT −86.51 −1.11% Market closed Last update at Oct 14, 20:36 GMT+0 News Nasdaq futures fall 1% as AI rout deepens on debt concerns More events Performance −0.95% 1W 1.41% 1M 2.12% 3M 9.11% 6M 12.22% YTD 17.08% 1Y Seasonals
+  - table:
+    - row:
+      - cell
+      - cell
+      - cell
+    - row:
+      - cell
+      - cell
+      - cell
+  - text: 2026 2025 2024
+  - button "More seasonals"
+  - text: Technicals
+  - img
+  - text: Neutral
+  - button "More technicals"
+  - text: ATM IV term structure 1W 2W 1M 2M 3M 6M 9M 1Y ‪10%‬ ‪12%‬ ‪14%‬ ‪16%‬ ‪18%‬ Volatility curve (29 days)
+  - table:
+    - row:
+      - cell
+      - cell
+      - cell
+    - row:
+      - cell
+      - cell
+      - cell
+  - button "More on options"
+  - text: Browse community posts Profile Website — Employees (FY) — ISIN US78378X1072 CUSIP 78378X107 FIGI BBG000H4FSM0
+  - img
+  - log:
+    - list
+  - log:
+    - list
+  - log:
+    - list
+  - log:
+    - list
+  - log:
+    - list
+  - log:
+    - list
+  - log:
+    - list
+  - log:
+    - list
+  - log:
+    - list
+  - log:
+    - list
+  - log:
+    - list
+  - log:
+    - list
+  - log:
+    - list
+  - log:
+    - list
+  - log:
+    - list
+  - log:
+    - list
+  - log:
+    - list
+  - log:
+    - list
+  - log:
+    - list
+  - log:
+    - list

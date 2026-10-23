@@ -1,0 +1,15 @@
+.entry {
+  font-family: var(--font);
+  font-size: var(--text-size);
+  background: var(--surface);
+  color: var(--text);
+  padding: var(--fixture-gap);
+}
+.charts {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--fixture-gap);
+}
+.chart {
+  height: var(--fixture-height);
+}

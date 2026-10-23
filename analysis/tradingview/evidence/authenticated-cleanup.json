@@ -1,0 +1,38 @@
+{
+  "date": "2026-10-16",
+  "source": "Supplementary Chrome DevTools native UI interactions; not a REA controlled scenario",
+  "observations": [
+    {
+      "action": "Dismiss native beforeunload dialog on inspection tab",
+      "outcome": "Tool reported success"
+    },
+    {
+      "action": "Click inspection-tab Paper Trading context menu",
+      "outcome": "Tool reported success; menu displayed Trading settings, Connect another broker, Log out"
+    },
+    {
+      "action": "Click broker-context Log out",
+      "outcome": "Tool returned interactivity timeout; later accessibility snapshot no longer showed account manager",
+      "subsequent_snapshot_account_manager_present": false,
+      "subsequent_snapshot_account_balance_present": false
+    },
+    {
+      "action": "Close only inspection pageId 2; restore pageId 1",
+      "outcome": "Close did not return before cancellation; next browser calls failed to connect to CDP. Original page was not deliberately closed. Final tab and broker state unverified."
+    },
+    {
+      "action": "Reconnect after endpoint interruption; restore original tab and close inspection tab",
+      "outcome": "Browser enumerated original EURUSD tab as pageId 4 and inspection as pageId 3; select_page restored original, close_page(3) succeeded, list_pages confirmed only original remained. Saved inspection layout and Pine draft remain."
+    }
+  ],
+  "remaining_state": [
+    "Inspection layout Codex inspection 2026-10-16 not deleted",
+    "Authored Pine draft state not deleted"
+  ],
+  "no_orders_submitted": true,
+  "no_alerts_created": true,
+  "no_scripts_published": true,
+  "original_tab_preserved_after_reconnection": true,
+  "inspection_tab_closed": true,
+  "final_broker_connection_status": "Not independently confirmed; account manager absent after broker logout interaction."
+}

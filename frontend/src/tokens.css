@@ -1,0 +1,26 @@
+/* Canonical VIS r7 roles. Probe dimensions are test-fixture geometry, not a product layout. */
+:root {
+  --surface: #ffffff;
+  --text: #1e293b;
+  --border: #d4dae3;
+  --up: #16a34a;
+  --up-edge: #15803d;
+  --down: #dc2626;
+  --down-edge: #c91f1f;
+  --study: #1d4ed8;
+  --font: system-ui, 'Segoe UI', sans-serif;
+  --text-size: 14px;
+  --axis-text-size: 12px;
+  --fixture-gap: 16px;
+  --fixture-height: 640px;
+}
+:root[data-theme='dark'] {
+  --surface: #151619;
+  --text: #d1d4dc;
+  --border: #2a2b30;
+  --up: #22c55e;
+  --up-edge: #16a34a;
+  --down: #f87171;
+  --down-edge: #ef4444;
+  --study: #93c5fd;
+}

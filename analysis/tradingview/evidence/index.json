@@ -1,0 +1,4048 @@
+[
+  {
+    "id": "E01",
+    "evidence_id": "ev_4472b012e0199b47fafc6549907cd5cc2516ea17b776c8c2c97f42d5219470fb",
+    "title": "Baseline SPX",
+    "parameters": {
+      "actions": [
+        {
+          "action": "wait_for_timeout",
+          "duration_ms": 12000,
+          "step_id": "load-chart"
+        }
+      ],
+      "browser": {
+        "executable_path": "/home/giulio/.cache/ms-playwright/chromium-1243/chrome-linux64/chrome",
+        "headless": true,
+        "mode": "launch"
+      },
+      "capture": {
+        "after_each_step": [],
+        "at_end": [
+          "accessibility",
+          "dom",
+          "screenshot",
+          "url"
+        ],
+        "events": [
+          "network",
+          "websockets",
+          "page-errors"
+        ],
+        "network": {
+          "header_values": false,
+          "request_body": false,
+          "response_body": false
+        }
+      },
+      "environment": {
+        "color_scheme": "light",
+        "locale": "en-US",
+        "reduced_motion": "reduce",
+        "service_workers": "block",
+        "timezone": "America/New_York",
+        "viewport": {
+          "device_scale_factor": 1,
+          "height": 1000,
+          "width": 1440
+        }
+      },
+      "scenario_sha256": "1df94eb0907f7a7570bb4c17ddfd77be5720ca87d65cf63953a092e5e2929944",
+      "secrets": [],
+      "start_url": {
+        "query": [],
+        "url": "https://www.tradingview.com/chart/?symbol=SP%3ASPX"
+      },
+      "storage": {
+        "cookies": [],
+        "local_storage": [],
+        "session_storage": []
+      }
+    },
+    "limitations": [
+      "Artifact identity is unavailable for this observation.",
+      "Event sequence records provider receipt order; simultaneous browser causality is not inferred.",
+      "Network content is retained only when selected; Playwright response-body bytes are API results and are not guaranteed to match wire bytes.",
+      "Request bytes are limited to what Playwright exposes; not_exposed does not establish body absence or multipart file coverage.",
+      "Network content reads settle within 5 seconds each and the observer does not request bodies from unfinished responses.",
+      "Playwright scenario events do not expose request initiator stacks; receipt order does not prove causality.",
+      "Storage values are hashed only after declared-secret redaction.",
+      "Some network requests had not completed when capture ended; later activity is unknown.",
+      "Browser event collection reached its resource budget; omitted events and descendant observations are unknown.",
+      "Browser host platform and architecture were not observed."
+    ],
+    "completeness": {
+      "equality_eligible": false,
+      "missing_sections": [
+        "events"
+      ],
+      "status": "incomplete",
+      "truncated_sections": []
+    },
+    "browser": {
+      "cleanup": "terminated-owned-process",
+      "mode": "launch",
+      "process_ownership": "provider-owned",
+      "product": "Chromium",
+      "version": "153.0.8010.12"
+    },
+    "steps": [
+      {
+        "step_id": "scenario_start",
+        "status": "completed",
+        "error": null,
+        "files": {}
+      },
+      {
+        "step_id": "load-chart",
+        "status": "completed",
+        "error": null,
+        "files": {
+          "accessibility": "evidence/accessibility/E01-load-chart.txt",
+          "dom": "evidence/dom/E01-load-chart.html",
+          "screenshot": "screenshots/E01-load-chart.png"
+        }
+      }
+    ]
+  },
+  {
+    "id": "E02",
+    "evidence_id": "ev_b75f3be32d6789e1df11946f79cdb2226f77cae57b68b1c549aa29f3637852df",
+    "title": "Symbols intervals and chart styles",
+    "parameters": {
+      "actions": [
+        {
+          "action": "wait_for",
+          "locator": {
+            "kind": "role",
+            "name": "SPX",
+            "role": "button"
+          },
+          "state": "visible",
+          "step_id": "ready",
+          "timeout_ms": 25000
+        },
+        {
+          "action": "click",
+          "button": "left",
+          "click_count": 1,
+          "locator": {
+            "kind": "role",
+            "name": "SPX",
+            "role": "button"
+          },
+          "step_id": "symbols",
+          "timeout_ms": 5000
+        },
+        {
+          "action": "wait_for_timeout",
+          "duration_ms": 1000,
+          "step_id": "symbol-dialog"
+        },
+        {
+          "action": "press",
+          "key": "Escape",
+          "locator": {
+            "kind": "css",
+            "selector": "body"
+          },
+          "step_id": "dismiss-symbols",
+          "timeout_ms": 5000
+        },
+        {
+          "action": "click",
+          "button": "left",
+          "click_count": 1,
+          "locator": {
+            "kind": "role",
+            "name": "1 day",
+            "role": "button"
+          },
+          "step_id": "intervals",
+          "timeout_ms": 5000
+        },
+        {
+          "action": "press",
+          "key": "Escape",
+          "locator": {
+            "kind": "css",
+            "selector": "body"
+          },
+          "step_id": "dismiss-intervals",
+          "timeout_ms": 5000
+        },
+        {
+          "action": "click",
+          "button": "left",
+          "click_count": 1,
+          "locator": {
+            "kind": "role",
+            "name": "Candles",
+            "role": "button"
+          },
+          "step_id": "chart-types",
+          "timeout_ms": 5000
+        }
+      ],
+      "browser": {
+        "executable_path": "/home/giulio/.cache/ms-playwright/chromium-1243/chrome-linux64/chrome",
+        "headless": true,
+        "mode": "launch"
+      },
+      "capture": {
+        "after_each_step": [
+          "accessibility",
+          "screenshot"
+        ],
+        "at_end": [
+          "url"
+        ],
+        "events": [],
+        "network": {
+          "header_values": false,
+          "request_body": false,
+          "response_body": false
+        }
+      },
+      "environment": {
+        "color_scheme": "light",
+        "locale": "en-US",
+        "reduced_motion": "reduce",
+        "service_workers": "block",
+        "timezone": "UTC",
+        "viewport": {
+          "device_scale_factor": 1,
+          "height": 1000,
+          "width": 1440
+        }
+      },
+      "scenario_sha256": "e04aa5e9952433b94ad855c065d835665bedb03d5064d8fdee5c765cdbeed66c",
+      "secrets": [],
+      "start_url": {
+        "query": [],
+        "url": "https://www.tradingview.com/chart/?symbol=SP%3ASPX"
+      },
+      "storage": {
+        "cookies": [],
+        "local_storage": [],
+        "session_storage": []
+      }
+    },
+    "limitations": [
+      "Artifact identity is unavailable for this observation.",
+      "Event sequence records provider receipt order; simultaneous browser causality is not inferred.",
+      "Network content is retained only when selected; Playwright response-body bytes are API results and are not guaranteed to match wire bytes.",
+      "Request bytes are limited to what Playwright exposes; not_exposed does not establish body absence or multipart file coverage.",
+      "Network content reads settle within 5 seconds each and the observer does not request bodies from unfinished responses.",
+      "Playwright scenario events do not expose request initiator stacks; receipt order does not prove causality.",
+      "Storage values are hashed only after declared-secret redaction.",
+      "Browser host platform and architecture were not observed."
+    ],
+    "completeness": {
+      "equality_eligible": true,
+      "missing_sections": [],
+      "status": "complete",
+      "truncated_sections": []
+    },
+    "browser": {
+      "cleanup": "terminated-owned-process",
+      "mode": "launch",
+      "process_ownership": "provider-owned",
+      "product": "Chromium",
+      "version": "153.0.8010.12"
+    },
+    "steps": [
+      {
+        "step_id": "scenario_start",
+        "status": "completed",
+        "error": null,
+        "files": {
+          "accessibility": "evidence/accessibility/E02-scenario_start.txt"
+        }
+      },
+      {
+        "step_id": "ready",
+        "status": "completed",
+        "error": null,
+        "files": {
+          "accessibility": "evidence/accessibility/E02-ready.txt"
+        }
+      },
+      {
+        "step_id": "symbols",
+        "status": "completed",
+        "error": null,
+        "files": {
+          "accessibility": "evidence/accessibility/E02-symbols.txt"
+        }
+      },
+      {
+        "step_id": "symbol-dialog",
+        "status": "completed",
+        "error": null,
+        "files": {
+          "accessibility": "evidence/accessibility/E02-symbol-dialog.txt",
+          "screenshot": "screenshots/E02-symbol-dialog.png"
+        }
+      },
+      {
+        "step_id": "dismiss-symbols",
+        "status": "completed",
+        "error": null,
+        "files": {
+          "accessibility": "evidence/accessibility/E02-dismiss-symbols.txt"
+        }
+      },
+      {
+        "step_id": "intervals",
+        "status": "completed",
+        "error": null,
+        "files": {
+          "accessibility": "evidence/accessibility/E02-intervals.txt",
+          "screenshot": "screenshots/E02-intervals.png"
+        }
+      },
+      {
+        "step_id": "dismiss-intervals",
+        "status": "completed",
+        "error": null,
+        "files": {
+          "accessibility": "evidence/accessibility/E02-dismiss-intervals.txt"
+        }
+      },
+      {
+        "step_id": "chart-types",
+        "status": "completed",
+        "error": null,
+        "files": {
+          "accessibility": "evidence/accessibility/E02-chart-types.txt",
+          "screenshot": "screenshots/E02-chart-types.png"
+        }
+      }
+    ]
+  },
+  {
+    "id": "E03",
+    "evidence_id": "ev_937d697eef16d76ab862a00b1c52ba27ec8897ace8a03053df5a00a47db7ebc8",
+    "title": "Indicators and trend tools",
+    "parameters": {
+      "actions": [
+        {
+          "action": "wait_for",
+          "locator": {
+            "kind": "role",
+            "name": "Indicators, metrics, and strategies",
+            "role": "button"
+          },
+          "state": "visible",
+          "step_id": "ready",
+          "timeout_ms": 25000
+        },
+        {
+          "action": "click",
+          "button": "left",
+          "click_count": 1,
+          "locator": {
+            "kind": "role",
+            "name": "Indicators, metrics, and strategies",
+            "role": "button"
+          },
+          "step_id": "indicators",
+          "timeout_ms": 5000
+        },
+        {
+          "action": "wait_for_timeout",
+          "duration_ms": 1500,
+          "step_id": "indicator-loaded"
+        },
+        {
+          "action": "press",
+          "key": "Escape",
+          "locator": {
+            "kind": "css",
+            "selector": "body"
+          },
+          "step_id": "dismiss-indicators",
+          "timeout_ms": 5000
+        },
+        {
+          "action": "click",
+          "button": "left",
+          "click_count": 1,
+          "locator": {
+            "kind": "role",
+            "name": "Trend tools",
+            "role": "button"
+          },
+          "step_id": "trend-tools",
+          "timeout_ms": 5000
+        },
+        {
+          "action": "press",
+          "key": "Escape",
+          "locator": {
+            "kind": "css",
+            "selector": "body"
+          },
+          "step_id": "dismiss-tools",
+          "timeout_ms": 5000
+        },
+        {
+          "action": "click",
+          "button": "left",
+          "click_count": 1,
+          "locator": {
+            "kind": "css",
+            "selector": "button[aria-label=\"Settings\"]"
+          },
+          "step_id": "settings",
+          "timeout_ms": 5000
+        }
+      ],
+      "browser": {
+        "executable_path": "/home/giulio/.cache/ms-playwright/chromium-1243/chrome-linux64/chrome",
+        "headless": true,
+        "mode": "launch"
+      },
+      "capture": {
+        "after_each_step": [
+          "accessibility",
+          "screenshot"
+        ],
+        "at_end": [
+          "url"
+        ],
+        "events": [],
+        "network": {
+          "header_values": false,
+          "request_body": false,
+          "response_body": false
+        }
+      },
+      "environment": {
+        "color_scheme": "light",
+        "locale": "en-US",
+        "reduced_motion": "reduce",
+        "service_workers": "block",
+        "timezone": "UTC",
+        "viewport": {
+          "device_scale_factor": 1,
+          "height": 1000,
+          "width": 1440
+        }
+      },
+      "scenario_sha256": "d2f50ebf1ee711775e5b7c0d51e45771b820e2ad8a24189831ef918aaa2b1f6e",
+      "secrets": [],
+      "start_url": {
+        "query": [],
+        "url": "https://www.tradingview.com/chart/?symbol=SP%3ASPX"
+      },
+      "storage": {
+        "cookies": [],
+        "local_storage": [],
+        "session_storage": []
+      }
+    },
+    "limitations": [
+      "Artifact identity is unavailable for this observation.",
+      "Event sequence records provider receipt order; simultaneous browser causality is not inferred.",
+      "Network content is retained only when selected; Playwright response-body bytes are API results and are not guaranteed to match wire bytes.",
+      "Request bytes are limited to what Playwright exposes; not_exposed does not establish body absence or multipart file coverage.",
+      "Network content reads settle within 5 seconds each and the observer does not request bodies from unfinished responses.",
+      "Playwright scenario events do not expose request initiator stacks; receipt order does not prove causality.",
+      "Storage values are hashed only after declared-secret redaction.",
+      "Browser host platform and architecture were not observed."
+    ],
+    "completeness": {
+      "equality_eligible": false,
+      "missing_sections": [
+        "action"
+      ],
+      "status": "incomplete",
+      "truncated_sections": []
+    },
+    "browser": {
+      "cleanup": "terminated-owned-process",
+      "mode": "launch",
+      "process_ownership": "provider-owned",
+      "product": "Chromium",
+      "version": "153.0.8010.12"
+    },
+    "steps": [
+      {
+        "step_id": "scenario_start",
+        "status": "completed",
+        "error": null,
+        "files": {
+          "accessibility": "evidence/accessibility/E03-scenario_start.txt"
+        }
+      },
+      {
+        "step_id": "ready",
+        "status": "completed",
+        "error": null,
+        "files": {
+          "accessibility": "evidence/accessibility/E03-ready.txt"
+        }
+      },
+      {
+        "step_id": "indicators",
+        "status": "completed",
+        "error": null,
+        "files": {
+          "accessibility": "evidence/accessibility/E03-indicators.txt"
+        }
+      },
+      {
+        "step_id": "indicator-loaded",
+        "status": "completed",
+        "error": null,
+        "files": {
+          "accessibility": "evidence/accessibility/E03-indicator-loaded.txt",
+          "screenshot": "screenshots/E03-indicator-loaded.png"
+        }
+      },
+      {
+        "step_id": "dismiss-indicators",
+        "status": "completed",
+        "error": null,
+        "files": {
+          "accessibility": "evidence/accessibility/E03-dismiss-indicators.txt"
+        }
+      },
+      {
+        "step_id": "trend-tools",
+        "status": "completed",
+        "error": null,
+        "files": {
+          "accessibility": "evidence/accessibility/E03-trend-tools.txt",
+          "screenshot": "screenshots/E03-trend-tools.png"
+        }
+      },
+      {
+        "step_id": "dismiss-tools",
+        "status": "completed",
+        "error": null,
+        "files": {
+          "accessibility": "evidence/accessibility/E03-dismiss-tools.txt"
+        }
+      },
+      {
+        "step_id": "settings",
+        "status": "failed",
+        "error": "locator.click: Error: strict mode violation: locator('button[aria-label=\"Settings\"]') resolved to 5 elements:\n    1) <button tabindex=\"-1\" type=\"button\" aria-label=\"Settings\" data-tooltip=\"Settings\" data-tooltip-show-on-focus=\"true\" class=\"iconButton-P4LQzYFS button-iLTBB5dO button-zm3YRUFG apply-common-tooltip isInteractive-zm3YRUFG accessible-zm3YRUFG\">…</button> aka getByLabel('Settings').first()\n    2) <button tabindex=\"-1\" type=\"button\" aria-label=\"Settings\" data-tooltip=\"Settings\" data-tooltip-show-on-focus=\"true\" class=\"iconButton-P4LQzYFS button-iLTBB5dO button-zm3YRUFG apply-common-tooltip isInteractive-zm3YRUFG accessible-zm3YRUFG\">…</button> aka getByLabel('Settings').nth(1)\n    3) <button tabindex=\"-1\" type=\"button\" aria-label=\"Settings\" data-tooltip=\"Settings\" id=\"header-toolbar-properties\" data-tooltip-show-on-focus=\"true\" data-name=\"header-toolbar-properties\" class=\"iconButton-P4LQzYFS button-iLTBB5dO button-zm3YRUFG apply-common-tooltip isInteractive-zm3YRUFG accessible-zm3YRUFG\">…</button> aka locator('#header-toolbar-properties')\n    4) <button type=\"button\" tabindex=\"-1\" title=\"Settings\" aria-label=\"Settings\" data-qa-id=\"legend-settings-action\" class=\"button-quatTGAC apply-common-tooltip accessible-quatTGAC\">…</button> aka getByRole('region', { name: 'Chart #' }).getByLabel('Settings', { exact: true })\n    5) <button type=\"button\" aria-label=\"Settings\" data-tooltip=\"Settings\" data-name=\"settings-button\" class=\"headerButton-zDcxZk2G button-z2WPFNXn apply-common-tooltip accessible-z2WPFNXn\">…</button> aka getByRole('button', { name: 'Settings' }).nth(2)\n\nCall log:\n\u001b[2m  - waiting for locator('button[aria-label=\"Settings\"]')\u001b[22m\n",
+        "files": {
+          "accessibility": "evidence/accessibility/E03-settings.txt"
+        }
+      }
+    ]
+  },
+  {
+    "id": "E04",
+    "evidence_id": "ev_ab417925731811f5f53a53075771a4783b2b2c1f6a1f94033fe7bd0644ede625",
+    "title": "Settings and layout inventory with interrupted flow",
+    "parameters": {
+      "actions": [
+        {
+          "action": "wait_for",
+          "locator": {
+            "kind": "css",
+            "selector": "#header-toolbar-properties"
+          },
+          "state": "visible",
+          "step_id": "ready",
+          "timeout_ms": 25000
+        },
+        {
+          "action": "click",
+          "button": "left",
+          "click_count": 1,
+          "locator": {
+            "kind": "css",
+            "selector": "#header-toolbar-properties"
+          },
+          "step_id": "settings",
+          "timeout_ms": 5000
+        },
+        {
+          "action": "press",
+          "key": "Escape",
+          "locator": {
+            "kind": "css",
+            "selector": "body"
+          },
+          "step_id": "close-settings",
+          "timeout_ms": 5000
+        },
+        {
+          "action": "click",
+          "button": "left",
+          "click_count": 1,
+          "locator": {
+            "kind": "role",
+            "name": "Layout setup",
+            "role": "button"
+          },
+          "step_id": "layout",
+          "timeout_ms": 5000
+        },
+        {
+          "action": "press",
+          "key": "Escape",
+          "locator": {
+            "kind": "css",
+            "selector": "body"
+          },
+          "step_id": "close-layout",
+          "timeout_ms": 5000
+        },
+        {
+          "action": "click",
+          "button": "left",
+          "click_count": 1,
+          "locator": {
+            "kind": "role",
+            "name": "Create alert",
+            "role": "button"
+          },
+          "step_id": "alert",
+          "timeout_ms": 5000
+        },
+        {
+          "action": "press",
+          "key": "Escape",
+          "locator": {
+            "kind": "css",
+            "selector": "body"
+          },
+          "step_id": "close-alert",
+          "timeout_ms": 5000
+        },
+        {
+          "action": "click",
+          "button": "left",
+          "click_count": 1,
+          "locator": {
+            "kind": "role",
+            "name": "Bar replay",
+            "role": "button"
+          },
+          "step_id": "replay",
+          "timeout_ms": 5000
+        },
+        {
+          "action": "wait_for_timeout",
+          "duration_ms": 1000,
+          "step_id": "replay-ready"
+        }
+      ],
+      "browser": {
+        "executable_path": "/home/giulio/.cache/ms-playwright/chromium-1243/chrome-linux64/chrome",
+        "headless": true,
+        "mode": "launch"
+      },
+      "capture": {
+        "after_each_step": [
+          "accessibility",
+          "screenshot"
+        ],
+        "at_end": [
+          "url"
+        ],
+        "events": [],
+        "network": {
+          "header_values": false,
+          "request_body": false,
+          "response_body": false
+        }
+      },
+      "environment": {
+        "color_scheme": "light",
+        "locale": "en-US",
+        "reduced_motion": "reduce",
+        "service_workers": "block",
+        "timezone": "UTC",
+        "viewport": {
+          "device_scale_factor": 1,
+          "height": 1000,
+          "width": 1440
+        }
+      },
+      "scenario_sha256": "3f8e5b124b18e2b22f8d7b6e541b294aecf66c1a80aba8e3c0cca0ccaa495087",
+      "secrets": [],
+      "start_url": {
+        "query": [],
+        "url": "https://www.tradingview.com/chart/?symbol=SP%3ASPX"
+      },
+      "storage": {
+        "cookies": [],
+        "local_storage": [],
+        "session_storage": []
+      }
+    },
+    "limitations": [
+      "Artifact identity is unavailable for this observation.",
+      "Event sequence records provider receipt order; simultaneous browser causality is not inferred.",
+      "Network content is retained only when selected; Playwright response-body bytes are API results and are not guaranteed to match wire bytes.",
+      "Request bytes are limited to what Playwright exposes; not_exposed does not establish body absence or multipart file coverage.",
+      "Network content reads settle within 5 seconds each and the observer does not request bodies from unfinished responses.",
+      "Playwright scenario events do not expose request initiator stacks; receipt order does not prove causality.",
+      "Storage values are hashed only after declared-secret redaction.",
+      "Browser host platform and architecture were not observed."
+    ],
+    "completeness": {
+      "equality_eligible": false,
+      "missing_sections": [
+        "accessibility",
+        "action",
+        "screenshot",
+        "url"
+      ],
+      "status": "incomplete",
+      "truncated_sections": []
+    },
+    "browser": {
+      "cleanup": "terminated-owned-process",
+      "mode": "launch",
+      "process_ownership": "provider-owned",
+      "product": "Chromium",
+      "version": "153.0.8010.12"
+    },
+    "steps": [
+      {
+        "step_id": "scenario_start",
+        "status": "completed",
+        "error": null,
+        "files": {
+          "accessibility": "evidence/accessibility/E04-scenario_start.txt"
+        }
+      },
+      {
+        "step_id": "ready",
+        "status": "completed",
+        "error": null,
+        "files": {
+          "accessibility": "evidence/accessibility/E04-ready.txt"
+        }
+      },
+      {
+        "step_id": "settings",
+        "status": "completed",
+        "error": null,
+        "files": {
+          "accessibility": "evidence/accessibility/E04-settings.txt"
+        }
+      },
+      {
+        "step_id": "close-settings",
+        "status": "completed",
+        "error": null,
+        "files": {
+          "accessibility": "evidence/accessibility/E04-close-settings.txt"
+        }
+      },
+      {
+        "step_id": "layout",
+        "status": "completed",
+        "error": null,
+        "files": {
+          "accessibility": "evidence/accessibility/E04-layout.txt",
+          "screenshot": "screenshots/E04-layout.png"
+        }
+      },
+      {
+        "step_id": "close-layout",
+        "status": "completed",
+        "error": null,
+        "files": {
+          "accessibility": "evidence/accessibility/E04-close-layout.txt"
+        }
+      },
+      {
+        "step_id": "alert",
+        "status": "completed",
+        "error": null,
+        "files": {
+          "accessibility": "evidence/accessibility/E04-alert.txt"
+        }
+      },
+      {
+        "step_id": "close-alert",
+        "status": "completed",
+        "error": null,
+        "files": {
+          "accessibility": "evidence/accessibility/E04-close-alert.txt"
+        }
+      },
+      {
+        "step_id": "replay",
+        "status": "failed",
+        "error": "locator.click: Timeout 5000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByRole('button', { name: 'Bar replay', exact: true })\u001b[22m\n\u001b[2m    - locator resolved to <button tabindex=\"-1\" type=\"button\" aria-pressed=\"false\" aria-label=\"Bar replay\" data-tooltip=\"Bar replay\" id=\"header-toolbar-replay\" class=\"button-P4LQzYFS button-vxmgjera withText-vxmgjera button-zm3YRUFG apply-common-tooltip isInteractive-zm3YRUFG accessible-zm3YRUFG\">…</button>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <div class=\"wrapper-oN4IcL29\">…</div> from <div id=\"overlap-manager-root\" data-qa-id=\"overlap-manager-root\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <div class=\"wrapper-oN4IcL29\">…</div> from <div id=\"overlap-manager-root\" data-qa-id=\"overlap-manager-root\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m    9 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <div class=\"wrapper-oN4IcL29\">…</div> from <div id=\"overlap-manager-root\" data-qa-id=\"overlap-manager-root\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 500ms\u001b[22m\n",
+        "files": {
+          "accessibility": "evidence/accessibility/E04-replay.txt"
+        }
+      },
+      {
+        "step_id": "replay-ready",
+        "status": "cancelled",
+        "error": "not executed after an earlier action failure",
+        "files": {}
+      }
+    ]
+  },
+  {
+    "id": "E05",
+    "evidence_id": "ev_7c7ad5cc1d27628a97fbae5ea230685e090248a817b7863b8f2d06c9885c951d",
+    "title": "Alert replay and save registration gates",
+    "parameters": {
+      "actions": [
+        {
+          "action": "wait_for",
+          "locator": {
+            "kind": "role",
+            "name": "Create alert",
+            "role": "button"
+          },
+          "state": "visible",
+          "step_id": "ready",
+          "timeout_ms": 25000
+        },
+        {
+          "action": "click",
+          "button": "left",
+          "click_count": 1,
+          "locator": {
+            "kind": "role",
+            "name": "Create alert",
+            "role": "button"
+          },
+          "step_id": "alert",
+          "timeout_ms": 5000
+        },
+        {
+          "action": "wait_for_timeout",
+          "duration_ms": 600,
+          "step_id": "alert-state"
+        },
+        {
+          "action": "press",
+          "key": "Escape",
+          "locator": {
+            "kind": "css",
+            "selector": "body"
+          },
+          "step_id": "dismiss-alert",
+          "timeout_ms": 3000
+        },
+        {
+          "action": "wait_for_timeout",
+          "duration_ms": 600,
+          "step_id": "alert-dismissed"
+        },
+        {
+          "action": "click",
+          "button": "left",
+          "click_count": 1,
+          "locator": {
+            "kind": "role",
+            "name": "Bar replay",
+            "role": "button"
+          },
+          "step_id": "replay",
+          "timeout_ms": 5000
+        },
+        {
+          "action": "wait_for_timeout",
+          "duration_ms": 600,
+          "step_id": "replay-state"
+        },
+        {
+          "action": "press",
+          "key": "Escape",
+          "locator": {
+            "kind": "css",
+            "selector": "body"
+          },
+          "step_id": "dismiss-replay",
+          "timeout_ms": 3000
+        },
+        {
+          "action": "click",
+          "button": "left",
+          "click_count": 1,
+          "locator": {
+            "kind": "role",
+            "name": "Save all charts for all symbols and intervals on your layout",
+            "role": "button"
+          },
+          "step_id": "save",
+          "timeout_ms": 5000
+        },
+        {
+          "action": "wait_for_timeout",
+          "duration_ms": 600,
+          "step_id": "save-state"
+        }
+      ],
+      "browser": {
+        "executable_path": "/home/giulio/.cache/ms-playwright/chromium-1243/chrome-linux64/chrome",
+        "headless": true,
+        "mode": "launch"
+      },
+      "capture": {
+        "after_each_step": [
+          "accessibility",
+          "screenshot"
+        ],
+        "at_end": [
+          "url"
+        ],
+        "events": [],
+        "network": {
+          "header_values": false,
+          "request_body": false,
+          "response_body": false
+        }
+      },
+      "environment": {
+        "color_scheme": "light",
+        "locale": "en-US",
+        "reduced_motion": "reduce",
+        "service_workers": "block",
+        "timezone": "UTC",
+        "viewport": {
+          "device_scale_factor": 1,
+          "height": 1000,
+          "width": 1440
+        }
+      },
+      "scenario_sha256": "1a1c24f242ed32feb3dcf1e2c51a06c9dd3ab75c90bff5a3e4a7c14eb0947071",
+      "secrets": [],
+      "start_url": {
+        "query": [],
+        "url": "https://www.tradingview.com/chart/?symbol=SP%3ASPX"
+      },
+      "storage": {
+        "cookies": [],
+        "local_storage": [],
+        "session_storage": []
+      }
+    },
+    "limitations": [
+      "Artifact identity is unavailable for this observation.",
+      "Event sequence records provider receipt order; simultaneous browser causality is not inferred.",
+      "Network content is retained only when selected; Playwright response-body bytes are API results and are not guaranteed to match wire bytes.",
+      "Request bytes are limited to what Playwright exposes; not_exposed does not establish body absence or multipart file coverage.",
+      "Network content reads settle within 5 seconds each and the observer does not request bodies from unfinished responses.",
+      "Playwright scenario events do not expose request initiator stacks; receipt order does not prove causality.",
+      "Storage values are hashed only after declared-secret redaction.",
+      "Browser host platform and architecture were not observed."
+    ],
+    "completeness": {
+      "equality_eligible": true,
+      "missing_sections": [],
+      "status": "complete",
+      "truncated_sections": []
+    },
+    "browser": {
+      "cleanup": "terminated-owned-process",
+      "mode": "launch",
+      "process_ownership": "provider-owned",
+      "product": "Chromium",
+      "version": "153.0.8010.12"
+    },
+    "steps": [
+      {
+        "step_id": "scenario_start",
+        "status": "completed",
+        "error": null,
+        "files": {
+          "accessibility": "evidence/accessibility/E05-scenario_start.txt"
+        }
+      },
+      {
+        "step_id": "ready",
+        "status": "completed",
+        "error": null,
+        "files": {
+          "accessibility": "evidence/accessibility/E05-ready.txt"
+        }
+      },
+      {
+        "step_id": "alert",
+        "status": "completed",
+        "error": null,
+        "files": {
+          "accessibility": "evidence/accessibility/E05-alert.txt"
+        }
+      },
+      {
+        "step_id": "alert-state",
+        "status": "completed",
+        "error": null,
+        "files": {
+          "accessibility": "evidence/accessibility/E05-alert-state.txt",
+          "screenshot": "screenshots/E05-alert-state.png"
+        }
+      },
+      {
+        "step_id": "dismiss-alert",
+        "status": "completed",
+        "error": null,
+        "files": {
+          "accessibility": "evidence/accessibility/E05-dismiss-alert.txt"
+        }
+      },
+      {
+        "step_id": "alert-dismissed",
+        "status": "completed",
+        "error": null,
+        "files": {
+          "accessibility": "evidence/accessibility/E05-alert-dismissed.txt"
+        }
+      },
+      {
+        "step_id": "replay",
+        "status": "completed",
+        "error": null,
+        "files": {
+          "accessibility": "evidence/accessibility/E05-replay.txt"
+        }
+      },
+      {
+        "step_id": "replay-state",
+        "status": "completed",
+        "error": null,
+        "files": {
+          "accessibility": "evidence/accessibility/E05-replay-state.txt",
+          "screenshot": "screenshots/E05-replay-state.png"
+        }
+      },
+      {
+        "step_id": "dismiss-replay",
+        "status": "completed",
+        "error": null,
+        "files": {
+          "accessibility": "evidence/accessibility/E05-dismiss-replay.txt"
+        }
+      },
+      {
+        "step_id": "save",
+        "status": "completed",
+        "error": null,
+        "files": {
+          "accessibility": "evidence/accessibility/E05-save.txt"
+        }
+      },
+      {
+        "step_id": "save-state",
+        "status": "completed",
+        "error": null,
+        "files": {
+          "accessibility": "evidence/accessibility/E05-save-state.txt",
+          "screenshot": "screenshots/E05-save-state.png"
+        }
+      }
+    ]
+  },
+  {
+    "id": "E06",
+    "evidence_id": "ev_04c1dda16a3f12f86fec87dc31db15dcc2ec38bf52ba61f20c3e4cb48bf5b5bc",
+    "title": "Object tree and Pine editor",
+    "parameters": {
+      "actions": [
+        {
+          "action": "wait_for",
+          "locator": {
+            "kind": "role",
+            "name": "Pine",
+            "role": "button"
+          },
+          "state": "visible",
+          "step_id": "ready",
+          "timeout_ms": 25000
+        },
+        {
+          "action": "click",
+          "button": "left",
+          "click_count": 1,
+          "locator": {
+            "kind": "role",
+            "name": "Object tree and data window",
+            "role": "button"
+          },
+          "step_id": "objects",
+          "timeout_ms": 5000
+        },
+        {
+          "action": "wait_for_timeout",
+          "duration_ms": 800,
+          "step_id": "objects-state"
+        },
+        {
+          "action": "click",
+          "button": "left",
+          "click_count": 1,
+          "locator": {
+            "kind": "role",
+            "name": "Pine",
+            "role": "button"
+          },
+          "step_id": "pine",
+          "timeout_ms": 5000
+        },
+        {
+          "action": "wait_for_timeout",
+          "duration_ms": 800,
+          "step_id": "pine-state"
+        },
+        {
+          "action": "click",
+          "button": "left",
+          "click_count": 1,
+          "locator": {
+            "kind": "role",
+            "name": "Trade",
+            "role": "button"
+          },
+          "step_id": "trade",
+          "timeout_ms": 5000
+        },
+        {
+          "action": "wait_for_timeout",
+          "duration_ms": 800,
+          "step_id": "trade-state"
+        }
+      ],
+      "browser": {
+        "executable_path": "/home/giulio/.cache/ms-playwright/chromium-1243/chrome-linux64/chrome",
+        "headless": true,
+        "mode": "launch"
+      },
+      "capture": {
+        "after_each_step": [
+          "accessibility",
+          "screenshot"
+        ],
+        "at_end": [
+          "url"
+        ],
+        "events": [],
+        "network": {
+          "header_values": false,
+          "request_body": false,
+          "response_body": false
+        }
+      },
+      "environment": {
+        "color_scheme": "light",
+        "locale": "en-US",
+        "reduced_motion": "reduce",
+        "service_workers": "block",
+        "timezone": "UTC",
+        "viewport": {
+          "device_scale_factor": 1,
+          "height": 1000,
+          "width": 1440
+        }
+      },
+      "scenario_sha256": "37351c4b0ea3d3908e5e40bafacd1db991475944035f63941ae809088cbeff98",
+      "secrets": [],
+      "start_url": {
+        "query": [],
+        "url": "https://www.tradingview.com/chart/?symbol=SP%3ASPX"
+      },
+      "storage": {
+        "cookies": [],
+        "local_storage": [],
+        "session_storage": []
+      }
+    },
+    "limitations": [
+      "Artifact identity is unavailable for this observation.",
+      "Event sequence records provider receipt order; simultaneous browser causality is not inferred.",
+      "Network content is retained only when selected; Playwright response-body bytes are API results and are not guaranteed to match wire bytes.",
+      "Request bytes are limited to what Playwright exposes; not_exposed does not establish body absence or multipart file coverage.",
+      "Network content reads settle within 5 seconds each and the observer does not request bodies from unfinished responses.",
+      "Playwright scenario events do not expose request initiator stacks; receipt order does not prove causality.",
+      "Storage values are hashed only after declared-secret redaction.",
+      "Browser host platform and architecture were not observed."
+    ],
+    "completeness": {
+      "equality_eligible": false,
+      "missing_sections": [
+        "accessibility",
+        "action",
+        "screenshot",
+        "url"
+      ],
+      "status": "incomplete",
+      "truncated_sections": []
+    },
+    "browser": {
+      "cleanup": "terminated-owned-process",
+      "mode": "launch",
+      "process_ownership": "provider-owned",
+      "product": "Chromium",
+      "version": "153.0.8010.12"
+    },
+    "steps": [
+      {
+        "step_id": "scenario_start",
+        "status": "completed",
+        "error": null,
+        "files": {
+          "accessibility": "evidence/accessibility/E06-scenario_start.txt"
+        }
+      },
+      {
+        "step_id": "ready",
+        "status": "completed",
+        "error": null,
+        "files": {
+          "accessibility": "evidence/accessibility/E06-ready.txt"
+        }
+      },
+      {
+        "step_id": "objects",
+        "status": "completed",
+        "error": null,
+        "files": {
+          "accessibility": "evidence/accessibility/E06-objects.txt"
+        }
+      },
+      {
+        "step_id": "objects-state",
+        "status": "completed",
+        "error": null,
+        "files": {
+          "accessibility": "evidence/accessibility/E06-objects-state.txt",
+          "screenshot": "screenshots/E06-objects-state.png"
+        }
+      },
+      {
+        "step_id": "pine",
+        "status": "completed",
+        "error": null,
+        "files": {
+          "accessibility": "evidence/accessibility/E06-pine.txt"
+        }
+      },
+      {
+        "step_id": "pine-state",
+        "status": "completed",
+        "error": null,
+        "files": {
+          "accessibility": "evidence/accessibility/E06-pine-state.txt",
+          "screenshot": "screenshots/E06-pine-state.png"
+        }
+      },
+      {
+        "step_id": "trade",
+        "status": "failed",
+        "error": "locator.click: Timeout 5000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByRole('button', { name: 'Trade', exact: true })\u001b[22m\n\u001b[2m    - locator resolved to <button tabindex=\"-1\" aria-disabled=\"false\" aria-describedby=\":r8:\" data-qa-id=\"trade-button\" class=\"activeArea-xzAtFmlE noStretch-xzAtFmlE hasClickListener-xzAtFmlE\">…</button>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <div class=\"header-woz0diYR\">…</div> from <div id=\"overlap-manager-root\" data-qa-id=\"overlap-manager-root\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <div class=\"header-woz0diYR\">…</div> from <div id=\"overlap-manager-root\" data-qa-id=\"overlap-manager-root\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m    9 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <div class=\"header-woz0diYR\">…</div> from <div id=\"overlap-manager-root\" data-qa-id=\"overlap-manager-root\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 500ms\u001b[22m\n",
+        "files": {
+          "accessibility": "evidence/accessibility/E06-trade.txt"
+        }
+      },
+      {
+        "step_id": "trade-state",
+        "status": "cancelled",
+        "error": "not executed after an earlier action failure",
+        "files": {}
+      }
+    ]
+  },
+  {
+    "id": "E07",
+    "evidence_id": "ev_8a0dd827ab3a8abec2293466fb492711ca93b3bb73f953875f721ba7808c5e2c",
+    "title": "Settings canvas and broker chooser",
+    "parameters": {
+      "actions": [
+        {
+          "action": "wait_for",
+          "locator": {
+            "kind": "css",
+            "selector": "#header-toolbar-properties"
+          },
+          "state": "visible",
+          "step_id": "ready",
+          "timeout_ms": 25000
+        },
+        {
+          "action": "click",
+          "button": "left",
+          "click_count": 1,
+          "locator": {
+            "kind": "css",
+            "selector": "#header-toolbar-properties"
+          },
+          "step_id": "settings",
+          "timeout_ms": 5000
+        },
+        {
+          "action": "wait_for",
+          "locator": {
+            "kind": "role",
+            "name": "Settings",
+            "role": "dialog"
+          },
+          "state": "visible",
+          "step_id": "settings-ready",
+          "timeout_ms": 5000
+        },
+        {
+          "action": "click",
+          "button": "left",
+          "click_count": 1,
+          "locator": {
+            "kind": "role",
+            "name": "Canvas",
+            "role": "tab"
+          },
+          "step_id": "canvas",
+          "timeout_ms": 5000
+        },
+        {
+          "action": "wait_for_timeout",
+          "duration_ms": 650,
+          "step_id": "canvas-state"
+        },
+        {
+          "action": "click",
+          "button": "left",
+          "click_count": 1,
+          "locator": {
+            "kind": "role",
+            "name": "Cancel",
+            "role": "button"
+          },
+          "step_id": "cancel-settings",
+          "timeout_ms": 5000
+        },
+        {
+          "action": "click",
+          "button": "left",
+          "click_count": 1,
+          "locator": {
+            "kind": "role",
+            "name": "Trade",
+            "role": "button"
+          },
+          "step_id": "trade",
+          "timeout_ms": 5000
+        },
+        {
+          "action": "wait_for_timeout",
+          "duration_ms": 650,
+          "step_id": "trade-state"
+        }
+      ],
+      "browser": {
+        "executable_path": "/home/giulio/.cache/ms-playwright/chromium-1243/chrome-linux64/chrome",
+        "headless": true,
+        "mode": "launch"
+      },
+      "capture": {
+        "after_each_step": [
+          "accessibility",
+          "screenshot"
+        ],
+        "at_end": [
+          "url"
+        ],
+        "events": [],
+        "network": {
+          "header_values": false,
+          "request_body": false,
+          "response_body": false
+        }
+      },
+      "environment": {
+        "color_scheme": "light",
+        "locale": "en-US",
+        "reduced_motion": "reduce",
+        "service_workers": "block",
+        "timezone": "UTC",
+        "viewport": {
+          "device_scale_factor": 1,
+          "height": 1000,
+          "width": 1440
+        }
+      },
+      "scenario_sha256": "91ff591273b2a3d8b878732ead21e7f391f0a527eea48bb8f85f5b4c202b9e15",
+      "secrets": [],
+      "start_url": {
+        "query": [],
+        "url": "https://www.tradingview.com/chart/?symbol=SP%3ASPX"
+      },
+      "storage": {
+        "cookies": [],
+        "local_storage": [],
+        "session_storage": []
+      }
+    },
+    "limitations": [
+      "Artifact identity is unavailable for this observation.",
+      "Event sequence records provider receipt order; simultaneous browser causality is not inferred.",
+      "Network content is retained only when selected; Playwright response-body bytes are API results and are not guaranteed to match wire bytes.",
+      "Request bytes are limited to what Playwright exposes; not_exposed does not establish body absence or multipart file coverage.",
+      "Network content reads settle within 5 seconds each and the observer does not request bodies from unfinished responses.",
+      "Playwright scenario events do not expose request initiator stacks; receipt order does not prove causality.",
+      "Storage values are hashed only after declared-secret redaction.",
+      "Browser host platform and architecture were not observed."
+    ],
+    "completeness": {
+      "equality_eligible": true,
+      "missing_sections": [],
+      "status": "complete",
+      "truncated_sections": []
+    },
+    "browser": {
+      "cleanup": "terminated-owned-process",
+      "mode": "launch",
+      "process_ownership": "provider-owned",
+      "product": "Chromium",
+      "version": "153.0.8010.12"
+    },
+    "steps": [
+      {
+        "step_id": "scenario_start",
+        "status": "completed",
+        "error": null,
+        "files": {
+          "accessibility": "evidence/accessibility/E07-scenario_start.txt"
+        }
+      },
+      {
+        "step_id": "ready",
+        "status": "completed",
+        "error": null,
+        "files": {
+          "accessibility": "evidence/accessibility/E07-ready.txt"
+        }
+      },
+      {
+        "step_id": "settings",
+        "status": "completed",
+        "error": null,
+        "files": {
+          "accessibility": "evidence/accessibility/E07-settings.txt"
+        }
+      },
+      {
+        "step_id": "settings-ready",
+        "status": "completed",
+        "error": null,
+        "files": {
+          "accessibility": "evidence/accessibility/E07-settings-ready.txt",
+          "screenshot": "screenshots/E07-settings-ready.png"
+        }
+      },
+      {
+        "step_id": "canvas",
+        "status": "completed",
+        "error": null,
+        "files": {
+          "accessibility": "evidence/accessibility/E07-canvas.txt"
+        }
+      },
+      {
+        "step_id": "canvas-state",
+        "status": "completed",
+        "error": null,
+        "files": {
+          "accessibility": "evidence/accessibility/E07-canvas-state.txt",
+          "screenshot": "screenshots/E07-canvas-state.png"
+        }
+      },
+      {
+        "step_id": "cancel-settings",
+        "status": "completed",
+        "error": null,
+        "files": {
+          "accessibility": "evidence/accessibility/E07-cancel-settings.txt"
+        }
+      },
+      {
+        "step_id": "trade",
+        "status": "completed",
+        "error": null,
+        "files": {
+          "accessibility": "evidence/accessibility/E07-trade.txt"
+        }
+      },
+      {
+        "step_id": "trade-state",
+        "status": "completed",
+        "error": null,
+        "files": {
+          "accessibility": "evidence/accessibility/E07-trade-state.txt",
+          "screenshot": "screenshots/E07-trade-state.png"
+        }
+      }
+    ]
+  },
+  {
+    "id": "E08",
+    "evidence_id": "ev_ca905101b401b8b8c2c2a97799c84d335e9a577f09856253e7e6eb3787f7192e",
+    "title": "Daily to hourly change with interrupted style selection",
+    "parameters": {
+      "actions": [
+        {
+          "action": "wait_for",
+          "locator": {
+            "kind": "role",
+            "name": "1 day",
+            "role": "button"
+          },
+          "state": "visible",
+          "step_id": "ready",
+          "timeout_ms": 25000
+        },
+        {
+          "action": "click",
+          "button": "left",
+          "click_count": 1,
+          "locator": {
+            "kind": "role",
+            "name": "1 day",
+            "role": "button"
+          },
+          "step_id": "interval-menu",
+          "timeout_ms": 5000
+        },
+        {
+          "action": "click",
+          "button": "left",
+          "click_count": 1,
+          "locator": {
+            "kind": "css",
+            "selector": "text=\"1 hour\""
+          },
+          "step_id": "hour",
+          "timeout_ms": 5000
+        },
+        {
+          "action": "wait_for_timeout",
+          "duration_ms": 2000,
+          "step_id": "hour-state"
+        },
+        {
+          "action": "click",
+          "button": "left",
+          "click_count": 1,
+          "locator": {
+            "kind": "role",
+            "name": "Candles",
+            "role": "button"
+          },
+          "step_id": "type-menu",
+          "timeout_ms": 5000
+        },
+        {
+          "action": "click",
+          "button": "left",
+          "click_count": 1,
+          "locator": {
+            "kind": "css",
+            "selector": "[role=\"row\"]:has([role=\"gridcell\"]:text-is(\"Line Click here to learn more\"))"
+          },
+          "step_id": "line",
+          "timeout_ms": 5000
+        },
+        {
+          "action": "wait_for_timeout",
+          "duration_ms": 1000,
+          "step_id": "line-state"
+        },
+        {
+          "action": "click",
+          "button": "left",
+          "click_count": 1,
+          "locator": {
+            "kind": "role",
+            "name": "Indicators, metrics, and strategies",
+            "role": "button"
+          },
+          "step_id": "indicators",
+          "timeout_ms": 5000
+        },
+        {
+          "action": "wait_for_timeout",
+          "duration_ms": 1000,
+          "step_id": "indicator-dom"
+        }
+      ],
+      "browser": {
+        "executable_path": "/home/giulio/.cache/ms-playwright/chromium-1243/chrome-linux64/chrome",
+        "headless": true,
+        "mode": "launch"
+      },
+      "capture": {
+        "after_each_step": [
+          "accessibility"
+        ],
+        "at_end": [
+          "accessibility",
+          "screenshot",
+          "dom",
+          "url"
+        ],
+        "events": [
+          "websockets"
+        ],
+        "network": {
+          "header_values": false,
+          "request_body": false,
+          "response_body": false
+        }
+      },
+      "environment": {
+        "color_scheme": "light",
+        "locale": "en-US",
+        "reduced_motion": "reduce",
+        "service_workers": "block",
+        "timezone": "UTC",
+        "viewport": {
+          "device_scale_factor": 1,
+          "height": 1000,
+          "width": 1440
+        }
+      },
+      "scenario_sha256": "943f33904ea97446c448b87613c27137d0910a01894d568e397e6d0c4563f689",
+      "secrets": [],
+      "start_url": {
+        "query": [],
+        "url": "https://www.tradingview.com/chart/?symbol=SP%3ASPX"
+      },
+      "storage": {
+        "cookies": [],
+        "local_storage": [],
+        "session_storage": []
+      }
+    },
+    "limitations": [
+      "Artifact identity is unavailable for this observation.",
+      "Event sequence records provider receipt order; simultaneous browser causality is not inferred.",
+      "Network content is retained only when selected; Playwright response-body bytes are API results and are not guaranteed to match wire bytes.",
+      "Request bytes are limited to what Playwright exposes; not_exposed does not establish body absence or multipart file coverage.",
+      "Network content reads settle within 5 seconds each and the observer does not request bodies from unfinished responses.",
+      "Playwright scenario events do not expose request initiator stacks; receipt order does not prove causality.",
+      "Storage values are hashed only after declared-secret redaction.",
+      "Browser event collection reached its resource budget; omitted events and descendant observations are unknown.",
+      "Browser host platform and architecture were not observed."
+    ],
+    "completeness": {
+      "equality_eligible": false,
+      "missing_sections": [
+        "accessibility",
+        "action",
+        "dom",
+        "events",
+        "screenshot",
+        "url"
+      ],
+      "status": "incomplete",
+      "truncated_sections": []
+    },
+    "browser": {
+      "cleanup": "terminated-owned-process",
+      "mode": "launch",
+      "process_ownership": "provider-owned",
+      "product": "Chromium",
+      "version": "153.0.8010.12"
+    },
+    "steps": [
+      {
+        "step_id": "scenario_start",
+        "status": "completed",
+        "error": null,
+        "files": {
+          "accessibility": "evidence/accessibility/E08-scenario_start.txt"
+        }
+      },
+      {
+        "step_id": "ready",
+        "status": "completed",
+        "error": null,
+        "files": {
+          "accessibility": "evidence/accessibility/E08-ready.txt"
+        }
+      },
+      {
+        "step_id": "interval-menu",
+        "status": "completed",
+        "error": null,
+        "files": {
+          "accessibility": "evidence/accessibility/E08-interval-menu.txt"
+        }
+      },
+      {
+        "step_id": "hour",
+        "status": "completed",
+        "error": null,
+        "files": {
+          "accessibility": "evidence/accessibility/E08-hour.txt"
+        }
+      },
+      {
+        "step_id": "hour-state",
+        "status": "completed",
+        "error": null,
+        "files": {
+          "accessibility": "evidence/accessibility/E08-hour-state.txt"
+        }
+      },
+      {
+        "step_id": "type-menu",
+        "status": "completed",
+        "error": null,
+        "files": {
+          "accessibility": "evidence/accessibility/E08-type-menu.txt"
+        }
+      },
+      {
+        "step_id": "line",
+        "status": "failed",
+        "error": "Analysis operation timed out after 5000ms: capture_browser_scenario",
+        "files": {
+          "accessibility": "evidence/accessibility/E08-line.txt"
+        }
+      },
+      {
+        "step_id": "line-state",
+        "status": "cancelled",
+        "error": "not executed after an earlier action failure",
+        "files": {}
+      },
+      {
+        "step_id": "indicators",
+        "status": "cancelled",
+        "error": "not executed after an earlier action failure",
+        "files": {}
+      },
+      {
+        "step_id": "indicator-dom",
+        "status": "cancelled",
+        "error": "not executed after an earlier action failure",
+        "files": {}
+      }
+    ]
+  },
+  {
+    "id": "E09",
+    "evidence_id": "ev_ef5051fee3aa30e33a179919b724059c74dc704a7ea19b258979504624ca5702",
+    "title": "Line style and indicator dialog DOM",
+    "parameters": {
+      "actions": [
+        {
+          "action": "wait_for",
+          "locator": {
+            "kind": "role",
+            "name": "Candles",
+            "role": "button"
+          },
+          "state": "visible",
+          "step_id": "ready",
+          "timeout_ms": 25000
+        },
+        {
+          "action": "click",
+          "button": "left",
+          "click_count": 1,
+          "locator": {
+            "kind": "role",
+            "name": "Candles",
+            "role": "button"
+          },
+          "step_id": "type-menu",
+          "timeout_ms": 7000
+        },
+        {
+          "action": "click",
+          "button": "left",
+          "click_count": 1,
+          "locator": {
+            "kind": "css",
+            "selector": "text=\"Line\""
+          },
+          "step_id": "line",
+          "timeout_ms": 7000
+        },
+        {
+          "action": "wait_for_timeout",
+          "duration_ms": 900,
+          "step_id": "line-state"
+        },
+        {
+          "action": "click",
+          "button": "left",
+          "click_count": 1,
+          "locator": {
+            "kind": "role",
+            "name": "Indicators, metrics, and strategies",
+            "role": "button"
+          },
+          "step_id": "indicators",
+          "timeout_ms": 7000
+        },
+        {
+          "action": "wait_for_timeout",
+          "duration_ms": 900,
+          "step_id": "indicator-dom"
+        }
+      ],
+      "browser": {
+        "executable_path": "/home/giulio/.cache/ms-playwright/chromium-1243/chrome-linux64/chrome",
+        "headless": true,
+        "mode": "launch"
+      },
+      "capture": {
+        "after_each_step": [
+          "accessibility"
+        ],
+        "at_end": [
+          "accessibility",
+          "dom",
+          "screenshot",
+          "url"
+        ],
+        "events": [],
+        "network": {
+          "header_values": false,
+          "request_body": false,
+          "response_body": false
+        }
+      },
+      "environment": {
+        "color_scheme": "light",
+        "locale": "en-US",
+        "reduced_motion": "reduce",
+        "service_workers": "block",
+        "timezone": "UTC",
+        "viewport": {
+          "device_scale_factor": 1,
+          "height": 1000,
+          "width": 1440
+        }
+      },
+      "scenario_sha256": "af44456d093aba491e7160ba62d7a21225de9f2a3ab9de16f85793108f33f604",
+      "secrets": [],
+      "start_url": {
+        "query": [],
+        "url": "https://www.tradingview.com/chart/?symbol=SP%3ASPX"
+      },
+      "storage": {
+        "cookies": [],
+        "local_storage": [],
+        "session_storage": []
+      }
+    },
+    "limitations": [
+      "Artifact identity is unavailable for this observation.",
+      "Event sequence records provider receipt order; simultaneous browser causality is not inferred.",
+      "Network content is retained only when selected; Playwright response-body bytes are API results and are not guaranteed to match wire bytes.",
+      "Request bytes are limited to what Playwright exposes; not_exposed does not establish body absence or multipart file coverage.",
+      "Network content reads settle within 5 seconds each and the observer does not request bodies from unfinished responses.",
+      "Playwright scenario events do not expose request initiator stacks; receipt order does not prove causality.",
+      "Storage values are hashed only after declared-secret redaction.",
+      "Browser host platform and architecture were not observed."
+    ],
+    "completeness": {
+      "equality_eligible": true,
+      "missing_sections": [],
+      "status": "complete",
+      "truncated_sections": []
+    },
+    "browser": {
+      "cleanup": "terminated-owned-process",
+      "mode": "launch",
+      "process_ownership": "provider-owned",
+      "product": "Chromium",
+      "version": "153.0.8010.12"
+    },
+    "steps": [
+      {
+        "step_id": "scenario_start",
+        "status": "completed",
+        "error": null,
+        "files": {
+          "accessibility": "evidence/accessibility/E09-scenario_start.txt"
+        }
+      },
+      {
+        "step_id": "ready",
+        "status": "completed",
+        "error": null,
+        "files": {
+          "accessibility": "evidence/accessibility/E09-ready.txt"
+        }
+      },
+      {
+        "step_id": "type-menu",
+        "status": "completed",
+        "error": null,
+        "files": {
+          "accessibility": "evidence/accessibility/E09-type-menu.txt"
+        }
+      },
+      {
+        "step_id": "line",
+        "status": "completed",
+        "error": null,
+        "files": {
+          "accessibility": "evidence/accessibility/E09-line.txt"
+        }
+      },
+      {
+        "step_id": "line-state",
+        "status": "completed",
+        "error": null,
+        "files": {
+          "accessibility": "evidence/accessibility/E09-line-state.txt"
+        }
+      },
+      {
+        "step_id": "indicators",
+        "status": "completed",
+        "error": null,
+        "files": {
+          "accessibility": "evidence/accessibility/E09-indicators.txt"
+        }
+      },
+      {
+        "step_id": "indicator-dom",
+        "status": "completed",
+        "error": null,
+        "files": {
+          "accessibility": "evidence/accessibility/E09-indicator-dom.txt",
+          "dom": "evidence/dom/E09-indicator-dom.html",
+          "screenshot": "screenshots/E09-indicator-dom.png"
+        }
+      }
+    ]
+  },
+  {
+    "id": "E10",
+    "evidence_id": "ev_9885f2d2df571ebe9501d31b17329fd1047ae3ec2a0fceb5642d61ca301eed58",
+    "title": "Drawing category inventories",
+    "parameters": {
+      "actions": [
+        {
+          "action": "wait_for",
+          "locator": {
+            "kind": "role",
+            "name": "Gann and Fibonacci tools",
+            "role": "button"
+          },
+          "state": "visible",
+          "step_id": "ready",
+          "timeout_ms": 25000
+        },
+        {
+          "action": "click",
+          "button": "left",
+          "click_count": 1,
+          "locator": {
+            "kind": "role",
+            "name": "Gann and Fibonacci tools",
+            "role": "button"
+          },
+          "step_id": "fibonacci",
+          "timeout_ms": 6000
+        },
+        {
+          "action": "wait_for_timeout",
+          "duration_ms": 500,
+          "step_id": "fibonacci-state"
+        },
+        {
+          "action": "press",
+          "key": "Escape",
+          "locator": {
+            "kind": "css",
+            "selector": "body"
+          },
+          "step_id": "dismiss-fibonacci",
+          "timeout_ms": 3000
+        },
+        {
+          "action": "click",
+          "button": "left",
+          "click_count": 1,
+          "locator": {
+            "kind": "role",
+            "name": "Patterns",
+            "role": "button"
+          },
+          "step_id": "patterns",
+          "timeout_ms": 6000
+        },
+        {
+          "action": "wait_for_timeout",
+          "duration_ms": 500,
+          "step_id": "patterns-state"
+        },
+        {
+          "action": "press",
+          "key": "Escape",
+          "locator": {
+            "kind": "css",
+            "selector": "body"
+          },
+          "step_id": "dismiss-patterns",
+          "timeout_ms": 3000
+        },
+        {
+          "action": "click",
+          "button": "left",
+          "click_count": 1,
+          "locator": {
+            "kind": "role",
+            "name": "Forecasting and measurement tools",
+            "role": "button"
+          },
+          "step_id": "measurements",
+          "timeout_ms": 6000
+        },
+        {
+          "action": "wait_for_timeout",
+          "duration_ms": 500,
+          "step_id": "measurements-state"
+        },
+        {
+          "action": "press",
+          "key": "Escape",
+          "locator": {
+            "kind": "css",
+            "selector": "body"
+          },
+          "step_id": "dismiss-measurements",
+          "timeout_ms": 3000
+        },
+        {
+          "action": "click",
+          "button": "left",
+          "click_count": 1,
+          "locator": {
+            "kind": "role",
+            "name": "Geometric shapes",
+            "role": "button"
+          },
+          "step_id": "shapes",
+          "timeout_ms": 6000
+        },
+        {
+          "action": "wait_for_timeout",
+          "duration_ms": 500,
+          "step_id": "shapes-state"
+        },
+        {
+          "action": "press",
+          "key": "Escape",
+          "locator": {
+            "kind": "css",
+            "selector": "body"
+          },
+          "step_id": "dismiss-shapes",
+          "timeout_ms": 3000
+        },
+        {
+          "action": "click",
+          "button": "left",
+          "click_count": 1,
+          "locator": {
+            "kind": "role",
+            "name": "Annotation tools",
+            "role": "button"
+          },
+          "step_id": "annotations",
+          "timeout_ms": 6000
+        },
+        {
+          "action": "wait_for_timeout",
+          "duration_ms": 500,
+          "step_id": "annotations-state"
+        },
+        {
+          "action": "press",
+          "key": "Escape",
+          "locator": {
+            "kind": "css",
+            "selector": "body"
+          },
+          "step_id": "dismiss-annotations",
+          "timeout_ms": 3000
+        },
+        {
+          "action": "click",
+          "button": "left",
+          "click_count": 1,
+          "locator": {
+            "kind": "role",
+            "name": "Magnets",
+            "role": "button"
+          },
+          "step_id": "magnets",
+          "timeout_ms": 6000
+        },
+        {
+          "action": "wait_for_timeout",
+          "duration_ms": 500,
+          "step_id": "magnets-state"
+        },
+        {
+          "action": "press",
+          "key": "Escape",
+          "locator": {
+            "kind": "css",
+            "selector": "body"
+          },
+          "step_id": "dismiss-magnets",
+          "timeout_ms": 3000
+        }
+      ],
+      "browser": {
+        "executable_path": "/home/giulio/.cache/ms-playwright/chromium-1243/chrome-linux64/chrome",
+        "headless": true,
+        "mode": "launch"
+      },
+      "capture": {
+        "after_each_step": [
+          "accessibility",
+          "screenshot"
+        ],
+        "at_end": [
+          "url"
+        ],
+        "events": [],
+        "network": {
+          "header_values": false,
+          "request_body": false,
+          "response_body": false
+        }
+      },
+      "environment": {
+        "color_scheme": "light",
+        "locale": "en-US",
+        "reduced_motion": "reduce",
+        "service_workers": "block",
+        "timezone": "UTC",
+        "viewport": {
+          "device_scale_factor": 1,
+          "height": 1000,
+          "width": 1440
+        }
+      },
+      "scenario_sha256": "ce5e4065b5e1dfe4045a79089ab06d738702278d12bdfe9f86463f99492e9df5",
+      "secrets": [],
+      "start_url": {
+        "query": [],
+        "url": "https://www.tradingview.com/chart/?symbol=SP%3ASPX"
+      },
+      "storage": {
+        "cookies": [],
+        "local_storage": [],
+        "session_storage": []
+      }
+    },
+    "limitations": [
+      "Artifact identity is unavailable for this observation.",
+      "Event sequence records provider receipt order; simultaneous browser causality is not inferred.",
+      "Network content is retained only when selected; Playwright response-body bytes are API results and are not guaranteed to match wire bytes.",
+      "Request bytes are limited to what Playwright exposes; not_exposed does not establish body absence or multipart file coverage.",
+      "Network content reads settle within 5 seconds each and the observer does not request bodies from unfinished responses.",
+      "Playwright scenario events do not expose request initiator stacks; receipt order does not prove causality.",
+      "Storage values are hashed only after declared-secret redaction.",
+      "Browser host platform and architecture were not observed."
+    ],
+    "completeness": {
+      "equality_eligible": true,
+      "missing_sections": [],
+      "status": "complete",
+      "truncated_sections": []
+    },
+    "browser": {
+      "cleanup": "terminated-owned-process",
+      "mode": "launch",
+      "process_ownership": "provider-owned",
+      "product": "Chromium",
+      "version": "153.0.8010.12"
+    },
+    "steps": [
+      {
+        "step_id": "scenario_start",
+        "status": "completed",
+        "error": null,
+        "files": {
+          "accessibility": "evidence/accessibility/E10-scenario_start.txt"
+        }
+      },
+      {
+        "step_id": "ready",
+        "status": "completed",
+        "error": null,
+        "files": {
+          "accessibility": "evidence/accessibility/E10-ready.txt"
+        }
+      },
+      {
+        "step_id": "fibonacci",
+        "status": "completed",
+        "error": null,
+        "files": {
+          "accessibility": "evidence/accessibility/E10-fibonacci.txt"
+        }
+      },
+      {
+        "step_id": "fibonacci-state",
+        "status": "completed",
+        "error": null,
+        "files": {
+          "accessibility": "evidence/accessibility/E10-fibonacci-state.txt",
+          "screenshot": "screenshots/E10-fibonacci-state.png"
+        }
+      },
+      {
+        "step_id": "dismiss-fibonacci",
+        "status": "completed",
+        "error": null,
+        "files": {
+          "accessibility": "evidence/accessibility/E10-dismiss-fibonacci.txt"
+        }
+      },
+      {
+        "step_id": "patterns",
+        "status": "completed",
+        "error": null,
+        "files": {
+          "accessibility": "evidence/accessibility/E10-patterns.txt"
+        }
+      },
+      {
+        "step_id": "patterns-state",
+        "status": "completed",
+        "error": null,
+        "files": {
+          "accessibility": "evidence/accessibility/E10-patterns-state.txt",
+          "screenshot": "screenshots/E10-patterns-state.png"
+        }
+      },
+      {
+        "step_id": "dismiss-patterns",
+        "status": "completed",
+        "error": null,
+        "files": {
+          "accessibility": "evidence/accessibility/E10-dismiss-patterns.txt"
+        }
+      },
+      {
+        "step_id": "measurements",
+        "status": "completed",
+        "error": null,
+        "files": {
+          "accessibility": "evidence/accessibility/E10-measurements.txt"
+        }
+      },
+      {
+        "step_id": "measurements-state",
+        "status": "completed",
+        "error": null,
+        "files": {
+          "accessibility": "evidence/accessibility/E10-measurements-state.txt",
+          "screenshot": "screenshots/E10-measurements-state.png"
+        }
+      },
+      {
+        "step_id": "dismiss-measurements",
+        "status": "completed",
+        "error": null,
+        "files": {
+          "accessibility": "evidence/accessibility/E10-dismiss-measurements.txt"
+        }
+      },
+      {
+        "step_id": "shapes",
+        "status": "completed",
+        "error": null,
+        "files": {
+          "accessibility": "evidence/accessibility/E10-shapes.txt"
+        }
+      },
+      {
+        "step_id": "shapes-state",
+        "status": "completed",
+        "error": null,
+        "files": {
+          "accessibility": "evidence/accessibility/E10-shapes-state.txt",
+          "screenshot": "screenshots/E10-shapes-state.png"
+        }
+      },
+      {
+        "step_id": "dismiss-shapes",
+        "status": "completed",
+        "error": null,
+        "files": {
+          "accessibility": "evidence/accessibility/E10-dismiss-shapes.txt"
+        }
+      },
+      {
+        "step_id": "annotations",
+        "status": "completed",
+        "error": null,
+        "files": {
+          "accessibility": "evidence/accessibility/E10-annotations.txt"
+        }
+      },
+      {
+        "step_id": "annotations-state",
+        "status": "completed",
+        "error": null,
+        "files": {
+          "accessibility": "evidence/accessibility/E10-annotations-state.txt",
+          "screenshot": "screenshots/E10-annotations-state.png"
+        }
+      },
+      {
+        "step_id": "dismiss-annotations",
+        "status": "completed",
+        "error": null,
+        "files": {
+          "accessibility": "evidence/accessibility/E10-dismiss-annotations.txt"
+        }
+      },
+      {
+        "step_id": "magnets",
+        "status": "completed",
+        "error": null,
+        "files": {
+          "accessibility": "evidence/accessibility/E10-magnets.txt"
+        }
+      },
+      {
+        "step_id": "magnets-state",
+        "status": "completed",
+        "error": null,
+        "files": {
+          "accessibility": "evidence/accessibility/E10-magnets-state.txt",
+          "screenshot": "screenshots/E10-magnets-state.png"
+        }
+      },
+      {
+        "step_id": "dismiss-magnets",
+        "status": "completed",
+        "error": null,
+        "files": {
+          "accessibility": "evidence/accessibility/E10-dismiss-magnets.txt"
+        }
+      }
+    ]
+  },
+  {
+    "id": "E11",
+    "evidence_id": "ev_b68bbe66bc3a3df9869404c7600c1924fe8e5141ae6662b4a00839001a0a4f54",
+    "title": "Indicator search with unmatched text locator",
+    "parameters": {
+      "actions": [
+        {
+          "action": "wait_for",
+          "locator": {
+            "kind": "role",
+            "name": "Indicators, metrics, and strategies",
+            "role": "button"
+          },
+          "state": "visible",
+          "step_id": "ready",
+          "timeout_ms": 25000
+        },
+        {
+          "action": "click",
+          "button": "left",
+          "click_count": 1,
+          "locator": {
+            "kind": "role",
+            "name": "Indicators, metrics, and strategies",
+            "role": "button"
+          },
+          "step_id": "indicators",
+          "timeout_ms": 6000
+        },
+        {
+          "action": "fill",
+          "locator": {
+            "kind": "css",
+            "selector": "#indicators-dialog-search-input"
+          },
+          "step_id": "search-rsi",
+          "timeout_ms": 6000,
+          "value": {
+            "source": "literal",
+            "value": "Relative Strength Index"
+          }
+        },
+        {
+          "action": "wait_for_timeout",
+          "duration_ms": 900,
+          "step_id": "search-results"
+        },
+        {
+          "action": "click",
+          "button": "left",
+          "click_count": 1,
+          "locator": {
+            "kind": "css",
+            "selector": "text=\"Relative Strength Index\""
+          },
+          "step_id": "add-rsi",
+          "timeout_ms": 6000
+        },
+        {
+          "action": "wait_for_timeout",
+          "duration_ms": 900,
+          "step_id": "rsi-added"
+        },
+        {
+          "action": "click",
+          "button": "left",
+          "click_count": 1,
+          "locator": {
+            "kind": "role",
+            "name": "Close menu",
+            "role": "button"
+          },
+          "step_id": "close-indicators",
+          "timeout_ms": 6000
+        },
+        {
+          "action": "click",
+          "button": "left",
+          "click_count": 1,
+          "locator": {
+            "kind": "role",
+            "name": "Object tree and data window",
+            "role": "button"
+          },
+          "step_id": "objects",
+          "timeout_ms": 6000
+        },
+        {
+          "action": "wait_for_timeout",
+          "duration_ms": 900,
+          "step_id": "object-state"
+        }
+      ],
+      "browser": {
+        "executable_path": "/home/giulio/.cache/ms-playwright/chromium-1243/chrome-linux64/chrome",
+        "headless": true,
+        "mode": "launch"
+      },
+      "capture": {
+        "after_each_step": [
+          "accessibility",
+          "screenshot"
+        ],
+        "at_end": [
+          "accessibility",
+          "dom",
+          "url"
+        ],
+        "events": [],
+        "network": {
+          "header_values": false,
+          "request_body": false,
+          "response_body": false
+        }
+      },
+      "environment": {
+        "color_scheme": "light",
+        "locale": "en-US",
+        "reduced_motion": "reduce",
+        "service_workers": "block",
+        "timezone": "UTC",
+        "viewport": {
+          "device_scale_factor": 1,
+          "height": 1000,
+          "width": 1440
+        }
+      },
+      "scenario_sha256": "6c92f87ad590427ba3c0d7b983ffd3b0f371998ca0f518a103fbf3bfbd4a2269",
+      "secrets": [],
+      "start_url": {
+        "query": [],
+        "url": "https://www.tradingview.com/chart/?symbol=SP%3ASPX"
+      },
+      "storage": {
+        "cookies": [],
+        "local_storage": [],
+        "session_storage": []
+      }
+    },
+    "limitations": [
+      "Artifact identity is unavailable for this observation.",
+      "Event sequence records provider receipt order; simultaneous browser causality is not inferred.",
+      "Network content is retained only when selected; Playwright response-body bytes are API results and are not guaranteed to match wire bytes.",
+      "Request bytes are limited to what Playwright exposes; not_exposed does not establish body absence or multipart file coverage.",
+      "Network content reads settle within 5 seconds each and the observer does not request bodies from unfinished responses.",
+      "Playwright scenario events do not expose request initiator stacks; receipt order does not prove causality.",
+      "Storage values are hashed only after declared-secret redaction.",
+      "Browser host platform and architecture were not observed."
+    ],
+    "completeness": {
+      "equality_eligible": false,
+      "missing_sections": [
+        "accessibility",
+        "action",
+        "dom",
+        "screenshot",
+        "url"
+      ],
+      "status": "incomplete",
+      "truncated_sections": []
+    },
+    "browser": {
+      "cleanup": "terminated-owned-process",
+      "mode": "launch",
+      "process_ownership": "provider-owned",
+      "product": "Chromium",
+      "version": "153.0.8010.12"
+    },
+    "steps": [
+      {
+        "step_id": "scenario_start",
+        "status": "completed",
+        "error": null,
+        "files": {
+          "accessibility": "evidence/accessibility/E11-scenario_start.txt"
+        }
+      },
+      {
+        "step_id": "ready",
+        "status": "completed",
+        "error": null,
+        "files": {
+          "accessibility": "evidence/accessibility/E11-ready.txt"
+        }
+      },
+      {
+        "step_id": "indicators",
+        "status": "completed",
+        "error": null,
+        "files": {
+          "accessibility": "evidence/accessibility/E11-indicators.txt"
+        }
+      },
+      {
+        "step_id": "search-rsi",
+        "status": "completed",
+        "error": null,
+        "files": {
+          "accessibility": "evidence/accessibility/E11-search-rsi.txt"
+        }
+      },
+      {
+        "step_id": "search-results",
+        "status": "completed",
+        "error": null,
+        "files": {
+          "accessibility": "evidence/accessibility/E11-search-results.txt"
+        }
+      },
+      {
+        "step_id": "add-rsi",
+        "status": "failed",
+        "error": "Analysis operation timed out after 6000ms: capture_browser_scenario",
+        "files": {
+          "accessibility": "evidence/accessibility/E11-add-rsi.txt"
+        }
+      },
+      {
+        "step_id": "rsi-added",
+        "status": "cancelled",
+        "error": "not executed after an earlier action failure",
+        "files": {}
+      },
+      {
+        "step_id": "close-indicators",
+        "status": "cancelled",
+        "error": "not executed after an earlier action failure",
+        "files": {}
+      },
+      {
+        "step_id": "objects",
+        "status": "cancelled",
+        "error": "not executed after an earlier action failure",
+        "files": {}
+      },
+      {
+        "step_id": "object-state",
+        "status": "cancelled",
+        "error": "not executed after an earlier action failure",
+        "files": {}
+      }
+    ]
+  },
+  {
+    "id": "E12",
+    "evidence_id": "ev_2ad85902f899d096aef39a7d66822991f1bc187d0471b9617759548bd393c793",
+    "title": "Indicator search with unmatched built-in text locator",
+    "parameters": {
+      "actions": [
+        {
+          "action": "wait_for",
+          "locator": {
+            "kind": "role",
+            "name": "Indicators, metrics, and strategies",
+            "role": "button"
+          },
+          "state": "visible",
+          "step_id": "ready",
+          "timeout_ms": 25000
+        },
+        {
+          "action": "click",
+          "button": "left",
+          "click_count": 1,
+          "locator": {
+            "kind": "role",
+            "name": "Indicators, metrics, and strategies",
+            "role": "button"
+          },
+          "step_id": "indicators",
+          "timeout_ms": 6000
+        },
+        {
+          "action": "fill",
+          "locator": {
+            "kind": "css",
+            "selector": "#indicators-dialog-search-input"
+          },
+          "step_id": "search-rsi",
+          "timeout_ms": 6000,
+          "value": {
+            "source": "literal",
+            "value": "Relative Strength Index"
+          }
+        },
+        {
+          "action": "wait_for_timeout",
+          "duration_ms": 700,
+          "step_id": "search-results"
+        },
+        {
+          "action": "click",
+          "button": "left",
+          "click_count": 1,
+          "locator": {
+            "kind": "css",
+            "selector": "text=\"Relative strength index\""
+          },
+          "step_id": "add-builtin-rsi",
+          "timeout_ms": 6000
+        },
+        {
+          "action": "wait_for_timeout",
+          "duration_ms": 700,
+          "step_id": "rsi-added"
+        },
+        {
+          "action": "click",
+          "button": "left",
+          "click_count": 1,
+          "locator": {
+            "kind": "role",
+            "name": "Close menu",
+            "role": "button"
+          },
+          "step_id": "close-indicators",
+          "timeout_ms": 6000
+        },
+        {
+          "action": "click",
+          "button": "left",
+          "click_count": 1,
+          "locator": {
+            "kind": "role",
+            "name": "Trend tools",
+            "role": "button"
+          },
+          "step_id": "trend-menu",
+          "timeout_ms": 6000
+        },
+        {
+          "action": "click",
+          "button": "left",
+          "click_count": 1,
+          "locator": {
+            "kind": "css",
+            "selector": "text=\"Horizontal line\""
+          },
+          "step_id": "horizontal-line",
+          "timeout_ms": 6000
+        },
+        {
+          "action": "click",
+          "button": "left",
+          "click_count": 1,
+          "locator": {
+            "kind": "css",
+            "selector": "[data-qa-id=\"pane-top-canvas\"]"
+          },
+          "step_id": "place-line",
+          "timeout_ms": 6000
+        },
+        {
+          "action": "wait_for_timeout",
+          "duration_ms": 700,
+          "step_id": "line-added"
+        },
+        {
+          "action": "click",
+          "button": "left",
+          "click_count": 1,
+          "locator": {
+            "kind": "role",
+            "name": "Object tree and data window",
+            "role": "button"
+          },
+          "step_id": "objects",
+          "timeout_ms": 6000
+        },
+        {
+          "action": "wait_for_timeout",
+          "duration_ms": 700,
+          "step_id": "object-state"
+        }
+      ],
+      "browser": {
+        "executable_path": "/home/giulio/.cache/ms-playwright/chromium-1243/chrome-linux64/chrome",
+        "headless": true,
+        "mode": "launch"
+      },
+      "capture": {
+        "after_each_step": [
+          "accessibility",
+          "screenshot"
+        ],
+        "at_end": [
+          "accessibility",
+          "dom",
+          "url"
+        ],
+        "events": [],
+        "network": {
+          "header_values": false,
+          "request_body": false,
+          "response_body": false
+        }
+      },
+      "environment": {
+        "color_scheme": "light",
+        "locale": "en-US",
+        "reduced_motion": "reduce",
+        "service_workers": "block",
+        "timezone": "UTC",
+        "viewport": {
+          "device_scale_factor": 1,
+          "height": 1000,
+          "width": 1440
+        }
+      },
+      "scenario_sha256": "7ed73ca11721d28425b2cbebde83edbaec97a4a2f9da3e9bb8fb06147e4c206d",
+      "secrets": [],
+      "start_url": {
+        "query": [],
+        "url": "https://www.tradingview.com/chart/?symbol=SP%3ASPX"
+      },
+      "storage": {
+        "cookies": [],
+        "local_storage": [],
+        "session_storage": []
+      }
+    },
+    "limitations": [
+      "Artifact identity is unavailable for this observation.",
+      "Event sequence records provider receipt order; simultaneous browser causality is not inferred.",
+      "Network content is retained only when selected; Playwright response-body bytes are API results and are not guaranteed to match wire bytes.",
+      "Request bytes are limited to what Playwright exposes; not_exposed does not establish body absence or multipart file coverage.",
+      "Network content reads settle within 5 seconds each and the observer does not request bodies from unfinished responses.",
+      "Playwright scenario events do not expose request initiator stacks; receipt order does not prove causality.",
+      "Storage values are hashed only after declared-secret redaction.",
+      "Browser host platform and architecture were not observed."
+    ],
+    "completeness": {
+      "equality_eligible": false,
+      "missing_sections": [
+        "accessibility",
+        "action",
+        "dom",
+        "screenshot",
+        "url"
+      ],
+      "status": "incomplete",
+      "truncated_sections": []
+    },
+    "browser": {
+      "cleanup": "terminated-owned-process",
+      "mode": "launch",
+      "process_ownership": "provider-owned",
+      "product": "Chromium",
+      "version": "153.0.8010.12"
+    },
+    "steps": [
+      {
+        "step_id": "scenario_start",
+        "status": "completed",
+        "error": null,
+        "files": {
+          "accessibility": "evidence/accessibility/E12-scenario_start.txt"
+        }
+      },
+      {
+        "step_id": "ready",
+        "status": "completed",
+        "error": null,
+        "files": {
+          "accessibility": "evidence/accessibility/E12-ready.txt"
+        }
+      },
+      {
+        "step_id": "indicators",
+        "status": "completed",
+        "error": null,
+        "files": {
+          "accessibility": "evidence/accessibility/E12-indicators.txt"
+        }
+      },
+      {
+        "step_id": "search-rsi",
+        "status": "completed",
+        "error": null,
+        "files": {
+          "accessibility": "evidence/accessibility/E12-search-rsi.txt"
+        }
+      },
+      {
+        "step_id": "search-results",
+        "status": "completed",
+        "error": null,
+        "files": {
+          "accessibility": "evidence/accessibility/E12-search-results.txt"
+        }
+      },
+      {
+        "step_id": "add-builtin-rsi",
+        "status": "failed",
+        "error": "locator.click: Timeout 6000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('text=\"Relative strength index\"')\u001b[22m\n",
+        "files": {
+          "accessibility": "evidence/accessibility/E12-add-builtin-rsi.txt"
+        }
+      },
+      {
+        "step_id": "rsi-added",
+        "status": "cancelled",
+        "error": "not executed after an earlier action failure",
+        "files": {}
+      },
+      {
+        "step_id": "close-indicators",
+        "status": "cancelled",
+        "error": "not executed after an earlier action failure",
+        "files": {}
+      },
+      {
+        "step_id": "trend-menu",
+        "status": "cancelled",
+        "error": "not executed after an earlier action failure",
+        "files": {}
+      },
+      {
+        "step_id": "horizontal-line",
+        "status": "cancelled",
+        "error": "not executed after an earlier action failure",
+        "files": {}
+      },
+      {
+        "step_id": "place-line",
+        "status": "cancelled",
+        "error": "not executed after an earlier action failure",
+        "files": {}
+      },
+      {
+        "step_id": "line-added",
+        "status": "cancelled",
+        "error": "not executed after an earlier action failure",
+        "files": {}
+      },
+      {
+        "step_id": "objects",
+        "status": "cancelled",
+        "error": "not executed after an earlier action failure",
+        "files": {}
+      },
+      {
+        "step_id": "object-state",
+        "status": "cancelled",
+        "error": "not executed after an earlier action failure",
+        "files": {}
+      }
+    ]
+  },
+  {
+    "id": "E13",
+    "evidence_id": "ev_ac923bd05096abbd351406fff932a83101831272b47f39eba5d65e0cf7b833d1",
+    "title": "Horizontal line registration gate",
+    "parameters": {
+      "actions": [
+        {
+          "action": "wait_for",
+          "locator": {
+            "kind": "role",
+            "name": "Trend tools",
+            "role": "button"
+          },
+          "state": "visible",
+          "step_id": "ready",
+          "timeout_ms": 25000
+        },
+        {
+          "action": "click",
+          "button": "left",
+          "click_count": 1,
+          "locator": {
+            "kind": "role",
+            "name": "Trend tools",
+            "role": "button"
+          },
+          "step_id": "trend-menu",
+          "timeout_ms": 6000
+        },
+        {
+          "action": "click",
+          "button": "left",
+          "click_count": 1,
+          "locator": {
+            "kind": "css",
+            "selector": "text=\"Horizontal line\""
+          },
+          "step_id": "horizontal-line",
+          "timeout_ms": 6000
+        },
+        {
+          "action": "click",
+          "button": "left",
+          "click_count": 1,
+          "locator": {
+            "kind": "css",
+            "selector": "[data-qa-id=\"pane-top-canvas\"]"
+          },
+          "step_id": "place-line",
+          "timeout_ms": 6000
+        },
+        {
+          "action": "wait_for_timeout",
+          "duration_ms": 700,
+          "step_id": "line-added"
+        },
+        {
+          "action": "click",
+          "button": "left",
+          "click_count": 1,
+          "locator": {
+            "kind": "role",
+            "name": "Object tree and data window",
+            "role": "button"
+          },
+          "step_id": "objects",
+          "timeout_ms": 6000
+        },
+        {
+          "action": "wait_for_timeout",
+          "duration_ms": 700,
+          "step_id": "object-state"
+        }
+      ],
+      "browser": {
+        "executable_path": "/home/giulio/.cache/ms-playwright/chromium-1243/chrome-linux64/chrome",
+        "headless": true,
+        "mode": "launch"
+      },
+      "capture": {
+        "after_each_step": [
+          "accessibility",
+          "screenshot"
+        ],
+        "at_end": [
+          "accessibility",
+          "dom",
+          "url"
+        ],
+        "events": [],
+        "network": {
+          "header_values": false,
+          "request_body": false,
+          "response_body": false
+        }
+      },
+      "environment": {
+        "color_scheme": "light",
+        "locale": "en-US",
+        "reduced_motion": "reduce",
+        "service_workers": "block",
+        "timezone": "UTC",
+        "viewport": {
+          "device_scale_factor": 1,
+          "height": 1000,
+          "width": 1440
+        }
+      },
+      "scenario_sha256": "4992d1407e7028284d8e0e863da1e9e21fd1f786e57800d1d4b67fb8e67bb5c2",
+      "secrets": [],
+      "start_url": {
+        "query": [],
+        "url": "https://www.tradingview.com/chart/?symbol=SP%3ASPX"
+      },
+      "storage": {
+        "cookies": [],
+        "local_storage": [],
+        "session_storage": []
+      }
+    },
+    "limitations": [
+      "Artifact identity is unavailable for this observation.",
+      "Event sequence records provider receipt order; simultaneous browser causality is not inferred.",
+      "Network content is retained only when selected; Playwright response-body bytes are API results and are not guaranteed to match wire bytes.",
+      "Request bytes are limited to what Playwright exposes; not_exposed does not establish body absence or multipart file coverage.",
+      "Network content reads settle within 5 seconds each and the observer does not request bodies from unfinished responses.",
+      "Playwright scenario events do not expose request initiator stacks; receipt order does not prove causality.",
+      "Storage values are hashed only after declared-secret redaction.",
+      "Browser host platform and architecture were not observed."
+    ],
+    "completeness": {
+      "equality_eligible": false,
+      "missing_sections": [
+        "accessibility",
+        "action",
+        "dom",
+        "screenshot",
+        "url"
+      ],
+      "status": "incomplete",
+      "truncated_sections": []
+    },
+    "browser": {
+      "cleanup": "terminated-owned-process",
+      "mode": "launch",
+      "process_ownership": "provider-owned",
+      "product": "Chromium",
+      "version": "153.0.8010.12"
+    },
+    "steps": [
+      {
+        "step_id": "scenario_start",
+        "status": "completed",
+        "error": null,
+        "files": {
+          "accessibility": "evidence/accessibility/E13-scenario_start.txt"
+        }
+      },
+      {
+        "step_id": "ready",
+        "status": "completed",
+        "error": null,
+        "files": {
+          "accessibility": "evidence/accessibility/E13-ready.txt"
+        }
+      },
+      {
+        "step_id": "trend-menu",
+        "status": "completed",
+        "error": null,
+        "files": {
+          "accessibility": "evidence/accessibility/E13-trend-menu.txt"
+        }
+      },
+      {
+        "step_id": "horizontal-line",
+        "status": "completed",
+        "error": null,
+        "files": {
+          "accessibility": "evidence/accessibility/E13-horizontal-line.txt"
+        }
+      },
+      {
+        "step_id": "place-line",
+        "status": "failed",
+        "error": "locator.click: Timeout 6000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('[data-qa-id=\"pane-top-canvas\"]')\u001b[22m\n\u001b[2m    - locator resolved to <canvas width=\"968\" height=\"891\" data-qa-id=\"pane-top-canvas\" aria-label=\"Chart for SP_NAUTH:SPX, 1 day\"></canvas>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <video loop=\"\" playsinline=\"\" preload=\"metadata\" class=\"video-sl0J9aMB\" disableremoteplayback=\"\">…</video> from <div id=\"overlap-manager-root\" data-qa-id=\"overlap-manager-root\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <video loop=\"\" playsinline=\"\" preload=\"metadata\" class=\"video-sl0J9aMB\" disableremoteplayback=\"\">…</video> from <div id=\"overlap-manager-root\" data-qa-id=\"overlap-manager-root\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m    11 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m       - element is visible, enabled and stable\u001b[22m\n\u001b[2m       - scrolling into view if needed\u001b[22m\n\u001b[2m       - done scrolling\u001b[22m\n\u001b[2m       - <video loop=\"\" playsinline=\"\" preload=\"metadata\" class=\"video-sl0J9aMB\" disableremoteplayback=\"\">…</video> from <div id=\"overlap-manager-root\" data-qa-id=\"overlap-manager-root\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m     - retrying click action\u001b[22m\n\u001b[2m       - waiting 500ms\u001b[22m\n",
+        "files": {
+          "accessibility": "evidence/accessibility/E13-place-line.txt",
+          "screenshot": "screenshots/E13-place-line.png"
+        }
+      },
+      {
+        "step_id": "line-added",
+        "status": "cancelled",
+        "error": "not executed after an earlier action failure",
+        "files": {}
+      },
+      {
+        "step_id": "objects",
+        "status": "cancelled",
+        "error": "not executed after an earlier action failure",
+        "files": {}
+      },
+      {
+        "step_id": "object-state",
+        "status": "cancelled",
+        "error": "not executed after an earlier action failure",
+        "files": {}
+      }
+    ]
+  },
+  {
+    "id": "E14",
+    "evidence_id": "ev_07ba055b802bc5d4a718d0c585a5c6c2de1a7da59032ee726f0015a08b5770dd",
+    "title": "RSI search and stable DOM identity",
+    "parameters": {
+      "actions": [
+        {
+          "action": "wait_for",
+          "locator": {
+            "kind": "role",
+            "name": "Indicators, metrics, and strategies",
+            "role": "button"
+          },
+          "state": "visible",
+          "step_id": "ready",
+          "timeout_ms": 25000
+        },
+        {
+          "action": "click",
+          "button": "left",
+          "click_count": 1,
+          "locator": {
+            "kind": "role",
+            "name": "Indicators, metrics, and strategies",
+            "role": "button"
+          },
+          "step_id": "indicators",
+          "timeout_ms": 6000
+        },
+        {
+          "action": "fill",
+          "locator": {
+            "kind": "css",
+            "selector": "#indicators-dialog-search-input"
+          },
+          "step_id": "search-rsi",
+          "timeout_ms": 6000,
+          "value": {
+            "source": "literal",
+            "value": "RSI"
+          }
+        },
+        {
+          "action": "wait_for_timeout",
+          "duration_ms": 700,
+          "step_id": "search-results"
+        }
+      ],
+      "browser": {
+        "executable_path": "/home/giulio/.cache/ms-playwright/chromium-1243/chrome-linux64/chrome",
+        "headless": true,
+        "mode": "launch"
+      },
+      "capture": {
+        "after_each_step": [],
+        "at_end": [
+          "accessibility",
+          "dom",
+          "screenshot"
+        ],
+        "events": [],
+        "network": {
+          "header_values": false,
+          "request_body": false,
+          "response_body": false
+        }
+      },
+      "environment": {
+        "color_scheme": "light",
+        "locale": "en-US",
+        "reduced_motion": "reduce",
+        "service_workers": "block",
+        "timezone": "UTC",
+        "viewport": {
+          "device_scale_factor": 1,
+          "height": 1000,
+          "width": 1440
+        }
+      },
+      "scenario_sha256": "16f6d75c69f7cb25b4bd0d2d81e5bda9b0ad33921b21155ca19a44a59aa2e253",
+      "secrets": [],
+      "start_url": {
+        "query": [],
+        "url": "https://www.tradingview.com/chart/?symbol=SP%3ASPX"
+      },
+      "storage": {
+        "cookies": [],
+        "local_storage": [],
+        "session_storage": []
+      }
+    },
+    "limitations": [
+      "Artifact identity is unavailable for this observation.",
+      "Event sequence records provider receipt order; simultaneous browser causality is not inferred.",
+      "Network content is retained only when selected; Playwright response-body bytes are API results and are not guaranteed to match wire bytes.",
+      "Request bytes are limited to what Playwright exposes; not_exposed does not establish body absence or multipart file coverage.",
+      "Network content reads settle within 5 seconds each and the observer does not request bodies from unfinished responses.",
+      "Playwright scenario events do not expose request initiator stacks; receipt order does not prove causality.",
+      "Storage values are hashed only after declared-secret redaction.",
+      "Browser host platform and architecture were not observed."
+    ],
+    "completeness": {
+      "equality_eligible": true,
+      "missing_sections": [],
+      "status": "complete",
+      "truncated_sections": []
+    },
+    "browser": {
+      "cleanup": "terminated-owned-process",
+      "mode": "launch",
+      "process_ownership": "provider-owned",
+      "product": "Chromium",
+      "version": "153.0.8010.12"
+    },
+    "steps": [
+      {
+        "step_id": "scenario_start",
+        "status": "completed",
+        "error": null,
+        "files": {}
+      },
+      {
+        "step_id": "ready",
+        "status": "completed",
+        "error": null,
+        "files": {}
+      },
+      {
+        "step_id": "indicators",
+        "status": "completed",
+        "error": null,
+        "files": {}
+      },
+      {
+        "step_id": "search-rsi",
+        "status": "completed",
+        "error": null,
+        "files": {}
+      },
+      {
+        "step_id": "search-results",
+        "status": "completed",
+        "error": null,
+        "files": {
+          "accessibility": "evidence/accessibility/E14-search-results.txt",
+          "dom": "evidence/dom/E14-search-results.html",
+          "screenshot": "screenshots/E14-search-results.png"
+        }
+      }
+    ]
+  },
+  {
+    "id": "E15",
+    "evidence_id": "ev_b7fc1eaed9380e47a99a98414dd8b9f2aa3ec655b60f17564d7207ae927b10d6",
+    "title": "Built-in RSI registration gate",
+    "parameters": {
+      "actions": [
+        {
+          "action": "wait_for",
+          "locator": {
+            "kind": "role",
+            "name": "Indicators, metrics, and strategies",
+            "role": "button"
+          },
+          "state": "visible",
+          "step_id": "ready",
+          "timeout_ms": 25000
+        },
+        {
+          "action": "click",
+          "button": "left",
+          "click_count": 1,
+          "locator": {
+            "kind": "role",
+            "name": "Indicators, metrics, and strategies",
+            "role": "button"
+          },
+          "step_id": "indicators",
+          "timeout_ms": 6000
+        },
+        {
+          "action": "fill",
+          "locator": {
+            "kind": "css",
+            "selector": "#indicators-dialog-search-input"
+          },
+          "step_id": "search-rsi",
+          "timeout_ms": 6000,
+          "value": {
+            "source": "literal",
+            "value": "RSI"
+          }
+        },
+        {
+          "action": "wait_for_timeout",
+          "duration_ms": 800,
+          "step_id": "search-results"
+        },
+        {
+          "action": "click",
+          "button": "left",
+          "click_count": 1,
+          "locator": {
+            "kind": "css",
+            "selector": "[data-id=\"STD;RSI\"]"
+          },
+          "step_id": "select-builtin-rsi",
+          "timeout_ms": 6000
+        },
+        {
+          "action": "wait_for_timeout",
+          "duration_ms": 800,
+          "step_id": "rsi-state"
+        }
+      ],
+      "browser": {
+        "executable_path": "/home/giulio/.cache/ms-playwright/chromium-1243/chrome-linux64/chrome",
+        "headless": true,
+        "mode": "launch"
+      },
+      "capture": {
+        "after_each_step": [
+          "accessibility",
+          "screenshot"
+        ],
+        "at_end": [
+          "url"
+        ],
+        "events": [],
+        "network": {
+          "header_values": false,
+          "request_body": false,
+          "response_body": false
+        }
+      },
+      "environment": {
+        "color_scheme": "light",
+        "locale": "en-US",
+        "reduced_motion": "reduce",
+        "service_workers": "block",
+        "timezone": "UTC",
+        "viewport": {
+          "device_scale_factor": 1,
+          "height": 1000,
+          "width": 1440
+        }
+      },
+      "scenario_sha256": "3eaaeafb3d287e795e07329fef735843c306ffca55ad5c203b6a52ea7cdfd642",
+      "secrets": [],
+      "start_url": {
+        "query": [],
+        "url": "https://www.tradingview.com/chart/?symbol=SP%3ASPX"
+      },
+      "storage": {
+        "cookies": [],
+        "local_storage": [],
+        "session_storage": []
+      }
+    },
+    "limitations": [
+      "Artifact identity is unavailable for this observation.",
+      "Event sequence records provider receipt order; simultaneous browser causality is not inferred.",
+      "Network content is retained only when selected; Playwright response-body bytes are API results and are not guaranteed to match wire bytes.",
+      "Request bytes are limited to what Playwright exposes; not_exposed does not establish body absence or multipart file coverage.",
+      "Network content reads settle within 5 seconds each and the observer does not request bodies from unfinished responses.",
+      "Playwright scenario events do not expose request initiator stacks; receipt order does not prove causality.",
+      "Storage values are hashed only after declared-secret redaction.",
+      "Browser host platform and architecture were not observed."
+    ],
+    "completeness": {
+      "equality_eligible": true,
+      "missing_sections": [],
+      "status": "complete",
+      "truncated_sections": []
+    },
+    "browser": {
+      "cleanup": "terminated-owned-process",
+      "mode": "launch",
+      "process_ownership": "provider-owned",
+      "product": "Chromium",
+      "version": "153.0.8010.12"
+    },
+    "steps": [
+      {
+        "step_id": "scenario_start",
+        "status": "completed",
+        "error": null,
+        "files": {
+          "accessibility": "evidence/accessibility/E15-scenario_start.txt"
+        }
+      },
+      {
+        "step_id": "ready",
+        "status": "completed",
+        "error": null,
+        "files": {
+          "accessibility": "evidence/accessibility/E15-ready.txt"
+        }
+      },
+      {
+        "step_id": "indicators",
+        "status": "completed",
+        "error": null,
+        "files": {
+          "accessibility": "evidence/accessibility/E15-indicators.txt"
+        }
+      },
+      {
+        "step_id": "search-rsi",
+        "status": "completed",
+        "error": null,
+        "files": {
+          "accessibility": "evidence/accessibility/E15-search-rsi.txt"
+        }
+      },
+      {
+        "step_id": "search-results",
+        "status": "completed",
+        "error": null,
+        "files": {
+          "accessibility": "evidence/accessibility/E15-search-results.txt"
+        }
+      },
+      {
+        "step_id": "select-builtin-rsi",
+        "status": "completed",
+        "error": null,
+        "files": {
+          "accessibility": "evidence/accessibility/E15-select-builtin-rsi.txt"
+        }
+      },
+      {
+        "step_id": "rsi-state",
+        "status": "completed",
+        "error": null,
+        "files": {
+          "accessibility": "evidence/accessibility/E15-rsi-state.txt",
+          "screenshot": "screenshots/E15-rsi-state.png"
+        }
+      }
+    ]
+  },
+  {
+    "id": "E16",
+    "evidence_id": "ev_338a918815824f86e1778d02f9a0feeebe549f2b22d54ef22c71ac77cbd53b5b",
+    "title": "Narrow viewport with dark system preference",
+    "parameters": {
+      "actions": [
+        {
+          "action": "wait_for_timeout",
+          "duration_ms": 4000,
+          "step_id": "mobile-ready"
+        }
+      ],
+      "browser": {
+        "executable_path": "/home/giulio/.cache/ms-playwright/chromium-1243/chrome-linux64/chrome",
+        "headless": true,
+        "mode": "launch"
+      },
+      "capture": {
+        "after_each_step": [],
+        "at_end": [
+          "accessibility",
+          "dom",
+          "screenshot",
+          "url"
+        ],
+        "events": [],
+        "network": {
+          "header_values": false,
+          "request_body": false,
+          "response_body": false
+        }
+      },
+      "environment": {
+        "color_scheme": "dark",
+        "locale": "en-US",
+        "reduced_motion": "reduce",
+        "service_workers": "block",
+        "timezone": "UTC",
+        "viewport": {
+          "device_scale_factor": 1,
+          "height": 844,
+          "width": 390
+        }
+      },
+      "scenario_sha256": "df482d421cb68e37ec8ce48d76fd58632d6444a46103436c483c3bd44bab4d6a",
+      "secrets": [],
+      "start_url": {
+        "query": [],
+        "url": "https://www.tradingview.com/chart/?symbol=SP%3ASPX"
+      },
+      "storage": {
+        "cookies": [],
+        "local_storage": [],
+        "session_storage": []
+      }
+    },
+    "limitations": [
+      "Artifact identity is unavailable for this observation.",
+      "Event sequence records provider receipt order; simultaneous browser causality is not inferred.",
+      "Network content is retained only when selected; Playwright response-body bytes are API results and are not guaranteed to match wire bytes.",
+      "Request bytes are limited to what Playwright exposes; not_exposed does not establish body absence or multipart file coverage.",
+      "Network content reads settle within 5 seconds each and the observer does not request bodies from unfinished responses.",
+      "Playwright scenario events do not expose request initiator stacks; receipt order does not prove causality.",
+      "Storage values are hashed only after declared-secret redaction.",
+      "Browser host platform and architecture were not observed."
+    ],
+    "completeness": {
+      "equality_eligible": true,
+      "missing_sections": [],
+      "status": "complete",
+      "truncated_sections": []
+    },
+    "browser": {
+      "cleanup": "terminated-owned-process",
+      "mode": "launch",
+      "process_ownership": "provider-owned",
+      "product": "Chromium",
+      "version": "153.0.8010.12"
+    },
+    "steps": [
+      {
+        "step_id": "scenario_start",
+        "status": "completed",
+        "error": null,
+        "files": {}
+      },
+      {
+        "step_id": "mobile-ready",
+        "status": "completed",
+        "error": null,
+        "files": {
+          "accessibility": "evidence/accessibility/E16-mobile-ready.txt",
+          "dom": "evidence/dom/E16-mobile-ready.html",
+          "screenshot": "screenshots/E16-mobile-ready.png"
+        }
+      }
+    ]
+  },
+  {
+    "id": "E17",
+    "evidence_id": "ev_a7336de180a984d4c0fcd3312c0228e200c0a87e0fb12aa233341ec7762ee704",
+    "title": "Main menu snapshot and data window",
+    "parameters": {
+      "actions": [
+        {
+          "action": "wait_for",
+          "locator": {
+            "kind": "css",
+            "selector": "[data-qa-id=\"main-menu-button\"]"
+          },
+          "state": "visible",
+          "step_id": "ready",
+          "timeout_ms": 25000
+        },
+        {
+          "action": "click",
+          "button": "left",
+          "click_count": 1,
+          "locator": {
+            "kind": "css",
+            "selector": "[data-qa-id=\"main-menu-button\"]"
+          },
+          "step_id": "main-menu",
+          "timeout_ms": 6000
+        },
+        {
+          "action": "wait_for_timeout",
+          "duration_ms": 700,
+          "step_id": "menu-state"
+        },
+        {
+          "action": "press",
+          "key": "Escape",
+          "locator": {
+            "kind": "css",
+            "selector": "body"
+          },
+          "step_id": "dismiss-menu",
+          "timeout_ms": 3000
+        },
+        {
+          "action": "click",
+          "button": "left",
+          "click_count": 1,
+          "locator": {
+            "kind": "role",
+            "name": "Take a snapshot",
+            "role": "button"
+          },
+          "step_id": "snapshot",
+          "timeout_ms": 6000
+        },
+        {
+          "action": "wait_for_timeout",
+          "duration_ms": 700,
+          "step_id": "snapshot-state"
+        },
+        {
+          "action": "press",
+          "key": "Escape",
+          "locator": {
+            "kind": "css",
+            "selector": "body"
+          },
+          "step_id": "dismiss-snapshot",
+          "timeout_ms": 3000
+        },
+        {
+          "action": "click",
+          "button": "left",
+          "click_count": 1,
+          "locator": {
+            "kind": "role",
+            "name": "Object tree and data window",
+            "role": "button"
+          },
+          "step_id": "data-tree",
+          "timeout_ms": 6000
+        },
+        {
+          "action": "click",
+          "button": "left",
+          "click_count": 1,
+          "locator": {
+            "kind": "role",
+            "name": "Data window",
+            "role": "tab"
+          },
+          "step_id": "data-window",
+          "timeout_ms": 5000
+        },
+        {
+          "action": "wait_for_timeout",
+          "duration_ms": 700,
+          "step_id": "data-window-state"
+        }
+      ],
+      "browser": {
+        "executable_path": "/home/giulio/.cache/ms-playwright/chromium-1243/chrome-linux64/chrome",
+        "headless": true,
+        "mode": "launch"
+      },
+      "capture": {
+        "after_each_step": [
+          "accessibility",
+          "screenshot"
+        ],
+        "at_end": [
+          "url"
+        ],
+        "events": [],
+        "network": {
+          "header_values": false,
+          "request_body": false,
+          "response_body": false
+        }
+      },
+      "environment": {
+        "color_scheme": "light",
+        "locale": "en-US",
+        "reduced_motion": "reduce",
+        "service_workers": "block",
+        "timezone": "UTC",
+        "viewport": {
+          "device_scale_factor": 1,
+          "height": 1000,
+          "width": 1440
+        }
+      },
+      "scenario_sha256": "801320272b1a0c3f9ebf9d25b71734e82ac3e47e61703d3e648f86303eac6fbe",
+      "secrets": [],
+      "start_url": {
+        "query": [],
+        "url": "https://www.tradingview.com/chart/?symbol=SP%3ASPX"
+      },
+      "storage": {
+        "cookies": [],
+        "local_storage": [],
+        "session_storage": []
+      }
+    },
+    "limitations": [
+      "Artifact identity is unavailable for this observation.",
+      "Event sequence records provider receipt order; simultaneous browser causality is not inferred.",
+      "Network content is retained only when selected; Playwright response-body bytes are API results and are not guaranteed to match wire bytes.",
+      "Request bytes are limited to what Playwright exposes; not_exposed does not establish body absence or multipart file coverage.",
+      "Network content reads settle within 5 seconds each and the observer does not request bodies from unfinished responses.",
+      "Playwright scenario events do not expose request initiator stacks; receipt order does not prove causality.",
+      "Storage values are hashed only after declared-secret redaction.",
+      "Browser host platform and architecture were not observed."
+    ],
+    "completeness": {
+      "equality_eligible": true,
+      "missing_sections": [],
+      "status": "complete",
+      "truncated_sections": []
+    },
+    "browser": {
+      "cleanup": "terminated-owned-process",
+      "mode": "launch",
+      "process_ownership": "provider-owned",
+      "product": "Chromium",
+      "version": "153.0.8010.12"
+    },
+    "steps": [
+      {
+        "step_id": "scenario_start",
+        "status": "completed",
+        "error": null,
+        "files": {
+          "accessibility": "evidence/accessibility/E17-scenario_start.txt"
+        }
+      },
+      {
+        "step_id": "ready",
+        "status": "completed",
+        "error": null,
+        "files": {
+          "accessibility": "evidence/accessibility/E17-ready.txt"
+        }
+      },
+      {
+        "step_id": "main-menu",
+        "status": "completed",
+        "error": null,
+        "files": {
+          "accessibility": "evidence/accessibility/E17-main-menu.txt"
+        }
+      },
+      {
+        "step_id": "menu-state",
+        "status": "completed",
+        "error": null,
+        "files": {
+          "accessibility": "evidence/accessibility/E17-menu-state.txt",
+          "screenshot": "screenshots/E17-menu-state.png"
+        }
+      },
+      {
+        "step_id": "dismiss-menu",
+        "status": "completed",
+        "error": null,
+        "files": {
+          "accessibility": "evidence/accessibility/E17-dismiss-menu.txt"
+        }
+      },
+      {
+        "step_id": "snapshot",
+        "status": "completed",
+        "error": null,
+        "files": {
+          "accessibility": "evidence/accessibility/E17-snapshot.txt"
+        }
+      },
+      {
+        "step_id": "snapshot-state",
+        "status": "completed",
+        "error": null,
+        "files": {
+          "accessibility": "evidence/accessibility/E17-snapshot-state.txt",
+          "screenshot": "screenshots/E17-snapshot-state.png"
+        }
+      },
+      {
+        "step_id": "dismiss-snapshot",
+        "status": "completed",
+        "error": null,
+        "files": {
+          "accessibility": "evidence/accessibility/E17-dismiss-snapshot.txt"
+        }
+      },
+      {
+        "step_id": "data-tree",
+        "status": "completed",
+        "error": null,
+        "files": {
+          "accessibility": "evidence/accessibility/E17-data-tree.txt"
+        }
+      },
+      {
+        "step_id": "data-window",
+        "status": "completed",
+        "error": null,
+        "files": {
+          "accessibility": "evidence/accessibility/E17-data-window.txt"
+        }
+      },
+      {
+        "step_id": "data-window-state",
+        "status": "completed",
+        "error": null,
+        "files": {
+          "accessibility": "evidence/accessibility/E17-data-window-state.txt",
+          "screenshot": "screenshots/E17-data-window-state.png"
+        }
+      }
+    ]
+  },
+  {
+    "id": "E18",
+    "evidence_id": "ev_a0ff708c35dca39400b9b1c491a59898fa061be86aaa0d56e85f347b0f702fcc",
+    "title": "AAPL symbol selection and explicit dark theme",
+    "parameters": {
+      "actions": [
+        {
+          "action": "wait_for",
+          "locator": {
+            "kind": "role",
+            "name": "SPX",
+            "role": "button"
+          },
+          "state": "visible",
+          "step_id": "ready",
+          "timeout_ms": 25000
+        },
+        {
+          "action": "click",
+          "button": "left",
+          "click_count": 1,
+          "locator": {
+            "kind": "role",
+            "name": "SPX",
+            "role": "button"
+          },
+          "step_id": "symbols",
+          "timeout_ms": 6000
+        },
+        {
+          "action": "fill",
+          "locator": {
+            "kind": "css",
+            "selector": "input[role=\"searchbox\"]"
+          },
+          "step_id": "aapl-query",
+          "timeout_ms": 6000,
+          "value": {
+            "source": "literal",
+            "value": "NASDAQ:AAPL"
+          }
+        },
+        {
+          "action": "wait_for_timeout",
+          "duration_ms": 900,
+          "step_id": "aapl-results"
+        },
+        {
+          "action": "press",
+          "key": "Enter",
+          "locator": {
+            "kind": "css",
+            "selector": "input[role=\"searchbox\"]"
+          },
+          "step_id": "choose-aapl",
+          "timeout_ms": 6000
+        },
+        {
+          "action": "wait_for_timeout",
+          "duration_ms": 900,
+          "step_id": "symbol-state"
+        },
+        {
+          "action": "click",
+          "button": "left",
+          "click_count": 1,
+          "locator": {
+            "kind": "css",
+            "selector": "[data-qa-id=\"main-menu-button\"]"
+          },
+          "step_id": "main-menu",
+          "timeout_ms": 6000
+        },
+        {
+          "action": "click",
+          "button": "left",
+          "click_count": 1,
+          "locator": {
+            "kind": "css",
+            "selector": "text=\"Dark theme\""
+          },
+          "step_id": "dark-theme",
+          "timeout_ms": 6000
+        },
+        {
+          "action": "wait_for_timeout",
+          "duration_ms": 900,
+          "step_id": "dark-state"
+        }
+      ],
+      "browser": {
+        "executable_path": "/home/giulio/.cache/ms-playwright/chromium-1243/chrome-linux64/chrome",
+        "headless": true,
+        "mode": "launch"
+      },
+      "capture": {
+        "after_each_step": [
+          "accessibility",
+          "screenshot"
+        ],
+        "at_end": [
+          "dom",
+          "accessibility",
+          "url"
+        ],
+        "events": [],
+        "network": {
+          "header_values": false,
+          "request_body": false,
+          "response_body": false
+        }
+      },
+      "environment": {
+        "color_scheme": "light",
+        "locale": "en-US",
+        "reduced_motion": "reduce",
+        "service_workers": "block",
+        "timezone": "UTC",
+        "viewport": {
+          "device_scale_factor": 1,
+          "height": 1000,
+          "width": 1440
+        }
+      },
+      "scenario_sha256": "06ac7aecefee151a4b21e9b7050e18efc863c8c1cf5be3b2f1727dc1870a5346",
+      "secrets": [],
+      "start_url": {
+        "query": [],
+        "url": "https://www.tradingview.com/chart/?symbol=SP%3ASPX"
+      },
+      "storage": {
+        "cookies": [],
+        "local_storage": [],
+        "session_storage": []
+      }
+    },
+    "limitations": [
+      "Artifact identity is unavailable for this observation.",
+      "Event sequence records provider receipt order; simultaneous browser causality is not inferred.",
+      "Network content is retained only when selected; Playwright response-body bytes are API results and are not guaranteed to match wire bytes.",
+      "Request bytes are limited to what Playwright exposes; not_exposed does not establish body absence or multipart file coverage.",
+      "Network content reads settle within 5 seconds each and the observer does not request bodies from unfinished responses.",
+      "Playwright scenario events do not expose request initiator stacks; receipt order does not prove causality.",
+      "Storage values are hashed only after declared-secret redaction.",
+      "Browser host platform and architecture were not observed."
+    ],
+    "completeness": {
+      "equality_eligible": true,
+      "missing_sections": [],
+      "status": "complete",
+      "truncated_sections": []
+    },
+    "browser": {
+      "cleanup": "terminated-owned-process",
+      "mode": "launch",
+      "process_ownership": "provider-owned",
+      "product": "Chromium",
+      "version": "153.0.8010.12"
+    },
+    "steps": [
+      {
+        "step_id": "scenario_start",
+        "status": "completed",
+        "error": null,
+        "files": {
+          "accessibility": "evidence/accessibility/E18-scenario_start.txt"
+        }
+      },
+      {
+        "step_id": "ready",
+        "status": "completed",
+        "error": null,
+        "files": {
+          "accessibility": "evidence/accessibility/E18-ready.txt"
+        }
+      },
+      {
+        "step_id": "symbols",
+        "status": "completed",
+        "error": null,
+        "files": {
+          "accessibility": "evidence/accessibility/E18-symbols.txt"
+        }
+      },
+      {
+        "step_id": "aapl-query",
+        "status": "completed",
+        "error": null,
+        "files": {
+          "accessibility": "evidence/accessibility/E18-aapl-query.txt"
+        }
+      },
+      {
+        "step_id": "aapl-results",
+        "status": "completed",
+        "error": null,
+        "files": {
+          "accessibility": "evidence/accessibility/E18-aapl-results.txt",
+          "screenshot": "screenshots/E18-aapl-results.png"
+        }
+      },
+      {
+        "step_id": "choose-aapl",
+        "status": "completed",
+        "error": null,
+        "files": {
+          "accessibility": "evidence/accessibility/E18-choose-aapl.txt"
+        }
+      },
+      {
+        "step_id": "symbol-state",
+        "status": "completed",
+        "error": null,
+        "files": {
+          "accessibility": "evidence/accessibility/E18-symbol-state.txt",
+          "screenshot": "screenshots/E18-symbol-state.png"
+        }
+      },
+      {
+        "step_id": "main-menu",
+        "status": "completed",
+        "error": null,
+        "files": {
+          "accessibility": "evidence/accessibility/E18-main-menu.txt"
+        }
+      },
+      {
+        "step_id": "dark-theme",
+        "status": "completed",
+        "error": null,
+        "files": {
+          "accessibility": "evidence/accessibility/E18-dark-theme.txt"
+        }
+      },
+      {
+        "step_id": "dark-state",
+        "status": "completed",
+        "error": null,
+        "files": {
+          "accessibility": "evidence/accessibility/E18-dark-state.txt",
+          "dom": "evidence/dom/E18-dark-state.html",
+          "screenshot": "screenshots/E18-dark-state.png"
+        }
+      }
+    ]
+  }
+]

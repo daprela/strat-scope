@@ -1,0 +1,43 @@
+{
+  "version": "MP-SET-001-r7",
+  "source_version": "WF-SET-001-r13",
+  "status": "READY_FOR_UI_ADVERSARIAL_REVIEW",
+  "gate_g4": "SATISFIED",
+  "gate_g5": "APPROVED",
+  "affected_frames": [
+    "MP-MOCK-015",
+    "MP-MOCK-027",
+    "MP-MOCK-077"
+  ],
+  "retained_approved_pair_count": 103,
+  "changed_svg_sha256": {
+    "MP-MOCK-077.svg": "d25e0ad9bde8fc8415874ceaaec4c96f496eb200c9a62a6c1977147c0b2b3593",
+    "MP-MOCK-015.svg": "aaab62f0c3914e81dac5b16cb0102cd3ee6f205d63d9817ee0cea9da294093f6",
+    "MP-MOCK-077-dark.svg": "82b85629fc9c609d2d2286c4c28ee0dac472d5fff2dd705ab533b7ea1f863f85",
+    "MP-MOCK-015-dark.svg": "1e791c3f4341cef2191ee3e1b48c6b1b0608f0a99c1ba6edbd7512500c05f773",
+    "MP-MOCK-027-dark.svg": "43cebe7771d45347b6f46566357785d3d416208805495462433ad3159859f533",
+    "MP-MOCK-027.svg": "c568975b021f7d0c667334f7614f6f292835b23c71c80fb6aa87d8b103bf3c87"
+  },
+  "prior_svg_sha256": {
+    "MP-MOCK-077.svg": "4cc48a1c45ecd1b692d1a824eb38d9fbfb0c83e4bd44c1873405b2710a6a70ae",
+    "MP-MOCK-015.svg": "3db38a94b06e726f948a910a6e3cf92676a0d0ad1e3d8b5df5224e2e56277c43",
+    "MP-MOCK-077-dark.svg": "ff0e419f3c202995d9b1fdedaf23d838a9bbdc88dd3b5abe6b8b2f1c68293f36",
+    "MP-MOCK-015-dark.svg": "fa3268b99830b369c685a8dc1b462c768ba7cd66bf55da099091e893ccbb637f",
+    "MP-MOCK-027-dark.svg": "fa973a26366d653096c53baf4000dcb1e2358c0b652309da4bc354b225039f0b",
+    "MP-MOCK-027.svg": "334623b2964b4f39ece24a482b13b3385ef5422c312620756153e4d1602b6da8"
+  },
+  "historical_approval_record": "approval.json",
+  "historical_changed_files": "history/r6/",
+  "source_approval_record": "../wireframes/approval-r13.json",
+  "wireframe_bytes_changed": false,
+  "corrections": {
+    "UIADV-STATE-001": "077 unknown publication blocks Start bar/Play/Step/Sell/Buy; reconciliation and safe inspection retained; known-resolved 037 unchanged",
+    "UIADV-STATE-002": "015 known failed retention uses error mark/token; working v13/failed save v13/retained v12 and retention-only retry preserved",
+    "UIADV-STATE-003": "027 phase, original request/run/boundary, submitted terms, retained records and unavailable-action reason propagated"
+  },
+  "unresolved": "UIADV-INT-002 requires upstream UX DELTA; no interaction policy inferred",
+  "independent_review": "ui-review.md revision 2 preserved; no independent closure",
+  "runtime_evidence": "Not observed",
+  "approval_record": "approval-r7.json",
+  "approval_evidence": "User: I approve the mockups; 21 October 2026"
+}

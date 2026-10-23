@@ -1,0 +1,57 @@
+{
+  "authority": "local workspace documents and one Parquet footer; not TradingView runtime evidence",
+  "root": "/mnt/data/gdrive/trading",
+  "scope": "Read ancestor instructions, aggregation documentation, contract excerpt; inspected one market manifest and its Parquet footer. No row scan, ingestion, dataset mutation, or full inventory validation.",
+  "documents": [
+    {
+      "path": "AGENTS.md",
+      "sha256": "75df227f6f4d3e31105e16b9e4622a9439fd0782e0af2246ce7fec4fe3c74986"
+    },
+    {
+      "path": "marketDataIngestion/aggregate-instructions.md",
+      "sha256": "138c812791524a0635919a8adef739b20f5a03ab210c3ccd785ec70849dac090"
+    },
+    {
+      "path": "contract-v1.0.0/backtest-data-format.md",
+      "sha256": "f40ad9c0bf398e3fe979aa3eae6f3eaef0d631ae94da8973b9d65186b6f48151"
+    },
+    {
+      "path": "marketDataIngestion/dukascopy_m1_bidask/SP500/2026/SP500_2026_09_M1_bidask.json",
+      "sha256": "48017bb15e547d2b99a5451ae841f20a4e4a66bd0548b9eebab77f5e813a22f9"
+    }
+  ],
+  "manifest": {
+    "symbol": "SP500",
+    "duka_symbol": "USA500IDXUSD",
+    "year": 2026,
+    "month": 9,
+    "status": "GOOD",
+    "rows": 8640,
+    "matched_rows": 8640,
+    "bid_only_rows": 0,
+    "ask_only_rows": 0,
+    "invalid_close_spread_rows": 0,
+    "first_timestamp": "2026-09-01 00:00:00+00:00",
+    "last_timestamp": "2026-09-07 23:59:00+00:00",
+    "bid_source": "download",
+    "bid_downloaded_days": 6,
+    "ask_downloaded_days": 6,
+    "bid_missing_days": 1,
+    "ask_missing_days": 1,
+    "generated_utc": "2026-09-08T09:46:20.200312+00:00"
+  },
+  "parquet": {
+    "path": "/mnt/data/gdrive/trading/marketDataIngestion/dukascopy_m1_bidask/SP500/2026/SP500_2026_09_M1_bidask.parquet",
+    "row_count": 8640,
+    "row_groups": 1,
+    "schema": "<pyarrow._parquet.ParquetSchema object at 0x7f9d46a67280>\nrequired group field_id=-1 schema {\n  optional int64 field_id=-1 timestamp (Timestamp(isAdjustedToUTC=true, timeUnit=nanoseconds, is_from_converted_type=false, force_set_converted_type=false));\n  optional double field_id=-1 bid_open;\n  optional double field_id=-1 bid_high;\n  optional double field_id=-1 bid_low;\n  optional double field_id=-1 bid_close;\n  optional float field_id=-1 bid_volume;\n  optional double field_id=-1 ask_open;\n  optional double field_id=-1 ask_high;\n  optional double field_id=-1 ask_low;\n  optional double field_id=-1 ask_close;\n  optional float field_id=-1 ask_volume;\n}\n",
+    "row_quality_verified": false
+  },
+  "integration_constraints": [
+    "Provider USA500IDXUSD is not proven equivalent to SP:SPX.",
+    "Monthly filename and GOOD status do not establish full-month coverage.",
+    "Preserve bid and ask; do not manufacture midpoint extrema.",
+    "Existing aggregation uses UTC boundaries, distinct from observed SPX session.",
+    "Completed-run evidence adapter remains governed by authored run-bundle contract; preserve exact values and knowledge-time reveal."
+  ]
+}

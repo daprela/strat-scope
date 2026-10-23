@@ -1,0 +1,28 @@
+{
+  "version": "WF-SET-001-r12",
+  "baseline_approval_version": "WF-SET-001-r11",
+  "status": "ACCEPTED_GEOMETRY_BY_EXPLICIT_CURRENT_MOCKUP_APPROVAL",
+  "date": "2026-10-21",
+  "evidence": "User: These side panels must have the same height of the watchlist; please review all side panels, not just the ones I named",
+  "scope": "All desktop side panels share watchlist top/bottom bounds; full-width bottom status chrome; widths/content retained and existing zoom bottom docks remain adaptive variants",
+  "source_sha256": {
+    "WF-FRAME-025.svg": "396824baf2e352bdf534ee01d16176cbab8952cb6d79d9e47a670e51eac7822c",
+    "WF-FRAME-027.svg": "a8462ea46203541d9d8fbf723ba625470ab491ce13cc01d35f065befeeb34e8a",
+    "WF-FRAME-030.svg": "55adbc908b7069d1f34c2d9d621a2a00a16e8656d20cb7dd4684ca123e718c1a",
+    "WF-FRAME-031.svg": "21be3745a845e589e968000142df18c685ed899674e9a84849506ab927d9897a",
+    "WF-FRAME-032.svg": "a6505e11aba89d50d505137ce3557fe96e7f60bdd3e66004ff3cf2a14ac1830d",
+    "WF-FRAME-068.svg": "364d8523020db9c470aabcb15335fd2cda84db5279ed24c21b6000e22ce6527f",
+    "WF-FRAME-076.svg": "be07a536f23b870d4b91ce3f9d39192c00a774e84d1c865fcf4f2a272183ef05",
+    "WF-FRAME-090.svg": "00e77edd941d3d460a8060fab7daa0348f59ddf0f9f07e96e2f988255c174151",
+    "WF-FRAME-091.svg": "32f116cb3d1157fbf493c2c5b95472ddd9381e0427767581b9e57cee7d16774a",
+    "WF-FRAME-092.svg": "0b881b27b1b71dbfa458055c8d58e5a9dc7503e50df33dce2daaa898dbb5d787",
+    "WF-FRAME-093.svg": "62c355562e6f0b07fcffc84b9ae019a2b35df5a03c34dc64206f5e8b9cf0814d",
+    "WF-FRAME-094.svg": "14872067602b2a4f0ea47f6f1d38e13b1b61191cfcb718f279f318912b71b2b0",
+    "WF-FRAME-095.svg": "e70fd4d1216b577045638657df8f50c414a1c98eca1fdf3d0f30882c93850e06",
+    "WF-FRAME-096.svg": "8875e361d4cabdc8be754d4cc59190361ee968338aa67955272183237613249e",
+    "WF-FRAME-097.svg": "6390fd90f8865b5ad588bfa5d9b618a8bb4c525a9b717d599ee76f91c5a8f9f7",
+    "WF-FRAME-098.svg": "2a8af0fde803c58390027df302589b7d9355c9c43a83f09e1821a9b2da2ab614"
+  },
+  "approval_evidence": "User: I approve the mockups",
+  "approval_record": "approval-r12.json"
+}

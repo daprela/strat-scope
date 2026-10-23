@@ -1,0 +1,48 @@
+{
+  "format": "supplemental-ui-reference-screenshots-v1",
+  "policy": "Original pixels; filenames A30/A31/A32 do not identify or amend the older controlled scenarios with those IDs. These three user-designated references are separate from the masked authenticated REA derivative.",
+  "screenshots": [
+    {
+      "id": "UI-REF-001",
+      "file": "screenshots/authenticated/A30-replay.png",
+      "title": "Replay start selection",
+      "description": "Select-bar cursor on chart, replay transport near the lower edge and Replay Trading area.",
+      "sha256": "ac2a7908b259f25e65bfe4d198305694fe42462f2b9b653489704eae87e7fcaa",
+      "width": 1873,
+      "height": 917,
+      "added_date": "2026-10-20",
+      "capture_date": null,
+      "provenance": "User-designated workspace screenshot; capture session not independently established.",
+      "scope": "Visual UI reference only; no asserted control behavior, execution result, indicator formula or provider integration.",
+      "controlled_scenario_id": null
+    },
+    {
+      "id": "UI-REF-002",
+      "file": "screenshots/authenticated/A31-replay.png",
+      "title": "Replay playback and order shortcuts",
+      "description": "Annotated reference showing the lower replay transport, step/speed controls and Sell/quantity/Buy shortcuts.",
+      "sha256": "43210748fca5d0691af815a4b03498194679aab1b2a7175c3a3a981c9077d772",
+      "width": 1870,
+      "height": 883,
+      "added_date": "2026-10-20",
+      "capture_date": null,
+      "provenance": "User-designated workspace screenshot; capture session not independently established.",
+      "scope": "Visual UI reference only; no asserted control behavior, execution result, indicator formula or provider integration.",
+      "controlled_scenario_id": null
+    },
+    {
+      "id": "UI-REF-003",
+      "file": "screenshots/authenticated/A32-paper-trading.png",
+      "title": "Paper trading while replay is active",
+      "description": "Right-hand paper ticket, simulated account summary, order type/quantity/SL/TP fields and order shortcuts in the replay strip.",
+      "sha256": "8cdec89f201fec3ba19a1ce2119dfbba76b000c215f99a38d41e5d9ab31c868e",
+      "width": 1870,
+      "height": 884,
+      "added_date": "2026-10-20",
+      "capture_date": null,
+      "provenance": "User-designated workspace screenshot; capture session not independently established.",
+      "scope": "Visual UI reference only; no asserted control behavior, execution result, indicator formula or provider integration.",
+      "controlled_scenario_id": null
+    }
+  ]
+}

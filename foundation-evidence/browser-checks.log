@@ -1,0 +1,22 @@
+python scripts/verify_lifecycle.py
+Graphical Chromium: normal TLS and authenticated readiness passed
+Stopped; 127.0.0.1:4111 is closed
+
+> strat-scope-foundation@0.1.0 test:e2e
+> playwright test
+
+[WebServer] (node:188200) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node-24 --trace-warnings ...` to show where the warning was created)
+[WebServer] (node:188214) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 3 tests using 1 worker
+
+(node:188249) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node-24 --trace-warnings ...` to show where the warning was created)
+  ✓  1 tests/browser/foundation.spec.ts:12:1 › HTTPS local assets, capability isolation and secure WS (1.9s)
+  ✓  2 tests/browser/foundation.spec.ts:52:3 › native paired renderer, lifecycle and P3 fixture (light) (2.3s)
+  ✓  3 tests/browser/foundation.spec.ts:52:3 › native paired renderer, lifecycle and P3 fixture (dark) (2.3s)
+
+  3 passed (9.8s)
+Stopped; 127.0.0.1:4111 is closed

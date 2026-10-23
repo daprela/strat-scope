@@ -1,0 +1,11 @@
+python scripts/foundation.py contracts
+
+> strat-scope-foundation@0.1.0 contracts
+> npm run generate --workspace @strat-scope/contracts
+
+
+> @strat-scope/contracts@0.1.0 generate
+> openapi-typescript ../../../foundation-evidence/openapi.json -o ../../src/generated/api.ts
+
+✨ openapi-typescript 7.13.0
+🚀 ../../../foundation-evidence/openapi.json → ../../src/generated/api.ts [38.6ms]

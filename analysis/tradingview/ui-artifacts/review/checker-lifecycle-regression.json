@@ -1,0 +1,12 @@
+{
+  "kind": "Checker lifecycle regression; no new visual approval",
+  "original_archive_sha256": "61ba3ee36f19bf7105cc3f5923f2dfc1be0ae6571986a1b19f4f572381130fe4",
+  "checker_sha256": "fabfc465b5f3a621c1332b8ed45c1b67977a251094b9bb3e8947e1effbeecb9b",
+  "fixture": "Previously distributed WF-SET-001-r8 / MP-SET-001-r3, extracted under /tmp; current checker copied in",
+  "current_source_pairs": 92,
+  "stale_source_pairs": 0,
+  "g4": "SATISFIED",
+  "g5": "APPROVED",
+  "result": "PASS: all 92 approved source pairs verified; no approval metadata mutation",
+  "current_r9_status": "92 old pairs explicitly stale; see mockups/review-checks.json"
+}

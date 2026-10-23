@@ -1,0 +1,7 @@
+subject=CN=Strat Scope Loopback
+issuer=CN=Strat Scope Local Development CA
+sha256 Fingerprint=B5:A5:B3:03:F1:C7:FC:EE:3A:8F:AC:DD:F0:5A:01:A2:5D:B6:C6:55:66:1D:8C:61:BB:36:BD:A1:D9:EE:E7:DA
+notBefore=Oct 23 01:03:28 2026 GMT
+notAfter=Oct 23 01:03:28 2027 GMT
+X509v3 Subject Alternative Name: 
+    IP Address:127.0.0.1

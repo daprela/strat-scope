@@ -1,0 +1,1013 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Run Bundle Manifest v1.0.0",
+  "description": "Canonical completed-bundle manifest. Physical schemas, semantic rules, and consumed-byte/index checks are additional normative requirements.",
+  "type": "object",
+  "properties": {
+    "contract_id": {
+      "const": "backtest-viewer.run-bundle"
+    },
+    "format_version": {
+      "const": "1.0.0"
+    },
+    "run_id": {
+      "type": "string",
+      "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]{0,127}$"
+    },
+    "completed": {
+      "const": true
+    },
+    "completed_at_utc": {
+      "type": "string",
+      "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}T[0-9]{2}:[0-9]{2}:[0-9]{2}\\.[0-9]{9}Z$"
+    },
+    "asset_name": {
+      "type": "string",
+      "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]{0,127}$"
+    },
+    "timeframe": {
+      "enum": [
+        "M1",
+        "M5",
+        "M15",
+        "M30",
+        "H1",
+        "H4",
+        "D1"
+      ]
+    },
+    "start_time_utc": {
+      "type": "string",
+      "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}T[0-9]{2}:[0-9]{2}:[0-9]{2}\\.[0-9]{9}Z$"
+    },
+    "end_time_utc": {
+      "type": "string",
+      "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}T[0-9]{2}:[0-9]{2}:[0-9]{2}\\.[0-9]{9}Z$"
+    },
+    "initial_balance": {
+      "type": "number",
+      "minimum": 0
+    },
+    "instrument": {
+      "type": "object",
+      "properties": {
+        "price_unit": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 128
+        },
+        "quantity_unit": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 128
+        },
+        "quote_currency": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 32
+        },
+        "account_currency": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 32
+        },
+        "price_decimals": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 15
+        },
+        "quantity_decimals": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 15
+        },
+        "price_basis": {
+          "enum": [
+            "BID",
+            "ASK",
+            "MID",
+            "LAST",
+            "PRODUCER_DEFINED"
+          ]
+        },
+        "market_dataset_id": {
+          "anyOf": [
+            {
+              "type": "string",
+              "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]{0,127}$"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        }
+      },
+      "required": [
+        "price_unit",
+        "quantity_unit",
+        "quote_currency",
+        "account_currency",
+        "price_decimals",
+        "quantity_decimals",
+        "price_basis",
+        "market_dataset_id"
+      ],
+      "additionalProperties": false
+    },
+    "primary_strategy_id": {
+      "type": "string",
+      "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]{0,127}$"
+    },
+    "strategies": {
+      "type": "array",
+      "minItems": 1,
+      "maxItems": 256,
+      "items": {
+        "type": "object",
+        "properties": {
+          "strategy_id": {
+            "type": "string",
+            "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]{0,127}$"
+          },
+          "name": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 256
+          },
+          "version": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 128
+          },
+          "parent_strategy_id": {
+            "anyOf": [
+              {
+                "type": "string",
+                "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]{0,127}$"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "known_at_utc": {
+            "type": "string",
+            "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}T[0-9]{2}:[0-9]{2}:[0-9]{2}\\.[0-9]{9}Z$"
+          },
+          "metadata": {
+            "type": "object"
+          }
+        },
+        "required": [
+          "strategy_id",
+          "name",
+          "version",
+          "parent_strategy_id",
+          "known_at_utc",
+          "metadata"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "execution_settings": {
+      "type": "object"
+    },
+    "source_data_location": {
+      "anyOf": [
+        {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 4096
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "report": {
+      "type": "object",
+      "properties": {
+        "summary": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/summary"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "trade_stats": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/trade_stats"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "drawdown": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/drawdown"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "unavailable_reasons": {
+          "type": "object",
+          "properties": {
+            "summary": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 1024
+            },
+            "trade_stats": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 1024
+            },
+            "drawdown": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 1024
+            }
+          },
+          "additionalProperties": false
+        }
+      },
+      "required": [
+        "summary",
+        "trade_stats",
+        "drawdown",
+        "unavailable_reasons"
+      ],
+      "additionalProperties": false
+    },
+    "required_features": {
+      "type": "array",
+      "minItems": 1,
+      "maxItems": 64,
+      "uniqueItems": true,
+      "items": {
+        "type": "string",
+        "minLength": 1,
+        "maxLength": 128
+      }
+    },
+    "sections": {
+      "type": "object",
+      "properties": {
+        "trade_facts": {
+          "type": "object",
+          "properties": {
+            "schema_id": {
+              "const": "run-bundle/1.0.0/trade_facts"
+            },
+            "optional": {
+              "const": false
+            },
+            "row_count": {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 9007199254740991
+            },
+            "time_field": {
+              "const": "known_at_utc"
+            },
+            "entity_field": {
+              "const": "execution_id"
+            },
+            "time_index": {
+              "$ref": "#/$defs/file_ref"
+            },
+            "entity_index": {
+              "$ref": "#/$defs/file_ref"
+            },
+            "state_index": {
+              "type": "null"
+            }
+          },
+          "required": [
+            "schema_id",
+            "optional",
+            "row_count",
+            "time_field",
+            "entity_field",
+            "time_index",
+            "entity_index",
+            "state_index"
+          ],
+          "additionalProperties": false
+        },
+        "position_history": {
+          "type": "object",
+          "properties": {
+            "schema_id": {
+              "const": "run-bundle/1.0.0/position_history"
+            },
+            "optional": {
+              "const": true
+            },
+            "row_count": {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 9007199254740991
+            },
+            "time_field": {
+              "const": "known_at_utc"
+            },
+            "entity_field": {
+              "const": "position_id"
+            },
+            "time_index": {
+              "$ref": "#/$defs/file_ref"
+            },
+            "entity_index": {
+              "$ref": "#/$defs/file_ref"
+            },
+            "state_index": {
+              "$ref": "#/$defs/file_ref"
+            }
+          },
+          "required": [
+            "schema_id",
+            "optional",
+            "row_count",
+            "time_field",
+            "entity_field",
+            "time_index",
+            "entity_index",
+            "state_index"
+          ],
+          "additionalProperties": false
+        },
+        "strategy_events": {
+          "type": "object",
+          "properties": {
+            "schema_id": {
+              "const": "run-bundle/1.0.0/strategy_events"
+            },
+            "optional": {
+              "const": true
+            },
+            "row_count": {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 9007199254740991
+            },
+            "time_field": {
+              "const": "known_at_utc"
+            },
+            "entity_field": {
+              "const": "event_id"
+            },
+            "time_index": {
+              "$ref": "#/$defs/file_ref"
+            },
+            "entity_index": {
+              "$ref": "#/$defs/file_ref"
+            },
+            "state_index": {
+              "type": "null"
+            }
+          },
+          "required": [
+            "schema_id",
+            "optional",
+            "row_count",
+            "time_field",
+            "entity_field",
+            "time_index",
+            "entity_index",
+            "state_index"
+          ],
+          "additionalProperties": false
+        },
+        "visual_history": {
+          "type": "object",
+          "properties": {
+            "schema_id": {
+              "const": "run-bundle/1.0.0/visual_history"
+            },
+            "optional": {
+              "const": true
+            },
+            "row_count": {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 9007199254740991
+            },
+            "time_field": {
+              "const": "known_at_utc"
+            },
+            "entity_field": {
+              "const": "visual_id"
+            },
+            "time_index": {
+              "$ref": "#/$defs/file_ref"
+            },
+            "entity_index": {
+              "$ref": "#/$defs/file_ref"
+            },
+            "state_index": {
+              "$ref": "#/$defs/file_ref"
+            }
+          },
+          "required": [
+            "schema_id",
+            "optional",
+            "row_count",
+            "time_field",
+            "entity_field",
+            "time_index",
+            "entity_index",
+            "state_index"
+          ],
+          "additionalProperties": false
+        },
+        "indicator_series": {
+          "type": "object",
+          "properties": {
+            "schema_id": {
+              "const": "run-bundle/1.0.0/indicator_series"
+            },
+            "optional": {
+              "const": true
+            },
+            "row_count": {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 9007199254740991
+            },
+            "time_field": {
+              "const": "known_at_utc"
+            },
+            "entity_field": {
+              "const": "series_id"
+            },
+            "time_index": {
+              "$ref": "#/$defs/file_ref"
+            },
+            "entity_index": {
+              "$ref": "#/$defs/file_ref"
+            },
+            "state_index": {
+              "type": "null"
+            }
+          },
+          "required": [
+            "schema_id",
+            "optional",
+            "row_count",
+            "time_field",
+            "entity_field",
+            "time_index",
+            "entity_index",
+            "state_index"
+          ],
+          "additionalProperties": false
+        },
+        "indicator_points": {
+          "type": "object",
+          "properties": {
+            "schema_id": {
+              "const": "run-bundle/1.0.0/indicator_points"
+            },
+            "optional": {
+              "const": true
+            },
+            "row_count": {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 9007199254740991
+            },
+            "time_field": {
+              "const": "sample_time_utc"
+            },
+            "entity_field": {
+              "const": "series_id"
+            },
+            "time_index": {
+              "$ref": "#/$defs/file_ref"
+            },
+            "entity_index": {
+              "$ref": "#/$defs/file_ref"
+            },
+            "state_index": {
+              "type": "null"
+            }
+          },
+          "required": [
+            "schema_id",
+            "optional",
+            "row_count",
+            "time_field",
+            "entity_field",
+            "time_index",
+            "entity_index",
+            "state_index"
+          ],
+          "additionalProperties": false
+        },
+        "sessions": {
+          "type": "object",
+          "properties": {
+            "schema_id": {
+              "const": "run-bundle/1.0.0/sessions"
+            },
+            "optional": {
+              "const": true
+            },
+            "row_count": {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 9007199254740991
+            },
+            "time_field": {
+              "const": "known_at_utc"
+            },
+            "entity_field": {
+              "const": "session_id"
+            },
+            "time_index": {
+              "$ref": "#/$defs/file_ref"
+            },
+            "entity_index": {
+              "$ref": "#/$defs/file_ref"
+            },
+            "state_index": {
+              "$ref": "#/$defs/file_ref"
+            }
+          },
+          "required": [
+            "schema_id",
+            "optional",
+            "row_count",
+            "time_field",
+            "entity_field",
+            "time_index",
+            "entity_index",
+            "state_index"
+          ],
+          "additionalProperties": false
+        },
+        "equity_curve": {
+          "type": "object",
+          "properties": {
+            "schema_id": {
+              "const": "run-bundle/1.0.0/equity_curve"
+            },
+            "optional": {
+              "const": true
+            },
+            "row_count": {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 9007199254740991
+            },
+            "time_field": {
+              "const": "timestamp_utc"
+            },
+            "entity_field": {
+              "const": "fact_id"
+            },
+            "time_index": {
+              "$ref": "#/$defs/file_ref"
+            },
+            "entity_index": {
+              "$ref": "#/$defs/file_ref"
+            },
+            "state_index": {
+              "type": "null"
+            }
+          },
+          "required": [
+            "schema_id",
+            "optional",
+            "row_count",
+            "time_field",
+            "entity_field",
+            "time_index",
+            "entity_index",
+            "state_index"
+          ],
+          "additionalProperties": false
+        },
+        "monthly_returns": {
+          "type": "object",
+          "properties": {
+            "schema_id": {
+              "const": "run-bundle/1.0.0/monthly_returns"
+            },
+            "optional": {
+              "const": true
+            },
+            "row_count": {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 9007199254740991
+            },
+            "time_field": {
+              "const": "known_at_utc"
+            },
+            "entity_field": {
+              "const": "fact_id"
+            },
+            "time_index": {
+              "$ref": "#/$defs/file_ref"
+            },
+            "entity_index": {
+              "$ref": "#/$defs/file_ref"
+            },
+            "state_index": {
+              "type": "null"
+            }
+          },
+          "required": [
+            "schema_id",
+            "optional",
+            "row_count",
+            "time_field",
+            "entity_field",
+            "time_index",
+            "entity_index",
+            "state_index"
+          ],
+          "additionalProperties": false
+        }
+      },
+      "patternProperties": {
+        "^[a-z][a-z0-9_]*\\.[a-z][a-z0-9_.-]*$": {
+          "type": "object",
+          "properties": {
+            "schema_id": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 128,
+              "pattern": "^[a-z][a-z0-9_]*\\.[a-z][a-z0-9_.-]*$"
+            },
+            "optional": {
+              "const": true
+            },
+            "row_count": {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 9007199254740991
+            },
+            "time_field": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 128
+            },
+            "entity_field": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 128
+            },
+            "time_index": {
+              "$ref": "#/$defs/file_ref"
+            },
+            "entity_index": {
+              "$ref": "#/$defs/file_ref"
+            },
+            "state_index": {
+              "anyOf": [
+                {
+                  "$ref": "#/$defs/file_ref"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            }
+          },
+          "required": [
+            "schema_id",
+            "optional",
+            "row_count",
+            "time_field",
+            "entity_field",
+            "time_index",
+            "entity_index",
+            "state_index"
+          ],
+          "additionalProperties": false
+        }
+      },
+      "required": [
+        "trade_facts"
+      ],
+      "maxProperties": 32,
+      "additionalProperties": false
+    },
+    "extensions": {
+      "type": "object",
+      "patternProperties": {
+        "^[a-z][a-z0-9_]*\\.[a-z][a-z0-9_.-]*$": {}
+      },
+      "additionalProperties": false
+    }
+  },
+  "required": [
+    "contract_id",
+    "format_version",
+    "run_id",
+    "completed",
+    "completed_at_utc",
+    "asset_name",
+    "timeframe",
+    "start_time_utc",
+    "end_time_utc",
+    "initial_balance",
+    "instrument",
+    "primary_strategy_id",
+    "strategies",
+    "execution_settings",
+    "source_data_location",
+    "report",
+    "required_features",
+    "sections",
+    "extensions"
+  ],
+  "additionalProperties": false,
+  "$defs": {
+    "id": {
+      "type": "string",
+      "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]{0,127}$"
+    },
+    "timestamp": {
+      "type": "string",
+      "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}T[0-9]{2}:[0-9]{2}:[0-9]{2}\\.[0-9]{9}Z$"
+    },
+    "file_ref": {
+      "type": "object",
+      "properties": {
+        "path": {
+          "type": "string",
+          "pattern": "^[a-z0-9][a-z0-9._/-]*$"
+        },
+        "sha256": {
+          "type": "string",
+          "pattern": "^[a-f0-9]{64}$"
+        },
+        "bytes": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 8388608
+        }
+      },
+      "required": [
+        "path",
+        "sha256",
+        "bytes"
+      ],
+      "additionalProperties": false
+    },
+    "summary": {
+      "type": "object",
+      "properties": {
+        "total_net_profit": {
+          "type": "number"
+        },
+        "gross_profit": {
+          "type": "number",
+          "minimum": 0
+        },
+        "gross_loss": {
+          "type": "number",
+          "minimum": 0
+        },
+        "total_trades": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 9007199254740991
+        },
+        "profit_factor": {
+          "anyOf": [
+            {
+              "type": "number",
+              "minimum": 0
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "expected_payoff": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "return_on_max_drawdown": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        }
+      },
+      "required": [
+        "total_net_profit",
+        "gross_profit",
+        "gross_loss",
+        "total_trades",
+        "profit_factor",
+        "expected_payoff",
+        "return_on_max_drawdown"
+      ],
+      "additionalProperties": false
+    },
+    "trade_stats": {
+      "type": "object",
+      "properties": {
+        "winning_trades": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 9007199254740991
+        },
+        "losing_trades": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 9007199254740991
+        },
+        "win_rate": {
+          "anyOf": [
+            {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 1
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "average_win": {
+          "anyOf": [
+            {
+              "type": "number",
+              "minimum": 0
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "average_loss": {
+          "anyOf": [
+            {
+              "type": "number",
+              "minimum": 0
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "win_loss_ratio": {
+          "anyOf": [
+            {
+              "type": "number",
+              "minimum": 0
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "max_consecutive_wins": {
+          "anyOf": [
+            {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 9007199254740991
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "max_consecutive_losses": {
+          "anyOf": [
+            {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 9007199254740991
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "largest_winning_trade": {
+          "anyOf": [
+            {
+              "type": "number",
+              "minimum": 0
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "largest_losing_trade": {
+          "anyOf": [
+            {
+              "type": "number",
+              "minimum": 0
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "average_trade_duration_seconds": {
+          "anyOf": [
+            {
+              "type": "number",
+              "minimum": 0
+            },
+            {
+              "type": "null"
+            }
+          ]
+        }
+      },
+      "required": [
+        "winning_trades",
+        "losing_trades",
+        "win_rate",
+        "average_win",
+        "average_loss",
+        "win_loss_ratio",
+        "max_consecutive_wins",
+        "max_consecutive_losses",
+        "largest_winning_trade",
+        "largest_losing_trade",
+        "average_trade_duration_seconds"
+      ],
+      "additionalProperties": false
+    },
+    "drawdown": {
+      "type": "object",
+      "properties": {
+        "max_drawdown": {
+          "type": "number",
+          "minimum": 0
+        },
+        "max_drawdown_pct": {
+          "anyOf": [
+            {
+              "type": "number",
+              "minimum": 0
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "relative_drawdown": {
+          "anyOf": [
+            {
+              "type": "number",
+              "minimum": 0
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "relative_drawdown_pct": {
+          "anyOf": [
+            {
+              "type": "number",
+              "minimum": 0
+            },
+            {
+              "type": "null"
+            }
+          ]
+        }
+      },
+      "required": [
+        "max_drawdown",
+        "max_drawdown_pct",
+        "relative_drawdown",
+        "relative_drawdown_pct"
+      ],
+      "additionalProperties": false
+    }
+  }
+}

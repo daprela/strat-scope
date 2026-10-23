@@ -1,0 +1,10 @@
+node_modules
+dist
+src/generated
+package-lock.json
+test-results
+playwright-report
+public/licenses
+AGENTS.md
+DEVELOPMENT.md
+UI-DEVELOPMENT.md

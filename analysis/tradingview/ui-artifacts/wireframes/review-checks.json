@@ -1,0 +1,27 @@
+{
+  "version": "WF-SET-001-r8",
+  "date": "2026-10-20",
+  "status": "DESIGN_ARTIFACT_CHECKS_PASSED",
+  "human_review": "APPROVED",
+  "checks": [
+    "92 SVGs parsed; 8 views and 64 state rows covered",
+    "Persistent charts and historical cursor bounds preserved",
+    "Floating replay capsule present; rejected replay dock absent",
+    "WF-FRAME-090 workspace 1870x884; capsule single row; default Results dock closed",
+    "Sell/Buy ready versus playing, accepted and processing states checked",
+    "Unsupported screenshot controls remain disabled",
+    "Reference screenshot SHA-256 digests match registry",
+    "1809 local HTML links/fragments resolved",
+    "Deterministic SVG/metadata/gallery/comparison regeneration",
+    "Rendered product-only WF-FRAME-090 PNG visually inspected",
+    "Python scripts compile; offline viewer regenerated",
+    "All 92 toolbars have adjacent independently pressed Bid/Ask candle-visibility controls",
+    "Narrow and two-chart controls fit without overlap; narrow frame rendered and visually inspected",
+    "All maintained PNG previews regenerated; 1820 offline links/fragments resolved"
+  ],
+  "limitations": [
+    "Static design checks do not establish runtime behavior or accessibility",
+    "High-fidelity mockups still require separate Gate G5 human review"
+  ],
+  "human_review_evidence": "User explicitly approved all wireframes in WF-SET-001-r8 on 2026-10-20: \u201capprove wireframes\u201d."
+}

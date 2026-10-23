@@ -1,0 +1,10 @@
+{
+  "filesystem": "ext2/ext3",
+  "sqlite": "3.51.2",
+  "synchronous": "FULL (2)",
+  "journalMode": "DELETE",
+  "foreignKeys": "ON",
+  "result": "passed",
+  "fixtures": "temporary owned directory on installed store filesystem",
+  "limits": "Real process crashes and injected I/O faults; not a power-cut or malicious-OS guarantee"
+}

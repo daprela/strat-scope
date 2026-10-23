@@ -1,0 +1,270 @@
+- document:
+  - button:
+    - img
+  - toolbar:
+    - button "AAPL"
+    - button "Switch data type"
+    - button "Compare symbols"
+    - separator
+    - button "1 day": D
+    - separator
+    - button "Candles"
+    - separator
+    - button "Indicators, metrics, and strategies": Indicators
+    - button "Indicator templates"
+    - separator
+    - button "Create alert": Alert
+    - button "Bar replay": Replay
+    - separator
+    - button "Undo change symbol"
+    - button [disabled]
+    - button "Layout setup"
+    - button "Save all charts for all symbols and intervals on your layout": Save Save
+    - button "Manage layouts"
+    - separator
+    - button "Quick search"
+    - button "Settings"
+    - button "Fullscreen mode"
+    - button "Take a snapshot"
+    - button "Share your idea with the trade community"
+    - button "Trade"
+    - button "Upgrade"
+  - toolbar:
+    - button "Cross"
+    - button "Cursors" [pressed]
+    - button "Trendline"
+    - button "Trend tools"
+    - button "Fib retracement"
+    - button "Gann and Fibonacci tools"
+    - button "XABCD pattern"
+    - button "Patterns"
+    - button "Long position"
+    - button "Forecasting and measurement tools"
+    - button "Brush"
+    - button "Geometric shapes"
+    - button "Text"
+    - button "Annotation tools"
+    - button "Icon"
+    - button "Icons"
+    - button "Measure"
+    - button "Zoom in"
+    - button "Magnet mode snaps drawings placed near price bars to the closest OHLC value"
+    - button "Magnets"
+    - button "Keep drawing"
+    - button "Lock drawings and indicators"
+    - button "Lock options"
+    - button "Hide all drawings"
+    - button "Hide options"
+    - button "Remove objects"
+    - button "Remove options"
+  - 'region "Chart #1"':
+    - toolbar:
+      - img
+      - text: A
+      - button "Change symbol": Apple Inc
+      - text: ·
+      - button "Change interval": 1D
+      - text: · NASDAQ
+      - button "Flag symbol":
+        - img
+      - button "More":
+        - img
+      - text: O 344.61 H 347.09 L 341.72 C 342.96 +1.69 (+0.50%)
+    - text: 345.47 Sell 0.18 345.65 Buy
+    - button "Hide indicator legend":
+      - img
+    - toolbar:
+      - text: Vol
+      - button "Hide":
+        - img
+      - button "Settings":
+        - img
+      - button "Remove":
+        - img
+      - button "More":
+        - img
+      - text: 50.06 M
+  - toolbar:
+    - button "1 day in 1 minute intervals": 1D
+    - button "5 days in 5 minutes intervals": 5D
+    - button "1 month in 30 minutes intervals": 1M
+    - button "3 months in 1 hour intervals": 3M
+    - button "6 months in 2 hours intervals": 6M
+    - button "Year to day in 1 day intervals": YTD
+    - button "1 year in 1 day intervals": 1Y
+    - button "5 years in 1 week intervals": 5Y
+    - button "All data in 1 month intervals": All
+    - separator
+    - button "Go to"
+    - button "Timezone": 10:43:33 UTC
+    - separator
+    - button "Adjust data for dividends": ADJ
+  - toolbar:
+    - button "Watchlist, details, and news" [pressed]
+    - button "Alerts"
+    - button "Object tree and data window"
+    - button "AI Copilot"
+    - button "Screeners"
+    - button "Pine"
+    - button "Calendars"
+    - button "Community"
+    - button "Notifications"
+    - button "Chats"
+    - button "Products"
+    - separator
+    - button "Help Center"
+  - button "Watchlist"
+  - button "Add symbol"
+  - button "Advanced view"
+  - button "Settings"
+  - button
+  - button "Symbol"
+  - button "Last"
+  - button "Chg"
+  - button "Chg%"
+  - text: Indices
+  - img
+  - text: S SPX D 7,718.94 −86.51 −1.11%
+  - img
+  - text: N NDQ 29,950.82 −618.66 −2.02%
+  - img
+  - text: D DJI 51,626.17 −48.98 −0.09%
+  - img
+  - text: V VIX D 17.59 0.72 4.27%
+  - img
+  - text: D DXY 102.110 −0.418 −0.41% Stocks
+  - img
+  - text: A AAPL 342.96 1.69 0.50%
+  - img
+  - text: T TSLA 367.16 −8.07 −2.15%
+  - img
+  - text: N NFLX 70.57 0.11 0.16% Futures
+  - img
+  - text: U USOIL 95.13 −0.03 −0.03%
+  - img
+  - text: G GOLD 4,153.671 48.450 1.18%
+  - img
+  - text: S SILVER 56.690
+  - superscript: "0"
+  - text: 1.0830 1.95% Forex
+  - img
+  - img
+  - text: E EURUSD 1.1206
+  - superscript: "7"
+  - text: 0.00506 0.45%
+  - img
+  - img
+  - text: G GBPUSD 1.3249
+  - superscript: "4"
+  - text: 0.00568 0.43%
+  - img
+  - img
+  - text: U USDJPY 157.86
+  - superscript: "2"
+  - text: −0.437 −0.28% Crypto
+  - img
+  - text: B BTCUSD 80,871 −703 −0.86%
+  - img
+  - text: B BTCUSDT 80,970.00 −712.01 −0.87%
+  - img
+  - text: E ETHUSD 2,363.2 −55.4 −2.29%
+  - img
+  - text: A AAPL
+  - button "Metrics"
+  - link "Apple Inc":
+    - /url: https://www.tradingview.com/symbols/NASDAQ-AAPL/
+  - text: NASDAQ
+  - link "Electronic Technology":
+    - /url: https://www.tradingview.com/markets/stocks-usa/sectorandindustry-sector/electronic-technology/
+  - link "Telecommunications Equipment":
+    - /url: https://www.tradingview.com/markets/stocks-usa/sectorandindustry-industry/telecommunications-equipment/
+  - text: "342.96 USD +1.69 +0.50% Last update at Oct 14, 23:59 GMT+0 345.60USD +2.64 +0.77% Pre-market Last update at 10:43 GMT+0 Key facts Apple (AAPL) topped a $5 trillion market cap on Oct 14, 2026. Leadership shifts: John Ternus named CEO. Product highlights: HomeView smart speaker on Oct 13, iPhone 18 Pro and iPhone Duo. Keep reading Key stats Next earnings report In 18 days Volume ‪50.06 M‬ Average Volume (30D) ‪40.10 M‬ Market capitalization ‪5.01 T‬"
+  - button
+  - text: Earnings 18 Q4 '25 Q1 '26 Q2 '26 Q3 '26 Q4 '26 ‪0.00‬ ‪0.80‬ ‪1.60‬ ‪2.40‬ ‪3.20‬ Actual Estimate
+  - button "More info"
+  - text: Dividends 12.04%
+  - img
+  - text: Earnings retained Payout ratio (TTM) Dividend yield TTM 0.31% Last payment 0.27 Last ex-dividend date Aug 10, 2026 Last payment date Aug 13, 2026
+  - button "More info"
+  - text: Income statement Annual Quarterly '21 '22 '23 '24 '25 ‪0.00‬ ‪‪110.00 B‬‬ ‪‪220.00 B‬‬ ‪‪330.00 B‬‬ ‪‪440.00 B‬‬ Revenue Net income Net margin %
+  - button "More financials"
+  - text: Performance 1.78% 1W 2.44% 1M 4.56% 3M 28.47% 6M 25.97% YTD 39.08% 1Y Seasonals
+  - table:
+    - row:
+      - cell
+      - cell
+      - cell
+    - row:
+      - cell
+      - cell
+      - cell
+  - button "More seasonals"
+  - text: Technicals
+  - img
+  - text: Buy
+  - button "More technicals"
+  - text: Analyst rating
+  - img
+  - text: Buy 1 year price target 337.18 (−1.69%)
+  - button "See forecast"
+  - text: Highest YTM bonds Aug 8, 2062 6.12% Aug 5, 2061 6.11% Feb 8, 2051 6.10%
+  - button "More bonds"
+  - text: ATM IV term structure 1W 2W 1M 2M 3M 6M 9M 1Y ‪20%‬ ‪22%‬ ‪24%‬ ‪26%‬ ‪28%‬ Volatility curve (29 days)
+  - table:
+    - row:
+      - cell
+      - cell
+      - cell
+    - row:
+      - cell
+      - cell
+      - cell
+  - button "More on options"
+  - text: Browse community posts Profile Website
+  - link "apple.com":
+    - /url: http://www.apple.com/
+  - text: Employees (FY) ‪166 K‬ ISIN US0378331005 CUSIP 037833100 FIGI BBG000B9XRY4 CFI code ESVUFR
+  - paragraph: "Apple, Inc. engages in the design, manufacture, and sale of smartphones, personal computers, tablets, wearables and accessories, and other varieties of related services. It operates through the following geographical segments: Americas, Europe, Greater China, Japan, and Rest of Asia Pacific. The Americas segment includes North and South America. The Europe segment consists of European countries, as well as India, the Middle East, and Africa. The Greater China segment comprises China, Hong Kong, and Taiwan. The Rest of Asia Pacific segment includes Australia and Asian countries. Its products and services include iPhone, Mac, iPad, AirPods, Apple TV, Apple Watch, Beats products, AppleCare, iCloud, digital content stores, streaming, and licensing services. The company was founded by Steven Paul Jobs, Ronald Gerald Wayne, and Stephen G. Wozniak in April 1976 and is headquartered in Cupertino, CA."
+  - button
+  - img
+  - text: Symbol search
+  - log:
+    - list
+  - log:
+    - list
+  - log:
+    - list
+  - log:
+    - list
+  - log:
+    - list
+  - log:
+    - list
+  - log:
+    - list
+  - log:
+    - list
+  - log:
+    - list
+  - log:
+    - list
+  - log:
+    - list
+  - log:
+    - list
+  - log:
+    - list
+  - log:
+    - list
+  - log:
+    - list
+  - log:
+    - list
+  - log:
+    - list
+  - log:
+    - list
+  - log:
+    - list
+  - log:
+    - list

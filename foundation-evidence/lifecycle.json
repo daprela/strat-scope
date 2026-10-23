@@ -1,0 +1,13 @@
+{
+  "origin": "https://127.0.0.1:4111",
+  "validation": "hostname/chain enabled",
+  "hostCA": "explicit installed local public CA; system trust was not installed",
+  "phases": [
+    "first TLS start and validated readiness passed",
+    "existing desktop browser TLS navigation passed",
+    "identity-checked shutdown and listener closure passed",
+    "same store and exact TLS origin relaunched",
+    "Chromium transport and renderer checks passed",
+    "final listener closure passed"
+  ]
+}

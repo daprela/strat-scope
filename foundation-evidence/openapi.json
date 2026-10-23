@@ -1,0 +1,356 @@
+{
+  "components": {
+    "schemas": {
+      "Authentication": {
+        "additionalProperties": false,
+        "properties": {
+          "epoch": {
+            "maxLength": 100,
+            "title": "Epoch",
+            "type": "string"
+          },
+          "purpose": {
+            "const": "foundation-status",
+            "title": "Purpose",
+            "type": "string"
+          },
+          "token": {
+            "maxLength": 100,
+            "title": "Token",
+            "type": "string"
+          }
+        },
+        "required": [
+          "token",
+          "epoch",
+          "purpose"
+        ],
+        "title": "Authentication",
+        "type": "object"
+      },
+      "Capability": {
+        "additionalProperties": false,
+        "properties": {
+          "epoch": {
+            "title": "Epoch",
+            "type": "string"
+          },
+          "expires_in_seconds": {
+            "const": 300,
+            "default": 300,
+            "title": "Expires In Seconds",
+            "type": "integer"
+          },
+          "purpose": {
+            "const": "foundation-status",
+            "default": "foundation-status",
+            "title": "Purpose",
+            "type": "string"
+          },
+          "token": {
+            "title": "Token",
+            "type": "string"
+          }
+        },
+        "required": [
+          "token",
+          "epoch"
+        ],
+        "title": "Capability",
+        "type": "object"
+      },
+      "ExactDecimal": {
+        "maxLength": 100,
+        "pattern": "^-?(0|[1-9][0-9]*)(\\.[0-9]+)?$",
+        "type": "string"
+      },
+      "ExactInteger": {
+        "maxLength": 40,
+        "pattern": "^-?(0|[1-9][0-9]*)$",
+        "type": "string"
+      },
+      "ExactObservation": {
+        "additionalProperties": false,
+        "properties": {
+          "instant": {
+            "$ref": "#/components/schemas/ExactInteger"
+          },
+          "occurrence": {
+            "$ref": "#/components/schemas/ExactInteger"
+          },
+          "unit": {
+            "enum": [
+              "ns",
+              "ms"
+            ],
+            "title": "Unit",
+            "type": "string"
+          },
+          "value": {
+            "$ref": "#/components/schemas/ExactDecimal"
+          }
+        },
+        "required": [
+          "instant",
+          "unit",
+          "occurrence",
+          "value"
+        ],
+        "title": "ExactObservation",
+        "type": "object"
+      },
+      "HTTPValidationError": {
+        "properties": {
+          "detail": {
+            "items": {
+              "$ref": "#/components/schemas/ValidationError"
+            },
+            "title": "Detail",
+            "type": "array"
+          }
+        },
+        "title": "HTTPValidationError",
+        "type": "object"
+      },
+      "UpdateEnvelope": {
+        "additionalProperties": false,
+        "properties": {
+          "business_features": {
+            "const": "not-implemented",
+            "default": "not-implemented",
+            "title": "Business Features",
+            "type": "string"
+          },
+          "epoch": {
+            "title": "Epoch",
+            "type": "string"
+          },
+          "kind": {
+            "const": "foundation-status",
+            "default": "foundation-status",
+            "title": "Kind",
+            "type": "string"
+          },
+          "status": {
+            "const": "infrastructure-ready",
+            "default": "infrastructure-ready",
+            "title": "Status",
+            "type": "string"
+          }
+        },
+        "required": [
+          "epoch"
+        ],
+        "title": "UpdateEnvelope",
+        "type": "object"
+      },
+      "ValidationError": {
+        "properties": {
+          "ctx": {
+            "title": "Context",
+            "type": "object"
+          },
+          "input": {
+            "title": "Input"
+          },
+          "loc": {
+            "items": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "integer"
+                }
+              ]
+            },
+            "title": "Location",
+            "type": "array"
+          },
+          "msg": {
+            "title": "Message",
+            "type": "string"
+          },
+          "type": {
+            "title": "Error Type",
+            "type": "string"
+          }
+        },
+        "required": [
+          "loc",
+          "msg",
+          "type"
+        ],
+        "title": "ValidationError",
+        "type": "object"
+      }
+    }
+  },
+  "info": {
+    "title": "Strat Scope Foundation",
+    "version": "0.1.0"
+  },
+  "openapi": "3.1.0",
+  "paths": {
+    "/api/bootstrap": {
+      "post": {
+        "operationId": "bootstrap_api_bootstrap_post",
+        "parameters": [
+          {
+            "in": "header",
+            "name": "x-foundation-bootstrap",
+            "required": false,
+            "schema": {
+              "default": "",
+              "title": "X-Foundation-Bootstrap",
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Capability"
+                }
+              }
+            },
+            "description": "Successful Response"
+          },
+          "422": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            },
+            "description": "Validation Error"
+          }
+        },
+        "summary": "Bootstrap"
+      }
+    },
+    "/api/ready": {
+      "get": {
+        "operationId": "ready_api_ready_get",
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "additionalProperties": {
+                    "anyOf": [
+                      {
+                        "type": "string"
+                      },
+                      {
+                        "type": "integer"
+                      }
+                    ]
+                  },
+                  "title": "Response Ready Api Ready Get",
+                  "type": "object"
+                }
+              }
+            },
+            "description": "Successful Response"
+          }
+        },
+        "summary": "Ready"
+      }
+    },
+    "/api/revoke": {
+      "post": {
+        "operationId": "revoke_api_revoke_post",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Authentication"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "204": {
+            "description": "Successful Response"
+          },
+          "422": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            },
+            "description": "Validation Error"
+          }
+        },
+        "summary": "Revoke"
+      }
+    },
+    "/api/status": {
+      "get": {
+        "operationId": "status_api_status_get",
+        "parameters": [
+          {
+            "in": "header",
+            "name": "authorization",
+            "required": false,
+            "schema": {
+              "default": "",
+              "title": "Authorization",
+              "type": "string"
+            }
+          },
+          {
+            "in": "header",
+            "name": "x-owner-epoch",
+            "required": false,
+            "schema": {
+              "default": "",
+              "title": "X-Owner-Epoch",
+              "type": "string"
+            }
+          },
+          {
+            "in": "header",
+            "name": "x-capability-purpose",
+            "required": false,
+            "schema": {
+              "default": "",
+              "title": "X-Capability-Purpose",
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/UpdateEnvelope"
+                }
+              }
+            },
+            "description": "Successful Response"
+          },
+          "422": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            },
+            "description": "Validation Error"
+          }
+        },
+        "summary": "Status"
+      }
+    }
+  }
+}

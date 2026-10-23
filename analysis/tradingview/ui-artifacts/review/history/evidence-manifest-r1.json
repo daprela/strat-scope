@@ -1,0 +1,1516 @@
+{
+  "review": "ui-review.md revision 1",
+  "date": "2026-10-21",
+  "scope": {
+    "wireframes": 92,
+    "mockups": 184,
+    "wireframe_version": "WF-SET-001-r8",
+    "mockup_version": "MP-SET-001-r3",
+    "approval": "G4/G5 approved per supplied dossier/index provenance; not modified by audit"
+  },
+  "checks": {
+    "source_sha256": "92/92 match current wireframes",
+    "xml_render": "276/276 canonical SVGs parsed and independently rendered through Inkscape",
+    "visual_inspection": "31 comparison sheets covering all canonical SVGs, plus focused source inspection",
+    "html_local_links": "No missing local links in both galleries, replay comparison or state specimens",
+    "maintained_checker": {
+      "command": "python analysis/tradingview/check_mockups.py",
+      "exit_code": 1,
+      "failure": "check_mockups.py:17 asserts gate_g5 is PENDING or STALE; current records are APPROVED"
+    },
+    "specimen_browser_render": "EVIDENCE LIMITED: Chromium socket permission failure; Firefox exited without capture",
+    "runtime_UIV": "Not executed; static design audit only"
+  },
+  "artifacts": [
+    {
+      "path": "architecture-dossier.md",
+      "sha256": "ddaea9cb64b0edeb1a2a3498d4de98cf6c1c7df6b673b69fd1b6cc1446752623",
+      "inspection": "Scoped authority or supporting evidence; see ui-review.md Section 2"
+    },
+    {
+      "path": "architecture-review.md",
+      "sha256": "19008517e4333bf03d5cb0787059d41b4b6b8eb8877657727af2f60ed3d5e598",
+      "inspection": "Scoped authority or supporting evidence; see ui-review.md Section 2"
+    },
+    {
+      "path": "check_mockups.py",
+      "sha256": "e781cc5c505fc0567853ae05d1fba6f845884fcd1b00c646a97ffdf42c129db0",
+      "inspection": "Scoped authority or supporting evidence; see ui-review.md Section 2"
+    },
+    {
+      "path": "domain-model.md",
+      "sha256": "8677c88b019523fa78ca029ab9d50fd8c4710fca8def4a6d28e434b6a7670554",
+      "inspection": "Scoped authority or supporting evidence; see ui-review.md Section 2"
+    },
+    {
+      "path": "requirements-dossier.md",
+      "sha256": "841570bd3457cc25a991d6b6c0fe3866b9356e9977b8a0bf490e6739d4b9f3e9",
+      "inspection": "Scoped authority or supporting evidence; see ui-review.md Section 2"
+    },
+    {
+      "path": "screenshots/E01-load-chart.png",
+      "sha256": "f9aed482c1245967cb7e6feed41adad8b1609c53ac3fad0c7c700a0da8d295e2",
+      "inspection": "Original local PNG visually inspected as geometry reference; no financial/feature authority inferred"
+    },
+    {
+      "path": "screenshots/E07-settings-ready.png",
+      "sha256": "fcbe0b2879871a97078a2f83f9bf4dfecb65e6eaf00fb5eb6dc7a89fcbcf1cf5",
+      "inspection": "Original local PNG visually inspected as geometry reference; no financial/feature authority inferred"
+    },
+    {
+      "path": "screenshots/authenticated/A24-trades-state.png",
+      "sha256": "0b090c0a58ca6cb6d49399c3e099ec55973edc2114461281082e9cd66fe0c672",
+      "inspection": "Original local PNG visually inspected as geometry reference; no financial/feature authority inferred"
+    },
+    {
+      "path": "screenshots/authenticated/A29-range-selection.png",
+      "sha256": "fbca87fd956c8b9a72b106ab915f2da23237c05a92f6e558888e27cbd68718af",
+      "inspection": "Original local PNG visually inspected as geometry reference; no financial/feature authority inferred"
+    },
+    {
+      "path": "screenshots/authenticated/A30-replay.png",
+      "sha256": "ac2a7908b259f25e65bfe4d198305694fe42462f2b9b653489704eae87e7fcaa",
+      "inspection": "Original local PNG visually inspected as geometry reference; no financial/feature authority inferred"
+    },
+    {
+      "path": "screenshots/authenticated/A31-replay.png",
+      "sha256": "43210748fca5d0691af815a4b03498194679aab1b2a7175c3a3a981c9077d772",
+      "inspection": "Original local PNG visually inspected as geometry reference; no financial/feature authority inferred"
+    },
+    {
+      "path": "screenshots/authenticated/A32-paper-trading.png",
+      "sha256": "8cdec89f201fec3ba19a1ce2119dfbba76b000c215f99a38d41e5d9ab31c868e",
+      "inspection": "Original local PNG visually inspected as geometry reference; no financial/feature authority inferred"
+    },
+    {
+      "path": "ui-artifacts/mockups/MP-MOCK-001-dark.svg",
+      "sha256": "c818e5cb964445f481ab51dce08cc9610391b9cdd02cecd10d4bbba5b702ae16",
+      "inspection": "XML/text/control inspection; independent Inkscape render; visual comparison sheet"
+    },
+    {
+      "path": "ui-artifacts/mockups/MP-MOCK-001.svg",
+      "sha256": "185d55cf18ca7008f6ddcba3e4642166d4805dc9205e9cb7d094c215052a41ec",
+      "inspection": "XML/text/control inspection; independent Inkscape render; visual comparison sheet"
+    },
+    {
+      "path": "ui-artifacts/mockups/MP-MOCK-002-dark.svg",
+      "sha256": "bfcff01bf6b2d795e02e0bd1fe9bf90152a18020a2b54c2dc0d068e1b67f8f33",
+      "inspection": "XML/text/control inspection; independent Inkscape render; visual comparison sheet"
+    },
+    {
+      "path": "ui-artifacts/mockups/MP-MOCK-002.svg",
+      "sha256": "5aa559d1dee0eaf60304e32b47d111fddac67cd8728e704ab00acfa68c20a043",
+      "inspection": "XML/text/control inspection; independent Inkscape render; visual comparison sheet"
+    },
+    {
+      "path": "ui-artifacts/mockups/MP-MOCK-003-dark.svg",
+      "sha256": "4f7c5ec34048d95a1e7884b50e27edfcaa71ce3095e58f8db4ccdead3650d0d0",
+      "inspection": "XML/text/control inspection; independent Inkscape render; visual comparison sheet"
+    },
+    {
+      "path": "ui-artifacts/mockups/MP-MOCK-003.svg",
+      "sha256": "b9252356aa45b61942e06340cd11f145fa1c71bbb5338de15ce078452d85efba",
+      "inspection": "XML/text/control inspection; independent Inkscape render; visual comparison sheet"
+    },
+    {
+      "path": "ui-artifacts/mockups/MP-MOCK-004-dark.svg",
+      "sha256": "8638f97318658d8874fb212f7ac949da094109ba686908bfd80298e398e96bab",
+      "inspection": "XML/text/control inspection; independent Inkscape render; visual comparison sheet"
+    },
+    {
+      "path": "ui-artifacts/mockups/MP-MOCK-004.svg",
+      "sha256": "fa61e71ee6d4657d025a1b14e8c60d9089ec637001204e6d06fd59c9d5244ffc",
+      "inspection": "XML/text/control inspection; independent Inkscape render; visual comparison sheet"
+    },
+    {
+      "path": "ui-artifacts/mockups/MP-MOCK-005-dark.svg",
+      "sha256": "4b1011f97c9e3604d01b1148ff8246fe3d7ca607945e57f5851f99c816d96bcb",
+      "inspection": "XML/text/control inspection; independent Inkscape render; visual comparison sheet"
+    },
+    {
+      "path": "ui-artifacts/mockups/MP-MOCK-005.svg",
+      "sha256": "a85559440c4f644f2c76adf165e430fac8a0f13d99da240a6537c4f1c5219bd4",
+      "inspection": "XML/text/control inspection; independent Inkscape render; visual comparison sheet"
+    },
+    {
+      "path": "ui-artifacts/mockups/MP-MOCK-006-dark.svg",
+      "sha256": "6d59526b2edc60cf956c17b181585cc1bbc3867a973aae0d09faacdb59acf983",
+      "inspection": "XML/text/control inspection; independent Inkscape render; visual comparison sheet"
+    },
+    {
+      "path": "ui-artifacts/mockups/MP-MOCK-006.svg",
+      "sha256": "60dfd16a276544d7f3d3dfe86796a6afeb9aeeeafc956605729c59f2b84af27f",
+      "inspection": "XML/text/control inspection; independent Inkscape render; visual comparison sheet"
+    },
+    {
+      "path": "ui-artifacts/mockups/MP-MOCK-007-dark.svg",
+      "sha256": "a88c1b52295df612c660bd92872a3b8df89ac928c30182c189eba3be63a0c86d",
+      "inspection": "XML/text/control inspection; independent Inkscape render; visual comparison sheet"
+    },
+    {
+      "path": "ui-artifacts/mockups/MP-MOCK-007.svg",
+      "sha256": "8410b7a64a38396a67a8d3507fd0719c319329bc1f95a1efcdac1d6757908299",
+      "inspection": "XML/text/control inspection; independent Inkscape render; visual comparison sheet"
+    },
+    {
+      "path": "ui-artifacts/mockups/MP-MOCK-008-dark.svg",
+      "sha256": "9ea1e22f7bdeaf300265374003e9403b8915c2e1cfde0812872431919ce1b17b",
+      "inspection": "XML/text/control inspection; independent Inkscape render; visual comparison sheet"
+    },
+    {
+      "path": "ui-artifacts/mockups/MP-MOCK-008.svg",
+      "sha256": "8cab6ec700b5fcbd5aedfcf4c394ad469a30cfa7624d69bd9d9aafc1f984eb6f",
+      "inspection": "XML/text/control inspection; independent Inkscape render; visual comparison sheet"
+    },
+    {
+      "path": "ui-artifacts/mockups/MP-MOCK-009-dark.svg",
+      "sha256": "666370368a504fd9f0a2ebf0a64860bb857e3bcd1cff8a2e0e2b140af21c9fc9",
+      "inspection": "XML/text/control inspection; independent Inkscape render; visual comparison sheet"
+    },
+    {
+      "path": "ui-artifacts/mockups/MP-MOCK-009.svg",
+      "sha256": "43d6a3ed121267274cc0f6c5ad661e564932d18a0d78aea93405a9fca19339a1",
+      "inspection": "XML/text/control inspection; independent Inkscape render; visual comparison sheet"
+    },
+    {
+      "path": "ui-artifacts/mockups/MP-MOCK-010-dark.svg",
+      "sha256": "e2da8dc35dc25355978ccdc9251a621f68b6a46dcfe9cb6abf9534a51f789d87",
+      "inspection": "XML/text/control inspection; independent Inkscape render; visual comparison sheet"
+    },
+    {
+      "path": "ui-artifacts/mockups/MP-MOCK-010.svg",
+      "sha256": "26037c07c87475891f8e33897e396b28aaccd5c6b0c1baa27f0dd294572c4491",
+      "inspection": "XML/text/control inspection; independent Inkscape render; visual comparison sheet"
+    },
+    {
+      "path": "ui-artifacts/mockups/MP-MOCK-011-dark.svg",
+      "sha256": "f747bcd00cf9ad2d23858974dd21f34d2844d7f5ae2ba11a52138acad8f9e9de",
+      "inspection": "XML/text/control inspection; independent Inkscape render; visual comparison sheet"
+    },
+    {
+      "path": "ui-artifacts/mockups/MP-MOCK-011.svg",
+      "sha256": "e5a64e088c6f32c561264dc76a64461945dae4d16307a79f9d78708a804030e7",
+      "inspection": "XML/text/control inspection; independent Inkscape render; visual comparison sheet"
+    },
+    {
+      "path": "ui-artifacts/mockups/MP-MOCK-012-dark.svg",
+      "sha256": "e15ba9c691842328adb1b94c36657429189b12c604ebba00ee750c22fe4397d1",
+      "inspection": "XML/text/control inspection; independent Inkscape render; visual comparison sheet"
+    },
+    {
+      "path": "ui-artifacts/mockups/MP-MOCK-012.svg",
+      "sha256": "c68de203b895df066ca182e05f6ecb1794e9865c4b994cd6b93bb40c16e52f27",
+      "inspection": "XML/text/control inspection; independent Inkscape render; visual comparison sheet"
+    },
+    {
+      "path": "ui-artifacts/mockups/MP-MOCK-013-dark.svg",
+      "sha256": "010af2501de400342991dab932f25b31cd1c5dc3610207c9dfcc7d1de9c8825e",
+      "inspection": "XML/text/control inspection; independent Inkscape render; visual comparison sheet"
+    },
+    {
+      "path": "ui-artifacts/mockups/MP-MOCK-013.svg",
+      "sha256": "b229c844c716f4ac05fb66dd024a4e8fd0b65b544b684bf09836a63fdc1a383c",
+      "inspection": "XML/text/control inspection; independent Inkscape render; visual comparison sheet"
+    },
+    {
+      "path": "ui-artifacts/mockups/MP-MOCK-014-dark.svg",
+      "sha256": "9cf69ce0862afd5d5e707085059fc6981126341a58861ee0f4adee1658e0be37",
+      "inspection": "XML/text/control inspection; independent Inkscape render; visual comparison sheet"
+    },
+    {
+      "path": "ui-artifacts/mockups/MP-MOCK-014.svg",
+      "sha256": "fdd8dd210044bfe0cf6479cbbf8ddf05d09b7f28aba17e5521d3afda99cef9fd",
+      "inspection": "XML/text/control inspection; independent Inkscape render; visual comparison sheet"
+    },
+    {
+      "path": "ui-artifacts/mockups/MP-MOCK-015-dark.svg",
+      "sha256": "e89e6459d593ef4f428916c16ee3dcf3efd8fb0ff62d549137c23cb97332d059",
+      "inspection": "XML/text/control inspection; independent Inkscape render; visual comparison sheet"
+    },
+    {
+      "path": "ui-artifacts/mockups/MP-MOCK-015.svg",
+      "sha256": "3b78165c8fe988d1e5cd205773b2d670393fe787b6dc76ebbafb35ea4b71a43c",
+      "inspection": "XML/text/control inspection; independent Inkscape render; visual comparison sheet"
+    },
+    {
+      "path": "ui-artifacts/mockups/MP-MOCK-016-dark.svg",
+      "sha256": "6f877926e743ffb5b6779e29950596b37164bda522ee9e7d90f401a174993add",
+      "inspection": "XML/text/control inspection; independent Inkscape render; visual comparison sheet"
+    },
+    {
+      "path": "ui-artifacts/mockups/MP-MOCK-016.svg",
+      "sha256": "e2b89060f3e58bbe779b19948f467587463b00266c171df00af3669694c0ff7c",
+      "inspection": "XML/text/control inspection; independent Inkscape render; visual comparison sheet"
+    },
+    {
+      "path": "ui-artifacts/mockups/MP-MOCK-017-dark.svg",
+      "sha256": "f52aba84006a967f520dd806813b794b9b7317f26ecb22f631049344e46f2cc3",
+      "inspection": "XML/text/control inspection; independent Inkscape render; visual comparison sheet"
+    },
+    {
+      "path": "ui-artifacts/mockups/MP-MOCK-017.svg",
+      "sha256": "a488ca5e9f64a2b84920d004cd4ee1d9dbaa207c1c5277dceb98ec1a0199894c",
+      "inspection": "XML/text/control inspection; independent Inkscape render; visual comparison sheet"
+    },
+    {
+      "path": "ui-artifacts/mockups/MP-MOCK-018-dark.svg",
+      "sha256": "54dd3a8b54006df656c1aa6994787ee694f1b23ed4181885ae2facbd7f13e42c",
+      "inspection": "XML/text/control inspection; independent Inkscape render; visual comparison sheet"
+    },
+    {
+      "path": "ui-artifacts/mockups/MP-MOCK-018.svg",
+      "sha256": "34ca6949110586c9001268db6cd4fd942ad242d11472b16bcf28d118973e738d",
+      "inspection": "XML/text/control inspection; independent Inkscape render; visual comparison sheet"
+    },
+    {
+      "path": "ui-artifacts/mockups/MP-MOCK-019-dark.svg",
+      "sha256": "6ed736082124efbd7a649808858fd87b2f53362e803788c677ce4998307f9ad4",
+      "inspection": "XML/text/control inspection; independent Inkscape render; visual comparison sheet"
+    },
+    {
+      "path": "ui-artifacts/mockups/MP-MOCK-019.svg",
+      "sha256": "99172738f6a4bc5f792c125fc4b631c5079174d1220cc6341d43adc40e4114d1",
+      "inspection": "XML/text/control inspection; independent Inkscape render; visual comparison sheet"
+    },
+    {
+      "path": "ui-artifacts/mockups/MP-MOCK-020-dark.svg",
+      "sha256": "03e4187c464ef2e0733e044eeaad2bc7d587559f496cecfc00682d9bfb4c849d",
+      "inspection": "XML/text/control inspection; independent Inkscape render; visual comparison sheet"
+    },
+    {
+      "path": "ui-artifacts/mockups/MP-MOCK-020.svg",
+      "sha256": "b2225f0c824e8118038b0b55a46f56b4df6fed9e94a1c828d78a737f63b15a11",
+      "inspection": "XML/text/control inspection; independent Inkscape render; visual comparison sheet"
+    },
+    {
+      "path": "ui-artifacts/mockups/MP-MOCK-021-dark.svg",
+      "sha256": "98a9cab5125713b19faff29a56fd81ed0e4458f90a0a95eeb786fcf661593271",
+      "inspection": "XML/text/control inspection; independent Inkscape render; visual comparison sheet"
+    },
+    {
+      "path": "ui-artifacts/mockups/MP-MOCK-021.svg",
+      "sha256": "6ff291da7298feedfb7092e2a0f88860345362bff4fcedf82f7a158237f4c277",
+      "inspection": "XML/text/control inspection; independent Inkscape render; visual comparison sheet"
+    },
+    {
+      "path": "ui-artifacts/mockups/MP-MOCK-022-dark.svg",
+      "sha256": "fceeb1b8cc40774295bebe05387ca41dd74d675b6fc79ce15fcf3f7bbf7bbed1",
+      "inspection": "XML/text/control inspection; independent Inkscape render; visual comparison sheet"
+    },
+    {
+      "path": "ui-artifacts/mockups/MP-MOCK-022.svg",
+      "sha256": "5321e1b7b5c14869976cf805c5d49e7b994a13a3000bbe091d643b39d5056c0a",
+      "inspection": "XML/text/control inspection; independent Inkscape render; visual comparison sheet"
+    },
+    {
+      "path": "ui-artifacts/mockups/MP-MOCK-023-dark.svg",
+      "sha256": "17beb7c6592de5dac5ad73d9fefb1b24dfc23febabdcef06df405e2335f51dcf",
+      "inspection": "XML/text/control inspection; independent Inkscape render; visual comparison sheet"
+    },
+    {
+      "path": "ui-artifacts/mockups/MP-MOCK-023.svg",
+      "sha256": "aa8c82e422faab29e80bcb4a5878230670eb0d8835c6713e57c75783817d8af2",
+      "inspection": "XML/text/control inspection; independent Inkscape render; visual comparison sheet"
+    },
+    {
+      "path": "ui-artifacts/mockups/MP-MOCK-024-dark.svg",
+      "sha256": "c07e220c7d0e3dd77ad457a935f209a32553b635f2f246bab77d94448efbde9d",
+      "inspection": "XML/text/control inspection; independent Inkscape render; visual comparison sheet"
+    },
+    {
+      "path": "ui-artifacts/mockups/MP-MOCK-024.svg",
+      "sha256": "2510831c9ba8fdba7e8a8e8626e9991a9a23013186059e40aea686095644974b",
+      "inspection": "XML/text/control inspection; independent Inkscape render; visual comparison sheet"
+    },
+    {
+      "path": "ui-artifacts/mockups/MP-MOCK-025-dark.svg",
+      "sha256": "5db4a4111a678405e0500fbba2480b46e3fcc88e4ff30c57f5c91e2b03db284e",
+      "inspection": "XML/text/control inspection; independent Inkscape render; visual comparison sheet"
+    },
+    {
+      "path": "ui-artifacts/mockups/MP-MOCK-025.svg",
+      "sha256": "882c264ee7fcffdb317f4c7f168d43b2aba79cb8e15cf8ad68d222d13870a6bc",
+      "inspection": "XML/text/control inspection; independent Inkscape render; visual comparison sheet"
+    },
+    {
+      "path": "ui-artifacts/mockups/MP-MOCK-026-dark.svg",
+      "sha256": "3e21e68439df01bfcce3a4c8fef09325e7c7d793612a041ac27541ddc04f45a0",
+      "inspection": "XML/text/control inspection; independent Inkscape render; visual comparison sheet"
+    },
+    {
+      "path": "ui-artifacts/mockups/MP-MOCK-026.svg",
+      "sha256": "e0d9c1e61bbdf48ddf92b09d4827836dfad591129813b2e06a7b0b9d04a81ee3",
+      "inspection": "XML/text/control inspection; independent Inkscape render; visual comparison sheet"
+    },
+    {
+      "path": "ui-artifacts/mockups/MP-MOCK-027-dark.svg",
+      "sha256": "2efb9e3c92411d5e51e624b42bc5ecf1e05376cbd4a9339f99b170d05c96df02",
+      "inspection": "XML/text/control inspection; independent Inkscape render; visual comparison sheet"
+    },
+    {
+      "path": "ui-artifacts/mockups/MP-MOCK-027.svg",
+      "sha256": "1a920c1b1da7a38d0d5056d9c5abb2288c34503f2c88078574656a6bdc4cf56a",
+      "inspection": "XML/text/control inspection; independent Inkscape render; visual comparison sheet"
+    },
+    {
+      "path": "ui-artifacts/mockups/MP-MOCK-028-dark.svg",
+      "sha256": "007155e450e9aff8eaaec6c45cf95481d363a9914538513f7ebcb116a70b5fd2",
+      "inspection": "XML/text/control inspection; independent Inkscape render; visual comparison sheet"
+    },
+    {
+      "path": "ui-artifacts/mockups/MP-MOCK-028.svg",
+      "sha256": "3388923f3459f342cf8a9c6fe1748bacd43beba69162d5d50f7efd9b60e10c15",
+      "inspection": "XML/text/control inspection; independent Inkscape render; visual comparison sheet"
+    },
+    {
+      "path": "ui-artifacts/mockups/MP-MOCK-029-dark.svg",
+      "sha256": "c944258dfb951fb5b74ef26740805814918ebac23270a2e5ba8c28a8faa5917e",
+      "inspection": "XML/text/control inspection; independent Inkscape render; visual comparison sheet"
+    },
+    {
+      "path": "ui-artifacts/mockups/MP-MOCK-029.svg",
+      "sha256": "4c5b8ff37267e34f40dd1ea36868e939fde9d402d76da507121f5d71f2305476",
+      "inspection": "XML/text/control inspection; independent Inkscape render; visual comparison sheet"
+    },
+    {
+      "path": "ui-artifacts/mockups/MP-MOCK-030-dark.svg",
+      "sha256": "80c5d723542ba2b221e86cc582c50e56295314d7a42317f538fbdf784fe441d5",
+      "inspection": "XML/text/control inspection; independent Inkscape render; visual comparison sheet"
+    },
+    {
+      "path": "ui-artifacts/mockups/MP-MOCK-030.svg",
+      "sha256": "72147c6210f212dc017cf2e322490891136c7872dc30f499ba88512e203082aa",
+      "inspection": "XML/text/control inspection; independent Inkscape render; visual comparison sheet"
+    },
+    {
+      "path": "ui-artifacts/mockups/MP-MOCK-031-dark.svg",
+      "sha256": "d7df87ed57568e7063b2ab48e1ddcfeb2091945e13bf27e0ceb444f11c50c2c7",
+      "inspection": "XML/text/control inspection; independent Inkscape render; visual comparison sheet"
+    },
+    {
+      "path": "ui-artifacts/mockups/MP-MOCK-031.svg",
+      "sha256": "f7851c312079a11477facad7ac38e742a719541769ecf22e29603a7fac791a39",
+      "inspection": "XML/text/control inspection; independent Inkscape render; visual comparison sheet"
+    },
+    {
+      "path": "ui-artifacts/mockups/MP-MOCK-032-dark.svg",
+      "sha256": "dbedbe05ca142333d2ea99aa141702da19882b178114e94047b4dba7a2bbd894",
+      "inspection": "XML/text/control inspection; independent Inkscape render; visual comparison sheet"
+    },
+    {
+      "path": "ui-artifacts/mockups/MP-MOCK-032.svg",
+      "sha256": "8dd76940d331efcacef042ef7512e2d1beccd1d25a99666465f88f3adb0c5073",
+      "inspection": "XML/text/control inspection; independent Inkscape render; visual comparison sheet"
+    },
+    {
+      "path": "ui-artifacts/mockups/MP-MOCK-033-dark.svg",
+      "sha256": "99d4fbbebf4cd41a910540b35bd8c00d264550e1dc0515bfbbb87e3945364658",
+      "inspection": "XML/text/control inspection; independent Inkscape render; visual comparison sheet"
+    },
+    {
+      "path": "ui-artifacts/mockups/MP-MOCK-033.svg",
+      "sha256": "53fa622c424b442b85262227dfed113093ad15d6833172e02e517946d4387755",
+      "inspection": "XML/text/control inspection; independent Inkscape render; visual comparison sheet"
+    },
+    {
+      "path": "ui-artifacts/mockups/MP-MOCK-034-dark.svg",
+      "sha256": "da0e08d30cdfccc9c4e3c9b3e13cd4d03b7edcc1db71b7019c05852c9b68a2de",
+      "inspection": "XML/text/control inspection; independent Inkscape render; visual comparison sheet"
+    },
+    {
+      "path": "ui-artifacts/mockups/MP-MOCK-034.svg",
+      "sha256": "bed2fdd30dcccf6ecabf6f88d196162e24f1c210731859b35f8be827ef0f5e9b",
+      "inspection": "XML/text/control inspection; independent Inkscape render; visual comparison sheet"
+    },
+    {
+      "path": "ui-artifacts/mockups/MP-MOCK-035-dark.svg",
+      "sha256": "1485308c1f9af1f92386db500e24b3ea8f51084448a1f50b34c473caf65300d8",
+      "inspection": "XML/text/control inspection; independent Inkscape render; visual comparison sheet"
+    },
+    {
+      "path": "ui-artifacts/mockups/MP-MOCK-035.svg",
+      "sha256": "c3a63058dcb1945309e03627dd04d0b603d689a0060514dd7f2c84c5fdc44502",
+      "inspection": "XML/text/control inspection; independent Inkscape render; visual comparison sheet"
+    },
+    {
+      "path": "ui-artifacts/mockups/MP-MOCK-036-dark.svg",
+      "sha256": "17f016ed26aad676fb35646dacf7601ea39b7b491995eb849b89763fc319ea26",
+      "inspection": "XML/text/control inspection; independent Inkscape render; visual comparison sheet"
+    },
+    {
+      "path": "ui-artifacts/mockups/MP-MOCK-036.svg",
+      "sha256": "5625f7bf623430d7d388d1f573fcef69bf05349d93575017f76252142bfb001b",
+      "inspection": "XML/text/control inspection; independent Inkscape render; visual comparison sheet"
+    },
+    {
+      "path": "ui-artifacts/mockups/MP-MOCK-037-dark.svg",
+      "sha256": "af49ca115c4591519659f1c5478f046d8d17731444423ef5ea4c7dc49e0491ee",
+      "inspection": "XML/text/control inspection; independent Inkscape render; visual comparison sheet"
+    },
+    {
+      "path": "ui-artifacts/mockups/MP-MOCK-037.svg",
+      "sha256": "c90608e37ee2845f8e0b487876020cc1857eb8b63e93c78274c1cd13300a2260",
+      "inspection": "XML/text/control inspection; independent Inkscape render; visual comparison sheet"
+    },
+    {
+      "path": "ui-artifacts/mockups/MP-MOCK-038-dark.svg",
+      "sha256": "a4d44baf68f3c2aec983da1efec18235a00296eae88d97c7ecec2b00c072c9f2",
+      "inspection": "XML/text/control inspection; independent Inkscape render; visual comparison sheet"
+    },
+    {
+      "path": "ui-artifacts/mockups/MP-MOCK-038.svg",
+      "sha256": "24124d77ba455dd19dc17b97181ed6e16008de5275aa769782c6578528de110b",
+      "inspection": "XML/text/control inspection; independent Inkscape render; visual comparison sheet"
+    },
+    {
+      "path": "ui-artifacts/mockups/MP-MOCK-039-dark.svg",
+      "sha256": "51073ac5fa83743b745f53b8ef9733e69bb241cc216d7589f8d282773a3ff5e8",
+      "inspection": "XML/text/control inspection; independent Inkscape render; visual comparison sheet"
+    },
+    {
+      "path": "ui-artifacts/mockups/MP-MOCK-039.svg",
+      "sha256": "331992dd9a0e318a7f75d37443ccca4805f0e801eb69cc379535d7eac0c91f5b",
+      "inspection": "XML/text/control inspection; independent Inkscape render; visual comparison sheet"
+    },
+    {
+      "path": "ui-artifacts/mockups/MP-MOCK-040-dark.svg",
+      "sha256": "8ce4e191b09326931170699f720a240b4aefe22a10b8b302112c0855d23dceb8",
+      "inspection": "XML/text/control inspection; independent Inkscape render; visual comparison sheet"
+    },
+    {
+      "path": "ui-artifacts/mockups/MP-MOCK-040.svg",
+      "sha256": "d508285ccdcb29759387cda18c3302418e5f3ff53e82a4f64b119fd0deccfc52",
+      "inspection": "XML/text/control inspection; independent Inkscape render; visual comparison sheet"
+    },
+    {
+      "path": "ui-artifacts/mockups/MP-MOCK-041-dark.svg",
+      "sha256": "54a30f3e7232f85681bf9c9184e70c64ca2e2fba05f60713bf4b907fcc0d7175",
+      "inspection": "XML/text/control inspection; independent Inkscape render; visual comparison sheet"
+    },
+    {
+      "path": "ui-artifacts/mockups/MP-MOCK-041.svg",
+      "sha256": "5ff0526bd16989827a5c34922974a331544bf0db8dbb02b2cdadcf220e9f8d87",
+      "inspection": "XML/text/control inspection; independent Inkscape render; visual comparison sheet"
+    },
+    {
+      "path": "ui-artifacts/mockups/MP-MOCK-042-dark.svg",
+      "sha256": "0aeab2d5088d87ff7be420fe10b62d2541b34c13f400d3fd074e2501bbec33a8",
+      "inspection": "XML/text/control inspection; independent Inkscape render; visual comparison sheet"
+    },
+    {
+      "path": "ui-artifacts/mockups/MP-MOCK-042.svg",
+      "sha256": "5c74cf1a838262694199152e7ab957cd9a823d5d6e212a8c25b1db58a5f4c42d",
+      "inspection": "XML/text/control inspection; independent Inkscape render; visual comparison sheet"
+    },
+    {
+      "path": "ui-artifacts/mockups/MP-MOCK-043-dark.svg",
+      "sha256": "4b0021893acc1c20acbe273c1f0561f5e5b0baa34fdc240207bd96fec6fc082f",
+      "inspection": "XML/text/control inspection; independent Inkscape render; visual comparison sheet"
+    },
+    {
+      "path": "ui-artifacts/mockups/MP-MOCK-043.svg",
+      "sha256": "12b4a21bdba37b91a7136bac2a12f2256594f934b329cf9d1440ecc5327969c9",
+      "inspection": "XML/text/control inspection; independent Inkscape render; visual comparison sheet"
+    },
+    {
+      "path": "ui-artifacts/mockups/MP-MOCK-044-dark.svg",
+      "sha256": "44c530fa9c82c4e496f5ad78c66fca1e4bb0782e1e80dbfd5a2c893c8b98cf45",
+      "inspection": "XML/text/control inspection; independent Inkscape render; visual comparison sheet"
+    },
+    {
+      "path": "ui-artifacts/mockups/MP-MOCK-044.svg",
+      "sha256": "2da082a793aea95f508d3de5e38a88ac93396acfa8e844942da294d19ce70dda",
+      "inspection": "XML/text/control inspection; independent Inkscape render; visual comparison sheet"
+    },
+    {
+      "path": "ui-artifacts/mockups/MP-MOCK-045-dark.svg",
+      "sha256": "f30b8eb389d34246b7211cbef2e4142ee0e286bbdb30359ec1de526d666f08af",
+      "inspection": "XML/text/control inspection; independent Inkscape render; visual comparison sheet"
+    },
+    {
+      "path": "ui-artifacts/mockups/MP-MOCK-045.svg",
+      "sha256": "916664021651ff1d0eff46336ea5d2a81c2be1e23583ab312e0e56d5e0ba5331",
+      "inspection": "XML/text/control inspection; independent Inkscape render; visual comparison sheet"
+    },
+    {
+      "path": "ui-artifacts/mockups/MP-MOCK-046-dark.svg",
+      "sha256": "dea20bba70762fdd08f1755725b40ed7de4eb3a737fd6d2ceab630906d941235",
+      "inspection": "XML/text/control inspection; independent Inkscape render; visual comparison sheet"
+    },
+    {
+      "path": "ui-artifacts/mockups/MP-MOCK-046.svg",
+      "sha256": "5a9225cfb8f80a4ab8c694464c2db10001d4168a52d9eceb2fa735e5897af310",
+      "inspection": "XML/text/control inspection; independent Inkscape render; visual comparison sheet"
+    },
+    {
+      "path": "ui-artifacts/mockups/MP-MOCK-047-dark.svg",
+      "sha256": "80dfed14e1870c4e4dbb7c74072bbeecb6876d51b25bb04f72ae5d461f61d8aa",
+      "inspection": "XML/text/control inspection; independent Inkscape render; visual comparison sheet"
+    },
+    {
+      "path": "ui-artifacts/mockups/MP-MOCK-047.svg",
+      "sha256": "90f2cf11e12c8c144380bd7fb6812701691cc3214e18749ace2da63f27c4e3e1",
+      "inspection": "XML/text/control inspection; independent Inkscape render; visual comparison sheet"
+    },
+    {
+      "path": "ui-artifacts/mockups/MP-MOCK-048-dark.svg",
+      "sha256": "843ae10d01ed253584c17cca01f341a0ad16721a34b239d15a19e6c3ac97ddb2",
+      "inspection": "XML/text/control inspection; independent Inkscape render; visual comparison sheet"
+    },
+    {
+      "path": "ui-artifacts/mockups/MP-MOCK-048.svg",
+      "sha256": "a79f8d882a5c3ef6ca5a36ff435437aa369ef09797fb98493fd1ad03c78e4ef6",
+      "inspection": "XML/text/control inspection; independent Inkscape render; visual comparison sheet"
+    },
+    {
+      "path": "ui-artifacts/mockups/MP-MOCK-049-dark.svg",
+      "sha256": "2b33d7fd071c274a5cee39a73418f1e9010558f2a273dfa6709a5089ec6fda49",
+      "inspection": "XML/text/control inspection; independent Inkscape render; visual comparison sheet"
+    },
+    {
+      "path": "ui-artifacts/mockups/MP-MOCK-049.svg",
+      "sha256": "fbc4e6aa57b74342346d80f857bfc1834db321e5ecb72c260eafc547b758d69e",
+      "inspection": "XML/text/control inspection; independent Inkscape render; visual comparison sheet"
+    },
+    {
+      "path": "ui-artifacts/mockups/MP-MOCK-050-dark.svg",
+      "sha256": "5fb3fcf9b6c3737a2916fd7b162c2f1e562da27a07a8d45d037e6cd3a60e984f",
+      "inspection": "XML/text/control inspection; independent Inkscape render; visual comparison sheet"
+    },
+    {
+      "path": "ui-artifacts/mockups/MP-MOCK-050.svg",
+      "sha256": "d3a1b466ba71f1fa972a1ab08f3129723d8851cbea272e0c215feb3fbe587e24",
+      "inspection": "XML/text/control inspection; independent Inkscape render; visual comparison sheet"
+    },
+    {
+      "path": "ui-artifacts/mockups/MP-MOCK-051-dark.svg",
+      "sha256": "691bc484c61363f7351096156cbe05eeb143f378ee39b0d5a88385b8beebc268",
+      "inspection": "XML/text/control inspection; independent Inkscape render; visual comparison sheet"
+    },
+    {
+      "path": "ui-artifacts/mockups/MP-MOCK-051.svg",
+      "sha256": "78faa0776b2abd8d6970d7186161012e1fb67e16a162f70dd1f5884c0be947d2",
+      "inspection": "XML/text/control inspection; independent Inkscape render; visual comparison sheet"
+    },
+    {
+      "path": "ui-artifacts/mockups/MP-MOCK-052-dark.svg",
+      "sha256": "713312f1dfa09533809513fcc7e881c00e0317341384685ea79a1b2472e2b2a0",
+      "inspection": "XML/text/control inspection; independent Inkscape render; visual comparison sheet"
+    },
+    {
+      "path": "ui-artifacts/mockups/MP-MOCK-052.svg",
+      "sha256": "e1a3d82f65258d0f613e28ed9a8d4697d8702fffec2e833b16faec9bda277ab1",
+      "inspection": "XML/text/control inspection; independent Inkscape render; visual comparison sheet"
+    },
+    {
+      "path": "ui-artifacts/mockups/MP-MOCK-053-dark.svg",
+      "sha256": "48c6c6ce043bae8e1ede5800ce6b05033aaa5dd20b5194f29918891458dbe10d",
+      "inspection": "XML/text/control inspection; independent Inkscape render; visual comparison sheet"
+    },
+    {
+      "path": "ui-artifacts/mockups/MP-MOCK-053.svg",
+      "sha256": "cf786f4ae8db54dd56d4271cf3a22f8aa6481164a2548c66342794d32d156435",
+      "inspection": "XML/text/control inspection; independent Inkscape render; visual comparison sheet"
+    },
+    {
+      "path": "ui-artifacts/mockups/MP-MOCK-054-dark.svg",
+      "sha256": "1e80e30df0adaf5135e5c955f009ce9dabbc4726b642df71ec37c49a7c137304",
+      "inspection": "XML/text/control inspection; independent Inkscape render; visual comparison sheet"
+    },
+    {
+      "path": "ui-artifacts/mockups/MP-MOCK-054.svg",
+      "sha256": "29eb24da6549d9de7e9ea0eb0521811e5887862948a02f032d02a9f2f7f9377e",
+      "inspection": "XML/text/control inspection; independent Inkscape render; visual comparison sheet"
+    },
+    {
+      "path": "ui-artifacts/mockups/MP-MOCK-055-dark.svg",
+      "sha256": "4970110627eff800587e0b6004f68020078e16f8c6b7240f42bddaac411dc477",
+      "inspection": "XML/text/control inspection; independent Inkscape render; visual comparison sheet"
+    },
+    {
+      "path": "ui-artifacts/mockups/MP-MOCK-055.svg",
+      "sha256": "292b1106ce2f5ef7c8ceb26c937bdfdbd315091d7f37666f24daefcc1361598e",
+      "inspection": "XML/text/control inspection; independent Inkscape render; visual comparison sheet"
+    },
+    {
+      "path": "ui-artifacts/mockups/MP-MOCK-056-dark.svg",
+      "sha256": "7209b589141b342074bb9524aab397df17b9633528d177f22ee8e9db32b1cedb",
+      "inspection": "XML/text/control inspection; independent Inkscape render; visual comparison sheet"
+    },
+    {
+      "path": "ui-artifacts/mockups/MP-MOCK-056.svg",
+      "sha256": "5b6619222afb5be25f5d4db5c2b7815f4ec63b0c2f3fb0e68324f697d18449fd",
+      "inspection": "XML/text/control inspection; independent Inkscape render; visual comparison sheet"
+    },
+    {
+      "path": "ui-artifacts/mockups/MP-MOCK-057-dark.svg",
+      "sha256": "6ed70c3cbd38bb4b5b230d1b515e4183064e845bae7f27bbcdac30da91cc25e7",
+      "inspection": "XML/text/control inspection; independent Inkscape render; visual comparison sheet"
+    },
+    {
+      "path": "ui-artifacts/mockups/MP-MOCK-057.svg",
+      "sha256": "6562dfe2cb346595e39c56a9c6fed72f1ae2f7e8288bad58e6ba03f6040c1936",
+      "inspection": "XML/text/control inspection; independent Inkscape render; visual comparison sheet"
+    },
+    {
+      "path": "ui-artifacts/mockups/MP-MOCK-058-dark.svg",
+      "sha256": "2ddc0d639da2b9957d2925309a919344516a9585beef531e980e913cc8721e22",
+      "inspection": "XML/text/control inspection; independent Inkscape render; visual comparison sheet"
+    },
+    {
+      "path": "ui-artifacts/mockups/MP-MOCK-058.svg",
+      "sha256": "c40db8f7c1f94419fcf313f6053c2c4555c1a8886adcf91ed8466cdb111db5cc",
+      "inspection": "XML/text/control inspection; independent Inkscape render; visual comparison sheet"
+    },
+    {
+      "path": "ui-artifacts/mockups/MP-MOCK-059-dark.svg",
+      "sha256": "979576bb9d5a15081cfde997f5623621ad49cb3020bb8e6a57540ec20171f135",
+      "inspection": "XML/text/control inspection; independent Inkscape render; visual comparison sheet"
+    },
+    {
+      "path": "ui-artifacts/mockups/MP-MOCK-059.svg",
+      "sha256": "9d02f2690029f5c620e4e46670511f1af6782d68ea5e531957d5e9c8e5bd8640",
+      "inspection": "XML/text/control inspection; independent Inkscape render; visual comparison sheet"
+    },
+    {
+      "path": "ui-artifacts/mockups/MP-MOCK-060-dark.svg",
+      "sha256": "0bc9160f498632ff4c9118a1f8e4d54aced02ebc3588ba9bd5126d1488ca847f",
+      "inspection": "XML/text/control inspection; independent Inkscape render; visual comparison sheet"
+    },
+    {
+      "path": "ui-artifacts/mockups/MP-MOCK-060.svg",
+      "sha256": "ce8bc844fbfae2acb1a023142dfb0579e3c8bb2ed167f7867b90edddcadf8cd1",
+      "inspection": "XML/text/control inspection; independent Inkscape render; visual comparison sheet"
+    },
+    {
+      "path": "ui-artifacts/mockups/MP-MOCK-061-dark.svg",
+      "sha256": "0b626604ea4c7a4c680f075451b2d17e8e73c18c7620d0103b308d98d0bae70f",
+      "inspection": "XML/text/control inspection; independent Inkscape render; visual comparison sheet"
+    },
+    {
+      "path": "ui-artifacts/mockups/MP-MOCK-061.svg",
+      "sha256": "bec6d8bb0406ada3ca51d24eae904f39c3e50310e7c83d9ba55e0fa7819e3948",
+      "inspection": "XML/text/control inspection; independent Inkscape render; visual comparison sheet"
+    },
+    {
+      "path": "ui-artifacts/mockups/MP-MOCK-062-dark.svg",
+      "sha256": "d426e508228c1c286e089e13509677a8f07a8efe656938fdfcdb4cea28a63b26",
+      "inspection": "XML/text/control inspection; independent Inkscape render; visual comparison sheet"
+    },
+    {
+      "path": "ui-artifacts/mockups/MP-MOCK-062.svg",
+      "sha256": "eb01b9c101dff401a50da6ec9c2fe1af349f4dc3d680c51b555146f9b9781aa7",
+      "inspection": "XML/text/control inspection; independent Inkscape render; visual comparison sheet"
+    },
+    {
+      "path": "ui-artifacts/mockups/MP-MOCK-063-dark.svg",
+      "sha256": "57756221ce52b9b1f5d901c538e730395aca6c7e89b5fbccf1739d442a45d17a",
+      "inspection": "XML/text/control inspection; independent Inkscape render; visual comparison sheet"
+    },
+    {
+      "path": "ui-artifacts/mockups/MP-MOCK-063.svg",
+      "sha256": "f54ec2ff020d3af88b793aa259c8beb9e7d337d392e872305424c793f699f6d5",
+      "inspection": "XML/text/control inspection; independent Inkscape render; visual comparison sheet"
+    },
+    {
+      "path": "ui-artifacts/mockups/MP-MOCK-064-dark.svg",
+      "sha256": "1bafa6fcde2da93b978ba96b6f551d458cacf154a6c2110c58bd4321b5ba3b0c",
+      "inspection": "XML/text/control inspection; independent Inkscape render; visual comparison sheet"
+    },
+    {
+      "path": "ui-artifacts/mockups/MP-MOCK-064.svg",
+      "sha256": "63219b55c88330ad3c722c23c7828e7db7d88b497d6c65939a3bf9597993ccdd",
+      "inspection": "XML/text/control inspection; independent Inkscape render; visual comparison sheet"
+    },
+    {
+      "path": "ui-artifacts/mockups/MP-MOCK-065-dark.svg",
+      "sha256": "70643d90b87611e02d88df8ea0bcee46a9fe622ce21d8db8f337019ef53198f0",
+      "inspection": "XML/text/control inspection; independent Inkscape render; visual comparison sheet"
+    },
+    {
+      "path": "ui-artifacts/mockups/MP-MOCK-065.svg",
+      "sha256": "6ff2672030e8e4d2b078dc44092288c587ca5dfa7dc5941a00b57f7c3bc6fe71",
+      "inspection": "XML/text/control inspection; independent Inkscape render; visual comparison sheet"
+    },
+    {
+      "path": "ui-artifacts/mockups/MP-MOCK-066-dark.svg",
+      "sha256": "6ae8180b9d89ac1308c5af32fb648fce2e98d91a58eb400428328487de3b380a",
+      "inspection": "XML/text/control inspection; independent Inkscape render; visual comparison sheet"
+    },
+    {
+      "path": "ui-artifacts/mockups/MP-MOCK-066.svg",
+      "sha256": "a3ac370460c641b5cb9c3d6efc2d7977404eae94c7303d9615115a6fd2ca0d25",
+      "inspection": "XML/text/control inspection; independent Inkscape render; visual comparison sheet"
+    },
+    {
+      "path": "ui-artifacts/mockups/MP-MOCK-067-dark.svg",
+      "sha256": "f8237899fc1341c5509ca303311528cd3c8bef5ee78913fead8d1789c9374835",
+      "inspection": "XML/text/control inspection; independent Inkscape render; visual comparison sheet"
+    },
+    {
+      "path": "ui-artifacts/mockups/MP-MOCK-067.svg",
+      "sha256": "e88b7c034727fe33b1ee288ac690e691bcb9a55cbbeebec70c9181ad287669d8",
+      "inspection": "XML/text/control inspection; independent Inkscape render; visual comparison sheet"
+    },
+    {
+      "path": "ui-artifacts/mockups/MP-MOCK-068-dark.svg",
+      "sha256": "c8f21c6e9bfd7391cfdfb79aa88b352eac071af73f14d61a6e7d56199d6c390f",
+      "inspection": "XML/text/control inspection; independent Inkscape render; visual comparison sheet"
+    },
+    {
+      "path": "ui-artifacts/mockups/MP-MOCK-068.svg",
+      "sha256": "5486739909ca42cf12f058b3aa6eb02398ae8df7199bc86f77f4dc00070162c8",
+      "inspection": "XML/text/control inspection; independent Inkscape render; visual comparison sheet"
+    },
+    {
+      "path": "ui-artifacts/mockups/MP-MOCK-069-dark.svg",
+      "sha256": "6d2f1c9a3287430866eb5a9dcb06fa3c1891eab207bcebc7511b35f5c3743264",
+      "inspection": "XML/text/control inspection; independent Inkscape render; visual comparison sheet"
+    },
+    {
+      "path": "ui-artifacts/mockups/MP-MOCK-069.svg",
+      "sha256": "1f0941b735aa816fa5062d33a6103880aae92096a31a4fbbba5e85c09b0e290a",
+      "inspection": "XML/text/control inspection; independent Inkscape render; visual comparison sheet"
+    },
+    {
+      "path": "ui-artifacts/mockups/MP-MOCK-070-dark.svg",
+      "sha256": "5827c62223ac406b283adab8fade6940e4dcdab634aeedd968259d4bf01244cc",
+      "inspection": "XML/text/control inspection; independent Inkscape render; visual comparison sheet"
+    },
+    {
+      "path": "ui-artifacts/mockups/MP-MOCK-070.svg",
+      "sha256": "568c21a442de6e326b0591833d842f8975f8ff64c87687f0ab94b30140d0c253",
+      "inspection": "XML/text/control inspection; independent Inkscape render; visual comparison sheet"
+    },
+    {
+      "path": "ui-artifacts/mockups/MP-MOCK-071-dark.svg",
+      "sha256": "7149d3b7c5be09809b22f4b81b6fc085b910dd5eadda674c5d94cac6aefbf037",
+      "inspection": "XML/text/control inspection; independent Inkscape render; visual comparison sheet"
+    },
+    {
+      "path": "ui-artifacts/mockups/MP-MOCK-071.svg",
+      "sha256": "a8f30cae0d3ee0066da82466bc8dde08bcb162ac31ac3908e8b993a344dbb323",
+      "inspection": "XML/text/control inspection; independent Inkscape render; visual comparison sheet"
+    },
+    {
+      "path": "ui-artifacts/mockups/MP-MOCK-072-dark.svg",
+      "sha256": "4876b8e8ebb376ea1ba133dae56a4edaa6bcf053c7c6a6409893814fe98866bf",
+      "inspection": "XML/text/control inspection; independent Inkscape render; visual comparison sheet"
+    },
+    {
+      "path": "ui-artifacts/mockups/MP-MOCK-072.svg",
+      "sha256": "d0ef8afbab474d8929f033df998cb5ffc38db09556e267a9d9a4a28e78da7003",
+      "inspection": "XML/text/control inspection; independent Inkscape render; visual comparison sheet"
+    },
+    {
+      "path": "ui-artifacts/mockups/MP-MOCK-073-dark.svg",
+      "sha256": "396284ca73414e4ce46d790967ca102b2dfdd09af8e767e2e9754268363980a0",
+      "inspection": "XML/text/control inspection; independent Inkscape render; visual comparison sheet"
+    },
+    {
+      "path": "ui-artifacts/mockups/MP-MOCK-073.svg",
+      "sha256": "e77ba6022fc28f5efd5dd0ead2e5afe7d1362fa7278d8516a7d125d042ad5f63",
+      "inspection": "XML/text/control inspection; independent Inkscape render; visual comparison sheet"
+    },
+    {
+      "path": "ui-artifacts/mockups/MP-MOCK-074-dark.svg",
+      "sha256": "10898150c2f64e13841d84ae34a1286b941d8c0bd6c091c03f6dbdb89ed96f7f",
+      "inspection": "XML/text/control inspection; independent Inkscape render; visual comparison sheet"
+    },
+    {
+      "path": "ui-artifacts/mockups/MP-MOCK-074.svg",
+      "sha256": "32bbba00bb0d82169acb48a49c9737e02d9aa40410a326bb47948ba7f45702b0",
+      "inspection": "XML/text/control inspection; independent Inkscape render; visual comparison sheet"
+    },
+    {
+      "path": "ui-artifacts/mockups/MP-MOCK-075-dark.svg",
+      "sha256": "d7afe4906f2589c7a6fac8b27511c7a5e5f4a5acb76f98589fab51d4051c5d6c",
+      "inspection": "XML/text/control inspection; independent Inkscape render; visual comparison sheet"
+    },
+    {
+      "path": "ui-artifacts/mockups/MP-MOCK-075.svg",
+      "sha256": "708350a8518fdde17330b9a26849337594a283fdf201b81027f2f05e8dc9eaa1",
+      "inspection": "XML/text/control inspection; independent Inkscape render; visual comparison sheet"
+    },
+    {
+      "path": "ui-artifacts/mockups/MP-MOCK-076-dark.svg",
+      "sha256": "64e5c8f65dc4d5b191780dc17723759c4f692ced135f3e471b25a7d38fb9c6c7",
+      "inspection": "XML/text/control inspection; independent Inkscape render; visual comparison sheet"
+    },
+    {
+      "path": "ui-artifacts/mockups/MP-MOCK-076.svg",
+      "sha256": "4e8efb8d541f9580328fd1c34b3713f186ee467e9c1ac12cec31fbc70d2982c9",
+      "inspection": "XML/text/control inspection; independent Inkscape render; visual comparison sheet"
+    },
+    {
+      "path": "ui-artifacts/mockups/MP-MOCK-077-dark.svg",
+      "sha256": "84b51bfd80f53255a5729813b1e849fea47f39998710a03e91dbbaadea75fcf8",
+      "inspection": "XML/text/control inspection; independent Inkscape render; visual comparison sheet"
+    },
+    {
+      "path": "ui-artifacts/mockups/MP-MOCK-077.svg",
+      "sha256": "ae6ea70cdfc414701f2bbe96d4c9196da4adf135064a899fb339591f5e7ae1ea",
+      "inspection": "XML/text/control inspection; independent Inkscape render; visual comparison sheet"
+    },
+    {
+      "path": "ui-artifacts/mockups/MP-MOCK-078-dark.svg",
+      "sha256": "a4d0646926af840a8b28d765ac9055b52beeb94f2ee82dd8ea0694b711e51dfb",
+      "inspection": "XML/text/control inspection; independent Inkscape render; visual comparison sheet"
+    },
+    {
+      "path": "ui-artifacts/mockups/MP-MOCK-078.svg",
+      "sha256": "5e3cf0b7cdd82570383eab8e70ff023edeb21904a0dc267ee7eba21a5b39f513",
+      "inspection": "XML/text/control inspection; independent Inkscape render; visual comparison sheet"
+    },
+    {
+      "path": "ui-artifacts/mockups/MP-MOCK-079-dark.svg",
+      "sha256": "c1fa963a64ffa17ed2e6e1c15a2d95b51f10920ddf78431cf68838c3d28923dc",
+      "inspection": "XML/text/control inspection; independent Inkscape render; visual comparison sheet"
+    },
+    {
+      "path": "ui-artifacts/mockups/MP-MOCK-079.svg",
+      "sha256": "b56a55fbd51490fdb68658179d2478502fc1745fbf49c9f156c7b2abc6a40c9a",
+      "inspection": "XML/text/control inspection; independent Inkscape render; visual comparison sheet"
+    },
+    {
+      "path": "ui-artifacts/mockups/MP-MOCK-080-dark.svg",
+      "sha256": "4f9c783f448f3876aedcc2b8607a7d9ee29ed7264a56b5f0ba4f3d560841d18e",
+      "inspection": "XML/text/control inspection; independent Inkscape render; visual comparison sheet"
+    },
+    {
+      "path": "ui-artifacts/mockups/MP-MOCK-080.svg",
+      "sha256": "2f65ad8c5c26ad935ec3285913a6bc32f898f327c0a3cff36f31242f08906a12",
+      "inspection": "XML/text/control inspection; independent Inkscape render; visual comparison sheet"
+    },
+    {
+      "path": "ui-artifacts/mockups/MP-MOCK-081-dark.svg",
+      "sha256": "4c947083ab7e35973a4161756ff82c8088e8a4ea61d122d5bfbb24038344cb12",
+      "inspection": "XML/text/control inspection; independent Inkscape render; visual comparison sheet"
+    },
+    {
+      "path": "ui-artifacts/mockups/MP-MOCK-081.svg",
+      "sha256": "ee1c5c4eeb8ec5ee258654e4f7d091a13fd826642dd8f1e266f7bca15e6c3aec",
+      "inspection": "XML/text/control inspection; independent Inkscape render; visual comparison sheet"
+    },
+    {
+      "path": "ui-artifacts/mockups/MP-MOCK-082-dark.svg",
+      "sha256": "3c7c869eeba815037b0c6ba570ee464fca98aae786b95d996d3667ee7add8f71",
+      "inspection": "XML/text/control inspection; independent Inkscape render; visual comparison sheet"
+    },
+    {
+      "path": "ui-artifacts/mockups/MP-MOCK-082.svg",
+      "sha256": "ba84a77661f22adc1f5539fd01824c16a2711a313efa36daa1b589f068d91cf1",
+      "inspection": "XML/text/control inspection; independent Inkscape render; visual comparison sheet"
+    },
+    {
+      "path": "ui-artifacts/mockups/MP-MOCK-083-dark.svg",
+      "sha256": "c07ccd7ed95635c6c1542838dab8289d54fcbbd330349b78846ef96c4d4f8c7a",
+      "inspection": "XML/text/control inspection; independent Inkscape render; visual comparison sheet"
+    },
+    {
+      "path": "ui-artifacts/mockups/MP-MOCK-083.svg",
+      "sha256": "60decde682cb69bbf4ab292005d7520cc5b060e9f416093011754383c080fdf0",
+      "inspection": "XML/text/control inspection; independent Inkscape render; visual comparison sheet"
+    },
+    {
+      "path": "ui-artifacts/mockups/MP-MOCK-084-dark.svg",
+      "sha256": "45fdadfbe189dfdfa5a8437f2523d561fb84c3c889ac95b5a3550306d849cfc3",
+      "inspection": "XML/text/control inspection; independent Inkscape render; visual comparison sheet"
+    },
+    {
+      "path": "ui-artifacts/mockups/MP-MOCK-084.svg",
+      "sha256": "693a2fb7fe8ecba5f341e85a4a21cec172bb9a8ca86241ea43a2b44bb21532b3",
+      "inspection": "XML/text/control inspection; independent Inkscape render; visual comparison sheet"
+    },
+    {
+      "path": "ui-artifacts/mockups/MP-MOCK-085-dark.svg",
+      "sha256": "1a902c48072d141ffeda22d0e10cb83f3300be940b1635487d1d9ba9a4af4b63",
+      "inspection": "XML/text/control inspection; independent Inkscape render; visual comparison sheet"
+    },
+    {
+      "path": "ui-artifacts/mockups/MP-MOCK-085.svg",
+      "sha256": "fffe65d6a2f046be2c27afd12da69705ddffeea1190a65aa629b44b613f26529",
+      "inspection": "XML/text/control inspection; independent Inkscape render; visual comparison sheet"
+    },
+    {
+      "path": "ui-artifacts/mockups/MP-MOCK-086-dark.svg",
+      "sha256": "b80e30f185b51554fb36e3ece0962557a773316b7b48232038fc0c00f0a078ed",
+      "inspection": "XML/text/control inspection; independent Inkscape render; visual comparison sheet"
+    },
+    {
+      "path": "ui-artifacts/mockups/MP-MOCK-086.svg",
+      "sha256": "ae92462612df1b11faca09207038d02b63ba114581a8f03c8937bedc264ed73a",
+      "inspection": "XML/text/control inspection; independent Inkscape render; visual comparison sheet"
+    },
+    {
+      "path": "ui-artifacts/mockups/MP-MOCK-087-dark.svg",
+      "sha256": "31cfc3f23e5b13cf292a2bfca046d4d274c8c66a60cacddae7ccba9fff99c3c8",
+      "inspection": "XML/text/control inspection; independent Inkscape render; visual comparison sheet"
+    },
+    {
+      "path": "ui-artifacts/mockups/MP-MOCK-087.svg",
+      "sha256": "be62867f7443200652ad9d1571480555cabd37fa9a7b7e2307c0591dbb6faa34",
+      "inspection": "XML/text/control inspection; independent Inkscape render; visual comparison sheet"
+    },
+    {
+      "path": "ui-artifacts/mockups/MP-MOCK-088-dark.svg",
+      "sha256": "ac64d34b6f2ad42cca58eac86008d3758e61faa4830782140a80fe729f360430",
+      "inspection": "XML/text/control inspection; independent Inkscape render; visual comparison sheet"
+    },
+    {
+      "path": "ui-artifacts/mockups/MP-MOCK-088.svg",
+      "sha256": "7b5e853239880fb32befb838410816aeef6e6dc5992b1933868f3224a7255170",
+      "inspection": "XML/text/control inspection; independent Inkscape render; visual comparison sheet"
+    },
+    {
+      "path": "ui-artifacts/mockups/MP-MOCK-089-dark.svg",
+      "sha256": "dd73b420ec3556f9f1c8c0297077d88b5e2f7c462f7cbce2068f32c6abaa8fe7",
+      "inspection": "XML/text/control inspection; independent Inkscape render; visual comparison sheet"
+    },
+    {
+      "path": "ui-artifacts/mockups/MP-MOCK-089.svg",
+      "sha256": "ff8ca4d28e4619095845c31c7c51d0ecf1ac74e23dee1b8052cc3be80a3b515f",
+      "inspection": "XML/text/control inspection; independent Inkscape render; visual comparison sheet"
+    },
+    {
+      "path": "ui-artifacts/mockups/MP-MOCK-090-dark.svg",
+      "sha256": "8cd1cace72f54166587dec2434daa39da24392f4bf8a28bf671c4ffa5e18728a",
+      "inspection": "XML/text/control inspection; independent Inkscape render; visual comparison sheet"
+    },
+    {
+      "path": "ui-artifacts/mockups/MP-MOCK-090.svg",
+      "sha256": "94970d18592c8d48edf47defb1e1e44faff24f552d62eef3d1c5b9e1b9823579",
+      "inspection": "XML/text/control inspection; independent Inkscape render; visual comparison sheet"
+    },
+    {
+      "path": "ui-artifacts/mockups/MP-MOCK-091-dark.svg",
+      "sha256": "59cf3749348f535e745e7ba54f2d7ff1e53cb56e40027745c915e5b582094b79",
+      "inspection": "XML/text/control inspection; independent Inkscape render; visual comparison sheet"
+    },
+    {
+      "path": "ui-artifacts/mockups/MP-MOCK-091.svg",
+      "sha256": "bb53feb39f169de8e14ef81aca26339bf8df7e3835b666343b48f79e04f7807f",
+      "inspection": "XML/text/control inspection; independent Inkscape render; visual comparison sheet"
+    },
+    {
+      "path": "ui-artifacts/mockups/MP-MOCK-092-dark.svg",
+      "sha256": "fcf300605e7cc99eb4f5c8cc062340c9cbd71a4762e8bae212bc7700c31c4844",
+      "inspection": "XML/text/control inspection; independent Inkscape render; visual comparison sheet"
+    },
+    {
+      "path": "ui-artifacts/mockups/MP-MOCK-092.svg",
+      "sha256": "f1d878daf4acc00433cfbe455e9df03f820a167e5c1815bc6578ac177f94b625",
+      "inspection": "XML/text/control inspection; independent Inkscape render; visual comparison sheet"
+    },
+    {
+      "path": "ui-artifacts/mockups/MP-SPEC-001.html",
+      "sha256": "1e64dcb06d058c3aaa21d0dc65878472a7d2714b76738a498a189e3447928d4d",
+      "inspection": "Scoped authority or supporting evidence; see ui-review.md Section 2"
+    },
+    {
+      "path": "ui-artifacts/mockups/index.html",
+      "sha256": "295d7d44fb27701370bc65472f59771da1ce07ebe20906e51b70c46b4128e55b",
+      "inspection": "Scoped authority or supporting evidence; see ui-review.md Section 2"
+    },
+    {
+      "path": "ui-artifacts/mockups/mockup-index.json",
+      "sha256": "15e36121116b8c35233a27d5369b59f4aa62fa667db42588172ce569d334c968",
+      "inspection": "Scoped authority or supporting evidence; see ui-review.md Section 2"
+    },
+    {
+      "path": "ui-artifacts/mockups/review-checks.json",
+      "sha256": "e3b741817ba367eed4897a373d863d6d89da784409f9f991b3e51dd4f4dfab25",
+      "inspection": "Scoped authority or supporting evidence; see ui-review.md Section 2"
+    },
+    {
+      "path": "ui-artifacts/reference-screenshots.json",
+      "sha256": "f7e1525364ba918c0a5e9097e71093aeea366f9318d9499c94b9f4cab8df356d",
+      "inspection": "Complete reference identity/provenance registry inspected"
+    },
+    {
+      "path": "ui-artifacts/wireframes/WF-FRAME-001.svg",
+      "sha256": "eeebddf1ca6e7b555fe5db15f9da61d0ba3898a1d0dc835323268769e10c67f2",
+      "inspection": "XML/text/control inspection; independent Inkscape render; visual comparison sheet"
+    },
+    {
+      "path": "ui-artifacts/wireframes/WF-FRAME-002.svg",
+      "sha256": "9d46dda69386d97707d986767a6eb3470539ac19b8e4c572843914d9d992ca31",
+      "inspection": "XML/text/control inspection; independent Inkscape render; visual comparison sheet"
+    },
+    {
+      "path": "ui-artifacts/wireframes/WF-FRAME-003.svg",
+      "sha256": "19dff8e7facc2307ca95b1d5b7b1f599fb54d0dc3d839296693a6de9004680d6",
+      "inspection": "XML/text/control inspection; independent Inkscape render; visual comparison sheet"
+    },
+    {
+      "path": "ui-artifacts/wireframes/WF-FRAME-004.svg",
+      "sha256": "6c465ec2dcd81fa42acebf54591ea92cb79ecc3480f390cd8f75e4638f2f5633",
+      "inspection": "XML/text/control inspection; independent Inkscape render; visual comparison sheet"
+    },
+    {
+      "path": "ui-artifacts/wireframes/WF-FRAME-005.svg",
+      "sha256": "e8b6ba0cb3521138173ba442a13a3a5f8a447c6662957ddbcbd623e6a7d1a0c4",
+      "inspection": "XML/text/control inspection; independent Inkscape render; visual comparison sheet"
+    },
+    {
+      "path": "ui-artifacts/wireframes/WF-FRAME-006.svg",
+      "sha256": "2a5a8d9724234f066939bd55ccedfee49895e5e7d10e70494f26c48d3b21ccb2",
+      "inspection": "XML/text/control inspection; independent Inkscape render; visual comparison sheet"
+    },
+    {
+      "path": "ui-artifacts/wireframes/WF-FRAME-007.svg",
+      "sha256": "a212175ec0411ebb8a50cfd4fc0a5fc0ad3da3beabe20864bb0544228fe7bfbc",
+      "inspection": "XML/text/control inspection; independent Inkscape render; visual comparison sheet"
+    },
+    {
+      "path": "ui-artifacts/wireframes/WF-FRAME-008.svg",
+      "sha256": "9c4f0b7022c1753904935606f3d5ce72909f188fd8a6a29e6db27cc604fee24d",
+      "inspection": "XML/text/control inspection; independent Inkscape render; visual comparison sheet"
+    },
+    {
+      "path": "ui-artifacts/wireframes/WF-FRAME-009.svg",
+      "sha256": "4d77fe9a2d2a727f0d02a2f7901cb4cfd02bd26913a0c842185909c4e3c97ac6",
+      "inspection": "XML/text/control inspection; independent Inkscape render; visual comparison sheet"
+    },
+    {
+      "path": "ui-artifacts/wireframes/WF-FRAME-010.svg",
+      "sha256": "00258cd7b25e09941e90b5fc96aa20e29457c9786a63a6670940ac4b411578ab",
+      "inspection": "XML/text/control inspection; independent Inkscape render; visual comparison sheet"
+    },
+    {
+      "path": "ui-artifacts/wireframes/WF-FRAME-011.svg",
+      "sha256": "ac966add3109481fbf756d4adc01549c0c25ddb96182a403f63ae15697d4c155",
+      "inspection": "XML/text/control inspection; independent Inkscape render; visual comparison sheet"
+    },
+    {
+      "path": "ui-artifacts/wireframes/WF-FRAME-012.svg",
+      "sha256": "2e734151ff55e2ed2bcb92d91fab7ae3606a5ee83e7810262b9c4fbbe7cffb34",
+      "inspection": "XML/text/control inspection; independent Inkscape render; visual comparison sheet"
+    },
+    {
+      "path": "ui-artifacts/wireframes/WF-FRAME-013.svg",
+      "sha256": "1977c70e4ae8863a7ddb55fd892cfdbe5780f8f10d795618cfea69b4c7b0ddb0",
+      "inspection": "XML/text/control inspection; independent Inkscape render; visual comparison sheet"
+    },
+    {
+      "path": "ui-artifacts/wireframes/WF-FRAME-014.svg",
+      "sha256": "d3aea40a54953bc658cbe0b59b5e93d7747c1ac0313a6e646ab1433e5b2d2c94",
+      "inspection": "XML/text/control inspection; independent Inkscape render; visual comparison sheet"
+    },
+    {
+      "path": "ui-artifacts/wireframes/WF-FRAME-015.svg",
+      "sha256": "81e3dc7ae6ac00b198cc917f618b16d813805b427f8a4f3b00008dbe30303130",
+      "inspection": "XML/text/control inspection; independent Inkscape render; visual comparison sheet"
+    },
+    {
+      "path": "ui-artifacts/wireframes/WF-FRAME-016.svg",
+      "sha256": "289757616ee58c7509ecc49f0871444895e43b83c90183351755f5abb09b1365",
+      "inspection": "XML/text/control inspection; independent Inkscape render; visual comparison sheet"
+    },
+    {
+      "path": "ui-artifacts/wireframes/WF-FRAME-017.svg",
+      "sha256": "0f677701c1e4abebe595560e793b7bee91ae6e06bee31c4e27a5198d5042f76a",
+      "inspection": "XML/text/control inspection; independent Inkscape render; visual comparison sheet"
+    },
+    {
+      "path": "ui-artifacts/wireframes/WF-FRAME-018.svg",
+      "sha256": "d1d8cf4d5a836e7dceeb66547d38e0e14adbf82cdd4be8f31ada18cebd455c22",
+      "inspection": "XML/text/control inspection; independent Inkscape render; visual comparison sheet"
+    },
+    {
+      "path": "ui-artifacts/wireframes/WF-FRAME-019.svg",
+      "sha256": "38378cc060fec6b252c3f1191d3d10d9e3d7e723fc3ffc2bfeedab6730d2bbf4",
+      "inspection": "XML/text/control inspection; independent Inkscape render; visual comparison sheet"
+    },
+    {
+      "path": "ui-artifacts/wireframes/WF-FRAME-020.svg",
+      "sha256": "c368c9e4812f9fb7bea1344db7a8f51791dba67021c31b596b774ae49432ba66",
+      "inspection": "XML/text/control inspection; independent Inkscape render; visual comparison sheet"
+    },
+    {
+      "path": "ui-artifacts/wireframes/WF-FRAME-021.svg",
+      "sha256": "5dd92e8db3c3f7c9e894aa3502facd476eff61de5b93e70d86443e4d4c2af17b",
+      "inspection": "XML/text/control inspection; independent Inkscape render; visual comparison sheet"
+    },
+    {
+      "path": "ui-artifacts/wireframes/WF-FRAME-022.svg",
+      "sha256": "977cff17b8c417a9e6d6631e247c7b19a3c650bbb292d39e781b07a198d642d9",
+      "inspection": "XML/text/control inspection; independent Inkscape render; visual comparison sheet"
+    },
+    {
+      "path": "ui-artifacts/wireframes/WF-FRAME-023.svg",
+      "sha256": "f362bf249d01a8d6746ca59d87f7d0480dd99aefb99626751bfe8e909420bfd3",
+      "inspection": "XML/text/control inspection; independent Inkscape render; visual comparison sheet"
+    },
+    {
+      "path": "ui-artifacts/wireframes/WF-FRAME-024.svg",
+      "sha256": "c36c11099aacfc7f05ee280acb8ae1e8241230bb5ae1386bdd913523b2c472da",
+      "inspection": "XML/text/control inspection; independent Inkscape render; visual comparison sheet"
+    },
+    {
+      "path": "ui-artifacts/wireframes/WF-FRAME-025.svg",
+      "sha256": "75bca4b6ca7bdbfe667a39ccf1b833e59d4fa436d51c00df348ac6065cf9289f",
+      "inspection": "XML/text/control inspection; independent Inkscape render; visual comparison sheet"
+    },
+    {
+      "path": "ui-artifacts/wireframes/WF-FRAME-026.svg",
+      "sha256": "011753cbd58a1dc59e3425a977aca66c25783c0a0ab50d2d48b4f5393daab593",
+      "inspection": "XML/text/control inspection; independent Inkscape render; visual comparison sheet"
+    },
+    {
+      "path": "ui-artifacts/wireframes/WF-FRAME-027.svg",
+      "sha256": "8263fe4d4a2b1f36a5530b99589fee8d666ae7f258834dfdcff03dd812949439",
+      "inspection": "XML/text/control inspection; independent Inkscape render; visual comparison sheet"
+    },
+    {
+      "path": "ui-artifacts/wireframes/WF-FRAME-028.svg",
+      "sha256": "0066db22bbd30d4fdb09a224621b29968c5e18b9c728102371b89065337f2ac3",
+      "inspection": "XML/text/control inspection; independent Inkscape render; visual comparison sheet"
+    },
+    {
+      "path": "ui-artifacts/wireframes/WF-FRAME-029.svg",
+      "sha256": "f661d045fd808963beff272f0b2537858c67364e621041a709d0cce6ccbfb127",
+      "inspection": "XML/text/control inspection; independent Inkscape render; visual comparison sheet"
+    },
+    {
+      "path": "ui-artifacts/wireframes/WF-FRAME-030.svg",
+      "sha256": "c93af4a457a451ab19c5ded17d5694ae5c6ec2893a74efa60893e0587f6be81f",
+      "inspection": "XML/text/control inspection; independent Inkscape render; visual comparison sheet"
+    },
+    {
+      "path": "ui-artifacts/wireframes/WF-FRAME-031.svg",
+      "sha256": "846acdc247083aa4a9bb5f5af6af70f26ba06fe99caddf170a9c52de73db4190",
+      "inspection": "XML/text/control inspection; independent Inkscape render; visual comparison sheet"
+    },
+    {
+      "path": "ui-artifacts/wireframes/WF-FRAME-032.svg",
+      "sha256": "bde4ff798260ff677fca221ab04bd32b0a7f481d1349cf203175f08e2b31518c",
+      "inspection": "XML/text/control inspection; independent Inkscape render; visual comparison sheet"
+    },
+    {
+      "path": "ui-artifacts/wireframes/WF-FRAME-033.svg",
+      "sha256": "7b7075c10f0ded22fa79eccef60a3d3f06135896460bc345ba3c2399bb63bcfc",
+      "inspection": "XML/text/control inspection; independent Inkscape render; visual comparison sheet"
+    },
+    {
+      "path": "ui-artifacts/wireframes/WF-FRAME-034.svg",
+      "sha256": "e39b32e4a327b905d5ef82cad06a4d92d52c112120ccc58a525e12e5f0c57675",
+      "inspection": "XML/text/control inspection; independent Inkscape render; visual comparison sheet"
+    },
+    {
+      "path": "ui-artifacts/wireframes/WF-FRAME-035.svg",
+      "sha256": "af272f31c568c9e5cf58727e41f338ec8245d433897d22fa8a4cb732ff247bb8",
+      "inspection": "XML/text/control inspection; independent Inkscape render; visual comparison sheet"
+    },
+    {
+      "path": "ui-artifacts/wireframes/WF-FRAME-036.svg",
+      "sha256": "9d072e5e4a415b51a0f1a6eb627f813d0db48400e1e190e0936064fc1727ff00",
+      "inspection": "XML/text/control inspection; independent Inkscape render; visual comparison sheet"
+    },
+    {
+      "path": "ui-artifacts/wireframes/WF-FRAME-037.svg",
+      "sha256": "1c96bf1f1a39f6a3874a614d0be33c540a92fd7c6265a8547205293c251d2d0d",
+      "inspection": "XML/text/control inspection; independent Inkscape render; visual comparison sheet"
+    },
+    {
+      "path": "ui-artifacts/wireframes/WF-FRAME-038.svg",
+      "sha256": "8fbc9054e1a14979aa7460aef08819729677a8873e555abf4d6d4f49ea30718a",
+      "inspection": "XML/text/control inspection; independent Inkscape render; visual comparison sheet"
+    },
+    {
+      "path": "ui-artifacts/wireframes/WF-FRAME-039.svg",
+      "sha256": "ece575949cca0b3e4254ccedff2079afde4a460c1bc3d205cedd9023584be501",
+      "inspection": "XML/text/control inspection; independent Inkscape render; visual comparison sheet"
+    },
+    {
+      "path": "ui-artifacts/wireframes/WF-FRAME-040.svg",
+      "sha256": "371643ed7e1734eab05515497922ebd76d81c5be22741bdca4a8ff6ced2db492",
+      "inspection": "XML/text/control inspection; independent Inkscape render; visual comparison sheet"
+    },
+    {
+      "path": "ui-artifacts/wireframes/WF-FRAME-041.svg",
+      "sha256": "372ac425d1ea17abfad76368f00779c093bc1bff4eab2a983170a7322aaaae08",
+      "inspection": "XML/text/control inspection; independent Inkscape render; visual comparison sheet"
+    },
+    {
+      "path": "ui-artifacts/wireframes/WF-FRAME-042.svg",
+      "sha256": "af902636404482fa636c1efb9933bd74d6de0d9c235078a08cfc267aa9689428",
+      "inspection": "XML/text/control inspection; independent Inkscape render; visual comparison sheet"
+    },
+    {
+      "path": "ui-artifacts/wireframes/WF-FRAME-043.svg",
+      "sha256": "34c4894e9d55f498944c38299a8e9ea06600de668baa9c57705c25c354d4ac49",
+      "inspection": "XML/text/control inspection; independent Inkscape render; visual comparison sheet"
+    },
+    {
+      "path": "ui-artifacts/wireframes/WF-FRAME-044.svg",
+      "sha256": "4b20d787aaf660e1c0f4302efd18962353fa289282b03f79a22bc25b955c052d",
+      "inspection": "XML/text/control inspection; independent Inkscape render; visual comparison sheet"
+    },
+    {
+      "path": "ui-artifacts/wireframes/WF-FRAME-045.svg",
+      "sha256": "b0699e73142703a8e4464683d4e8ec2661281799b4cd59d563d6205db5d31dc2",
+      "inspection": "XML/text/control inspection; independent Inkscape render; visual comparison sheet"
+    },
+    {
+      "path": "ui-artifacts/wireframes/WF-FRAME-046.svg",
+      "sha256": "7b629ac20bb81ae909bc1035fb1bd53cc71430b7788dc2df88de79ecaaebb616",
+      "inspection": "XML/text/control inspection; independent Inkscape render; visual comparison sheet"
+    },
+    {
+      "path": "ui-artifacts/wireframes/WF-FRAME-047.svg",
+      "sha256": "6e886163644952d1049aef6eee7e50ba2615bfe5dd63abc776a9325965f31e67",
+      "inspection": "XML/text/control inspection; independent Inkscape render; visual comparison sheet"
+    },
+    {
+      "path": "ui-artifacts/wireframes/WF-FRAME-048.svg",
+      "sha256": "53254e5eb578fb315c0ece76bb608fab04b5b41fb16697656921f645548c1b77",
+      "inspection": "XML/text/control inspection; independent Inkscape render; visual comparison sheet"
+    },
+    {
+      "path": "ui-artifacts/wireframes/WF-FRAME-049.svg",
+      "sha256": "5c611f77d2f7dd5c2341326eddf6b1266c446a48c4d616cb1133272252a62600",
+      "inspection": "XML/text/control inspection; independent Inkscape render; visual comparison sheet"
+    },
+    {
+      "path": "ui-artifacts/wireframes/WF-FRAME-050.svg",
+      "sha256": "4c08980e2bc7c33a6626dbd7d6a600abde8df98775b40b9692460f4ef2868fc0",
+      "inspection": "XML/text/control inspection; independent Inkscape render; visual comparison sheet"
+    },
+    {
+      "path": "ui-artifacts/wireframes/WF-FRAME-051.svg",
+      "sha256": "ad4b0f5edbed9d054b77b2fe8b3cc386d11265791b4f88da113cfac135c77dce",
+      "inspection": "XML/text/control inspection; independent Inkscape render; visual comparison sheet"
+    },
+    {
+      "path": "ui-artifacts/wireframes/WF-FRAME-052.svg",
+      "sha256": "244cbe22fff1352e30a35cba74e51cd69b301db72623751cfc2d9348d407e352",
+      "inspection": "XML/text/control inspection; independent Inkscape render; visual comparison sheet"
+    },
+    {
+      "path": "ui-artifacts/wireframes/WF-FRAME-053.svg",
+      "sha256": "eda0a791339ee17a2ceeffd1b7a9bd1f4d3242cfb5274ebda3ee2d33d1b57c9d",
+      "inspection": "XML/text/control inspection; independent Inkscape render; visual comparison sheet"
+    },
+    {
+      "path": "ui-artifacts/wireframes/WF-FRAME-054.svg",
+      "sha256": "e391f7c5bf4de34fffcdcb2bd20e4d603b7243c00fc384af13daf21d1d227559",
+      "inspection": "XML/text/control inspection; independent Inkscape render; visual comparison sheet"
+    },
+    {
+      "path": "ui-artifacts/wireframes/WF-FRAME-055.svg",
+      "sha256": "8c10f1710f94547d86f8db92a0ac47741e724c26490f54bd57eb09b81b6c7da9",
+      "inspection": "XML/text/control inspection; independent Inkscape render; visual comparison sheet"
+    },
+    {
+      "path": "ui-artifacts/wireframes/WF-FRAME-056.svg",
+      "sha256": "0b9aaca5a3035b78a0f62224d00fd221d3f53e18dd923b6a60b70c9b6adf12b6",
+      "inspection": "XML/text/control inspection; independent Inkscape render; visual comparison sheet"
+    },
+    {
+      "path": "ui-artifacts/wireframes/WF-FRAME-057.svg",
+      "sha256": "a3ba21d1f1c835d38f61d28d143a5356abd24622ff46f1bde4f168ec856d87c9",
+      "inspection": "XML/text/control inspection; independent Inkscape render; visual comparison sheet"
+    },
+    {
+      "path": "ui-artifacts/wireframes/WF-FRAME-058.svg",
+      "sha256": "4aafe02b8ae81f3bfd1ed8e2c0fd348b1d8a95c5ff3b51758bf9610be08947d5",
+      "inspection": "XML/text/control inspection; independent Inkscape render; visual comparison sheet"
+    },
+    {
+      "path": "ui-artifacts/wireframes/WF-FRAME-059.svg",
+      "sha256": "8c0321a94a0ed93bb5a9b2b1be087bb482a65218fbe47f30eab458e7d288c178",
+      "inspection": "XML/text/control inspection; independent Inkscape render; visual comparison sheet"
+    },
+    {
+      "path": "ui-artifacts/wireframes/WF-FRAME-060.svg",
+      "sha256": "994d4a2e0908effb7488e483db57c8046357a48fd97631b2881af065d192ab5b",
+      "inspection": "XML/text/control inspection; independent Inkscape render; visual comparison sheet"
+    },
+    {
+      "path": "ui-artifacts/wireframes/WF-FRAME-061.svg",
+      "sha256": "a3b48ce7e245e0b53a23890179c38a1ada5f97c1ea4ed1de0f42ecc122d48c28",
+      "inspection": "XML/text/control inspection; independent Inkscape render; visual comparison sheet"
+    },
+    {
+      "path": "ui-artifacts/wireframes/WF-FRAME-062.svg",
+      "sha256": "2f2d2dd007760468e1e64bb0a4e1046ef3e886828038c6ed0198327e2c0edcd8",
+      "inspection": "XML/text/control inspection; independent Inkscape render; visual comparison sheet"
+    },
+    {
+      "path": "ui-artifacts/wireframes/WF-FRAME-063.svg",
+      "sha256": "ccf9c3d6f9aef479c3bf7aaacda77aef8b9639fe59a08c47f124ded55f47eae5",
+      "inspection": "XML/text/control inspection; independent Inkscape render; visual comparison sheet"
+    },
+    {
+      "path": "ui-artifacts/wireframes/WF-FRAME-064.svg",
+      "sha256": "761576ddbb5da3ba135b1c804679b47da66366bbc70363f801698862493a3d2b",
+      "inspection": "XML/text/control inspection; independent Inkscape render; visual comparison sheet"
+    },
+    {
+      "path": "ui-artifacts/wireframes/WF-FRAME-065.svg",
+      "sha256": "3f89569060c3df197522185564e71b65598f6bb4dd5393817ab70cce27420149",
+      "inspection": "XML/text/control inspection; independent Inkscape render; visual comparison sheet"
+    },
+    {
+      "path": "ui-artifacts/wireframes/WF-FRAME-066.svg",
+      "sha256": "e320da309150be7cd2c76867be701443631d0d5aaf5d28188ba32b7741f9dea8",
+      "inspection": "XML/text/control inspection; independent Inkscape render; visual comparison sheet"
+    },
+    {
+      "path": "ui-artifacts/wireframes/WF-FRAME-067.svg",
+      "sha256": "09bd88ad7960613eed6785cfc5b78a94607bfc3e3c2c1244687d3837d4421a67",
+      "inspection": "XML/text/control inspection; independent Inkscape render; visual comparison sheet"
+    },
+    {
+      "path": "ui-artifacts/wireframes/WF-FRAME-068.svg",
+      "sha256": "58119baebd1eab8564d8a81a7d7d8c61e964c8ef296f4f82018f950fa952f5bf",
+      "inspection": "XML/text/control inspection; independent Inkscape render; visual comparison sheet"
+    },
+    {
+      "path": "ui-artifacts/wireframes/WF-FRAME-069.svg",
+      "sha256": "b8b0a18ec52bee8ee02101cd7eda4024e55ff911efec00a39b45576a54c2452c",
+      "inspection": "XML/text/control inspection; independent Inkscape render; visual comparison sheet"
+    },
+    {
+      "path": "ui-artifacts/wireframes/WF-FRAME-070.svg",
+      "sha256": "88a86e9a2a80a6e610a5248f8755b798525ff008a631a18004a9a98cd579ef06",
+      "inspection": "XML/text/control inspection; independent Inkscape render; visual comparison sheet"
+    },
+    {
+      "path": "ui-artifacts/wireframes/WF-FRAME-071.svg",
+      "sha256": "0a9c3c548bb109a2bdba4152b1783a063982062df1ce6c85b8017b897d44c7c1",
+      "inspection": "XML/text/control inspection; independent Inkscape render; visual comparison sheet"
+    },
+    {
+      "path": "ui-artifacts/wireframes/WF-FRAME-072.svg",
+      "sha256": "7557a9145db2337824d0b3e809ea5d9ca4cd09c57ee0be4bb619a0233d4563d2",
+      "inspection": "XML/text/control inspection; independent Inkscape render; visual comparison sheet"
+    },
+    {
+      "path": "ui-artifacts/wireframes/WF-FRAME-073.svg",
+      "sha256": "9456654d4a7e213d2c7cd7450aa720a0182dff29b1eeb9c6240774d5c0876927",
+      "inspection": "XML/text/control inspection; independent Inkscape render; visual comparison sheet"
+    },
+    {
+      "path": "ui-artifacts/wireframes/WF-FRAME-074.svg",
+      "sha256": "81c7a8ce03dc76db4117669a48917e5fc2313de64d4c06d6bbccc3461fb3de28",
+      "inspection": "XML/text/control inspection; independent Inkscape render; visual comparison sheet"
+    },
+    {
+      "path": "ui-artifacts/wireframes/WF-FRAME-075.svg",
+      "sha256": "9e82e65514d6f1380adab710afb082146dce5b1c29d2d2e431df8bd4921f6542",
+      "inspection": "XML/text/control inspection; independent Inkscape render; visual comparison sheet"
+    },
+    {
+      "path": "ui-artifacts/wireframes/WF-FRAME-076.svg",
+      "sha256": "45f2e70b300979f290275368bc8c4d7ec974084e75707b724124ae3742e0068a",
+      "inspection": "XML/text/control inspection; independent Inkscape render; visual comparison sheet"
+    },
+    {
+      "path": "ui-artifacts/wireframes/WF-FRAME-077.svg",
+      "sha256": "df4e1bc1282d66b8caf13ca4f14e18b472b53167a1e8ad0119cce17d7e70e617",
+      "inspection": "XML/text/control inspection; independent Inkscape render; visual comparison sheet"
+    },
+    {
+      "path": "ui-artifacts/wireframes/WF-FRAME-078.svg",
+      "sha256": "d32aa24bb805582ec160fe77e66497b90394e8e8bbcc73ab7ef34f112df60086",
+      "inspection": "XML/text/control inspection; independent Inkscape render; visual comparison sheet"
+    },
+    {
+      "path": "ui-artifacts/wireframes/WF-FRAME-079.svg",
+      "sha256": "13a4e2ea24eb889a0321e5cca787dce493c2db9065c59fbf33842acd35db974d",
+      "inspection": "XML/text/control inspection; independent Inkscape render; visual comparison sheet"
+    },
+    {
+      "path": "ui-artifacts/wireframes/WF-FRAME-080.svg",
+      "sha256": "9bb1c94f9946b299a4a9adf9b8dbc79b0f59ae30f8de8d52a258352618ee94dc",
+      "inspection": "XML/text/control inspection; independent Inkscape render; visual comparison sheet"
+    },
+    {
+      "path": "ui-artifacts/wireframes/WF-FRAME-081.svg",
+      "sha256": "866b6e62618e32d9205b9147567e3e013673a7f9f06ecca9fb09ee260f6aa514",
+      "inspection": "XML/text/control inspection; independent Inkscape render; visual comparison sheet"
+    },
+    {
+      "path": "ui-artifacts/wireframes/WF-FRAME-082.svg",
+      "sha256": "4b76fe8c9716b6c7c5dc558c5f2447d6a7f26c92ebfafea622fd70b97135c1a5",
+      "inspection": "XML/text/control inspection; independent Inkscape render; visual comparison sheet"
+    },
+    {
+      "path": "ui-artifacts/wireframes/WF-FRAME-083.svg",
+      "sha256": "7b86ba04b7e411b96269e1fa9c66a5a64097d68f5721f07c00ddea94a8c5756f",
+      "inspection": "XML/text/control inspection; independent Inkscape render; visual comparison sheet"
+    },
+    {
+      "path": "ui-artifacts/wireframes/WF-FRAME-084.svg",
+      "sha256": "ebd39f5fa0a85828269bf6338888d9758322d746c50a769f8cc0dbd68f688ad5",
+      "inspection": "XML/text/control inspection; independent Inkscape render; visual comparison sheet"
+    },
+    {
+      "path": "ui-artifacts/wireframes/WF-FRAME-085.svg",
+      "sha256": "45669a95fd4a79e8127d569788d0eadc91e9d6bc9fcb866fb30fa7e217dea1e7",
+      "inspection": "XML/text/control inspection; independent Inkscape render; visual comparison sheet"
+    },
+    {
+      "path": "ui-artifacts/wireframes/WF-FRAME-086.svg",
+      "sha256": "c2bbe2395b3375c16809fbaf5d13eca847e85293225c09aed354a4138f5981b5",
+      "inspection": "XML/text/control inspection; independent Inkscape render; visual comparison sheet"
+    },
+    {
+      "path": "ui-artifacts/wireframes/WF-FRAME-087.svg",
+      "sha256": "dbd9acc038408cab1cbfd024acf5b5ec36ea87237325546273c1a049c150ef12",
+      "inspection": "XML/text/control inspection; independent Inkscape render; visual comparison sheet"
+    },
+    {
+      "path": "ui-artifacts/wireframes/WF-FRAME-088.svg",
+      "sha256": "34da06db4cccbb5ce84f234e0e83e183f4f7a95778430a800f4ebb7772b81447",
+      "inspection": "XML/text/control inspection; independent Inkscape render; visual comparison sheet"
+    },
+    {
+      "path": "ui-artifacts/wireframes/WF-FRAME-089.svg",
+      "sha256": "bf4c58c0b4ae5f7462566c9d7e999ff87ea26e7c9d67edf6beb2db2abe89242e",
+      "inspection": "XML/text/control inspection; independent Inkscape render; visual comparison sheet"
+    },
+    {
+      "path": "ui-artifacts/wireframes/WF-FRAME-090.svg",
+      "sha256": "390f2de5283beec666ae778d0740237d1ce35ea9e710d24aecab5f67de458823",
+      "inspection": "XML/text/control inspection; independent Inkscape render; visual comparison sheet"
+    },
+    {
+      "path": "ui-artifacts/wireframes/WF-FRAME-091.svg",
+      "sha256": "ea2f3afff99c4f19c7de65450346774578c292b287e36b77a7024dd431ba686b",
+      "inspection": "XML/text/control inspection; independent Inkscape render; visual comparison sheet"
+    },
+    {
+      "path": "ui-artifacts/wireframes/WF-FRAME-092.svg",
+      "sha256": "fe2b7cc6986671eca95e02e79538cd8fe91f76c8455acb52dc5841f18e938b5e",
+      "inspection": "XML/text/control inspection; independent Inkscape render; visual comparison sheet"
+    },
+    {
+      "path": "ui-artifacts/wireframes/frame-index.json",
+      "sha256": "459261e275f880215997635396ad9f023245b6c75356cf03728a78f6e8e88630",
+      "inspection": "Scoped authority or supporting evidence; see ui-review.md Section 2"
+    },
+    {
+      "path": "ui-artifacts/wireframes/index.html",
+      "sha256": "c7212c0115fb41bfa064375b68b3f2b8401520dcbf7515c20a47717982e79fa3",
+      "inspection": "Scoped authority or supporting evidence; see ui-review.md Section 2"
+    },
+    {
+      "path": "ui-artifacts/wireframes/replay-review.html",
+      "sha256": "2bd55a8a4506ec84950b585d6a47c1b26edb31a691fac1f0f57194e2127e426d",
+      "inspection": "Scoped authority or supporting evidence; see ui-review.md Section 2"
+    },
+    {
+      "path": "ui-dossier.md",
+      "sha256": "11fd03b18893ed9eb9948bbbca45bd158d7d2736ef816b41e5a370ae990433be",
+      "inspection": "Complete"
+    },
+    {
+      "path": "visual-system.md",
+      "sha256": "c98274094adfdf244af066dc9974d63bbad1e2dbc39cad60b03900adeb150498",
+      "inspection": "Complete"
+    }
+  ]
+}

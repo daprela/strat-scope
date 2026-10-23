@@ -1,0 +1,16 @@
+{
+  "profile": "~/.local/share/strat-scope/browser-profile (persistent graphical Chromium)",
+  "browser": "153.0.8010.12",
+  "origin": "https://127.0.0.1:4111/",
+  "secureContext": true,
+  "tls": {
+    "issuer": "Strat Scope Local Development CA",
+    "protocol": "TLS 1.3",
+    "subjectName": "Strat Scope Loopback",
+    "validFrom": 1792717408,
+    "validTo": 1824253408
+  },
+  "certificateBypass": false,
+  "trust": "Installed host user NSS database; no profile-only CA bundle",
+  "limits": "This verified profile can be reopened with make browser. Other browser profiles are not certified."
+}

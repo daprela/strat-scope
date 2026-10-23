@@ -1,0 +1,282 @@
+{
+  "version": "MP-SET-001-r9",
+  "renderer": "Inkscape; offline authored SVG only",
+  "fresh_render_count": 44,
+  "fresh_renders": [
+    {
+      "source": "MP-MOCK-068.svg",
+      "source_sha256": "57bb10616f047d7973119a932e008f3cf5e77164a5f8d3c933397a66e354a193",
+      "png": "previews/MP-MOCK-068.png",
+      "png_sha256": "6d3aef830d1dcb8010787255dc4d4b87f2f4e47734e05546828e8e8903c8cf28"
+    },
+    {
+      "source": "previews/MP-MOCK-068-product.svg",
+      "source_sha256": "888f56d0072ecd39b1b992053dabe0c71405a30f42ceae11a4399a17fd57f360",
+      "png": "previews/MP-MOCK-068-product.png",
+      "png_sha256": "5bf8f8718807523064bbcb1e8f6b5f0c19c81530f561ffd595c3f23c7cfaf2a3"
+    },
+    {
+      "source": "MP-MOCK-068-dark.svg",
+      "source_sha256": "707148ca6adb218fb0c20ff55bed1c3376817cf1b63c52be2cc132c8e9a1f86c",
+      "png": "previews/MP-MOCK-068-dark.png",
+      "png_sha256": "b140b8767a69729fb2dd9480b7b16b154be94d48c7de25682142870f3cf709b1"
+    },
+    {
+      "source": "previews/MP-MOCK-068-dark-product.svg",
+      "source_sha256": "a6d43c7fe3c53df46731c30fd96c10ee07014b89ef6e36228a20e2f969935a2c",
+      "png": "previews/MP-MOCK-068-dark-product.png",
+      "png_sha256": "f58324ccb1a1393caa725fc3282c4050b722def7e67287ec7a0d4611c5bbd00c"
+    },
+    {
+      "source": "MP-MOCK-093.svg",
+      "source_sha256": "19a805ac72eda1dc575795fdd35a367fbc0a856d0228163fb77232cfb77c5527",
+      "png": "previews/MP-MOCK-093.png",
+      "png_sha256": "73c9691b52f77356472bdcabc3a12fc8fa95ad0ff7f1ab61bbe1f4cf33a06982"
+    },
+    {
+      "source": "previews/MP-MOCK-093-product.svg",
+      "source_sha256": "03f089581d484982f83fc940371522d8be1544b0958b28991cb9f515b0f1d041",
+      "png": "previews/MP-MOCK-093-product.png",
+      "png_sha256": "d2fe01d1ac3023782e5a0c2b30ee6eed65e8e67338e80d401e66b25529746657"
+    },
+    {
+      "source": "MP-MOCK-093-dark.svg",
+      "source_sha256": "4cd1f4b0a21095182c33ed2bdd12d9c95a9270f64ef734a328b04e0eebc9d2f4",
+      "png": "previews/MP-MOCK-093-dark.png",
+      "png_sha256": "20847ff5e3f6641ff30d1c2f75253219fc0ac049e96fd3eb63d2fbcf87a75db0"
+    },
+    {
+      "source": "previews/MP-MOCK-093-dark-product.svg",
+      "source_sha256": "80274cbbf3dfce396d2a0e4da67d9a22fe4ebb2b5e0bb1ba2f1db68cd2d6197f",
+      "png": "previews/MP-MOCK-093-dark-product.png",
+      "png_sha256": "e4cf31d0483ccff685ca1924ca46ea3a0c3cfce64580d978eb2d8eb01c71439b"
+    },
+    {
+      "source": "MP-MOCK-094.svg",
+      "source_sha256": "91ff6c8effda74636127991bb0228db62decb742f05dd3ac1c19c4f9764350fe",
+      "png": "previews/MP-MOCK-094.png",
+      "png_sha256": "93275ea2720fb3f236a21694d3bb0984da0bfe3f54141c14a69756f0ea9c53c4"
+    },
+    {
+      "source": "previews/MP-MOCK-094-product.svg",
+      "source_sha256": "b9e9b220aa063540ac391bf074a84398ed0a3c7064730b9ccb453daf0a848f9d",
+      "png": "previews/MP-MOCK-094-product.png",
+      "png_sha256": "f2c4f5382c11f65f9a2f73fdd5854d51c6976a9a006d45b17b518ced37b48418"
+    },
+    {
+      "source": "MP-MOCK-094-dark.svg",
+      "source_sha256": "4fa457d5027b016d12a35255f7c51d00d4f4158a7761a4c3ad56907334735e8d",
+      "png": "previews/MP-MOCK-094-dark.png",
+      "png_sha256": "0aec7705b8b3867baffc65aa904d2ab96342476da8e185aa3d2f75524e7643dc"
+    },
+    {
+      "source": "previews/MP-MOCK-094-dark-product.svg",
+      "source_sha256": "69e41df49ebc1cfa3a4b7b1a39f67c8e3c809f4f46ac30567fde1b56a66fd2ec",
+      "png": "previews/MP-MOCK-094-dark-product.png",
+      "png_sha256": "c93109c04295007c8453457abb0ef173b75a9c7883d5b40d2689ef506f7f8f01"
+    },
+    {
+      "source": "MP-MOCK-095.svg",
+      "source_sha256": "2f6efbe5133ff87fdcc5fe635c9430e568290875780c573e254a9a92e7e1be70",
+      "png": "previews/MP-MOCK-095.png",
+      "png_sha256": "271af838133c1c270ccb39b1cf225c2dcc26b4005a84c72c2942de1aee97faf0"
+    },
+    {
+      "source": "previews/MP-MOCK-095-product.svg",
+      "source_sha256": "95c763bd11f837158938dfbc9826751aad2b9e3405892fa43a357bc9696e6e90",
+      "png": "previews/MP-MOCK-095-product.png",
+      "png_sha256": "cc2dad6125b4d7672adc699eb81f8370c08f3c4691d57351f5bee0df2af375d3"
+    },
+    {
+      "source": "MP-MOCK-095-dark.svg",
+      "source_sha256": "c57f4f89570ed53cbdac9f220a94ef3cf7188195ee32cfd9b97324a80a4314f8",
+      "png": "previews/MP-MOCK-095-dark.png",
+      "png_sha256": "10a6421540609a716c2224b9f4efa80c94c3861cfc388db8b85fd6bb9580b4c9"
+    },
+    {
+      "source": "previews/MP-MOCK-095-dark-product.svg",
+      "source_sha256": "65fdb56a42cc8304cd05e244aa3cda0d59f1688b8d03d81645b92bdaf9317e04",
+      "png": "previews/MP-MOCK-095-dark-product.png",
+      "png_sha256": "067057132b1edb866283e03322e6fd8d17d67d729f225b05cd74de0181c50da0"
+    },
+    {
+      "source": "MP-MOCK-107.svg",
+      "source_sha256": "88b9a3c9ebcf48729389faafea26b2cea749237cd044a9f7da43782ae25d8111",
+      "png": "previews/MP-MOCK-107.png",
+      "png_sha256": "cb8a160e5d844f18122700ead725dacbc6677257ca52e995655cf76076059579"
+    },
+    {
+      "source": "previews/MP-MOCK-107-product.svg",
+      "source_sha256": "89426ce21950526bad4ee1b08ab9353e7bab3756a846d394ab2ea74c7082d5c0",
+      "png": "previews/MP-MOCK-107-product.png",
+      "png_sha256": "64756bc21eebdeb21f6659940d4d38766764fffac29a9b77af32262373a46e37"
+    },
+    {
+      "source": "MP-MOCK-107-dark.svg",
+      "source_sha256": "143495d51238f6cae6f10336ef0ae0f39e982ed3e6a9bdfef84c3cc66e59fc9a",
+      "png": "previews/MP-MOCK-107-dark.png",
+      "png_sha256": "2969b556a247d98b4f73a2f2d6b810af98189f45576fdff254daab59f2db158d"
+    },
+    {
+      "source": "previews/MP-MOCK-107-dark-product.svg",
+      "source_sha256": "8a0c252ec65d0a4de42549b9905a8c13d6d8543a6447b5f45f3179962a42829a",
+      "png": "previews/MP-MOCK-107-dark-product.png",
+      "png_sha256": "ef80a77f55acc37581fb6a983b77c4a584a1f02764ff896ac766f4af09ed785e"
+    },
+    {
+      "source": "MP-MOCK-108.svg",
+      "source_sha256": "5e16a732f7080a70580c5ec91043b4b8068b4bd8c7741407dc29a72a1905c34d",
+      "png": "previews/MP-MOCK-108.png",
+      "png_sha256": "6b3819b7c5ff61db62fde4e2290a81382ae623ece538924fb0bf85eba1ca39bb"
+    },
+    {
+      "source": "previews/MP-MOCK-108-product.svg",
+      "source_sha256": "13899e0fd53bf3af549c057b05de0ed46d003084503d8d45ef953e7425a205ad",
+      "png": "previews/MP-MOCK-108-product.png",
+      "png_sha256": "354994932dcda7ba80a1f5c7f5ccbceb09546876f33cf048b7434cd59b68c6f4"
+    },
+    {
+      "source": "MP-MOCK-108-dark.svg",
+      "source_sha256": "4c695b79a5b3a315a95c4d040089c9dc31f6f2c8b1b3dc755dc5a0e71269c0ea",
+      "png": "previews/MP-MOCK-108-dark.png",
+      "png_sha256": "fbd0363583c9d8c394c12f27a4d1e094a17aa6f22e29b33a64aee930fae6f7b6"
+    },
+    {
+      "source": "previews/MP-MOCK-108-dark-product.svg",
+      "source_sha256": "4dbec3377b3035180d39a19cf62d956ebaa477566d56c3dda7fd460294b1fae4",
+      "png": "previews/MP-MOCK-108-dark-product.png",
+      "png_sha256": "e4e8c5316a93fd5305dd1fd23af88e757bece2e903522cd157a9b12da5a77d87"
+    },
+    {
+      "source": "MP-MOCK-109.svg",
+      "source_sha256": "fb0f15452fe204f5415f049ebe3994cbc82f2a646d7e48d972726d382edca68b",
+      "png": "previews/MP-MOCK-109.png",
+      "png_sha256": "792a079a99caac8cbcbf04a3eb24f5a246f4eddd48a3895ed2ab0b7b3248eed2"
+    },
+    {
+      "source": "previews/MP-MOCK-109-product.svg",
+      "source_sha256": "d697bfbb524c63e5bf42b068a7da65d147e6b522cb99ec0f1b49f375d4555846",
+      "png": "previews/MP-MOCK-109-product.png",
+      "png_sha256": "cdedfa08aab59ff3cf1454c96d2ddc9a63053cc56cf00c4848cc976f999b813f"
+    },
+    {
+      "source": "MP-MOCK-109-dark.svg",
+      "source_sha256": "0aca8b31fc730ae0524f191dad25761b8df771c98e31ffa576a4998783290979",
+      "png": "previews/MP-MOCK-109-dark.png",
+      "png_sha256": "8b9385b93122d174406c59405e1955777238e6c520cebe66bf079ec472125f67"
+    },
+    {
+      "source": "previews/MP-MOCK-109-dark-product.svg",
+      "source_sha256": "c0b9cfa7f19737698cd65a56bcf9b06bcf139772403d44685c1d560fe0c8f9ee",
+      "png": "previews/MP-MOCK-109-dark-product.png",
+      "png_sha256": "bd10e862310aadf8cd65a1fcd2f2790742c6c3a1bbf4f7a931c97090ae1410e5"
+    },
+    {
+      "source": "MP-MOCK-110.svg",
+      "source_sha256": "a40f1e60fdcbfd190811832bdd623edf4e06acd60afa7834bf1c2941ed72932c",
+      "png": "previews/MP-MOCK-110.png",
+      "png_sha256": "d4c0366bc70ef7cec1ddd90e3c104a7dcf102b600ad91b987d3ddf6669b63ff6"
+    },
+    {
+      "source": "previews/MP-MOCK-110-product.svg",
+      "source_sha256": "e85bbcc12533ed51a9a8a6d22a796258aa2bfa08376d080bd5da5483e10c97b9",
+      "png": "previews/MP-MOCK-110-product.png",
+      "png_sha256": "4788e33aa8d128e9e64d3a11cb6f1cd8d32ba8e3b9eddc28d36de9e841c169e5"
+    },
+    {
+      "source": "MP-MOCK-110-dark.svg",
+      "source_sha256": "8330c2412f05623dd2db0c8f80b915acdeef1aff23d6da2f9bbb64d2b10b9894",
+      "png": "previews/MP-MOCK-110-dark.png",
+      "png_sha256": "c4cd65cf59abdc5e791ca66d8bc6149cd6edfb1899068a630ce11fba98c08b06"
+    },
+    {
+      "source": "previews/MP-MOCK-110-dark-product.svg",
+      "source_sha256": "ef92460a325c0e208979b39977322f6701d023098a2fd1fb8e690a3b54bcd151",
+      "png": "previews/MP-MOCK-110-dark-product.png",
+      "png_sha256": "345fd1c576d7725bdbcdab5a3b24db4958ac1b802a211e7d7ab0f285a3cb6eea"
+    },
+    {
+      "source": "MP-MOCK-111.svg",
+      "source_sha256": "886056a5ffdc3938a66b42b9833696c15d22a662664a75cda0a14031b1733f9b",
+      "png": "previews/MP-MOCK-111.png",
+      "png_sha256": "191abfabbcf8c2ad70b88ed9b9051b1300977fb035f66704f7fa318efb7e2f5b"
+    },
+    {
+      "source": "previews/MP-MOCK-111-product.svg",
+      "source_sha256": "4412887af4e6d51a0c3430773d976828e54096c90032b75f76dfdd2367392686",
+      "png": "previews/MP-MOCK-111-product.png",
+      "png_sha256": "c65e9aa8e69b4198331ffe7aa4befa5a88b0c7abee254c7579b1090080cb90b9"
+    },
+    {
+      "source": "MP-MOCK-111-dark.svg",
+      "source_sha256": "fcebcc1a5279b25f769c4815f4ef4bbdaad55f92d590614b9a642781b40a6a4e",
+      "png": "previews/MP-MOCK-111-dark.png",
+      "png_sha256": "9002d15a3da434681dea126bc405f3bbde83224159b6158d44c520febb41fa07"
+    },
+    {
+      "source": "previews/MP-MOCK-111-dark-product.svg",
+      "source_sha256": "6e6d4ecc5bfb13cefe278bda33a500f7abcb50c1141284a12eeeaa1d11721492",
+      "png": "previews/MP-MOCK-111-dark-product.png",
+      "png_sha256": "f6cd37d24880be515862138f399b982310dd1df80854e7350efcef1f3f64481d"
+    },
+    {
+      "source": "MP-MOCK-112.svg",
+      "source_sha256": "047495e9f3ee048d220fa7997e0140a0f2f481ce747243b81565af1b9e68dd95",
+      "png": "previews/MP-MOCK-112.png",
+      "png_sha256": "0f520e41c5b92df76e49ee9a51d50d2ce53b57561dd26db66cc5a97ae55b8b5f"
+    },
+    {
+      "source": "previews/MP-MOCK-112-product.svg",
+      "source_sha256": "5b9ab5ba6785e2c7e7791dac3698c7fd3dd91bb35cc561c5499904e5855990c7",
+      "png": "previews/MP-MOCK-112-product.png",
+      "png_sha256": "ee6d37ca24045f86b733cf369ef5f3c61b83bbcefbed9ae079bfc23794cc4881"
+    },
+    {
+      "source": "MP-MOCK-112-dark.svg",
+      "source_sha256": "1611d6c7d83d21420ca66c282b75238308d42749316cae31448221fa6e87e208",
+      "png": "previews/MP-MOCK-112-dark.png",
+      "png_sha256": "314046845feca5a2f0e2e34bbc28612bd992caff4047f945ad4d35eaff78ee80"
+    },
+    {
+      "source": "previews/MP-MOCK-112-dark-product.svg",
+      "source_sha256": "8b10ee023693e33c9877496d1b5ac521dd64cdee63e5a18a90da7241f1059a16",
+      "png": "previews/MP-MOCK-112-dark-product.png",
+      "png_sha256": "aaaba220ea58caee4f89ff851929288b9bc4c235d4fa5dc41540dab36e9e1224"
+    },
+    {
+      "source": "MP-MOCK-113.svg",
+      "source_sha256": "a5529b906a4a067822e878af417f92d7c69654d6fdfc54fa827b50c604112e13",
+      "png": "previews/MP-MOCK-113.png",
+      "png_sha256": "b604222f1778a3f19b2f37f83c04f6578b2f818240caa0c6a96f7f6503138c03"
+    },
+    {
+      "source": "previews/MP-MOCK-113-product.svg",
+      "source_sha256": "da28d9f9c478a8f5d1b38f679c1d1b4260524159babb23313469f741c88b7dea",
+      "png": "previews/MP-MOCK-113-product.png",
+      "png_sha256": "dfa3f2384fd7a953aceba88d4c6c4abfc3f47b077a2a3b93997eb04c6d80096d"
+    },
+    {
+      "source": "MP-MOCK-113-dark.svg",
+      "source_sha256": "acce0d260378f9003950371bb3a9a9cc9369e3eeb953f851cccc8be4891f08f3",
+      "png": "previews/MP-MOCK-113-dark.png",
+      "png_sha256": "b3c476304c0e7847324548adcd5f1bcec7634f0e6d6fcf36ef3fe24ae9c3917e"
+    },
+    {
+      "source": "previews/MP-MOCK-113-dark-product.svg",
+      "source_sha256": "f85f06df7e1e6db6bb741a208f56fa2a935533fd7558950e34fb83d7f71f20ec",
+      "png": "previews/MP-MOCK-113-dark-product.png",
+      "png_sha256": "93c62de220e2d6c1ea1f0f06021edf17a2f2d686871a30e7520c5bde635ba88f"
+    }
+  ],
+  "retained_canonical_svg_count": 204,
+  "retained_identity_check": "102 pairs byte-identical to historical r8 index and approval",
+  "visual_inspection": "All eleven affected compositions inspected in both themes on four product contact sheets; capsule/ticket level agreement, pending/invalid restrictions, collapsed and effective desktop zoom readback confirmed. Static authored-design scope only.",
+  "prior_render_report": "history/r8-int002/render-checks.json",
+  "runtime_evidence": "Not observed",
+  "contact_sheets": [
+    "previews/INT002-r9-contact-1.png",
+    "previews/INT002-r9-contact-2.png",
+    "previews/INT002-r9-contact-3.png",
+    "previews/INT002-r9-contact-4.png"
+  ]
+}

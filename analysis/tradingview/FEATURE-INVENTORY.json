@@ -1,0 +1,1001 @@
+[
+  {
+    "group": "chart_types",
+    "evidence": "E02",
+    "evidence_id": "ev_b75f3be32d6789e1df11946f79cdb2226f77cae57b68b1c549aa29f3637852df",
+    "step_id": "chart-types",
+    "scope": "Captured visible accessibility tree; includes group headings. Menu presence does not establish availability or successful use.",
+    "rows": [
+      {
+        "name": "Bars",
+        "disabled": false,
+        "selected": false
+      },
+      {
+        "name": "Candles",
+        "disabled": false,
+        "selected": true
+      },
+      {
+        "name": "Hollow candles",
+        "disabled": false,
+        "selected": false
+      },
+      {
+        "name": "Volume candles",
+        "disabled": false,
+        "selected": false
+      },
+      {
+        "name": "Line",
+        "disabled": false,
+        "selected": false
+      },
+      {
+        "name": "Line with markers",
+        "disabled": false,
+        "selected": false
+      },
+      {
+        "name": "Step line",
+        "disabled": false,
+        "selected": false
+      },
+      {
+        "name": "Area",
+        "disabled": false,
+        "selected": false
+      },
+      {
+        "name": "HLC area",
+        "disabled": false,
+        "selected": false
+      },
+      {
+        "name": "Baseline",
+        "disabled": false,
+        "selected": false
+      },
+      {
+        "name": "Columns",
+        "disabled": false,
+        "selected": false
+      },
+      {
+        "name": "High-low",
+        "disabled": false,
+        "selected": false
+      },
+      {
+        "name": "Volume footprint",
+        "disabled": false,
+        "selected": false
+      },
+      {
+        "name": "Time price opportunity",
+        "disabled": false,
+        "selected": false
+      },
+      {
+        "name": "Session volume profile",
+        "disabled": false,
+        "selected": false
+      },
+      {
+        "name": "Heikin Ashi",
+        "disabled": false,
+        "selected": false
+      },
+      {
+        "name": "Renko",
+        "disabled": false,
+        "selected": false
+      },
+      {
+        "name": "Line break",
+        "disabled": false,
+        "selected": false
+      },
+      {
+        "name": "Kagi",
+        "disabled": false,
+        "selected": false
+      },
+      {
+        "name": "Point & figure",
+        "disabled": false,
+        "selected": false
+      },
+      {
+        "name": "Range",
+        "disabled": false,
+        "selected": false
+      }
+    ]
+  },
+  {
+    "group": "intervals",
+    "evidence": "E02",
+    "evidence_id": "ev_b75f3be32d6789e1df11946f79cdb2226f77cae57b68b1c549aa29f3637852df",
+    "step_id": "intervals",
+    "scope": "Captured visible accessibility tree; includes group headings. Menu presence does not establish availability or successful use.",
+    "rows": [
+      {
+        "name": "Add custom interval",
+        "disabled": false,
+        "selected": false
+      },
+      {
+        "name": "Ticks",
+        "disabled": false,
+        "selected": false
+      },
+      {
+        "name": "1 tick",
+        "disabled": true,
+        "selected": false
+      },
+      {
+        "name": "10 ticks",
+        "disabled": true,
+        "selected": false
+      },
+      {
+        "name": "100 ticks",
+        "disabled": true,
+        "selected": false
+      },
+      {
+        "name": "1000 ticks",
+        "disabled": true,
+        "selected": false
+      },
+      {
+        "name": "Seconds",
+        "disabled": false,
+        "selected": false
+      },
+      {
+        "name": "1 second",
+        "disabled": false,
+        "selected": false
+      },
+      {
+        "name": "5 seconds",
+        "disabled": false,
+        "selected": false
+      },
+      {
+        "name": "10 seconds",
+        "disabled": false,
+        "selected": false
+      },
+      {
+        "name": "15 seconds",
+        "disabled": false,
+        "selected": false
+      },
+      {
+        "name": "30 seconds",
+        "disabled": false,
+        "selected": false
+      },
+      {
+        "name": "45 seconds",
+        "disabled": false,
+        "selected": false
+      },
+      {
+        "name": "Minutes",
+        "disabled": false,
+        "selected": false
+      },
+      {
+        "name": "1 minute",
+        "disabled": false,
+        "selected": false
+      },
+      {
+        "name": "2 minutes",
+        "disabled": false,
+        "selected": false
+      },
+      {
+        "name": "3 minutes",
+        "disabled": false,
+        "selected": false
+      },
+      {
+        "name": "5 minutes",
+        "disabled": false,
+        "selected": false
+      },
+      {
+        "name": "10 minutes",
+        "disabled": false,
+        "selected": false
+      },
+      {
+        "name": "15 minutes",
+        "disabled": false,
+        "selected": false
+      },
+      {
+        "name": "30 minutes",
+        "disabled": false,
+        "selected": false
+      },
+      {
+        "name": "45 minutes",
+        "disabled": false,
+        "selected": false
+      },
+      {
+        "name": "Hours",
+        "disabled": false,
+        "selected": false
+      },
+      {
+        "name": "1 hour",
+        "disabled": false,
+        "selected": false
+      },
+      {
+        "name": "2 hours",
+        "disabled": false,
+        "selected": false
+      },
+      {
+        "name": "3 hours",
+        "disabled": false,
+        "selected": false
+      },
+      {
+        "name": "4 hours",
+        "disabled": false,
+        "selected": false
+      },
+      {
+        "name": "Days",
+        "disabled": false,
+        "selected": false
+      },
+      {
+        "name": "1 day",
+        "disabled": false,
+        "selected": true
+      },
+      {
+        "name": "1 week",
+        "disabled": false,
+        "selected": false
+      },
+      {
+        "name": "1 month",
+        "disabled": false,
+        "selected": false
+      },
+      {
+        "name": "3 months",
+        "disabled": false,
+        "selected": false
+      },
+      {
+        "name": "6 months",
+        "disabled": false,
+        "selected": false
+      },
+      {
+        "name": "12 months",
+        "disabled": false,
+        "selected": false
+      },
+      {
+        "name": "Ranges",
+        "disabled": false,
+        "selected": false
+      },
+      {
+        "name": "1 range",
+        "disabled": false,
+        "selected": false
+      },
+      {
+        "name": "10 ranges",
+        "disabled": false,
+        "selected": false
+      },
+      {
+        "name": "100 ranges",
+        "disabled": false,
+        "selected": false
+      },
+      {
+        "name": "1000 ranges",
+        "disabled": false,
+        "selected": false
+      }
+    ]
+  },
+  {
+    "group": "trend_tools",
+    "evidence": "E03",
+    "evidence_id": "ev_937d697eef16d76ab862a00b1c52ba27ec8897ace8a03053df5a00a47db7ebc8",
+    "step_id": "trend-tools",
+    "scope": "Captured visible accessibility tree; includes group headings. Menu presence does not establish availability or successful use.",
+    "rows": [
+      {
+        "name": "Lines",
+        "disabled": false,
+        "selected": false
+      },
+      {
+        "name": "Trendline",
+        "disabled": false,
+        "selected": false
+      },
+      {
+        "name": "Ray",
+        "disabled": false,
+        "selected": false
+      },
+      {
+        "name": "Info line",
+        "disabled": false,
+        "selected": false
+      },
+      {
+        "name": "Extended line",
+        "disabled": false,
+        "selected": false
+      },
+      {
+        "name": "Trend angle",
+        "disabled": false,
+        "selected": false
+      },
+      {
+        "name": "Horizontal line",
+        "disabled": false,
+        "selected": false
+      },
+      {
+        "name": "Horizontal ray",
+        "disabled": false,
+        "selected": false
+      },
+      {
+        "name": "Vertical line",
+        "disabled": false,
+        "selected": false
+      },
+      {
+        "name": "Crossline",
+        "disabled": false,
+        "selected": false
+      },
+      {
+        "name": "Channels",
+        "disabled": false,
+        "selected": false
+      },
+      {
+        "name": "Parallel channel",
+        "disabled": false,
+        "selected": false
+      },
+      {
+        "name": "Regression trend",
+        "disabled": false,
+        "selected": false
+      },
+      {
+        "name": "Flat top/bottom",
+        "disabled": false,
+        "selected": false
+      },
+      {
+        "name": "Disjoint channel",
+        "disabled": false,
+        "selected": false
+      },
+      {
+        "name": "Pitchforks",
+        "disabled": false,
+        "selected": false
+      },
+      {
+        "name": "Pitchfork",
+        "disabled": false,
+        "selected": false
+      },
+      {
+        "name": "Schiff pitchfork",
+        "disabled": false,
+        "selected": false
+      },
+      {
+        "name": "Modified Schiff pitchfork",
+        "disabled": false,
+        "selected": false
+      },
+      {
+        "name": "Inside pitchfork",
+        "disabled": false,
+        "selected": false
+      }
+    ]
+  },
+  {
+    "group": "fibonacci_gann",
+    "evidence": "E10",
+    "evidence_id": "ev_9885f2d2df571ebe9501d31b17329fd1047ae3ec2a0fceb5642d61ca301eed58",
+    "step_id": "fibonacci-state",
+    "scope": "Captured visible accessibility tree; includes group headings. Menu presence does not establish availability or successful use.",
+    "rows": [
+      {
+        "name": "Fibonacci",
+        "disabled": false,
+        "selected": false
+      },
+      {
+        "name": "Fib retracement",
+        "disabled": false,
+        "selected": false
+      },
+      {
+        "name": "Trend-based fib extension",
+        "disabled": false,
+        "selected": false
+      },
+      {
+        "name": "Fib channel",
+        "disabled": false,
+        "selected": false
+      },
+      {
+        "name": "Fib time zone",
+        "disabled": false,
+        "selected": false
+      },
+      {
+        "name": "Fib speed resistance fan",
+        "disabled": false,
+        "selected": false
+      },
+      {
+        "name": "Trend-based fib time",
+        "disabled": false,
+        "selected": false
+      },
+      {
+        "name": "Fib circles",
+        "disabled": false,
+        "selected": false
+      },
+      {
+        "name": "Fib spiral",
+        "disabled": false,
+        "selected": false
+      },
+      {
+        "name": "Fib speed resistance arcs",
+        "disabled": false,
+        "selected": false
+      },
+      {
+        "name": "Fib wedge",
+        "disabled": false,
+        "selected": false
+      },
+      {
+        "name": "Pitchfan",
+        "disabled": false,
+        "selected": false
+      },
+      {
+        "name": "Gann",
+        "disabled": false,
+        "selected": false
+      },
+      {
+        "name": "Gann box",
+        "disabled": false,
+        "selected": false
+      },
+      {
+        "name": "Gann square fixed",
+        "disabled": false,
+        "selected": false
+      },
+      {
+        "name": "Gann square",
+        "disabled": false,
+        "selected": false
+      },
+      {
+        "name": "Gann fan",
+        "disabled": false,
+        "selected": false
+      }
+    ]
+  },
+  {
+    "group": "patterns",
+    "evidence": "E10",
+    "evidence_id": "ev_9885f2d2df571ebe9501d31b17329fd1047ae3ec2a0fceb5642d61ca301eed58",
+    "step_id": "patterns-state",
+    "scope": "Captured visible accessibility tree; includes group headings. Menu presence does not establish availability or successful use.",
+    "rows": [
+      {
+        "name": "Chart patterns",
+        "disabled": false,
+        "selected": false
+      },
+      {
+        "name": "XABCD pattern",
+        "disabled": false,
+        "selected": false
+      },
+      {
+        "name": "Cypher pattern",
+        "disabled": false,
+        "selected": false
+      },
+      {
+        "name": "Head and shoulders",
+        "disabled": false,
+        "selected": false
+      },
+      {
+        "name": "ABCD pattern",
+        "disabled": false,
+        "selected": false
+      },
+      {
+        "name": "Triangle pattern",
+        "disabled": false,
+        "selected": false
+      },
+      {
+        "name": "Three drives pattern",
+        "disabled": false,
+        "selected": false
+      },
+      {
+        "name": "Elliott waves",
+        "disabled": false,
+        "selected": false
+      },
+      {
+        "name": "Elliott impulse wave (1·2·3·4·5)",
+        "disabled": false,
+        "selected": false
+      },
+      {
+        "name": "Elliott correction wave (A·B·C)",
+        "disabled": false,
+        "selected": false
+      },
+      {
+        "name": "Elliott triangle wave (A·B·C·D·E)",
+        "disabled": false,
+        "selected": false
+      },
+      {
+        "name": "Elliott double combo wave (W·X·Y)",
+        "disabled": false,
+        "selected": false
+      },
+      {
+        "name": "Elliott triple combo wave (W·X·Y·X·Z)",
+        "disabled": false,
+        "selected": false
+      },
+      {
+        "name": "Cycles",
+        "disabled": false,
+        "selected": false
+      },
+      {
+        "name": "Cyclic lines",
+        "disabled": false,
+        "selected": false
+      },
+      {
+        "name": "Time cycles",
+        "disabled": false,
+        "selected": false
+      },
+      {
+        "name": "Sine line",
+        "disabled": false,
+        "selected": false
+      }
+    ]
+  },
+  {
+    "group": "forecast_measure",
+    "evidence": "E10",
+    "evidence_id": "ev_9885f2d2df571ebe9501d31b17329fd1047ae3ec2a0fceb5642d61ca301eed58",
+    "step_id": "measurements-state",
+    "scope": "Captured visible accessibility tree; includes group headings. Menu presence does not establish availability or successful use.",
+    "rows": [
+      {
+        "name": "Forecasting",
+        "disabled": false,
+        "selected": false
+      },
+      {
+        "name": "Long position",
+        "disabled": false,
+        "selected": false
+      },
+      {
+        "name": "Short position",
+        "disabled": false,
+        "selected": false
+      },
+      {
+        "name": "Position forecast",
+        "disabled": false,
+        "selected": false
+      },
+      {
+        "name": "Bars pattern",
+        "disabled": false,
+        "selected": false
+      },
+      {
+        "name": "Ghost feed",
+        "disabled": false,
+        "selected": false
+      },
+      {
+        "name": "Sector",
+        "disabled": false,
+        "selected": false
+      },
+      {
+        "name": "Volume-based",
+        "disabled": false,
+        "selected": false
+      },
+      {
+        "name": "Anchored VWAP",
+        "disabled": false,
+        "selected": false
+      },
+      {
+        "name": "Fixed range volume profile",
+        "disabled": false,
+        "selected": false
+      },
+      {
+        "name": "Anchored volume profile",
+        "disabled": false,
+        "selected": false
+      },
+      {
+        "name": "Measurers",
+        "disabled": false,
+        "selected": false
+      },
+      {
+        "name": "Price range",
+        "disabled": false,
+        "selected": false
+      },
+      {
+        "name": "Date range",
+        "disabled": false,
+        "selected": false
+      },
+      {
+        "name": "Date and price range",
+        "disabled": false,
+        "selected": false
+      }
+    ]
+  },
+  {
+    "group": "shapes",
+    "evidence": "E10",
+    "evidence_id": "ev_9885f2d2df571ebe9501d31b17329fd1047ae3ec2a0fceb5642d61ca301eed58",
+    "step_id": "shapes-state",
+    "scope": "Captured visible accessibility tree; includes group headings. Menu presence does not establish availability or successful use.",
+    "rows": [
+      {
+        "name": "Brushes",
+        "disabled": false,
+        "selected": false
+      },
+      {
+        "name": "Brush",
+        "disabled": false,
+        "selected": false
+      },
+      {
+        "name": "Highlighter",
+        "disabled": false,
+        "selected": false
+      },
+      {
+        "name": "Arrows",
+        "disabled": false,
+        "selected": false
+      },
+      {
+        "name": "Arrow marker",
+        "disabled": false,
+        "selected": false
+      },
+      {
+        "name": "Arrow",
+        "disabled": false,
+        "selected": false
+      },
+      {
+        "name": "Arrow mark up",
+        "disabled": false,
+        "selected": false
+      },
+      {
+        "name": "Arrow mark down",
+        "disabled": false,
+        "selected": false
+      },
+      {
+        "name": "Shapes",
+        "disabled": false,
+        "selected": false
+      },
+      {
+        "name": "Rectangle",
+        "disabled": false,
+        "selected": false
+      },
+      {
+        "name": "Rotated rectangle",
+        "disabled": false,
+        "selected": false
+      },
+      {
+        "name": "Path",
+        "disabled": false,
+        "selected": false
+      },
+      {
+        "name": "Circle",
+        "disabled": false,
+        "selected": false
+      },
+      {
+        "name": "Ellipse",
+        "disabled": false,
+        "selected": false
+      },
+      {
+        "name": "Polyline",
+        "disabled": false,
+        "selected": false
+      },
+      {
+        "name": "Triangle",
+        "disabled": false,
+        "selected": false
+      },
+      {
+        "name": "Arc",
+        "disabled": false,
+        "selected": false
+      },
+      {
+        "name": "Curve",
+        "disabled": false,
+        "selected": false
+      },
+      {
+        "name": "Double curve",
+        "disabled": false,
+        "selected": false
+      }
+    ]
+  },
+  {
+    "group": "annotations",
+    "evidence": "E10",
+    "evidence_id": "ev_9885f2d2df571ebe9501d31b17329fd1047ae3ec2a0fceb5642d61ca301eed58",
+    "step_id": "annotations-state",
+    "scope": "Captured visible accessibility tree; includes group headings. Menu presence does not establish availability or successful use.",
+    "rows": [
+      {
+        "name": "Text and notes",
+        "disabled": false,
+        "selected": false
+      },
+      {
+        "name": "Text",
+        "disabled": false,
+        "selected": false
+      },
+      {
+        "name": "Note",
+        "disabled": false,
+        "selected": false
+      },
+      {
+        "name": "Price note",
+        "disabled": false,
+        "selected": false
+      },
+      {
+        "name": "Pin",
+        "disabled": false,
+        "selected": false
+      },
+      {
+        "name": "Table",
+        "disabled": false,
+        "selected": false
+      },
+      {
+        "name": "Callout",
+        "disabled": false,
+        "selected": false
+      },
+      {
+        "name": "Comment",
+        "disabled": false,
+        "selected": false
+      },
+      {
+        "name": "Price label",
+        "disabled": false,
+        "selected": false
+      },
+      {
+        "name": "Signpost",
+        "disabled": false,
+        "selected": false
+      },
+      {
+        "name": "Flag mark",
+        "disabled": false,
+        "selected": false
+      },
+      {
+        "name": "Content",
+        "disabled": false,
+        "selected": false
+      },
+      {
+        "name": "Image",
+        "disabled": false,
+        "selected": false
+      },
+      {
+        "name": "Post",
+        "disabled": false,
+        "selected": false
+      },
+      {
+        "name": "Idea",
+        "disabled": false,
+        "selected": false
+      }
+    ]
+  },
+  {
+    "group": "magnets",
+    "evidence": "E10",
+    "evidence_id": "ev_9885f2d2df571ebe9501d31b17329fd1047ae3ec2a0fceb5642d61ca301eed58",
+    "step_id": "magnets-state",
+    "scope": "Captured visible accessibility tree; includes group headings. Menu presence does not establish availability or successful use.",
+    "rows": [
+      {
+        "name": "Weak magnet",
+        "disabled": false,
+        "selected": false
+      },
+      {
+        "name": "Strong magnet",
+        "disabled": false,
+        "selected": false
+      },
+      {
+        "name": "Snap to indicators",
+        "disabled": true,
+        "selected": false
+      }
+    ]
+  },
+  {
+    "group": "main_menu",
+    "evidence": "E17",
+    "evidence_id": "ev_a7336de180a984d4c0fcd3312c0228e200c0a87e0fb12aa233341ec7762ee704",
+    "step_id": "menu-state",
+    "scope": "Captured visible accessibility tree; includes group headings. Menu presence does not establish availability or successful use.",
+    "rows": [
+      {
+        "name": "Home",
+        "disabled": false,
+        "selected": false
+      },
+      {
+        "name": "Help Center",
+        "disabled": false,
+        "selected": false
+      },
+      {
+        "name": "What's new",
+        "disabled": false,
+        "selected": false
+      },
+      {
+        "name": "Dark theme",
+        "disabled": false,
+        "selected": false
+      },
+      {
+        "name": "Drawings panel",
+        "disabled": false,
+        "selected": false
+      },
+      {
+        "name": "Keyboard shortcuts",
+        "disabled": false,
+        "selected": false
+      },
+      {
+        "name": "Get desktop app",
+        "disabled": false,
+        "selected": false
+      },
+      {
+        "name": "Sign in",
+        "disabled": false,
+        "selected": false
+      },
+      {
+        "name": "Join now",
+        "disabled": false,
+        "selected": false
+      }
+    ]
+  },
+  {
+    "group": "snapshots",
+    "evidence": "E17",
+    "evidence_id": "ev_a7336de180a984d4c0fcd3312c0228e200c0a87e0fb12aa233341ec7762ee704",
+    "step_id": "snapshot-state",
+    "scope": "Captured visible accessibility tree; includes group headings. Menu presence does not establish availability or successful use.",
+    "rows": [
+      {
+        "name": "Download image",
+        "disabled": false,
+        "selected": false
+      },
+      {
+        "name": "Copy image",
+        "disabled": false,
+        "selected": false
+      },
+      {
+        "name": "Copy link",
+        "disabled": false,
+        "selected": false
+      },
+      {
+        "name": "Open in new tab",
+        "disabled": false,
+        "selected": false
+      },
+      {
+        "name": "Tweet image",
+        "disabled": false,
+        "selected": false
+      }
+    ]
+  }
+]

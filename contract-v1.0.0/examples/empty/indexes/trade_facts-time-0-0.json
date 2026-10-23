@@ -1,0 +1,1 @@
+{"index_kind":"time","level":0,"summary":{"min_key":null,"max_key":null,"min_start":null,"max_end":null,"min_known":null,"max_known_end":null,"count":0},"entries":[{"file":{"path":"data/trade_facts-0.parquet","sha256":"b329f874968d09b76bd12444582b16d940b73cbbbb8ce9c935cb031e73f29218","bytes":3194},"row_count":0,"first_time":null,"last_time":null}]}

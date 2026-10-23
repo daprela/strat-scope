@@ -1,0 +1,102 @@
+{
+  "scope": "A21–A23 authored Pine probes only; endpoint metadata, no bodies, header values or websocket payloads. Does not alter E01 startup network summary.",
+  "captures": [
+    {
+      "id": "A21",
+      "evidence_id": "ev_a4d9c85b2ebf84bee571303161b3b2c0f5bf1b22bf42edaa45b68fc371ec4c77",
+      "dropped": 0,
+      "requests": [
+        {
+          "step_index": 4,
+          "sequence": 4,
+          "method": "POST",
+          "host": "pine-facade.tradingview.com",
+          "path": "/pine-facade/save/new_draft",
+          "query_names": [
+            "allow_use_existing_draft"
+          ]
+        },
+        {
+          "step_index": 5,
+          "sequence": 14,
+          "method": "POST",
+          "host": "pine-facade.tradingview.com",
+          "path": "/pine-facade/translate_light",
+          "query_names": [
+            "v"
+          ]
+        },
+        {
+          "step_index": 5,
+          "sequence": 20,
+          "method": "GET",
+          "host": "pine-facade.tradingview.com",
+          "path": "/pine-facade/is_auth_to_get/USER;[script-id]/0.1",
+          "query_names": []
+        },
+        {
+          "step_index": 5,
+          "sequence": 21,
+          "method": "GET",
+          "host": "pine-facade.tradingview.com",
+          "path": "/pine-facade/translate/USER;[script-id]/0.1",
+          "query_names": []
+        }
+      ]
+    },
+    {
+      "id": "A22",
+      "evidence_id": "ev_01ab8bd55a56f257726c87f4e6ded2fe0e5820e52debda37fc03af5c50f7227b",
+      "dropped": 0,
+      "requests": [
+        {
+          "step_index": 4,
+          "sequence": 7,
+          "method": "POST",
+          "host": "pine-facade.tradingview.com",
+          "path": "/pine-facade/save/next_draft/USER;[script-id]",
+          "query_names": [
+            "allow_create_new"
+          ]
+        },
+        {
+          "step_index": 5,
+          "sequence": 14,
+          "method": "POST",
+          "host": "pine-facade.tradingview.com",
+          "path": "/pine-facade/translate_light",
+          "query_names": [
+            "v"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "A23",
+      "evidence_id": "ev_68f4a07d5b127234e0ed8c425057b41266db18dcd0f0be03d6ea54547ee3f439",
+      "dropped": 0,
+      "requests": [
+        {
+          "step_index": 4,
+          "sequence": 1,
+          "method": "POST",
+          "host": "pine-facade.tradingview.com",
+          "path": "/pine-facade/save/next_draft/USER;[script-id]",
+          "query_names": [
+            "allow_create_new"
+          ]
+        },
+        {
+          "step_index": 5,
+          "sequence": 8,
+          "method": "POST",
+          "host": "pine-facade.tradingview.com",
+          "path": "/pine-facade/translate_light",
+          "query_names": [
+            "v"
+          ]
+        }
+      ]
+    }
+  ]
+}

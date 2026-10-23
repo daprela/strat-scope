@@ -1,0 +1,17 @@
+{
+  "AGENTS.md": "66375d0e19a9935541a371d58aa5b368224a75d33685e02f2561c2d93af84c6c",
+  "backend/AGENTS.md": "ca2a10a2cbe1360cb7f4da75daac0074b73e76236957cf16f960b9178c18c474",
+  "backend/DEVELOPMENT.md": "1518c1b8c78f697003df3bd059a529fcb5081293ec8df21f4d605161e4eb8b69",
+  "frontend/AGENTS.md": "9755b76af9942f0982cd8a6bbae66bea74b2329733ea4c232fd0afb52cb41e91",
+  "frontend/DEVELOPMENT.md": "914732659f51d7f0c96d29976c155feeeaff6b62cf0be85cb94d9e75ac7186a2",
+  "frontend/UI-DEVELOPMENT.md": "3ebba8a0bf7398e37c8f5421bc153a3441afa89d47314af18017a31f513c1820",
+  "analysis/tradingview/architecture-dossier.md": "ddaea9cb64b0edeb1a2a3498d4de98cf6c1c7df6b673b69fd1b6cc1446752623",
+  "analysis/tradingview/architecture-review.md": "19008517e4333bf03d5cb0787059d41b4b6b8eb8877657727af2f60ed3d5e598",
+  "analysis/tradingview/requirements-dossier.md": "841570bd3457cc25a991d6b6c0fe3866b9356e9977b8a0bf490e6739d4b9f3e9",
+  "analysis/tradingview/domain-model.md": "8677c88b019523fa78ca029ab9d50fd8c4710fca8def4a6d28e434b6a7670554",
+  "analysis/tradingview/implementation-standards.md": "9289da657716ad1d45488f9c5894b661e64aa1e241bda788cfec86a50c7ce145",
+  "analysis/tradingview/standards-approval.json": "19870abe03df71f2a5bad737e2d1c5a00dbfe28b1700189c68fdae514c1469af",
+  "analysis/tradingview/ui-dossier.md": "4dae7668d6ae07516bcf78e3f207404e4ee6782fd2becf4b458e6293682bbe37",
+  "analysis/tradingview/visual-system.md": "6cb0097424cd03e46db2d751f149ce9d6b6f37cda1331b81b0434994b7a838a8",
+  "analysis/tradingview/ui-review.md": "a7e1eb1a641c44a07217055936b5101c37b16145bbbeddb5bd323c1ee4e2add1"
+}
